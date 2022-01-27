@@ -1,0 +1,97 @@
+---
+title: "Gray Foundation Data Model"
+author: "Sage Bionetworks"
+date: "Last updated on `r Sys.Date()`"
+output: 
+  html_document:
+    theme: lumen
+    css: www/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+    toc_depth: 4
+---
+
+```{r setup, include=FALSE}
+library(data.table)
+library(data.tree)
+library(reactable)
+
+HTAN_model <- fread("https://raw.githubusercontent.com/ncihtan/data-models/main/HTAN.model.csv")
+imports <- yaml::read_yaml("imports.yml")
+gf <- copy(HTAN_model)
+# Replace HTAN mentions with more generic Atlas term 
+gf[, Attribute := gsub("HTAN", "Atlas", Attribute)]
+gf[, DependsOn := gsub("HTAN", "Atlas", DependsOn)]
+gf[, Description := gsub("HTAN", "", Description)]
+```
+
+## Description
+
+For interoperability, the Gray Foundation model re-uses the Human Tumor Atlas Network (HTAN) model;
+it **imports** a subset of the most relevant specifications. 
+
+This was motivated by the ability to have assets searched and integrated using a common vocabulary
+and the chance to accelerate development for Gray Foundation project.
+
+Differences that may be observed are:
+
+- Because Gray Foundation focuses on breast cancer and ovarian cancer, we only import those disease-specific components.  
+- For breast cancer and ovarian cancer, we may also include additional properties lacking coverage in the HTAN model.  
+- Small differences in properties being present/required/optional based on Gray Foundation-specific needs.  
+
+
+Reference the HTAN development model [here](https://data.humantumoratlas.org/standards). 
+
+## **Patient** 
+
+Metadata components collected for patients (cases).
+```{r echo=F}
+# Apply deltas, i.e. keep only selected modules
+patient <- gf[Attribute %in% imports$Patient, 
+              .(Component = Attribute, Property = strsplit(DependsOn, split = ", ?"))]
+patient <- patient[, .(Property = unlist(Property)), by = Component]
+
+# Somewhat confusing to include `Component` as a dependency 
+# (needed for backend but doesn't much sense to display) so remove from public table
+# Already implicit that these are components of patient metadata
+patient <- patient[Property != "Component"]
+
+patient <- merge(patient, gf[, .(Attribute, Description)], by.x = "Property", by.y = "Attribute")
+reactable(patient, 
+          # filterable = if(nrow(dt) > 20) TRUE else FALSE,
+          pagination = FALSE,
+          groupBy = "Component",
+          columns = list(
+            Component = colDef(maxWidth = 300),
+            Property = colDef(maxWidth = 500),
+            Description = colDef(maxWidth = 500)
+          ),
+          # wrap = FALSE,
+          class = "term-table"
+  )
+```
+
+
+## **Assay Data**
+
+Metadata components collected for deposited assay data.
+```{r echo=F}
+# Apply deltas, i.e. keep only selected modules
+data <- gf[Attribute %in% imports$Data, 
+              .(Component = Attribute, Property = strsplit(DependsOn, split = ", ?"))]
+data <- data[, .(Property = unlist(Property)), by = Component]
+data <- merge(data, gf[, .(Attribute, Description)], by.x = "Property", by.y = "Attribute")
+reactable(data, 
+          # filterable = if(nrow(dt) > 20) TRUE else FALSE,
+          pagination = FALSE,
+          groupBy = "Component",
+          columns = list(
+            Component = colDef(maxWidth = 300),
+            Property = colDef(maxWidth = 500),
+            Description = colDef(maxWidth = 500)
+          ),
+          # wrap = FALSE,
+          class = "term-table"
+  )
+```
