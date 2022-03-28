@@ -1,0 +1,11 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+Age at Menarche,Age at first period,,,,FALSE,Demographics Female,,,
+Age at Menopause,Age at menopause,,,,FALSE,Demographics Female,,,
+Obstetric History,Obstetric history notation,,,,FALSE,Demographics Female,,,
+Parity,Number of pregnancies carried over the threshold of viability,,,,FALSE,Demographics Female,,,
+Gravidity,Total number of pregnancies regardless of outcome,,,,FALSE,Demographics Female,,,
+Age at First Birth,Age at first birth,,,,FALSE,Demographics Female,,,
+Yes - Given Birth,Has given birth,"Yes, No, unknown",,,FALSE,Demographics Female,,,
+Number of Live Births,Number of live births,,,,FALSE,Demographics Female,,,
+Yes - Issues With Pregnancy,Whether there was an issue with any pregnancy,,,,FALSE,Demographics Female,,,
+Years of Contraceptive Use,Years of contraceptive use,,,,FALSE,Demographics Female,,,

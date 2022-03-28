@@ -1,0 +1,4 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+Ovarian Cancer Histologic Subtype,Text term to describe the histological subtype of ovarian cancer in the participant,"High-grade serous, Low-grade serous, High-grade endometrioid, Low-grade endometrioid, Clear cell, Mucinous, Sex-cord stromal, Germ cell, Other, unknown, Data not available","","",FALSE,Ovarian Cancer Tier 3,"","",""
+Ovarian Cancer Surgical Outcome,Text term that describes the kind of surgical treatment administered.,"R0 resection,Optimal cytoreduction, Sub-optimal cytoreduction, Other, unknown, Data not available","","",FALSE,Ovarian Cancer Tier 3,"","",""
+Ovarian Cancer Platinum Status,Text term to indicate the status of treatment with platinum in participant with ovarian cancer,"Platinum-refractory, Platinum-sensitive, Platinum-resistant, Data not available, unknown","","",FALSE,Ovarian Cancer Tier 3,"","",""

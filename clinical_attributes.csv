@@ -1,0 +1,392 @@
+Attribute,Type
+AA Change,character
+AIDS Risk Factors,character
+AJCC Clinical M,character
+AJCC Clinical N,character
+AJCC Clinical Stage,character
+AJCC Clinical T,character
+AJCC Pathologic M,character
+AJCC Pathologic N,character
+AJCC Pathologic Stage,character
+AJCC Pathologic T,character
+AJCC Staging System Edition,character
+Acquisition Method Other Specify,character
+Acquisition Method Type,character
+Additional Topography,character
+Adjacent Biospecimen IDs,character
+Adverse Event,character
+Adverse Event Grade,character
+Age Is Obfuscated,boolean
+Age at Diagnosis,numeric
+Age at Index,numeric
+Alcohol Days Per Week,character
+Alcohol Drinks Per Day,character
+Alcohol Exposure,character
+Alcohol History,boolean
+Alcohol Intensity,character
+Alcohol Type,character
+Analyte Biospecimen Type,character
+Analyte Type,character
+Anaplasia Present,character
+Anaplasia Present Type,character
+Anatomic Site,character
+Antigen,character
+Antigen Retrieval,character
+Asbestos Exposure,boolean
+Atlas Biospecimen ID,character
+Atlas Parent Biospecimen ID,character
+Atlas Parent ID,character
+Atlas Participant ID,character
+BIRADS Mammography Breast Density Category,character
+BMI,character
+Best Overall Response,character
+Biospecimen Dimension 1,character
+Biospecimen Dimension 2,character
+Biospecimen Dimension 3,character
+Biospecimen Slide Location,character
+Biospecimen Type,character
+Blood Biospecimen Type,character
+Blood Test Normal Range Lower,character
+Blood Test Normal Range Upper,character
+Body Surface Area,character
+Bone Marrow Biospecimen Type,character
+Breast Biopsy Procedure Finding Type,character
+Breast Cancer Allred Estrogen Receptor Score,character
+Breast Cancer Assessment Tests,character
+Breast Cancer Genomic Test Performed,character
+Breast Cancer Tier 3,character
+Breast Carcinoma Centromere 17 Copy Number,numeric
+Breast Carcinoma Detection Method Type,character
+Breast Carcinoma ER Staining Intensity,character
+Breast Carcinoma ER Status Percentage Value,character
+Breast Carcinoma Estrogen Receptor Status,character
+Breast Carcinoma HER2 Centromere17 Copynumber Total,numeric
+Breast Carcinoma HER2 Chromosome17 Ratio,character
+Breast Carcinoma HER2 Ratio Diagnosis,character
+Breast Carcinoma HER2 Status,character
+Breast Carcinoma Histology Category,character
+Breast Carcinoma PR Staining Intensity,character
+Breast Carcinoma PR Status Percentage Value,character
+Breast Carcinoma Progesteroner Receptor Status,character
+Breast Carcinoma Surgical Procedure Name,character
+Breast Imaging Performed Type,character
+Breast Quadrant Site,character
+Breslow Thickness,character
+CD4 Count,character
+CDC HIV Risk Factors,character
+COVID19 Antibody Testing,character
+COVID19 Cancer Treatment Followup,boolean
+COVID19 Complications Severity,character
+COVID19 Current Status,character
+COVID19 Occurrence Indicator,boolean
+COVID19 Positive Lab Test Indicator,boolean
+Cancer Associated Gene Mutations,character
+Cause of Death,character
+Cause of Death Source,character
+Cause of Response,character
+Cell Count,character
+Chemo Concurrent to Radiation,boolean
+Chewing tobacco daily use count,character
+Chromosome,character
+Cigarettes per Day,character
+Classification of Tumor,character
+Clinical Biospecimen Type,character
+Clinical Data Tier 2,character
+Clonality,character
+Coal Dust Exposure,boolean
+Cog Neuroblastoma Risk Group,character
+Cog Rhabdomyosarcoma Risk Group,character
+Collection Days from Index,character
+Collection Media,character
+Comorbidity,character
+Comorbidity Method of Diagnosis,character
+Concomitant Medication Received Type,character
+Copy Number,numeric
+Country of Residence,character
+Cytoband,character
+DLCO Ref Predictive Percent,character
+Days to Adverse Event,character
+Days to Birth,character
+Days to Comorbidity,character
+Days to Death,character
+Days to Diagnosis,character
+Days to Follow Up,character
+Days to Imaging,character
+Days to Last Follow up,character
+Days to Last Known Disease Status,character
+Days to Progression,character
+Days to Progression Free,character
+Days to Recurrence,character
+Days to Treatment End,character
+Days to Treatment Start,character
+Dead,character
+Degree of Dysplasia,character
+Demographics,character
+Diabetes Treatment Type,character
+Diagnosis,character
+Dimensions Unit,character
+Disease Response,character
+Dysplasia Fraction,character
+ECOG Performance Status,character
+Ecig vape 30 day use num,character
+Ecig vape times per day,character
+Ecig vape use,character
+Environmental Tobacco Smoke Exposure,boolean
+Ethnicity,character
+Evidence of Recurrence Type,character
+Exon,character
+Exposure,character
+Extent of Tumor Resection,character
+FEV 1 FVC Pre Bronch Percent,character
+FEV1 FVC Post Bronch Percent,character
+FEV1 Ref Post Bronch Percent,character
+FEV1 Ref Pre Bronch Percent,character
+Family History,character
+Family Member Vital Status Indicator,character
+Fiducial Marker,character
+First Symptom Prior to Diagnosis,character
+Fixation Duration,character
+Fixative Type,character
+Follow Up,character
+Gender,character
+Gene Symbol,character
+Gleason Grade Group,character
+Gleason Grade Tertiary,character
+Gleason Patterns Percent,character
+Greatest Tumor Dimension,character
+Gross Tumor Weight,character
+HAART Treatment Indicator,boolean
+HER2 Breast Carcinoma Copy Number Total,numeric
+HIV Viral Load,character
+HPV Positive Type,character
+Height,character
+Hepatitis Sustained Virological Response,boolean
+Hereditary Cancer Predisposition Syndrome,character
+Histologic Morphology Code,character
+Histology Assessment By,character
+Histology Assessment Medium,character
+Histone Family,character
+Histone Variant,character
+Hormonal Contraceptive Use,character
+Hormone Therapy Breast Cancer Prevention Indicator,boolean
+Hysterectomy Margins Involved,character
+Hysterectomy Type,character
+IGCCCG Stage,character
+INPC Grade,character
+INPC Histologic Group,character
+INRG Stage,character
+INSS Stage,character
+IRS Group,character
+IRS Stage,character
+ISS Stage,character
+Imaging Result,character
+Imaging Type,character
+Immunosuppression,boolean
+Immunosuppressive Treatment Type,character
+Initial Disease Status,character
+International Prognostic Index,character
+Intron,character
+Invasive Ductal Breast Carcinoma Histologic Category,character
+Invasive Lobular Breast Carcinoma Histologic Category,character
+Ischemic Temperature,character
+Ischemic Time,character
+Karnofsky Performance Status,character
+Known Genetic Predisposition Mutation,boolean
+Lab Tests for MMR Status,character
+Laboratory Test,character
+Last Known Disease Status,character
+Laterality,character
+Loci Abnormal Count,character
+Loci Count,character
+Locus,character
+Lymph Node Involved Site,character
+Lymph Nodes Positive,character
+Lymph Nodes Tested,character
+Lymphatic Invasion Present,boolean
+Lysis Buffer,character
+Mammaprint Risk Group,character
+Margin Distance,character
+Margins Involved Site,character
+Marijuana Use Per Week,character
+Marijuana smoke,character
+Medulloblastoma Molecular Classification,character
+Menopause Status,character
+Metastasis at Diagnosis,character
+Metastasis at Diagnosis Site,character
+Method of Diagnosis,character
+Method of Nucleic Acid Isolation,character
+Micropapillary Features,character
+Mismatch Repair Mutation,boolean
+Mismatch Repair System Status,character
+Mitosis Karyorrhexis Index,character
+Mitotic Count,character
+Mode of Cancer Detection,character
+Molecular Analysis Method,character
+Molecular Consequence,character
+Molecular Test,character
+Morphology,character
+Mounting Medium,character
+Multicentric Breast Carcinoma Present Indicator,boolean
+Multifocal Breast Carcinoma Present Indicator,boolean
+Mutational Signatures,character
+NCI Atlas Cancer Site,character
+Nadir CD4 Count,character
+Non Nodal Regional Disease,character
+Non Nodal Tumor Deposits,boolean
+Number Proliferating Cells,numeric
+Number of Cycles,numeric
+Occupation Duration Years,date
+Oncotype Risk Group,character
+Oncotype Score,character
+Other Acquisition Method,character
+Other Biopsy Resection Site,character
+Ovarian Cancer Histologic Subtype,character
+Ovarian Cancer Platinum Status,character
+Ovarian Cancer Surgical Outcome,character
+Ovarian Cancer Tier 3,character
+Ovarian Specimen Status,character
+Ovarian Surface Involvement,character
+Pack Years Smoked,date
+Pathogenicity,character
+Percent Eosinophil Infiltration,character
+Percent Granulocyte Infiltration,character
+Percent Inflam Infiltration,character
+Percent Lymphocyte Infiltration,character
+Percent Monocyte Infiltration,character
+Percent Necrosis,character
+Percent Neutrophil Infiltration,character
+Percent Normal Cells,character
+Percent Stromal Cells,character
+Percent Tumor Cells,character
+Percent Tumor Invasion,character
+Percent Tumor Nuclei,character
+Perineural Invasion Present,boolean
+Peritoneal Fluid Cytological Status,character
+Ploidy,character
+Portion Weight,character
+Precancerous Condition Type,character
+Pregnancy Outcome,character
+Pregnant at Diagnosis,boolean
+Preinvasive Morphology,character
+Premature At Birth,boolean
+Preservation Method,character
+Primary Diagnosis,character
+Primary Gleason Grade,character
+Prior Invasive Breast Disease,character
+Prior Malignancy,boolean
+Prior Sites of Radiation,character
+Prior Treatment,boolean
+Processing Days from Index,character
+Processing Location,character
+Progression or Recurrence,character
+Progression or Recurrence Anatomic Site,character
+Progression or Recurrence Type,character
+Race,character
+Radon Exposure,boolean
+Reason Treatment Ended,character
+Recist Targeted Regions Number,numeric
+Recist Targeted Regions Sum,character
+Reflux Treatment Type,character
+Regimen or Line of Therapy,character
+Relationship Age at Diagnosis,character
+Relationship Gender,character
+Relationship Primary Diagnosis,character
+Relationship Type,character
+Relative with Cancer History,character
+Relatives with Cancer History Count,character
+Residual Disease,character
+Respirable Crystalline Silica Exposure,boolean
+Risk Factor,character
+Risk Factor Treatment,boolean
+Satellite Metastasis Present Indicator,boolean
+Scan Tracer Used,character
+Second Exon,character
+Second Gene Symbol,character
+Second hand smoke exposure years,date
+Secondary Gleason Grade,character
+Secondhand Smoke as Child,boolean
+Section Number in Sequence,numeric
+Section Thickness Value,character
+Sectioning Days from Index,character
+Sentinel Lymph Node Count,character
+Sentinel Node Positive Assessment Count,character
+Shipping Condition Type,character
+Site Data Source,character
+Site of Resection or Biopsy,character
+Slicing Method,character
+Slide Charge Type,character
+Smoke Exposure Duration,character
+Smokeless Tobacco Quit Age,character
+Smoking Exposure,character
+Smoking Frequency,character
+Specialized Molecular Test,character
+Specimen Laterality,character
+Staining Markers,character
+Start Days from Index,character
+Stop Days from Index,character
+Storage Method,character
+Supratentorial Localization,character
+Synchronous Malignancy,boolean
+Test Analyte Type,character
+Test Result,character
+Test Units,character
+Test Value,character
+Therapeutic Agents,character
+Therapy,character
+Time Between Waking and First Smoke,character
+Timepoint Label,character
+Tissue Biospecimen Type,character
+Tissue or Organ of Origin,character
+Tobacco Smoking Onset Year,date
+Tobacco Smoking Quit Year,date
+Tobacco Smoking Status,character
+Tobacco Use per Day,character
+Topography Code,character
+Total Volume,character
+Total Volume Unit,character
+Transcript,character
+Treatment Anatomic Site,character
+Treatment Arm,character
+Treatment Dose,character
+Treatment Dose Units,character
+Treatment Effect,character
+Treatment Effect Indicator,boolean
+Treatment Frequency,character
+Treatment Intent Type,character
+Treatment Outcome,character
+Treatment Type,character
+Treatment or Therapy,character
+Tumor Confined to Organ of Origin,boolean
+Tumor Depth,character
+Tumor Extranodal Extension Indicator,character
+Tumor Focality,character
+Tumor Grade,character
+Tumor Grade,character
+Tumor Infiltrating Lymphocytes,character
+Tumor Largest Dimension Diameter,character
+Tumor Tissue Type,character
+Type of Smoke Exposure,character
+Type of Tobacco Used,character
+Type of smoke exposure cumulative years,date
+Urine Biospecimen Type,character
+Variant Origin,character
+Variant Type,character
+Vascular Invasion Present,character
+Vascular Invasion Type,character
+Viral Hepatitis Serologies,character
+Vital Status,character
+WHO CNS Grade,character
+WHO NTE Grade,character
+Weeks Gestation at Birth,character
+Weight,character
+Year Of Birth,date
+Year of Death,date
+Year of Diagnosis,date
+Years Smoked,date
+Yes - Alcohol Exposure,character
+Yes - Anaplasia Present,character
+Yes - Cancer History Relative,character
+Yes - Progression or Recurrence,character
+Yes - Smoking Exposure,character
+Yes - Vascular Invasion Present,character
+Zygosity,character

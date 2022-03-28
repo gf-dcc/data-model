@@ -17,16 +17,14 @@ library(data.table)
 library(data.tree)
 library(reactable)
 
-HTAN_model <- fread("https://raw.githubusercontent.com/ncihtan/data-models/main/HTAN.model.csv")
-imports <- yaml::read_yaml("imports.yml")
-gf <- copy(HTAN_model)
-# Replace HTAN mentions with more generic Atlas term 
-gf[, Attribute := gsub("HTAN", "Atlas", Attribute)]
-gf[, DependsOn := gsub("HTAN", "Atlas", DependsOn)]
-gf[, Description := gsub("HTAN", "", Description)]
+source("import.R")
 ```
 
-## Description
+```{r import, include=FALSE}
+
+```
+
+## General Description
 
 For interoperability, the Gray Foundation model re-uses the Human Tumor Atlas Network (HTAN) model;
 it **imports** a subset of the most relevant specifications. 
@@ -37,11 +35,28 @@ and the chance to accelerate development for Gray Foundation project.
 Differences that may be observed are:
 
 - Because Gray Foundation focuses on breast cancer and ovarian cancer, we only import those disease-specific components.  
-- For breast cancer and ovarian cancer, we may also include additional properties lacking coverage in the HTAN model.  
+- For breast cancer and ovarian cancer, we may include additional properties if the HTAN model doesn't cover them.  
 - Small differences in properties being present/required/optional based on Gray Foundation-specific needs.  
 
-
 Reference the HTAN development model [here](https://data.humantumoratlas.org/standards). 
+
+## Application Example
+
+In this section we give an example overview of how the data models are applied.
+In the figure below, two data assets are shown, belonging to different data atlases (each "atlas" conceptually groups a set of data towards a research question). 
+
+
+
+
+The patient cohorts contributing to each atlas can be the same or different; in many cases, the cohorts are different because each atlas team draws upon different biosample sources, though sometimes there may be a shared subset which gives opportunity for data integration.
+
+### For longitudinal data
+
+Some atlases are snapshots while others aim to capture dynamics of a disease through time and/or treatment.
+For instance, the microbiome atlas can comprise of data at different timepoints during a treatment period. 
+Each timepoint is associated with a different patient "state".  
+Different states usually differ by attributes such as treatment, disease stage, etc., while certain attributes like patient race and sex (demographics) and family history are the same (fixed).
+
 
 ## **Patient** 
 

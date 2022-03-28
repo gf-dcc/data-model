@@ -1,22 +1,23 @@
-Patient:
-- Biosample
-- Biospecimen
-- Demographics
-- Clinical Data Tier 2
-- Family History
-- Exposure
-- Follow Up
-- Diagnosis
-- Therapy
-- Molecular Test
-- Breast Cancer Tier 3
-- Ovarian Cancer Tier 3
-Data:
-- Assay
-- scRNA-seq Level 1
-- scATAC-seq Level 1
-- scRNA-seq Level 3
-- Imaging Level 2
+Imports:
+  Clinical:
+    - Patient
+    - Biospecimen
+    - Demographics
+    - Clinical Data Tier 2
+    - Family History
+    - Exposure
+    - Follow Up
+    - Diagnosis
+    - Therapy
+    - Molecular Test
+    - Breast Cancer Tier 3
+    - Ovarian Cancer Tier 3
+  Data:
+    - Assay
+    - scRNA-seq Level 1
+    - scATAC-seq Level 1
+    - scRNA-seq Level 3
+    - Imaging Level 2
 SchemaIgnore:
 - SRRS Clinical Data Tier 2
 - Lung Cancer Tier 3
