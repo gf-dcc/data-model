@@ -2,6 +2,7 @@ Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsO
 Age,Age of individual,,,,FALSE,Demographics Extended,,,
 Age at Menarche,Age at first period,,,,FALSE,Demographics Extended,,,
 Age at Menopause,Age at menopause,,,,FALSE,Demographics Extended,,,
+Menopause Cause,Causal history of menopause,"Natural, Surgically induced, unknown",,,FALSE,Demographics Extended,,,
 Obstetric History,Obstetric history notation such as “G1 P1”,,,,FALSE,Demographics Extended,,,
 Parity,Number of pregnancies carried over the threshold of viability,,,,FALSE,Demographics Extended,,,
 Gravidity,Total number of pregnancies regardless of outcome,,,,FALSE,Demographics Extended,,,
