@@ -10,8 +10,13 @@
 attributeList <- function(model,
                           modules = NULL, 
                           filename = NULL) {
-  attributes <- model[Parent %in% modules, .(Attribute, `Valid Values`)]
-  attributes <- attributes[, .(Attribute, Type = typeClass(Attribute, `Valid Values`))]
+  attributes <- model[Parent %in% modules, .(Attribute, Description, `Valid Values`, RequiredGF, Parent)]
+  attributes <- attributes[, .(Attribute, 
+                               Type = typeClass(Attribute, `Valid Values`),
+                               Description = Description,
+                               Values = `Valid Values`,
+                               Required = RequiredGF,
+                               Parent = Parent)]
   attributes <- attributes[order(Attribute)]
   if(is.null(filename)) attributes else fwrite(attributes, filename)
 }
@@ -32,3 +37,14 @@ typeClass <- function(as, vs) {
   }
   Map(eachAttribute, as, vs)
 }
+
+#' Export required attributes only
+#' 
+getRequired <- function() {
+  clin <- fread("clinical_attributes.csv")
+  req <- clin[Required %in% c("Required", "Required_If_Available"), .SD, by = "Parent"]
+  req[Required == "Required_If_Available", Required := "Required_If_Available_Applicable"]
+  fwrite(req, file = "required_recommended.csv")
+  #req
+}
+  
