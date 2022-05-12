@@ -9176,6 +9176,40 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:Sex",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Sex of individual",
+            "rdfs:label": "Sex",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:DemographicsExtended"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Female"
+                },
+                {
+                    "@id": "bts:Male"
+                },
+                {
+                    "@id": "bts:Unknown"
+                },
+                {
+                    "@id": "bts:Unspecified"
+                },
+                {
+                    "@id": "bts:NotReported"
+                }
+            ],
+            "sms:displayName": "Sex",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:Age",
             "@type": "rdfs:Class",
             "rdfs:comment": "Age of individual",
@@ -28746,7 +28780,7 @@
                     "@id": "bts:AtlasParticipantID"
                 },
                 {
-                    "@id": "bts:Gender"
+                    "@id": "bts:Sex"
                 },
                 {
                     "@id": "bts:Race"
