@@ -1,0 +1,28 @@
+name: Dispatch downstream dev
+
+on:
+  release:
+    types: [published]
+
+env:
+  REPO_RAW: https://raw.githubusercontent.com/gf-dcc/data-model
+  SRC_FILE: GF.jsonld
+
+jobs:
+  dispatch-downstream-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate input payload
+        id: payload
+        run: |
+          sudo apt install jq
+          URL=$REPO_RAW/$GITHUB_REF_NAME/$SRC_FILE
+          INPUT=$(jq -n -c --arg url "$URL" '{ source: $url}')
+          echo "::set-output name=INPUT::$INPUT"
+      - uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Update source model for dev
+          repo: gf-dcc/data_curator
+          ref: refs/heads/gf-dev
+          token: ${{ secrets.REPO_PAT }}
+          inputs: ${{ steps.payload.outputs.INPUT }}
