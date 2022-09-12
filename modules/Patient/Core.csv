@@ -1,0 +1,3 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+Patient Core,Minimal required set of individual-level clinical data,"","Atlas Participant ID,Sex,Race,Ethnicity,Vital Status,Age,Age at Menarche,Menopause Status,Gravidity,Parity,Primary Diagnosis,Test Result,Alcohol Intensity,Tobacco Smoking Status","",FALSE,Patient,Patient,"",""
+Sample Core,Minimal required set of sample-level clinical data,"","Antibiotic Use,BMI","",FALSE,Patient,Patient,"",""
