@@ -1,4 +1,4 @@
 Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
 Patient Core,Minimal required set of individual-level clinical data that is considered fixed,"","Atlas Participant ID,Sex,Race,Ethnicity,Vital Status,Age at Menarche,Menopause Status","",FALSE,Patient,Patient,"",""
 Patient Core Timepoint,Minimal required set of individual-level clinical data that can vary at different timepoints,"","Index,Timepoint,Age,Menopause Status,Gravidity,Parity,Primary Diagnosis,Test Result,Alcohol Intensity,Tobacco Smoking Status,Pack Years Smoked","",FALSE,Patient,Patient,"",""
-Sample Core,Minimal required set of sample-level clinical data,"","Antibiotic Use,BMI,Age,Weight,Tumor Grade,Sample Collection Site, Sample Collection Year, ER Status, PR Status, HER Status","",FALSE,Sample,Sample,"",""
+Sample Core,Minimal required set of sample-level clinical data,"","Antibiotic Use,BMI,Age,Weight,Tumor Grade,Sample Collection Site, Sample Collection Year, ER Status, PR Status, HER2 Status","",FALSE,Sample,Sample,"",""
