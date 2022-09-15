@@ -41,3 +41,4 @@ Ecig vape times per day,e-cig frequency of use (times per day—one “time” c
 Type of smoke exposure cumulative years,The number of cumulative years of the patient's specific type of smoke exposure,"","","",FALSE,Exposure,"","",""
 Chewing tobacco daily use count,"The quantity of daily use of tobacco, in the form of a plug, usually flavored, for chewing rather than smoking.","","","",FALSE,Exposure,"","",""
 Second hand smoke exposure years,The number of cumulative years of the patient's exposure to second-hand cigarette smoke,"","","",FALSE,Exposure,"","",""
+Antibiotic Use,"Antibiotic use","No, Yes - within last monthh, Yes - within last 1-6 months, Yes - over 6 months ago,unknown","","",FALSE,Exposure,"","",""

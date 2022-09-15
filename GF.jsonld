@@ -8018,6 +8018,162 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:PatientCore",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Minimal required set of individual-level clinical data that is considered fixed",
+            "rdfs:label": "PatientCore",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Patient Core",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:AtlasParticipantID"
+                },
+                {
+                    "@id": "bts:Sex"
+                },
+                {
+                    "@id": "bts:Race"
+                },
+                {
+                    "@id": "bts:Ethnicity"
+                },
+                {
+                    "@id": "bts:VitalStatus"
+                },
+                {
+                    "@id": "bts:AgeatMenarche"
+                },
+                {
+                    "@id": "bts:MenopauseStatus"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PatientCoreTimepoint",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Minimal required set of individual-level clinical data that can vary at different timepoints",
+            "rdfs:label": "PatientCoreTimepoint",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Patient Core Timepoint",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Index"
+                },
+                {
+                    "@id": "bts:Timepoint"
+                },
+                {
+                    "@id": "bts:Age"
+                },
+                {
+                    "@id": "bts:MenopauseStatus"
+                },
+                {
+                    "@id": "bts:Gravidity"
+                },
+                {
+                    "@id": "bts:Parity"
+                },
+                {
+                    "@id": "bts:PrimaryDiagnosis"
+                },
+                {
+                    "@id": "bts:TestResult"
+                },
+                {
+                    "@id": "bts:AlcoholIntensity"
+                },
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                },
+                {
+                    "@id": "bts:PackYearsSmoked"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SampleCore",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Minimal required set of sample-level clinical data",
+            "rdfs:label": "SampleCore",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sample Core",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:AntibioticUse"
+                },
+                {
+                    "@id": "bts:BMI"
+                },
+                {
+                    "@id": "bts:Age"
+                },
+                {
+                    "@id": "bts:Weight"
+                },
+                {
+                    "@id": "bts:TumorGrade"
+                },
+                {
+                    "@id": "bts:SampleCollectionSite"
+                },
+                {
+                    "@id": "bts:SampleCollectionYear"
+                },
+                {
+                    "@id": "bts:ERStatus"
+                },
+                {
+                    "@id": "bts:PRStatus"
+                },
+                {
+                    "@id": "bts:HER2Status"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:Ethnicity",
             "@type": "rdfs:Class",
             "rdfs:comment": "An individual's self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.",
@@ -18306,6 +18462,40 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Second hand smoke exposure years",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:AntibioticUse",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Antibiotic use",
+            "rdfs:label": "AntibioticUse",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Exposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:No"
+                },
+                {
+                    "@id": "bts:Yes-withinlastmonthh"
+                },
+                {
+                    "@id": "bts:Yes-withinlast1-6months"
+                },
+                {
+                    "@id": "bts:Yes-over6monthsago"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
+            "sms:displayName": "Antibiotic Use",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -28756,315 +28946,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ClinicalCore",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Minimal required set of clinical data across patient components",
-            "rdfs:label": "ClinicalCore",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Clinical Core",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:AtlasParticipantID"
-                },
-                {
-                    "@id": "bts:Sex"
-                },
-                {
-                    "@id": "bts:Race"
-                },
-                {
-                    "@id": "bts:Ethnicity"
-                },
-                {
-                    "@id": "bts:VitalStatus"
-                },
-                {
-                    "@id": "bts:Age"
-                },
-                {
-                    "@id": "bts:AgeatMenarche"
-                },
-                {
-                    "@id": "bts:MenopauseStatus"
-                },
-                {
-                    "@id": "bts:Gravidity"
-                },
-                {
-                    "@id": "bts:Parity"
-                },
-                {
-                    "@id": "bts:BMI"
-                },
-                {
-                    "@id": "bts:PrimaryDiagnosis"
-                },
-                {
-                    "@id": "bts:AlcoholIntensity"
-                },
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:BreastCancerTier3",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Breast cancer specific attributes in Clinical Data Tier 3",
-            "rdfs:label": "BreastCancerTier3",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Breast Cancer Tier 3",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Patient"
-                },
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:AtlasParticipantID"
-                },
-                {
-                    "@id": "bts:TimepointLabel"
-                },
-                {
-                    "@id": "bts:StartDaysfromIndex"
-                },
-                {
-                    "@id": "bts:StopDaysfromIndex"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaDetectionMethodType"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHistologyCategory"
-                },
-                {
-                    "@id": "bts:InvasiveLobularBreastCarcinomaHistologicCategory"
-                },
-                {
-                    "@id": "bts:InvasiveDuctalBreastCarcinomaHistologicCategory"
-                },
-                {
-                    "@id": "bts:BreastBiopsyProcedureFindingType"
-                },
-                {
-                    "@id": "bts:BreastQuadrantSite"
-                },
-                {
-                    "@id": "bts:BreastCancerAssessmentTests"
-                },
-                {
-                    "@id": "bts:BreastCancerGenomicTestPerformed"
-                },
-                {
-                    "@id": "bts:MammaprintRiskGroup"
-                },
-                {
-                    "@id": "bts:OncotypeRiskGroup"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaEstrogenReceptorStatus"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaProgesteronerReceptorStatus"
-                },
-                {
-                    "@id": "bts:BreastCancerAllredEstrogenReceptorScore"
-                },
-                {
-                    "@id": "bts:PriorInvasiveBreastDisease"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaERStatusPercentageValue"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaPRStatusPercentageValue"
-                },
-                {
-                    "@id": "bts:HER2BreastCarcinomaCopyNumberTotal"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaCentromere17CopyNumber"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Centromere17CopynumberTotal"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Chromosome17Ratio"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaSurgicalProcedureName"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2RatioDiagnosis"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Status"
-                },
-                {
-                    "@id": "bts:HormoneTherapyBreastCancerPreventionIndicator"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaERStainingIntensity"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaPRStainingIntensity"
-                },
-                {
-                    "@id": "bts:OncotypeScore"
-                },
-                {
-                    "@id": "bts:BreastImagingPerformedType"
-                },
-                {
-                    "@id": "bts:MultifocalBreastCarcinomaPresentIndicator"
-                },
-                {
-                    "@id": "bts:MulticentricBreastCarcinomaPresentIndicator"
-                },
-                {
-                    "@id": "bts:BIRADSMammographyBreastDensityCategory"
-                },
-                {
-                    "@id": "bts:Component"
-                },
-                {
-                    "@id": "bts:AtlasParticipantID"
-                },
-                {
-                    "@id": "bts:TimepointLabel"
-                },
-                {
-                    "@id": "bts:StartDaysfromIndex"
-                },
-                {
-                    "@id": "bts:StopDaysfromIndex"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaDetectionMethodType"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHistologyCategory"
-                },
-                {
-                    "@id": "bts:InvasiveLobularBreastCarcinomaHistologicCategory"
-                },
-                {
-                    "@id": "bts:InvasiveDuctalBreastCarcinomaHistologicCategory"
-                },
-                {
-                    "@id": "bts:BreastBiopsyProcedureFindingType"
-                },
-                {
-                    "@id": "bts:BreastQuadrantSite"
-                },
-                {
-                    "@id": "bts:BreastCancerAssessmentTests"
-                },
-                {
-                    "@id": "bts:BreastCancerGenomicTestPerformed"
-                },
-                {
-                    "@id": "bts:MammaprintRiskGroup"
-                },
-                {
-                    "@id": "bts:OncotypeRiskGroup"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaEstrogenReceptorStatus"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaProgesteronerReceptorStatus"
-                },
-                {
-                    "@id": "bts:BreastCancerAllredEstrogenReceptorScore"
-                },
-                {
-                    "@id": "bts:PriorInvasiveBreastDisease"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaERStatusPercentageValue"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaPRStatusPercentageValue"
-                },
-                {
-                    "@id": "bts:HER2BreastCarcinomaCopyNumberTotal"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaCentromere17CopyNumber"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Centromere17CopynumberTotal"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Chromosome17Ratio"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaSurgicalProcedureName"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2RatioDiagnosis"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaHER2Status"
-                },
-                {
-                    "@id": "bts:HormoneTherapyBreastCancerPreventionIndicator"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaERStainingIntensity"
-                },
-                {
-                    "@id": "bts:BreastCarcinomaPRStainingIntensity"
-                },
-                {
-                    "@id": "bts:OncotypeScore"
-                },
-                {
-                    "@id": "bts:BreastImagingPerformedType"
-                },
-                {
-                    "@id": "bts:MultifocalBreastCarcinomaPresentIndicator"
-                },
-                {
-                    "@id": "bts:MulticentricBreastCarcinomaPresentIndicator"
-                },
-                {
-                    "@id": "bts:BIRADSMammographyBreastDensityCategory"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:ClinicalDataTier2",
             "@type": "rdfs:Class",
             "rdfs:comment": "Cancer related clinical data",
@@ -29226,6 +29107,121 @@
             },
             "sms:displayName": "Breast Cancer Tier 3",
             "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:AtlasParticipantID"
+                },
+                {
+                    "@id": "bts:TimepointLabel"
+                },
+                {
+                    "@id": "bts:StartDaysfromIndex"
+                },
+                {
+                    "@id": "bts:StopDaysfromIndex"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaDetectionMethodType"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaHistologyCategory"
+                },
+                {
+                    "@id": "bts:InvasiveLobularBreastCarcinomaHistologicCategory"
+                },
+                {
+                    "@id": "bts:InvasiveDuctalBreastCarcinomaHistologicCategory"
+                },
+                {
+                    "@id": "bts:BreastBiopsyProcedureFindingType"
+                },
+                {
+                    "@id": "bts:BreastQuadrantSite"
+                },
+                {
+                    "@id": "bts:BreastCancerAssessmentTests"
+                },
+                {
+                    "@id": "bts:BreastCancerGenomicTestPerformed"
+                },
+                {
+                    "@id": "bts:MammaprintRiskGroup"
+                },
+                {
+                    "@id": "bts:OncotypeRiskGroup"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaEstrogenReceptorStatus"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaProgesteronerReceptorStatus"
+                },
+                {
+                    "@id": "bts:BreastCancerAllredEstrogenReceptorScore"
+                },
+                {
+                    "@id": "bts:PriorInvasiveBreastDisease"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaERStatusPercentageValue"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaPRStatusPercentageValue"
+                },
+                {
+                    "@id": "bts:HER2BreastCarcinomaCopyNumberTotal"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaCentromere17CopyNumber"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaHER2Centromere17CopynumberTotal"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaHER2Chromosome17Ratio"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaSurgicalProcedureName"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaHER2RatioDiagnosis"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaHER2Status"
+                },
+                {
+                    "@id": "bts:HormoneTherapyBreastCancerPreventionIndicator"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaERStainingIntensity"
+                },
+                {
+                    "@id": "bts:BreastCarcinomaPRStainingIntensity"
+                },
+                {
+                    "@id": "bts:OncotypeScore"
+                },
+                {
+                    "@id": "bts:BreastImagingPerformedType"
+                },
+                {
+                    "@id": "bts:MultifocalBreastCarcinomaPresentIndicator"
+                },
+                {
+                    "@id": "bts:MulticentricBreastCarcinomaPresentIndicator"
+                },
+                {
+                    "@id": "bts:BIRADSMammographyBreastDensityCategory"
+                }
+            ],
             "sms:validationRules": []
         },
         {
@@ -38500,6 +38496,125 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "4C",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Index",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Index",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PatientCoreTimepoint"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Index",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Timepoint",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Timepoint",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PatientCoreTimepoint"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Timepoint",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SampleCollectionSite",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SampleCollectionSite",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SampleCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sample Collection Site",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SampleCollectionYear",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SampleCollectionYear",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SampleCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sample Collection Year",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ERStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "ERStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SampleCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "ER Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PRStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "PRStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SampleCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "PR Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:HER2Status",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "HER2Status",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SampleCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "HER2 Status",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -65343,6 +65458,57 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Never",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Yes-withinlastmonthh",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Yes-withinlastmonthh",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AntibioticUse"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Yes - within last monthh",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Yes-withinlast1-6months",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Yes-withinlast1-6months",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AntibioticUse"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Yes - within last 1-6 months",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Yes-over6monthsago",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Yes-over6monthsago",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AntibioticUse"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Yes - over 6 months ago",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
