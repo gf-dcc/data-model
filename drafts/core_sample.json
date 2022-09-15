@@ -1,0 +1,61 @@
+{
+  "atlas_participant_id": "B4435",
+  "sex": "Female",
+  "race": "White",
+  "ethnicity": "not hispanic or latino",
+  "age_at_menarche": 13,
+  "BRCA1_variant": "pathogenic",
+  "BRCA2_variant": "variant of uncertain significance",
+  "timepoint": [
+  {
+   "timepoint_label": "Patient History 1 (Pre-study)",
+    "age": 35,
+    "weight": 123,
+    "menopause_status" : "Premenopausal",
+    "menstrual_cycle_stage": "unknown",
+    "gravidity": 0,
+    "parity": 0,
+    "primary_diagnosis": "breast carcinoma",
+    "tobacco_smoking_status": "lifelong non-smoker",
+    "pack_years_smoked": 0,
+    "alcohol_use_status": "light drinker",
+    "drinks_per_week": 2,
+    "antibiotic_use": "unknown",
+    "ER_status" : "positive", 
+    "PR_status": "negative", 
+    "HER2_status": "negative"
+  },
+  {
+    "timepoint_label": "Main collection",
+    "age": 45,
+    "weight": 130,
+    "menopause_status" : "Premenopausal",
+    "menstrual_cycle_stage": "unknown",
+    "gravidity": 0,
+    "parity": 0,
+    "primary_diagnosis": "none",
+    "tobacco_smoking_status": "lifelong non-smoker",
+    "pack_years_smoked": 0,
+    "alcohol_use_status": "previous drinker",
+    "drinks_per_week": 0,
+    "antibiotic_use": "unknown",
+    "ER_status" : "positive", 
+    "PR_status": "negative", 
+    "HER2_status": "negative",
+    "samples" : [
+      {
+       "sample_id": "X123",
+       "sample_site": "left breast",
+       "tumor_grade": "not applicable",
+       "ER_staining_intensity" : "strong"
+       },
+       {
+       "sample_id": "X134",
+       "sample_site": "right breast",
+       "tumor_grade": "not applicable",
+       "ER_staining_intensity" : "moderate" 
+       }
+       ]
+  }
+  ]
+}
