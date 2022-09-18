@@ -21,10 +21,7 @@
     "packYearsSmoked": 0,
     "alcoholUseStatus": "light drinker",
     "drinksPerWeek": 2,
-    "antibioticUse": "unknown",
-    "statusER" : "positive", 
-    "statusPR": "negative", 
-    "statusHER2": "negative"
+    "antibioticUse": "unknown"
   },
   {
     "timePointLabel": "Main collection",
@@ -48,7 +45,8 @@
        "tumorGrade": "not applicable",
        "statusER" : "positive",
        "statusPR": "negative",
-       "statusHER2": "negative"
+       "statusHER2": "negative",
+       "synData" : ["syn111111", "syn222222"] 
        },
        {
        "sampleId": "R123",
@@ -56,7 +54,8 @@
        "tumorGrade": "not applicable",
        "statusER" : "unknown/not done", 
        "statusPR": "unknown/not done",
-       "statusHER2": "unknown/not done"
+       "statusHER2": "unknown/not done",
+       "synData" : ["syn333333", "syn444444"]
        }
        ]
   }
