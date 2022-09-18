@@ -8,7 +8,7 @@
   "classBRCA2": "variant of uncertain significance",
   "timepoints": [
   {
-   "timePointLabel": "Patient History 1 (Pre-study)",
+   "timepointLabel": "Patient History 1 (Pre-study)",
     "age": 35,
     "weight": 123,
     "menopauseStatus" : "Premenopausal",
@@ -24,7 +24,7 @@
     "antibioticUse": "unknown"
   },
   {
-    "timePointLabel": "Main collection",
+    "timepointLabel": "Main collection",
     "age": 45,
     "weight": 130,
     "menopauseStatus" : "Premenopausal",
