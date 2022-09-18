@@ -41,6 +41,7 @@
     "samples" : [
       {
        "sampleId": "L123",
+       "sampleCollectionCenter": "MGH",
        "sampleSite": "left breast",
        "tumorGrade": "not applicable",
        "statusER" : "positive",
@@ -50,6 +51,7 @@
        },
        {
        "sampleId": "R123",
+       "sampleCollectionCenter": "MGH",
        "sampleSite": "right breast",
        "tumorGrade": "not applicable",
        "statusER" : "unknown/not done", 
