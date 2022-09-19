@@ -18,9 +18,9 @@
     "parity": 0,
     "primaryDiagnosis": "breast carcinoma",
     "previousDiagnosis": "none",
-    "tobaccoSmokingStatus": "lifelong non-smoker",
+    "tobaccoUse": "lifelong non-smoker",
     "packYearsSmoked": 0,
-    "alcoholUseStatus": "occasional drinker",
+    "alcoholUse": "occasional drinker",
     "drinksPerWeek": 2,
     "antibioticUse": "unknown"
   },
@@ -34,9 +34,9 @@
     "parity": 0,
     "primaryDiagnosis": "none",
     "previousDiagnosis": "breast carcinoma",
-    "tobaccoSmokingStatus": "lifelong non-smoker",
+    "tobaccoUse": "lifelong non-smoker",
     "packYearsSmoked": 0,
-    "alcoholUseStatus": "non-drinker",
+    "alcoholUse": "non-drinker",
     "drinksPerWeek": 0,
     "antibioticUse": "unknown",
     "samples" : [
