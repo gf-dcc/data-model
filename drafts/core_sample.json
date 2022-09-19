@@ -1,5 +1,6 @@
 {
   "atlasParticipantId": "B4435",
+  "atlasGroup" : "Sage",
   "sex": "Female",
   "race": "White",
   "ethnicity": "not hispanic or latino",
@@ -19,7 +20,7 @@
     "previousDiagnosis": "none",
     "tobaccoSmokingStatus": "lifelong non-smoker",
     "packYearsSmoked": 0,
-    "alcoholUseStatus": "light drinker",
+    "alcoholUseStatus": "occasional drinker",
     "drinksPerWeek": 2,
     "antibioticUse": "unknown"
   },
@@ -35,7 +36,7 @@
     "previousDiagnosis": "breast carcinoma",
     "tobaccoSmokingStatus": "lifelong non-smoker",
     "packYearsSmoked": 0,
-    "alcoholUseStatus": "previous drinker",
+    "alcoholUseStatus": "non-drinker",
     "drinksPerWeek": 0,
     "antibioticUse": "unknown",
     "samples" : [
