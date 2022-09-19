@@ -11,7 +11,9 @@
   {
    "timepointLabel": "Pre-study",
     "age": 35,
-    "weight": 123,
+    "weight": "56kg",
+    "height": "167cm",
+    "BMI" : 20.1,
     "menopauseStatus" : "Premenopausal",
     "menopauseCycleStage": "unknown",
     "gravidity": 0,
@@ -27,7 +29,9 @@
   {
     "timepointLabel": "Main collection",
     "age": 45,
-    "weight": 130,
+    "weight": "50kg",
+    "height": "167cm",
+    "BMI" : 25.1,
     "menopauseStatus" : "Premenopausal",
     "menopauseCycleStage": "unknown",
     "gravidity": 0,
