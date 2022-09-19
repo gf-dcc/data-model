@@ -10,7 +10,7 @@
   "timepoints": [
   {
    "timepointLabel": "Pre-study",
-    "age": 50,
+    "age": 48,
     "weight": "56kg",
     "height": "167cm",
     "BMI" : 20.1,
@@ -32,7 +32,7 @@
     "weight": "50kg",
     "height": "167cm",
     "BMI" : 25.1,
-    "menopauseStatus" : "Premenopausal",
+    "menopauseStatus" : "Postmenopausal",
     "menopauseCycleStage": "unknown",
     "gravidity": 0,
     "parity": 0,
