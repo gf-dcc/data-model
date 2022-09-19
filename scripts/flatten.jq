@@ -1,5 +1,6 @@
 .timepoints[] as $timepoint | $timepoint.samples[]? as $sample  | 
 { atlasParticipantId : .atlasParticipantId, 
+  atlasGroup : .atlasGroup, 
   sex: .sex,
   race: .race,
   ethnicity: .ethnicity,
@@ -15,9 +16,9 @@
   parity : $timepoint.parity,
   primaryDiagnosis : $timepoint.primaryDiagnosis,
   previousDiagnosis : $timepoint.previousDiagnosis,
-  tobaccoSmokingStatus : $timepoint.tobaccoSmokingStatus,
+  tobaccoUse : $timepoint.tobaccoUse,
   packYearsSmoked : $timepoint.packYearsSmoked,
-  alcoholUseStatus : $timepoint.alcoholUseStatus,
+  alcoholUse : $timepoint.alcoholUse,
   drinksPerWeek : $timepoint.drinksPerWeek,
   antibioticUse : $timepoint.antibioticUse,
   sampleId : $sample.sampleId,
