@@ -9,7 +9,7 @@
   "classBRCA2": "variant of uncertain significance",
   "timepoints": [
   {
-   "timepointLabel": "Patient History 1 (Pre-study)",
+   "timepointLabel": "Pre-study",
     "age": 35,
     "weight": 123,
     "menopauseStatus" : "Premenopausal",
@@ -44,7 +44,7 @@
        "sampleId": "L123",
        "sampleCollectionCenter": "MGH",
        "sampleSite": "left breast",
-       "tumorGrade": "not applicable",
+       "tumorGrade": "G1",
        "statusER" : "positive",
        "statusPR": "negative",
        "statusHER2": "negative",
