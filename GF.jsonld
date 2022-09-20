@@ -8114,7 +8114,25 @@
                     "@id": "bts:AntibioticUse"
                 },
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:SampleCollectionCenter"
+                },
+                {
+                    "@id": "bts:SampleSite"
+                },
+                {
+                    "@id": "bts:TumorGrade"
+                },
+                {
+                    "@id": "bts:StatusER"
+                },
+                {
+                    "@id": "bts:StatusPR"
+                },
+                {
+                    "@id": "bts:StatusHER2"
                 }
             ],
             "sms:validationRules": []
@@ -8160,6 +8178,150 @@
                 },
                 {
                     "@id": "bts:StatusHER2"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:AtlasGroup",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The Atlas team contributing this data",
+            "rdfs:label": "AtlasGroup",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Other"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Atlas Group",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Other"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Brugge"
+                },
+                {
+                    "@id": "bts:Ellisen"
+                },
+                {
+                    "@id": "bts:Nathanson"
+                },
+                {
+                    "@id": "bts:Eng"
+                },
+                {
+                    "@id": "bts:Sung"
+                },
+                {
+                    "@id": "bts:Drapkin"
+                },
+                {
+                    "@id": "bts:Velculescu"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StatusER",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "ER status given by sample pathology",
+            "rdfs:label": "StatusER",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Status ER",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StatusPR",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "PR status given by sample pathology",
+            "rdfs:label": "StatusPR",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Status PR",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StatusHER2",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "HER2 status given by sample pathology",
+            "rdfs:label": "StatusHER2",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Status HER2",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
                 }
             ],
             "sms:validationRules": []
@@ -32915,23 +33077,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Other",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Other",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Immersion"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Other",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:Yes",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -38491,23 +38636,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:AtlasGroup",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "AtlasGroup",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ClinicalCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Atlas Group",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:ClassBRCA1",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -38633,7 +38761,7 @@
             "rdfs:label": "SampleID",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:ClinicalCore"
                 }
             ],
             "schema:isPartOf": {
@@ -38650,7 +38778,7 @@
             "rdfs:label": "SampleCollectionCenter",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:ClinicalCore"
                 }
             ],
             "schema:isPartOf": {
@@ -38667,7 +38795,7 @@
             "rdfs:label": "SampleSite",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:ClinicalCore"
                 }
             ],
             "schema:isPartOf": {
@@ -38678,53 +38806,121 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:StatusER",
+            "@id": "bts:Brugge",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "StatusER",
+            "rdfs:label": "Brugge",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:AtlasGroup"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Status ER",
+            "sms:displayName": "Brugge",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:StatusPR",
+            "@id": "bts:Ellisen",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "StatusPR",
+            "rdfs:label": "Ellisen",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:AtlasGroup"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Status PR",
+            "sms:displayName": "Ellisen",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:StatusHER2",
+            "@id": "bts:Nathanson",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "StatusHER2",
+            "rdfs:label": "Nathanson",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:SampleCore"
+                    "@id": "bts:AtlasGroup"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Status HER2",
+            "sms:displayName": "Nathanson",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Eng",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Eng",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AtlasGroup"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Eng",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Sung",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Sung",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AtlasGroup"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sung",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Drapkin",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Drapkin",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AtlasGroup"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Drapkin",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Velculescu",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Velculescu",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:AtlasGroup"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Velculescu",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
