@@ -8240,9 +8240,32 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
+                },
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
             "sms:displayName": "Status ER",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                },
                 {
                     "@id": "bts:Sample"
                 }
@@ -8256,8 +8279,34 @@
                 },
                 {
                     "@id": "bts:Unknown"
+                },
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
                 }
             ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StatusER",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "ER status given by sample pathology",
+            "rdfs:label": "StatusER",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Status ER",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -8273,6 +8322,17 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Positive"
+                },
+                {
+                    "@id": "bts:Negative"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
             "sms:displayName": "Status PR",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
@@ -8294,10 +8354,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:StatusHER2",
+            "@id": "bts:SampleID",
             "@type": "rdfs:Class",
-            "rdfs:comment": "HER2 status given by sample pathology",
-            "rdfs:label": "StatusHER2",
+            "rdfs:comment": "Sample ID assigned by the contributing lab",
+            "rdfs:label": "SampleID",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:Sample"
@@ -8306,22 +8366,11 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Status HER2",
+            "sms:displayName": "Sample ID",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
                     "@id": "bts:Sample"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Positive"
-                },
-                {
-                    "@id": "bts:Negative"
-                },
-                {
-                    "@id": "bts:Unknown"
                 }
             ],
             "sms:validationRules": []
@@ -17416,7 +17465,7 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Pack Years Smoked",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -38755,23 +38804,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:SampleID",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SampleID",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ClinicalCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Sample ID",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:SampleCollectionCenter",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -38802,6 +38834,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sample Site",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:StatusHER2",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "StatusHER2",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Status HER2",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
