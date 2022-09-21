@@ -15,7 +15,7 @@
     "height": "167cm",
     "BMI" : 20.1,
     "menopauseStatus" : "Premenopausal",
-    "menopauseCycleStage": "unknown",
+    "menstrualCyclePhase": "unknown",
     "gravidity": 0,
     "parity": 0,
     "primaryDiagnosis": "ovarian cancer",
@@ -24,7 +24,8 @@
     "packYearsSmoked": 0,
     "alcoholUse": "occasional drinker",
     "drinksPerWeek": 2,
-    "antibioticUse": "unknown"
+    "antibioticUse": "unknown",
+    "procedure": "not specified"
   },
   {
     "timepointLabel": "Main collection",
@@ -33,7 +34,7 @@
     "height": "167cm",
     "BMI" : 25.1,
     "menopauseStatus" : "Postmenopausal",
-    "menopauseCycleStage": "unknown",
+    "menstrualCyclePhase": "unknown",
     "gravidity": 0,
     "parity": 0,
     "primaryDiagnosis": "none",
@@ -43,6 +44,7 @@
     "alcoholUse": "non-drinker",
     "drinksPerWeek": 0,
     "antibioticUse": "unknown",
+    "procedure": "biopsy",
     "samples" : [
       {
        "sampleId": "L123",
