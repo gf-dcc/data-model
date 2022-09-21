@@ -5268,18 +5268,23 @@
         {
             "@id": "bts:TimepointLabel",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Label to identify the time point at which the clinical data or biospecimen was obtained (e.g. Baseline, End of Treatment, Overall survival, Final). NO PHI/PII INFORMATION IS ALLOWED.",
+            "rdfs:comment": "A custom timepoint label used by the lab",
             "rdfs:label": "TimepointLabel",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Biospecimen"
+                    "@id": "bts:Sample"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Timepoint Label",
-            "sms:required": "sms:true",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
             "sms:validationRules": []
         },
         {
@@ -8120,9 +8125,6 @@
                     "@id": "bts:BMI"
                 },
                 {
-                    "@id": "bts:MenopauseStatus"
-                },
-                {
                     "@id": "bts:MenstrualCyclePhase"
                 },
                 {
@@ -8270,6 +8272,101 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:TimepointLabel",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A custom timepoint label used by the lab",
+            "rdfs:label": "TimepointLabel",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Timepoint Label",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ClassBRCA1",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Classification of BRCA1 germline variant",
+            "rdfs:label": "ClassBRCA1",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Pathogenic"
+                },
+                {
+                    "@id": "bts:Likelypathogenic"
+                },
+                {
+                    "@id": "bts:Variantofuncertainsignificance"
+                },
+                {
+                    "@id": "bts:Benign"
+                },
+                {
+                    "@id": "bts:Likelybenign"
+                }
+            ],
+            "sms:displayName": "Class BRCA1",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ClassBRCA2",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Classification of BRCA2 germline variant",
+            "rdfs:label": "ClassBRCA2",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Pathogenic"
+                },
+                {
+                    "@id": "bts:Likelypathogenic"
+                },
+                {
+                    "@id": "bts:Variantofuncertainsignificance"
+                },
+                {
+                    "@id": "bts:Benign"
+                },
+                {
+                    "@id": "bts:Likelybenign"
+                }
+            ],
+            "sms:displayName": "Class BRCA2",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:StatusER",
             "@type": "rdfs:Class",
             "rdfs:comment": "ER status given by sample pathology",
@@ -8310,26 +8407,6 @@
                 },
                 {
                     "@id": "bts:Sample"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Positive"
-                },
-                {
-                    "@id": "bts:Negative"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:Positive"
-                },
-                {
-                    "@id": "bts:Negative"
-                },
-                {
-                    "@id": "bts:Unknown"
                 }
             ],
             "sms:validationRules": []
@@ -8380,17 +8457,6 @@
             "sms:requiresComponent": [
                 {
                     "@id": "bts:Sample"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:Positive"
-                },
-                {
-                    "@id": "bts:Negative"
-                },
-                {
-                    "@id": "bts:Unknown"
                 }
             ],
             "sms:validationRules": []
@@ -38774,40 +38840,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ClassBRCA1",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ClassBRCA1",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ClinicalCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Class BRCA1",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ClassBRCA2",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ClassBRCA2",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ClinicalCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Class BRCA2",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:PreviousDiagnosis",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -39042,6 +39074,91 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Velculescu",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Pathogenic",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Pathogenic",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClassBRCA1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "pathogenic",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Likelypathogenic",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Likelypathogenic",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClassBRCA1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "likely pathogenic",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Variantofuncertainsignificance",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Variantofuncertainsignificance",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClassBRCA1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "variant of uncertain significance",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Benign",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Benign",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClassBRCA1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "benign",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Likelybenign",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Likelybenign",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClassBRCA1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "likely benign",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -92579,23 +92696,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:Benign",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Benign",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Pathogenicity"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Benign",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:LikelyBenign",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -92626,23 +92726,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Likely Pathogenic",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Pathogenic",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Pathogenic",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Pathogenicity"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Pathogenic",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
