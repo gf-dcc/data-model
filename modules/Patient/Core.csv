@@ -6,5 +6,5 @@ Status ER,ER status given by sample pathology,"positive, negative, unknown","pos
 Status ER,ER status given by sample pathology,"positive, negative, unknown","positive, negative, unknown","",FALSE,Sample,Sample,"",""
 Status PR,PR status given by sample pathology,"positive, negative, unknown","positive, negative, unknown","",FALSE,Sample,Sample,"",""
 Sample ID,Sample ID assigned by the contributing lab,"","","",FALSE,Sample,Sample,"",""
-Procedure,Associated medical procedure associated with this timepoint/sampling,"hysterectomy,lumpectomy,mastectomy,biopsy,excision,re-excision,other surgery,none,not specified","","",FALSE,Sample,Sample,"",""
+Procedure,"Associated medical procedure associated with this timepoint/sampling","hysterectomy,lumpectomy,mastectomy,biopsy,excision,re-excision,other surgery,none,not specified","","",FALSE,Sample,Sample,"",""
 Menstrual Cycle Phase,The phase as assessed from sample pathology (for individuals undergoing concurrent hysterectomy) or derived from EMR (for women not undergoing hysterectomy and not on hormonal contraceptive),"follicular, luteal","","",FALSE,Sample,Sample,"",""
