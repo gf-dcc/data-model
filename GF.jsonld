@@ -8153,6 +8153,9 @@
                     "@id": "bts:AntibioticUse"
                 },
                 {
+                    "@id": "bts:Procedure"
+                },
+                {
                     "@id": "bts:SampleID"
                 },
                 {
