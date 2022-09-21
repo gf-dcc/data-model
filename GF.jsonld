@@ -1121,14 +1121,53 @@
         {
             "@id": "bts:Procedure",
             "@type": "rdfs:Class",
-            "rdfs:comment": "A series of actions conducted in a certain order or manner",
+            "rdfs:comment": "Associated medical procedure associated with this timepoint/sampling",
             "rdfs:label": "Procedure",
-            "rdfs:subClassOf": {
-                "@id": "bts:Occurrent"
-            },
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
-            }
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Hysterectomy"
+                },
+                {
+                    "@id": "bts:Lumpectomy"
+                },
+                {
+                    "@id": "bts:Mastectomy"
+                },
+                {
+                    "@id": "bts:Biopsy"
+                },
+                {
+                    "@id": "bts:Excision"
+                },
+                {
+                    "@id": "bts:Re-excision"
+                },
+                {
+                    "@id": "bts:Othersurgery"
+                },
+                {
+                    "@id": "bts:None"
+                },
+                {
+                    "@id": "bts:Notspecified"
+                }
+            ],
+            "sms:displayName": "Procedure",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:validationRules": []
         },
         {
             "@id": "bts:Phenomenon",
@@ -8084,7 +8123,7 @@
                     "@id": "bts:MenopauseStatus"
                 },
                 {
-                    "@id": "bts:MenopauseCycleStage"
+                    "@id": "bts:MenstrualCyclePhase"
                 },
                 {
                     "@id": "bts:Gravidity"
@@ -8367,6 +8406,53 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sample ID",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Procedure",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Associated medical procedure associated with this timepoint/sampling",
+            "rdfs:label": "Procedure",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Procedure",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:MenstrualCyclePhase",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The phase as assessed from sample pathology (for individuals undergoing concurrent hysterectomy) or derived from EMR (for women not undergoing hysterectomy and not on hormonal contraceptive)",
+            "rdfs:label": "MenstrualCyclePhase",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Sample"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Follicular"
+                },
+                {
+                    "@id": "bts:Luteal"
+                }
+            ],
+            "sms:displayName": "Menstrual Cycle Phase",
             "sms:required": "sms:false",
             "sms:requiresComponent": [
                 {
@@ -38719,23 +38805,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:MenopauseCycleStage",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "MenopauseCycleStage",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ClinicalCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Menopause Cycle Stage",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:PreviousDiagnosis",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -38970,6 +39039,91 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Velculescu",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Hysterectomy",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Hysterectomy",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Procedure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "hysterectomy",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Mastectomy",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Mastectomy",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Procedure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "mastectomy",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Othersurgery",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Othersurgery",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Procedure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "other surgery",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Follicular",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Follicular",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:MenstrualCyclePhase"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "follicular",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Luteal",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Luteal",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:MenstrualCyclePhase"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "luteal",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
