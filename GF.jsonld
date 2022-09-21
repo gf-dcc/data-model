@@ -8237,14 +8237,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Atlas Group",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Other"
-                }
-            ],
-            "sms:requiresDependency": [
+            "schema:rangeIncludes": [
                 {
                     "@id": "bts:Brugge"
                 },
@@ -8265,6 +8258,13 @@
                 },
                 {
                     "@id": "bts:Velculescu"
+                }
+            ],
+            "sms:displayName": "Atlas Group",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Other"
                 }
             ],
             "sms:validationRules": []
