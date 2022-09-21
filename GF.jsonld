@@ -8194,14 +8194,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Sample Core",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Sample"
-                }
-            ],
-            "sms:requiresDependency": [
+            "schema:rangeIncludes": [
                 {
                     "@id": "bts:SampleID"
                 },
@@ -8222,6 +8215,13 @@
                 },
                 {
                     "@id": "bts:StatusHER2"
+                }
+            ],
+            "sms:displayName": "Sample Core",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Sample"
                 }
             ],
             "sms:validationRules": []
