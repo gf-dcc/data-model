@@ -1,3 +1,5 @@
+# Build JSON-LD on pull requests with data model changes (starts with 'dm/')
+
 name: schematic-schema-convert
 
 on:
@@ -13,6 +15,7 @@ env:
   
 jobs:
   build:
+    if: startsWith(github.head_ref, 'dm/')
     runs-on: ubuntu-latest
 
     steps:
