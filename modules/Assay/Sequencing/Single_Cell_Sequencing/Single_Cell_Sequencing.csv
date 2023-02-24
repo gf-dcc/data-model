@@ -1,0 +1,6 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+Dissociation Method,The tissue dissociation method used for scRNASeq or scATAC-seq assays,"gentleMACS, Dounce, Enzymatic Digestion, Not Applicable",,,TRUE,Single_Cell_Sequencing,,,
+Cryopreserved Cells in Sample,Indicate if library preparation was based on revived frozen cells.,"Yes, No",,,TRUE,Single_Cell_Sequencing,,,
+Single Cell Isolation Method,"The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)","Microfluidics Chip, Droplets, FACS, Plates, 10x, Nuclei Isolation",,,TRUE,Single_Cell_Sequencing,,,
+Total Number of Input Cells,Number of cells loaded/placed on plates,,,,TRUE,Single_Cell_Sequencing,,,
+Input Cells and Nuclei,"Number of cells and number of nuclei input; entry format: number, number",,,,TRUE,Single_Cell_Sequencing,,,

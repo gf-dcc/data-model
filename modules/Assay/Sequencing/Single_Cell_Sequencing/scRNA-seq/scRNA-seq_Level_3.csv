@@ -1,4 +1,5 @@
 Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+scRNA-seq Level 3,Gene and Isoform expression files,,"Component, Filename, File Format, Data Category, Matrix Type, Linked Matrices, Cell Median Number Reads, Cell Median Number Genes, Cell Total, scRNAseq Workflow Type, scRNAseq Workflow Parameters Description, Workflow Link, Workflow Version",,FALSE,Single_Cell_Sequencing,,,
 Cell Median Number Reads,Median number of reads per cell. Number,"","","",TRUE,scRNA-seq Level 3,"","",""
 Cell Median Number Genes,Median number of genes detected per cell. Number,"","","",TRUE,scRNA-seq Level 3,"","",""
 Cell Total,Number of sequenced  cells. Applies to raw counts matrix only.,"","","",TRUE,scRNA-seq Level 3,"","",""

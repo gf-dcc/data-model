@@ -1,8 +1,5 @@
 Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
-Single Cell Isolation Method,"The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)","Microfluidics Chip, Droplets, FACS, Plates, 10x, Nuclei Isolation","","",TRUE,scRNA-seq Level 1,"","",""
-Dissociation Method,The tissue dissociation method used for scRNASeq or scATAC-seq assays,"gentleMACS, Dounce, Enzymatic Digestion, Not Applicable","","",TRUE,scRNA-seq Level 1,"","",""
-Read1,Read 1 content description,"Cell Barcode and UMI, cDNA","","",TRUE,scRNA-seq Level 1,"","",""
-Read2,Read 2 content description,"Cell Barcode and UMI, cDNA","","",TRUE,scRNA-seq Level 1,"","",""
+scRNA-seq Level 1,Single-cell RNA-seq [EFO_0008913],,"Component, Filename, File Format, Lab ID, Cryopreserved Cells in Sample, Single Cell Isolation Method, Dissociation Method, Library Construction Method, Read Indicator, Read1, Read2, End Bias, Reverse Transcription Primer, Spike In, Sequencing Platform, Total Number of Input Cells, Input Cells and Nuclei,Protocol Link, Technical Replicate Group",,FALSE,Single_Cell_Sequencing,Biospecimen,http://www.ebi.ac.uk/efo/EFO_0008913,
 Cell Barcode and UMI,Cell and transcript identifiers,"","UMI Barcode Offset, UMI Barcode Length, Median UMIs per Cell Number, Cell Barcode Offset, Cell Barcode Length, Valid Barcodes Cell Number","",FALSE,scRNA-seq Level 1,"","",""
 Cell Barcode Offset,Offset in sequence for cell barcode read (in bp): number,"","","",TRUE,scRNA-seq Level 1,"","",""
 Cell Barcode Length,Length of cell barcode read (in bp): number,"","","",TRUE,scRNA-seq Level 1,"","",""
@@ -15,7 +12,6 @@ CEL-seq2,Highly-multiplexed plate-based single-cell RNA-Seq assay,"","Empty Well
 Empty Well Barcode,Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.,"","","",TRUE,scRNA-seq Level 1,"","",""
 Well Index,Indicate if protein expression (EPCAM/CD45) positive/negative data  is available for each cell in CEL-seq2 assays,"Yes, No","","",FALSE,scRNA-seq Level 1,"","",""
 Single Cell Dissociation Days from Index,Number of days between sample for single cell assay was received in lab and when the sample was dissociated and cells were isolated [number],"","","",TRUE,scRNA-seq Level 1,"","",""
-Cryopreserved Cells in Sample,Indicate if library preparation was based on revived frozen cells.,"Yes, No","","",TRUE,scRNA-seq Level 1,"","",""
 End Bias,"The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag/end or the full length transcript","3 Prime, 5 Prime, Full Length Transcript","","",TRUE,scRNA-seq Level 1,"","",""
 Reverse Transcription Primer,"An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA","Oligo-dT, Poly-dT, Feature barcoding, Random","","",TRUE,scRNA-seq Level 1,"",http://www.sequenceontology.org/so_wiki/index.php/Category:SO:0000112_!_primer,""
 Feature barcoding,A method for adding extra channels of information to cells by running single-cell gene expression in parallel with other assays [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc],"",Feature Reference Id,"",FALSE,scRNA-seq Level 1,"",https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc,""
