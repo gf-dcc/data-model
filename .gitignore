@@ -1,1 +1,8 @@
-creds.json
+# Creds
+schematic_service_account_creds.json
+
+# Template files generated locally
+*.schema.json
+
+# Ignore test logs
+logs
