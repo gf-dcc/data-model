@@ -1,0 +1,2 @@
+Component,Filename,File Format,Lab ID,Channel Metadata Filename,Imaging Assay Type,Protocol Link,Software and Version,Microscope,Objective,NominalMagnification,LensNA,WorkingDistance,WorkingDistanceUnit,Immersion,Pyramid,Zstack,Tseries,Passed QC,Comment,FOV number,FOVX,FOVXUnit,FOVY,FOVYUnit,Frame Averaging,Image ID,DimensionOrder,PhysicalSizeX,PhysicalSizeXUnit,PhysicalSizeY,PhysicalSizeYUnit,PhysicalSizeZ,PhysicalSizeZUnit,Pixels BigEndian,PlaneCount,SizeC,SizeT,SizeX,SizeY,SizeZ,PixelType
+ImagingLevel2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
