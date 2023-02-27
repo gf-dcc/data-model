@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generate .csv/Excel templates, to be provided:
-# 2) as fallback for contribs who can't access GoogleSheets / DCA (maybe they're blocked or DCA is down)
+# 2) as fallback for contribs who can't access GoogleSheets / DCA (maybe they're blocked by their institution, DCA is down, or just prefer being handed a .csv directly)
 # 1) for documentation, i.e. read-only templates are embedded in user docs
 
 # A config file is expected as the first arg.
@@ -20,6 +20,7 @@ for i in ${!TEMPLATES[@]}
 do
   echo ">>>>>>> Getting ${TEMPLATES[$i]}"
   schematic manifest --config config.yml get -dt ${TEMPLATES[$i]} --title ${TITLES[$i]} -o $OUTPUT_DIR/${TEMPLATES[$i]}.csv | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
+  sleep 0.5
 done
 
 # Clean up all the intermediates
