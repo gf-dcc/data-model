@@ -8,7 +8,7 @@
 # Locally, run test from the root of the repo with `./tests/generate/generate.sh ./tests/generate/config.json`.
 # However, most runs use GitHub Actions.
 
-OUTPUT_DIR=templates
+OUTPUT_DIR_CSV=templates/csv
 LOG_DIR=logs
 TEMPLATES=($(jq -r '.[].template' $1 | tr -d '"'))
 TITLES=($(jq -r '.[].title' $1 | tr -d '"'))
@@ -19,7 +19,7 @@ mkdir -p $LOG_DIR
 for i in ${!TEMPLATES[@]}
 do
   echo ">>>>>>> Getting ${TEMPLATES[$i]}"
-  schematic manifest --config config.yml get -dt ${TEMPLATES[$i]} --title ${TITLES[$i]} -o $OUTPUT_DIR/${TEMPLATES[$i]}.csv | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
+  schematic manifest --config config.yml get -dt ${TEMPLATES[$i]} --title ${TITLES[$i]} -s -o ${OUTPUT_DIR_CSV}/${TEMPLATES[$i]}.csv | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
   sleep 0.5
 done
 
