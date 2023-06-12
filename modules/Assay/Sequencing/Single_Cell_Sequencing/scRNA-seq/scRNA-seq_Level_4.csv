@@ -1,0 +1,2 @@
+Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
+scRNA-seq Level 4,"Data represents the relationships between cells derived from Level 3 expression data and shown as tSNE or UMAP coordinates per cell, plus all other cell-specific meta information (e.g., cell type)",,"Component, Filename, File Format, scRNAseq Workflow Type, scRNAseq Workflow Parameters Description, Workflow Version, Workflow Link",,FALSE,Single_Cell_Sequencing,,,
