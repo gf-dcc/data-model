@@ -1,2 +1,0 @@
-Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
-scRNA-seq Level 2,Alignment workflows downstream of scRNA-seq Level 1,,"Component, Filename, File Format, Parent File ID, scRNAseq Workflow Type, Workflow Version, scRNAseq Workflow Parameters Description, Workflow Link, Genomic Reference, Genomic Reference URL, Genome Annotation URL, Whitelist Cell Barcode File Link, Cell Barcode Tag, UMI Tag, Applied Hard Trimming",,FALSE,Single_Cell_Sequencing,scRNA-seq Level 1,,
