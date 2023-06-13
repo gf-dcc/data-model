@@ -1,0 +1,16 @@
+name: Add issues to main Gray Foundation project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/orgs/gf-dcc/projects/2
+          github-token: ${{ secrets.GF_DCC_SERVICE }}
