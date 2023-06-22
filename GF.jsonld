@@ -5099,6 +5099,51 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:Biospecimen",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Biological entity; this can be tissue, blood, analyte and subsamples of those",
+            "rdfs:label": "Biospecimen",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Thing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Biospecimen",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Patient"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:BiospecimenID"
+                },
+                {
+                    "@id": "bts:ParentID"
+                },
+                {
+                    "@id": "bts:ParentBiospecimenID"
+                },
+                {
+                    "@id": "bts:AdjacentBiospecimenIDs"
+                },
+                {
+                    "@id": "bts:BiospecimenType"
+                },
+                {
+                    "@id": "bts:TimepointLabel"
+                },
+                {
+                    "@id": "bts:SpecimenLaterality"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:BiospecimenID",
             "@type": "rdfs:Class",
             "rdfs:comment": " ID associated with a biosample based on  ID SOP (eg x_yyy_zzz)",
