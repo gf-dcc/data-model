@@ -16,3 +16,16 @@ Days to Death,Number of days between the date used for index and the date from a
 Occupation Duration Years,The number of years a patient worked in a specific occupation.,"","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2435424&version=1.0,""
 Premature At Birth,The yes/no/unknown indicator used to describe whether the patient was premature (less than 37 weeks gestation) at birth.,"Yes, No, unknown, Not Reported","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6010765&version=1.0,""
 Weeks Gestation at Birth,Numeric value used to describe the number of weeks starting from the approximate date of the biological mother's last menstrual period and ending with the birth of the patient.,"","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2737369&version=1.0,""
+Sex,Sex of individual,"female, male, unknown, unspecified, Not Reported",,,FALSE,Demographics,,,
+Age,Age of individual,,,,FALSE,Demographics,,,
+Age at Menarche,Age at first period,,,,FALSE,Demographics,,,
+Age at Menopause,Age at menopause,,,,FALSE,Demographics,,,
+Menopause Cause,Causal history of menopause,"Natural, Surgically induced, unknown",,,FALSE,Demographics,,,
+Obstetric History,Obstetric history notation such as “G1 P1”,,,,FALSE,Demographics,,,
+Parity,Number of pregnancies carried over the threshold of viability,,,,FALSE,Demographics,,,
+Gravidity,Total number of pregnancies regardless of outcome,,,,FALSE,Demographics,,,
+Age at First Birth,Age when individual gave first birth,,,,FALSE,Demographics,,,
+Yes - Given Birth,Has given birth,"Yes, No, unknown",,,FALSE,Demographics,,,
+Number of Live Births,Number of live births,,,,FALSE,Demographics,,,
+Yes - Issues With Pregnancy,Whether there was an issue with any pregnancy,,,,FALSE,Demographics,,,
+Years of Contraceptive Use,Years of contraceptive use,,,,FALSE,Demographics,,,

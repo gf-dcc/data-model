@@ -1,49 +1,53 @@
-Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,	http://purl.obolibrary.org/obo/NCIT_C164667,Validation Rules
+Attribute,Description,Valid Values,DependsOn,Properties,FALSE,Parent,DependsOn Component,	http://purl.obolibrary.org/obo/NCIT_C164667,Validation Rules
 Sequencing,Module for next generation sequencing assays,"","","",FALSE,Assay,"",https://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=topic_3168,""
-Sequencing Platform,A platform is an object aggregate that is the set of instruments and software needed to perform a process [OBI_0000050]. Specific model of the sequencing instrument.,"Illumina Next Seq 500, Illumina Next Seq 550, Illumina Next Seq 2500, Illumina NovaSeq 6000,  Illumina MiSeq, 454 GS FLX Titanium, AB SOLiD 4 AB SOLiD 2, AB SOLiD 3, Complete Genomics, Illumina HiSeq X Ten, Illumina HiSeq X Five, Illumina Genome Analyzer II, Illumina Genome Analyzer IIx, Illumina HiSeq 2000, Illumina HiSeq 2500, Illumina HiSeq 4000, Illumina MiSeq, Illumina NextSeq, Ion Torrent PGM, Ion Torrent Proton, Ion Torrent S5, PacBio RS, NovaSeq 6000, NovaSeqS4, Ultima Genomics UG100, Oxford Nanopore minION, GridION, PromethION, PacBio Sequel2, Revio, Other, unknown, Not Reported",,,TRUE,Device,,http://purl.obolibrary.org/obo/GENEPIO_0100473,
-Library Construction Method,Process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors [OBI_0000711],"Smart-seq2, Smart-SeqV4, 10xV1.0, 10xV1.1, 10xV2, 10xV3,10xV3.1, CEL-seq2, Drop-seq, inDropsV2, inDropsV3, TruDrop, sci-ATAC-seq",,,TRUE,Sequencing,,http://purl.obolibrary.org/obo/OBI_0000711,
-Nucleic Acid Source,The source of the input nucleic molecule,"Single Cell, Bulk Whole Cell, Single Nucleus, Bulk Nuclei",,,TRUE,Sequencing,,http://example.org/htan/NucleicAcidSource,
-Read1,Read 1 content description,"Cell Barcode and DNA Insert, Sample Index and DNA Insert, DNA Insert, Sample Index, Cell Barcode","","",TRUE,Sequencing,"","",""
-Read2,Read 2 content description,"Cell Barcode and DNA Insert, Sample Index and DNA Insert, DNA Insert, Sample Index, Cell Barcode","","",TRUE,Sequencing,"","",""
+Sequencing Platform,A platform is an object aggregate that is the set of instruments and software needed to perform a process [OBI_0000050]. Specific model of the sequencing instrument.,"Illumina Next Seq 500, Illumina Next Seq 550, Illumina Next Seq 2500, Illumina NovaSeq 6000,  Illumina MiSeq, 454 GS FLX Titanium, AB SOLiD 4 AB SOLiD 2, AB SOLiD 3, Complete Genomics, Illumina HiSeq X Ten, Illumina HiSeq X Five, Illumina Genome Analyzer II, Illumina Genome Analyzer IIx, Illumina HiSeq 2000, Illumina HiSeq 2500, Illumina HiSeq 4000, Illumina MiSeq, Illumina NextSeq, Ion Torrent PGM, Ion Torrent Proton, Ion Torrent S5, PacBio RS, NovaSeq 6000, NovaSeqS4, Ultima Genomics UG100, Oxford Nanopore minION, GridION, PromethION, PacBio Sequel2, Revio, Other, unknown, Not Reported",,,FALSE,Device,,http://purl.obolibrary.org/obo/GENEPIO_0100473,
+Library Construction Method,Process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors [OBI_0000711],"Smart-seq2, Smart-SeqV4, 10xV1.0, 10xV1.1, 10xV2, 10xV3,10xV3.1, CEL-seq2, Drop-seq, inDropsV2, inDropsV3, TruDrop, sci-ATAC-seq",,,FALSE,Sequencing,,http://purl.obolibrary.org/obo/OBI_0000711,
+Nucleic Acid Source,The source of the input nucleic molecule,"Single Cell, Bulk Whole Cell, Single Nucleus, Bulk Nuclei",,,FALSE,Sequencing,,http://example.org/htan/NucleicAcidSource,
+Read1,Read 1 content description,"Cell Barcode and DNA Insert, Sample Index and DNA Insert, DNA Insert, Sample Index, Cell Barcode","","",FALSE,Sequencing,"","",""
+Read2,Read 2 content description,"Cell Barcode and DNA Insert, Sample Index and DNA Insert, DNA Insert, Sample Index, Cell Barcode","","",FALSE,Sequencing,"","",""
 Technical Replicate Group,A common term for all files belonging to the same cell or library. Provide a numbering of each library prep batch (can differ from encapsulation and sequencing batch),,,,FALSE,Sequencing,,,
-Sequencing Batch ID,Links samples to a specific local sequencer run. Can be string or 'null',,,,TRUE,Sequencing,,,
+Sequencing Batch ID,Links samples to a specific local sequencer run. Can be string or 'null',,,,FALSE,Sequencing,,,
 Total Reads,Total number of reads per sample. Integer,,,,FALSE,Sequencing,,http://purl.obolibrary.org/obo/NCIT_C164667,
-Dissociation Method,The tissue dissociation method used for scRNASeq or scATAC-seq assays,"gentleMACS, Dounce, Enzymatic Digestion, Not Applicable",,,TRUE,Sequencing,,,
-Cryopreserved Cells in Sample,Indicate if library preparation was based on revived frozen cells.,"Yes, No",,,TRUE,Sequencing,,,
-Single Cell Isolation Method,"The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)","Microfluidics Chip, Droplets, FACS, Plates, 10x, Nuclei Isolation",,,TRUE,Sequencing,,,
-Total Number of Input Cells,Number of cells loaded/placed on plates,,,,TRUE,Sequencing,,,
-Input Cells and Nuclei,"Number of cells and number of nuclei input; entry format: number, number",,,,TRUE,Sequencing,,,
+Dissociation Method,The tissue dissociation method used for scRNASeq or scATAC-seq assays,"gentleMACS, Dounce, Enzymatic Digestion, Not Applicable",,,FALSE,Sequencing,,,
+Cryopreserved Cells in Sample,Indicate if library preparation was based on revived frozen cells.,"Yes, No",,,FALSE,Sequencing,,,
+Single Cell Isolation Method,"The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)","Microfluidics Chip, Droplets, FACS, Plates, 10x, Nuclei Isolation",,,FALSE,Sequencing,,,
+Total Number of Input Cells,Number of cells loaded/placed on plates,,,,FALSE,Sequencing,,,
+Input Cells and Nuclei,"Number of cells and number of nuclei input; entry format: number, number",,,,FALSE,Sequencing,,,
 Cell Barcode and UMI,Cell and transcript identifiers,"","UMI Barcode Offset, UMI Barcode Length, Median UMIs per Cell Number, Cell Barcode Offset, Cell Barcode Length, Valid Barcodes Cell Number","",FALSE,Sequencing,"","",""
-Cell Barcode Offset,Offset in sequence for cell barcode read (in bp): number,"","","",TRUE,Sequencing,"",http://www.ebi.ac.uk/efo/EFO_0010204,""
-Cell Barcode Length,Length of cell barcode read (in bp): number,"","","",TRUE,Sequencing,"","",""
-Valid Barcodes Cell Number,Number,"","","",TRUE,Sequencing,"","",""
+Cell Barcode Offset,Offset in sequence for cell barcode read (in bp): number,"","","",FALSE,Sequencing,"",http://www.ebi.ac.uk/efo/EFO_0010204,""
+Cell Barcode Length,Length of cell barcode read (in bp): number,"","","",FALSE,Sequencing,"","",""
+Valid Barcodes Cell Number,Number,"","","",FALSE,Sequencing,"","",""
 UMI Barcode Offset,"Start position of UMI barcode in the sequence. Values: number, 0 for start of read","","","",TRUE,Sequencing,"",https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html,""
-UMI Barcode Length,Length of UMI barcode read (in bp): number,"","","",TRUE,Sequencing,"","",""
-Median UMIs per Cell Number,Number,"","","",TRUE,Sequencing,"","",""
-Input Cells and Nuclei,"Number of cells and number of nuclei input; entry format: number, number","","","",TRUE,Sequencing,"","",""
+UMI Barcode Length,Length of UMI barcode read (in bp): number,"","","",FALSE,Sequencing,"","",""
+Median UMIs per Cell Number,Number,"","","",FALSE,Sequencing,"","",""
+Input Cells and Nuclei,"Number of cells and number of nuclei input; entry format: number, number","","","",FALSE,Sequencing,"","",""
 CEL-seq2,Highly-multiplexed plate-based single-cell RNA-Seq assay,"","Empty Well Barcode, Well Index","",FALSE,Sequencing,"",http://www.ebi.ac.uk/efo/EFO_0010010,""
 Empty Well Barcode,Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.,"","","",TRUE,Sequencing,"","",""
 Well Index,Indicate if protein expression (EPCAM/CD45) positive/negative data  is available for each cell in CEL-seq2 assays,"Yes, No","","",FALSE,Sequencing,"","",""
 Single Cell Dissociation Days from Index,Number of days between sample for single cell assay was received in lab and when the sample was dissociated and cells were isolated [number],"","","",TRUE,Sequencing,"","",""
 End Bias,"The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag/end or the full length transcript","3 Prime, 5 Prime, Full Length Transcript","","",TRUE,Sequencing,"",http://www.ebi.ac.uk/efo/EFO_0010187,""
-Reverse Transcription Primer,"An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA","Oligo-dT, Poly-dT, Feature barcoding, Random","","",TRUE,Sequencing,"",http://www.sequenceontology.org/so_wiki/index.php/Category:SO:0000112_!_primer,""
+Reverse Transcription Primer,"An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA","Oligo-dT, Poly-dT, Feature barcoding, Random","","",FALSE,Sequencing,"",http://www.sequenceontology.org/so_wiki/index.php/Category:SO:0000112_!_primer,""
 Feature barcoding,A method for adding extra channels of information to cells by running single-cell gene expression in parallel with other assays [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc],"",Feature Reference Id,"",FALSE,Sequencing,"",https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc,""
 Feature Reference Id,"Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref]","","","",TRUE,Sequencing,"","",""
 Spike In,A set of known synthetic RNA molecules with known sequence that are added to the cell lysis mix,"ERCC, Other Spike In, No Spike In, PhiX","","",TRUE,Sequencing,"",http://www.ebi.ac.uk/efo/EFO_0010193,""
-Cell Median Number Reads,Median number of reads per cell. Number,"","","",TRUE,Sequencing,"","",""
-Cell Median Number Genes,Median number of genes detected per cell. Number,"","","",TRUE,Sequencing,"","",""
+Cell Median Number Reads,Median number of reads per cell. Number,"","","",FALSE,Sequencing,"","",""
+Cell Median Number Genes,Median number of genes detected per cell. Number,"","","",FALSE,Sequencing,"","",""
 Cell Total,Number of sequenced  cells. Applies to raw counts matrix only.,"","","",TRUE,Sequencing,"","",""
 Threshold for Minimum Passing Reads,Threshold for calling cells,,,,TRUE,Sequencing,,,
 Total Number of Passing Nuclei,Number of nuclei sequenced,,,,TRUE,Sequencing,,,
-Median Fraction of Reads in Peaks,Median fraction of reads in peaks (FRIP),,Peaks Calling Software,,TRUE,Sequencing,,,
-Median Fraction of Reads in Annotated cis DNA Elements,Median fraction of reads in annotated cis-DNA elements (FRIADE),,Peaks Calling Software,,TRUE,Sequencing,,,
-Median Passing Read Percentage,Non-PCR duplicate nuclear genomic sequence reads not aligning to unanchored contigs out of total reads assigned to the nucleus barcode,,,,TRUE,Sequencing,,,
-Median Percentage of Mitochondrial Reads per Nucleus,Contamination from mitochondrial sequences,,,,TRUE,Sequencing,,,
+Median Fraction of Reads in Peaks,Median fraction of reads in peaks (FRIP),,Peaks Calling Software,,FALSE,Sequencing,,,
+Median Fraction of Reads in Annotated cis DNA Elements,Median fraction of reads in annotated cis-DNA elements (FRIADE),,Peaks Calling Software,,FALSE,Sequencing,,,
+Median Passing Read Percentage,Non-PCR duplicate nuclear genomic sequence reads not aligning to unanchored contigs out of total reads assigned to the nucleus barcode,,,,FALSE,Sequencing,,,
+Median Percentage of Mitochondrial Reads per Nucleus,Contamination from mitochondrial sequences,,,,FALSE,Sequencing,,,
 Transposition Reaction,"Name of the transposase, transposon sequences","Tn5, EZ-Tn5, Tn5-059, Nextera Tn5, Diagenode-unloaded Apex-Bio, Diagenode-loaded Apex-Bio, In-House",,,TRUE,Sequencing,,,
-Single Nucleus Buffer,Nuclei isolation buffer,"NIB, 10x, Omni",,,TRUE,Sequencing,,,
+Single Nucleus Buffer,Nuclei isolation buffer,"NIB, 10x, Omni",,,FALSE,Sequencing,,,
 scATACseq Library Layout,Sequencing read type,scATACseq Paired End,,,TRUE,Sequencing,,,
 Nucleus Identifier,Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from,Nuclei Barcode,,,TRUE,Sequencing,,,
-Nuclei Barcode Read,Nuclei Barcode Read,,,,TRUE,Sequencing,,,
-Nuclei Barcode Length,Nuclei Barcode Length,,,,TRUE,Sequencing,,,
+Nuclei Barcode Read,Nuclei Barcode Read,,,,FALSE,Sequencing,,,
+Nuclei Barcode Length,Nuclei Barcode Length,,,,FALSE,Sequencing,,,
 scATACseq Paired End,A library layout type,"scATACseq Read1, scATACseq Read2",,,FALSE,Sequencing,,,
 Read3,Read 3 content description,"Cell Barcode and DNA Insert, Sample Index and DNA Insert, DNA Insert, Sample Index, Cell Barcode",,,FALSE,Sequencing,,,
+scRNAseq Workflow Type, "","","","",FALSE,Sequencing,"","",""
+scRNAseq Workflow Parameters Description, "","","","",FALSE,Sequencing,"","",""
+Workflow Version, "","","","",FALSE,Sequencing,"","",""
+Workflow Link, "","","","",FALSE,Sequencing,"","",""
