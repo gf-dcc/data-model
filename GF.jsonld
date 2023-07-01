@@ -5099,13 +5099,71 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:ScRNA-seqLevel4",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Gene and Isoform expression files",
+            "rdfs:label": "ScRNA-seqLevel4",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SingleCellSequencing"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "scRNA-seq Level 4",
+            "sms:required": "sms:false",
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:Component"
+                },
+                {
+                    "@id": "bts:Filename"
+                },
+                {
+                    "@id": "bts:FileFormat"
+                },
+                {
+                    "@id": "bts:DataCategory"
+                },
+                {
+                    "@id": "bts:MatrixType"
+                },
+                {
+                    "@id": "bts:LinkedMatrices"
+                },
+                {
+                    "@id": "bts:CellMedianNumberReads"
+                },
+                {
+                    "@id": "bts:CellMedianNumberGenes"
+                },
+                {
+                    "@id": "bts:CellTotal"
+                },
+                {
+                    "@id": "bts:ScRNAseqWorkflowType"
+                },
+                {
+                    "@id": "bts:ScRNAseqWorkflowParametersDescription"
+                },
+                {
+                    "@id": "bts:WorkflowLink"
+                },
+                {
+                    "@id": "bts:WorkflowVersion"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:Biospecimen",
             "@type": "rdfs:Class",
             "rdfs:comment": "Biological entity; this can be tissue, blood, analyte and subsamples of those",
             "rdfs:label": "Biospecimen",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:Thing"
+                    "@id": "bts:Patient"
                 }
             ],
             "schema:isPartOf": {
@@ -5113,11 +5171,6 @@
             },
             "sms:displayName": "Biospecimen",
             "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
             "sms:requiresDependency": [
                 {
                     "@id": "bts:BiospecimenID"
@@ -8267,7 +8320,7 @@
         {
             "@id": "bts:CohortCore",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Minimal required set of individual-level clinical data across different cohort collections in practice",
+            "rdfs:comment": "Set of individual-level clinical data across different cohort collections",
             "rdfs:label": "CohortCore",
             "rdfs:subClassOf": [
                 {
@@ -8281,10 +8334,16 @@
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:LabID"
+                    "@id": "bts:AtlasParticipantID"
+                },
+                {
+                    "@id": "bts:Age"
                 },
                 {
                     "@id": "bts:Sex"
+                },
+                {
+                    "@id": "bts:BMI"
                 },
                 {
                     "@id": "bts:Race"
@@ -8293,19 +8352,13 @@
                     "@id": "bts:Ethnicity"
                 },
                 {
-                    "@id": "bts:Age"
+                    "@id": "bts:VitalStatus"
                 },
                 {
-                    "@id": "bts:BMI"
+                    "@id": "bts:Height"
                 },
                 {
-                    "@id": "bts:AgeatMenarche"
-                },
-                {
-                    "@id": "bts:GeneticAlteration"
-                },
-                {
-                    "@id": "bts:MenopauseStatus"
+                    "@id": "bts:Weight"
                 },
                 {
                     "@id": "bts:Gravidity"
@@ -8314,46 +8367,28 @@
                     "@id": "bts:Parity"
                 },
                 {
+                    "@id": "bts:AgeAtMenarche"
+                },
+                {
+                    "@id": "bts:MenstrualCyclePhase"
+                },
+                {
                     "@id": "bts:MenopauseStatus"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CohortCoreRFC",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "More idealized, RFC-proposed set of individual-level clinical data that extends Cohort Core",
-            "rdfs:label": "CohortCoreRFC",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cohort Core RFC",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:CohortCore"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ClassBRCA1"
-                },
-                {
-                    "@id": "bts:ClassBRCA2"
-                },
-                {
-                    "@id": "bts:MenopauseCycleStage"
                 },
                 {
                     "@id": "bts:PrimaryDiagnosis"
                 },
                 {
-                    "@id": "bts:PreviousDiagnosis"
+                    "@id": "bts:AgeatDiagnosis"
+                },
+                {
+                    "@id": "bts:DiagnosisStatusType"
+                },
+                {
+                    "@id": "bts:ClassBRCA1"
+                },
+                {
+                    "@id": "bts:ClassBRCA2"
                 },
                 {
                     "@id": "bts:TobaccoUse"
@@ -8365,40 +8400,25 @@
                     "@id": "bts:AlcoholUse"
                 },
                 {
-                    "@id": "bts:DrinksPerWeek"
+                    "@id": "bts:NumberofDrinksPerWeek"
                 },
                 {
                     "@id": "bts:AntibioticUse"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CohortCorePortal",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Portal-specific augmented set of individual-level clinical data that extends Cohort Core",
-            "rdfs:label": "CohortCorePortal",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Patient"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cohort Core Portal",
-            "sms:required": "sms:false",
-            "sms:requiresComponent": [
-                {
-                    "@id": "bts:CohortCore"
-                }
-            ],
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:ParticipantID"
                 },
                 {
-                    "@id": "bts:AtlasGroup"
+                    "@id": "bts:SampleCollectionCenter"
+                },
+                {
+                    "@id": "bts:SampleCollectionYear"
+                },
+                {
+                    "@id": "bts:ERStatus"
+                },
+                {
+                    "@id": "bts:PRStatus"
+                },
+                {
+                    "@id": "bts:HER2Status"
                 }
             ],
             "sms:validationRules": []
@@ -39693,10 +39713,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:GeneticAlteration",
+            "@id": "bts:AtlasParticipantID",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "GeneticAlteration",
+            "rdfs:label": "AtlasParticipantID",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:CohortCore"
@@ -39705,7 +39725,58 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Genetic Alteration",
+            "sms:displayName": "Atlas Participant ID",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:AgeAtMenarche",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "AgeAtMenarche",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Age At Menarche",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:MenstrualCyclePhase",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "MenstrualCyclePhase",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Menstrual Cycle Phase",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:DiagnosisStatusType",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "DiagnosisStatusType",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Diagnosis Status Type",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -39716,7 +39787,7 @@
             "rdfs:label": "ClassBRCA1",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCoreRFC"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
@@ -39733,7 +39804,7 @@
             "rdfs:label": "ClassBRCA2",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCoreRFC"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
@@ -39744,47 +39815,13 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:MenopauseCycleStage",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "MenopauseCycleStage",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:CohortCoreRFC"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Menopause Cycle Stage",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:PreviousDiagnosis",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "PreviousDiagnosis",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:CohortCoreRFC"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Previous Diagnosis",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:TobaccoUse",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
             "rdfs:label": "TobaccoUse",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCoreRFC"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
@@ -39801,7 +39838,7 @@
             "rdfs:label": "AlcoholUse",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCoreRFC"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
@@ -39812,36 +39849,104 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:DrinksPerWeek",
+            "@id": "bts:NumberofDrinksPerWeek",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "DrinksPerWeek",
+            "rdfs:label": "NumberofDrinksPerWeek",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCoreRFC"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Drinks Per Week",
+            "sms:displayName": "Number of Drinks Per Week",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
-            "@id": "bts:AtlasGroup",
+            "@id": "bts:SampleCollectionCenter",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "AtlasGroup",
+            "rdfs:label": "SampleCollectionCenter",
             "rdfs:subClassOf": [
                 {
-                    "@id": "bts:CohortCorePortal"
+                    "@id": "bts:CohortCore"
                 }
             ],
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Atlas Group",
+            "sms:displayName": "Sample Collection Center",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SampleCollectionYear",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SampleCollectionYear",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sample Collection Year",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ERStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "ERStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "ER Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PRStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "PRStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "PR Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:HER2Status",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "HER2Status",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CohortCore"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "HER2 Status",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -39859,23 +39964,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sample ID",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SampleCollectionCenter",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SampleCollectionCenter",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:SampleCore"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Sample Collection Center",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
