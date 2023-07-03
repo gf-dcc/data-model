@@ -19577,6 +19577,9 @@
                     "@id": "bts:PTENmutation"
                 },
                 {
+                    "@id": "bts:RAD51Cmutation"
+                },
+                {
                     "@id": "bts:ROS1mutation"
                 },
                 {
@@ -71261,6 +71264,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "PTEN mutation",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:RAD51Cmutation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "RAD51Cmutation",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:CancerAssociatedGeneMutations"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "RAD51C mutation",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
