@@ -8334,7 +8334,7 @@
             "sms:required": "sms:false",
             "sms:requiresDependency": [
                 {
-                    "@id": "bts:AtlasParticipantID"
+                    "@id": "bts:AtlasID"
                 },
                 {
                     "@id": "bts:Age"
@@ -8448,7 +8448,7 @@
                     "@id": "bts:SampleID"
                 },
                 {
-                    "@id": "bts:SampleCollectionCenter"
+                    "@id": "bts:AtlasID"
                 },
                 {
                     "@id": "bts:SampleSite"
@@ -39716,10 +39716,10 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:AtlasParticipantID",
+            "@id": "bts:AtlasID",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
-            "rdfs:label": "AtlasParticipantID",
+            "rdfs:label": "AtlasID",
             "rdfs:subClassOf": [
                 {
                     "@id": "bts:CohortCore"
@@ -39728,7 +39728,7 @@
             "schema:isPartOf": {
                 "@id": "http://schema.biothings.io"
             },
-            "sms:displayName": "Atlas Participant ID",
+            "sms:displayName": "Atlas ID",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
