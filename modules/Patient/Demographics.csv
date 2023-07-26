@@ -15,4 +15,16 @@ Cause of Death Source,The text term used to describe the source used to determin
 Days to Death,Number of days between the date used for index and the date from a person's date of death represented as a calculated number of days.,"","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6154724&version=1.0,""
 Occupation Duration Years,The number of years a patient worked in a specific occupation.,"","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2435424&version=1.0,""
 Premature At Birth,The yes/no/unknown indicator used to describe whether the patient was premature (less than 37 weeks gestation) at birth.,"Yes, No, unknown, Not Reported","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6010765&version=1.0,""
-Weeks Gestation at Birth,Numeric value used to describe the number of weeks starting from the approximate date of the biological mother's last menstrual period and ending with the birth of the patient.,"","","",FALSE,Demographics,"",https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2737369&version=1.0,""
+Sex,Sex of individual,"female, male, unknown, unspecified, Not Reported",,,FALSE,Demographics Extended,,,
+Age,Age of individual,,,,FALSE,Demographics Extended,,,
+Age at Menarche,Age at first period,,,,FALSE,Demographics Extended,,,
+Age at Menopause,Age at menopause,,,,FALSE,Demographics Extended,,,
+Menopause Cause,Causal history of menopause,"Natural, Surgically induced, unknown",,,FALSE,Demographics Extended,,,
+Obstetric History,Obstetric history notation such as “G1 P1”,,,,FALSE,Demographics Extended,,,
+Parity,Number of pregnancies carried over the threshold of viability,,,,FALSE,Demographics Extended,,,
+Gravidity,Total number of pregnancies regardless of outcome,,,,FALSE,Demographics Extended,,,
+Age at First Birth,Age when individual gave first birth,,,,FALSE,Demographics Extended,,,
+Yes - Given Birth,Has given birth,"Yes, No, unknown",,,FALSE,Demographics Extended,,,
+Number of Live Births,Number of live births,,,,FALSE,Demographics Extended,,,
+Yes - Issues With Pregnancy,Whether there was an issue with any pregnancy,,,,FALSE,Demographics Extended,,,
+Years of Contraceptive Use,Years of contraceptive use,,,,FALSE,Demographics Extended,,,
