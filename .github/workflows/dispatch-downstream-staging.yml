@@ -1,10 +1,12 @@
-name: Dispatch downstream dev
+name: Dispatch for downstream staging
 
 on:
   release:
     types: [published]
 
 env:
+  REPO: gf-dcc/data_curator # DCA repo of community
+  REF_DEV: refs/heads/staging # ref to staging branch
   REPO_RAW: https://raw.githubusercontent.com/gf-dcc/data-model
   SRC_FILE: GF.jsonld
 
@@ -15,14 +17,13 @@ jobs:
       - name: Generate input payload
         id: payload
         run: |
-          sudo apt install jq
           URL=$REPO_RAW/$GITHUB_REF_NAME/$SRC_FILE
           INPUT=$(jq -n -c --arg url "$URL" '{ source: $url}')
           echo "::set-output name=INPUT::$INPUT"
       - uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: Update source model for dev
-          repo: gf-dcc/data_curator
-          ref: refs/heads/gf-dev
-          token: ${{ secrets.REPO_PAT }}
+          workflow: Data model staging
+          repo: ${{ env.REPO }}
+          ref: ${{ env.REF_DEV }}
+          token: ${{ secrets.GF_DCC_SERVICE }}
           inputs: ${{ steps.payload.outputs.INPUT }}
