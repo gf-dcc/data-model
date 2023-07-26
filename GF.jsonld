@@ -17579,6 +17579,128 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:SmokingFrequency",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The text term used to generally decribe how often the patient smokes.",
+            "rdfs:label": "SmokingFrequency",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Exposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Everyday"
+                },
+                {
+                    "@id": "bts:Somedays"
+                },
+                {
+                    "@id": "bts:Unknown"
+                }
+            ],
+            "sms:displayName": "Smoking Frequency",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SecondhandSmokeasChild",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The text term used to indicate whether the patient was exposed to secondhand smoke as a child.",
+            "rdfs:label": "SecondhandSmokeasChild",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Exposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:Yes"
+                },
+                {
+                    "@id": "bts:No"
+                },
+                {
+                    "@id": "bts:Unknown"
+                },
+                {
+                    "@id": "bts:NotReported"
+                }
+            ],
+            "sms:displayName": "Secondhand Smoke as Child",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TobaccoUseperDay",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Numeric value that represents the number of times the patient uses tobacco each day.",
+            "rdfs:label": "TobaccoUseperDay",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Exposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Tobacco Use per Day",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TobaccoSmokingStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Category describing current smoking status and smoking history as self-reported by a patient",
+            "rdfs:label": "TobaccoSmokingStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Exposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:LifelongNon-Smoker"
+                },
+                {
+                    "@id": "bts:CurrentSmoker"
+                },
+                {
+                    "@id": "bts:CurrentReformedSmokerfor>15yrs"
+                },
+                {
+                    "@id": "bts:CurrentReformedSmokerfor<or=15yrs"
+                },
+                {
+                    "@id": "bts:CurrentReformedSmoker"
+                },
+                {
+                    "@id": "bts:DurationNotSpecified"
+                },
+                {
+                    "@id": "bts:Smokinghistorynotdocumented"
+                },
+                {
+                    "@id": "bts:Unknown"
+                },
+                {
+                    "@id": "bts:NotReported"
+                }
+            ],
+            "sms:displayName": "Tobacco Smoking Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:AlcoholExposure",
             "@type": "rdfs:Class",
             "rdfs:comment": "Indicate if individual has alcohol exposure",
@@ -17783,37 +17905,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:AsbestosExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The yes/no/unknown indicator used to describe whether the patient was exposed to asbestos.",
-            "rdfs:label": "AsbestosExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotReported"
-                }
-            ],
-            "sms:displayName": "Asbestos Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:CigarettesperDay",
             "@type": "rdfs:Class",
             "rdfs:comment": "The average number of cigarettes smoked per day.",
@@ -17827,34 +17918,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Cigarettes per Day",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CoalDustExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The yes/no/unknown indicator used to describe whether a patient was exposed to fine powder derived by the crushing of coal.",
-            "rdfs:label": "CoalDustExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "Coal Dust Exposure",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -17883,880 +17946,6 @@
                 }
             ],
             "sms:displayName": "Environmental Tobacco Smoke Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:RadonExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The yes/no/unknown indicator used to describe whether the patient was exposed to radon.",
-            "rdfs:label": "RadonExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotReported"
-                }
-            ],
-            "sms:displayName": "Radon Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:RespirableCrystallineSilicaExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The yes/no/unknown indicator used to describe whether a patient was exposured to respirable crystalline silica, a widespread, naturally occurring, crystalline metal oxide that consists of different forms including quartz, cristobalite, tridymite, tripoli, ganister, chert and novaculite.",
-            "rdfs:label": "RespirableCrystallineSilicaExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "Respirable Crystalline Silica Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SmokingFrequency",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The text term used to generally decribe how often the patient smokes.",
-            "rdfs:label": "SmokingFrequency",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Everyday"
-                },
-                {
-                    "@id": "bts:Somedays"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "Smoking Frequency",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SecondhandSmokeasChild",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The text term used to indicate whether the patient was exposed to secondhand smoke as a child.",
-            "rdfs:label": "SecondhandSmokeasChild",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotReported"
-                }
-            ],
-            "sms:displayName": "Secondhand Smoke as Child",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SmokeExposureDuration",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Text term used to describe the length of time the patient was exposed to an environmental factor.",
-            "rdfs:label": "SmokeExposureDuration",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:SixWeeksorMore"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotReported"
-                }
-            ],
-            "sms:displayName": "Smoke Exposure Duration",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TypeofSmokeExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The text term used to describe the patient's specific type of smoke exposure.",
-            "rdfs:label": "TypeofSmokeExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Accidentalbuildingfiresmoke"
-                },
-                {
-                    "@id": "bts:Accidentalgrassfiresmoke"
-                },
-                {
-                    "@id": "bts:AccidentalfiresmokeNOS"
-                },
-                {
-                    "@id": "bts:Accidentalforestfiresmoke"
-                },
-                {
-                    "@id": "bts:Accidentalvehiclefiresmoke"
-                },
-                {
-                    "@id": "bts:Aircraftsmoke"
-                },
-                {
-                    "@id": "bts:Burningtreesmoke"
-                },
-                {
-                    "@id": "bts:CoalsmokeNOS"
-                },
-                {
-                    "@id": "bts:CookingrelatedsmokeNOS"
-                },
-                {
-                    "@id": "bts:ElectroniccigarettesmokeNOS"
-                },
-                {
-                    "@id": "bts:Electricalfiresmoke"
-                },
-                {
-                    "@id": "bts:Environmentaltobaccosmoke"
-                },
-                {
-                    "@id": "bts:Factorysmokestacksmoke"
-                },
-                {
-                    "@id": "bts:Fieldburningsmoke"
-                },
-                {
-                    "@id": "bts:FiresmokeNOS"
-                },
-                {
-                    "@id": "bts:Furnaceorboilersmoke"
-                },
-                {
-                    "@id": "bts:Gasburningsmokepropane"
-                },
-                {
-                    "@id": "bts:Greasefiresmoke"
-                },
-                {
-                    "@id": "bts:Grillingsmoke"
-                },
-                {
-                    "@id": "bts:Hashishsmoke"
-                },
-                {
-                    "@id": "bts:Indoorcoalburningstoveorfireplacesmoke"
-                },
-                {
-                    "@id": "bts:IndoorstoveorfireplacesmokeNOS"
-                },
-                {
-                    "@id": "bts:Indoorwoodburningstoveorfireplacesmoke"
-                },
-                {
-                    "@id": "bts:Machinesmoke"
-                },
-                {
-                    "@id": "bts:Marijuanasmoke"
-                },
-                {
-                    "@id": "bts:NoSmokeExposure"
-                },
-                {
-                    "@id": "bts:OilburningsmokeKerosene"
-                },
-                {
-                    "@id": "bts:OilburningsmokeNOS"
-                },
-                {
-                    "@id": "bts:Recreationalfiresmoke"
-                },
-                {
-                    "@id": "bts:SmokeexposureNOS"
-                },
-                {
-                    "@id": "bts:Smokehousesmoke"
-                },
-                {
-                    "@id": "bts:Tobaccosmokecigar"
-                },
-                {
-                    "@id": "bts:Tobaccosmokecigarettes"
-                },
-                {
-                    "@id": "bts:Tobaccosmokepipe"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:Volcanicsmoke"
-                },
-                {
-                    "@id": "bts:Wasteburningsmoke"
-                },
-                {
-                    "@id": "bts:Woodburningsmokefactory"
-                },
-                {
-                    "@id": "bts:WoodburningsmokeNOS"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokeartificialsmokemachines"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokefirefighting"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokefoundry"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokegenerators"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokemilitary"
-                },
-                {
-                    "@id": "bts:WorkrelatedsmokeNOS"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokepaintbaking"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokeplasticsfactory"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokeplumbing"
-                },
-                {
-                    "@id": "bts:Workrelatedsmokesoldering/welding"
-                }
-            ],
-            "sms:displayName": "Type of Smoke Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Marijuanasmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Marijuana smoke exposure",
-            "rdfs:label": "Marijuanasmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Marijuana smoke",
-            "sms:required": "sms:false",
-            "sms:requiresDependency": [
-                {
-                    "@id": "bts:MarijuanaUsePerWeek"
-                }
-            ],
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:MarijuanaUsePerWeek",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Numeric value that represents the number of times the patient uses marijuana each day.",
-            "rdfs:label": "MarijuanaUsePerWeek",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Marijuana Use Per Week",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TobaccoUseperDay",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Numeric value that represents the number of times the patient uses tobacco each day.",
-            "rdfs:label": "TobaccoUseperDay",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco Use per Day",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SmokelessTobaccoQuitAge",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Smokeless tobacco quit age",
-            "rdfs:label": "SmokelessTobaccoQuitAge",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Smokeless Tobacco Quit Age",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TimeBetweenWakingandFirstSmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The text term used to describe the approximate amount of time elapsed between the time the patient wakes up in the morning to the time they smoke their first cigarette.",
-            "rdfs:label": "TimeBetweenWakingandFirstSmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Within5Minutes"
-                },
-                {
-                    "@id": "bts:6-30Minutes"
-                },
-                {
-                    "@id": "bts:31-60Minutes"
-                },
-                {
-                    "@id": "bts:After60Minutes"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "Time Between Waking and First Smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TobaccoSmokingOnsetYear",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The year in which the participant began smoking.",
-            "rdfs:label": "TobaccoSmokingOnsetYear",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco Smoking Onset Year",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TobaccoSmokingQuitYear",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The year in which the participant quit smoking.",
-            "rdfs:label": "TobaccoSmokingQuitYear",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco Smoking Quit Year",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TobaccoSmokingStatus",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Category describing current smoking status and smoking history as self-reported by a patient",
-            "rdfs:label": "TobaccoSmokingStatus",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:LifelongNon-Smoker"
-                },
-                {
-                    "@id": "bts:CurrentSmoker"
-                },
-                {
-                    "@id": "bts:CurrentReformedSmokerfor>15yrs"
-                },
-                {
-                    "@id": "bts:CurrentReformedSmokerfor<or=15yrs"
-                },
-                {
-                    "@id": "bts:CurrentReformedSmoker"
-                },
-                {
-                    "@id": "bts:DurationNotSpecified"
-                },
-                {
-                    "@id": "bts:Smokinghistorynotdocumented"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotReported"
-                }
-            ],
-            "sms:displayName": "Tobacco Smoking Status",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:TypeofTobaccoUsed",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The text term used to describe the specific type of tobacco used by the patient.",
-            "rdfs:label": "TypeofTobaccoUsed",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Cigarettes"
-                },
-                {
-                    "@id": "bts:Cigar"
-                },
-                {
-                    "@id": "bts:ElectronicCigarette"
-                },
-                {
-                    "@id": "bts:Other"
-                },
-                {
-                    "@id": "bts:Pipe"
-                },
-                {
-                    "@id": "bts:SmokelessTobacco"
-                },
-                {
-                    "@id": "bts:Marijuana"
-                }
-            ],
-            "sms:displayName": "Type of Tobacco Used",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19OccurrenceIndicator",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The indicator that describes whether or not a COVID-19 infectious disorder occurred.",
-            "rdfs:label": "COVID19OccurrenceIndicator",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotApplicable"
-                },
-                {
-                    "@id": "bts:NotDone"
-                }
-            ],
-            "sms:displayName": "COVID19 Occurrence Indicator",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19CurrentStatus",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The patient's current COVID-19 status of sign or symptom events or interventions",
-            "rdfs:label": "COVID19CurrentStatus",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Patientcurrentlyhassymptoms"
-                },
-                {
-                    "@id": "bts:Patienthadsymptomsbutnowisfullyrecovered"
-                },
-                {
-                    "@id": "bts:PatientneverhadanysymptomsofCOVID-19"
-                },
-                {
-                    "@id": "bts:StatusunknownduetogeneralCOVID-19relatedtravelrestrictions"
-                },
-                {
-                    "@id": "bts:Statusunknownduetolackofdisease/tumorassessmentduetoCOVID-19diagnosis"
-                },
-                {
-                    "@id": "bts:Statusunknownduetootherreasons"
-                }
-            ],
-            "sms:displayName": "COVID19 Current Status",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19PositiveLabTestIndicator",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The indicator that describes whether or not there was a COVID-19 positive test result.",
-            "rdfs:label": "COVID19PositiveLabTestIndicator",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotApplicable"
-                },
-                {
-                    "@id": "bts:NotDone"
-                }
-            ],
-            "sms:displayName": "COVID19 Positive Lab Test Indicator",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19AntibodyTesting",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Text term that demonstrates the test results of immunoglobulin M (IgM) and immunoglobulin G (IgG) antibodies to the SARS-CoV-2 virus in subject serum samples.",
-            "rdfs:label": "COVID19AntibodyTesting",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:SARS-CoV-2IgMantibodypositive"
-                },
-                {
-                    "@id": "bts:SARS-CoV-2IgGantibodypositive"
-                },
-                {
-                    "@id": "bts:SARS-CoV-2IgG/IgMantibodypositive"
-                },
-                {
-                    "@id": "bts:SARS-CoV-2IgMantibodynegative"
-                },
-                {
-                    "@id": "bts:SARS-CoV-2IgGantibodynegative"
-                },
-                {
-                    "@id": "bts:SARS-CoV-2IgG/IgMantibodynegative"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotApplicable"
-                },
-                {
-                    "@id": "bts:NotDone"
-                }
-            ],
-            "sms:displayName": "COVID19 Antibody Testing",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19ComplicationsSeverity",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Text term that retrospectively indicates the worst complications during COVID-19 infectious disorder in the patient.",
-            "rdfs:label": "COVID19ComplicationsSeverity",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Cardiaccomplications"
-                },
-                {
-                    "@id": "bts:Pulmonarycomplications"
-                },
-                {
-                    "@id": "bts:Systemiccomplications"
-                },
-                {
-                    "@id": "bts:Other"
-                },
-                {
-                    "@id": "bts:NotApplicable"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "COVID19 Complications Severity",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:COVID19CancerTreatmentFollowup",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Indicator that describes if cancer treatment was modified for the patient due to COVID-19 infectious disorder",
-            "rdfs:label": "COVID19CancerTreatmentFollowup",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Yes"
-                },
-                {
-                    "@id": "bts:No"
-                },
-                {
-                    "@id": "bts:Unknown"
-                },
-                {
-                    "@id": "bts:NotApplicable"
-                }
-            ],
-            "sms:displayName": "COVID19 Cancer Treatment Followup",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Ecigvapeuse",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Use of non-traditional cigarette nicotine delivery device (electronic cigarette, ENDS - electronic nicotine delivery system)",
-            "rdfs:label": "Ecigvapeuse",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "bts:Current"
-                },
-                {
-                    "@id": "bts:Former"
-                },
-                {
-                    "@id": "bts:Never"
-                },
-                {
-                    "@id": "bts:Unknown"
-                }
-            ],
-            "sms:displayName": "Ecig vape use",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Ecigvape30dayusenum",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "Number of days e-cigarettes or vaping device was used in the last 30 days",
-            "rdfs:label": "Ecigvape30dayusenum",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Ecig vape 30 day use num",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Ecigvapetimesperday",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "e-cig frequency of use (times per day—one “time” consists of around 15 puffs or lasts around 10 minutes)",
-            "rdfs:label": "Ecigvapetimesperday",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Ecig vape times per day",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Typeofsmokeexposurecumulativeyears",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The number of cumulative years of the patient's specific type of smoke exposure",
-            "rdfs:label": "Typeofsmokeexposurecumulativeyears",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Type of smoke exposure cumulative years",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Chewingtobaccodailyusecount",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The quantity of daily use of tobacco, in the form of a plug, usually flavored, for chewing rather than smoking.",
-            "rdfs:label": "Chewingtobaccodailyusecount",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Chewing tobacco daily use count",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Secondhandsmokeexposureyears",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "The number of cumulative years of the patient's exposure to second-hand cigarette smoke",
-            "rdfs:label": "Secondhandsmokeexposureyears",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Exposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Second hand smoke exposure years",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -29688,19 +28877,7 @@
                     "@id": "bts:AlcoholExposure"
                 },
                 {
-                    "@id": "bts:AsbestosExposure"
-                },
-                {
-                    "@id": "bts:CoalDustExposure"
-                },
-                {
                     "@id": "bts:EnvironmentalTobaccoSmokeExposure"
-                },
-                {
-                    "@id": "bts:RadonExposure"
-                },
-                {
-                    "@id": "bts:RespirableCrystallineSilicaExposure"
                 }
             ],
             "sms:validationRules": []
@@ -65250,6 +64427,23 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:TypeofSmokeExposure",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TypeofSmokeExposure",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Type of Smoke Exposure",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:TimebetweenWakingandFirstSmoke",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -65263,6 +64457,244 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Time between Waking and First Smoke",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TobaccoSmokingOnsetYear",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TobaccoSmokingOnsetYear",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Tobacco Smoking Onset Year",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TobaccoSmokingQuitYear",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TobaccoSmokingQuitYear",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Tobacco Smoking Quit Year",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:TypeofTobaccoUsed",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "TypeofTobaccoUsed",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Type of Tobacco Used",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SmokeExposureDuration",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SmokeExposureDuration",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Smoke Exposure Duration",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SmokelessTobaccoQuitAge",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SmokelessTobaccoQuitAge",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Yes-SmokingExposure"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Smokeless Tobacco Quit Age",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Everyday",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Everyday",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SmokingFrequency"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Every day",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Somedays",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Somedays",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:SmokingFrequency"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Some days",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:LifelongNon-Smoker",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "LifelongNon-Smoker",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Lifelong Non-Smoker",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CurrentSmoker",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CurrentSmoker",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Current Smoker",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CurrentReformedSmokerfor>15yrs",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CurrentReformedSmokerfor>15yrs",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Current Reformed Smoker for > 15 yrs",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CurrentReformedSmokerfor<or=15yrs",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CurrentReformedSmokerfor<or=15yrs",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Current Reformed Smoker for < or = 15 yrs",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:CurrentReformedSmoker",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "CurrentReformedSmoker",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Current Reformed Smoker",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:DurationNotSpecified",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "DurationNotSpecified",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Duration Not Specified",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Smokinghistorynotdocumented",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Smokinghistorynotdocumented",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:TobaccoSmokingStatus"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Smoking history not documented",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -65416,1468 +64848,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Wine",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Everyday",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Everyday",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:SmokingFrequency"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Every day",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Somedays",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Somedays",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:SmokingFrequency"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Some days",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SixWeeksorMore",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SixWeeksorMore",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:SmokeExposureDuration"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Six Weeks or More",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Accidentalbuildingfiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Accidentalbuildingfiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Accidental building fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Accidentalgrassfiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Accidentalgrassfiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Accidental grass fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:AccidentalfiresmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "AccidentalfiresmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Accidental fire smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Accidentalforestfiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Accidentalforestfiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Accidental forest fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Accidentalvehiclefiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Accidentalvehiclefiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Accidental vehicle fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Aircraftsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Aircraftsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Aircraft smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Burningtreesmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Burningtreesmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Burning tree smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CoalsmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CoalsmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Coal smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CookingrelatedsmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CookingrelatedsmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cooking related smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ElectroniccigarettesmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ElectroniccigarettesmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Electronic cigarette smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Electricalfiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Electricalfiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Electrical fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Environmentaltobaccosmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Environmentaltobaccosmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Environmental tobacco smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Factorysmokestacksmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Factorysmokestacksmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Factory smokestack smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Fieldburningsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Fieldburningsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Field burning smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:FiresmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "FiresmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Fire smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Furnaceorboilersmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Furnaceorboilersmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Furnace or boiler smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Gasburningsmokepropane",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Gasburningsmokepropane",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Gas burning smoke propane",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Greasefiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Greasefiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Grease fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Grillingsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Grillingsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Grilling smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Hashishsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Hashishsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Hashish smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Indoorcoalburningstoveorfireplacesmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Indoorcoalburningstoveorfireplacesmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Indoor coal burning stove or fireplace smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:IndoorstoveorfireplacesmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "IndoorstoveorfireplacesmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Indoor stove or fireplace smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Indoorwoodburningstoveorfireplacesmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Indoorwoodburningstoveorfireplacesmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Indoor wood burning stove or fireplace smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Machinesmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Machinesmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Machine smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:NoSmokeExposure",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "NoSmokeExposure",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "No Smoke Exposure",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:OilburningsmokeKerosene",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "OilburningsmokeKerosene",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Oil burning smoke Kerosene",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:OilburningsmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "OilburningsmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Oil burning smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Recreationalfiresmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Recreationalfiresmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Recreational fire smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SmokeexposureNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SmokeexposureNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Smoke exposure NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Smokehousesmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Smokehousesmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Smokehouse smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Tobaccosmokecigar",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Tobaccosmokecigar",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco smoke cigar",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Tobaccosmokecigarettes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Tobaccosmokecigarettes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco smoke cigarettes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Tobaccosmokepipe",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Tobaccosmokepipe",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Tobacco smoke pipe",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Volcanicsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Volcanicsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Volcanic smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Wasteburningsmoke",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Wasteburningsmoke",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Waste burning smoke",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Woodburningsmokefactory",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Woodburningsmokefactory",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Wood burning smoke factory",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:WoodburningsmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "WoodburningsmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Wood burning smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokeartificialsmokemachines",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokeartificialsmokemachines",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke artificial smoke machines",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokefirefighting",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokefirefighting",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke fire fighting",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokefoundry",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokefoundry",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke foundry",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokegenerators",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokegenerators",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke generators",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokemilitary",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokemilitary",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke military",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:WorkrelatedsmokeNOS",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "WorkrelatedsmokeNOS",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke NOS",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokepaintbaking",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokepaintbaking",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke paint baking",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokeplasticsfactory",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokeplasticsfactory",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke plastics factory",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokeplumbing",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokeplumbing",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke plumbing",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Workrelatedsmokesoldering/welding",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Workrelatedsmokesoldering/welding",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofSmokeExposure"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Workrelated smoke soldering/welding",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Within5Minutes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Within5Minutes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TimeBetweenWakingandFirstSmoke"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Within 5 Minutes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:6-30Minutes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "6-30Minutes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TimeBetweenWakingandFirstSmoke"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "6-30 Minutes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:31-60Minutes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "31-60Minutes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TimeBetweenWakingandFirstSmoke"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "31-60 Minutes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:After60Minutes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "After60Minutes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TimeBetweenWakingandFirstSmoke"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "After 60 Minutes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:LifelongNon-Smoker",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "LifelongNon-Smoker",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Lifelong Non-Smoker",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CurrentSmoker",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CurrentSmoker",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Current Smoker",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CurrentReformedSmokerfor>15yrs",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CurrentReformedSmokerfor>15yrs",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Current Reformed Smoker for > 15 yrs",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CurrentReformedSmokerfor<or=15yrs",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CurrentReformedSmokerfor<or=15yrs",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Current Reformed Smoker for < or = 15 yrs",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:CurrentReformedSmoker",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "CurrentReformedSmoker",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Current Reformed Smoker",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:DurationNotSpecified",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "DurationNotSpecified",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Duration Not Specified",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Smokinghistorynotdocumented",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Smokinghistorynotdocumented",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TobaccoSmokingStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Smoking history not documented",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Cigarettes",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Cigarettes",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cigarettes",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Cigar",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Cigar",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cigar",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:ElectronicCigarette",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ElectronicCigarette",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Electronic Cigarette",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Pipe",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Pipe",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Pipe",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SmokelessTobacco",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SmokelessTobacco",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Smokeless Tobacco",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Marijuana",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Marijuana",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:TypeofTobaccoUsed"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Marijuana",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:NotDone",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "NotDone",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19OccurrenceIndicator"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Not Done",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Patientcurrentlyhassymptoms",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Patientcurrentlyhassymptoms",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Patient currently has symptoms",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Patienthadsymptomsbutnowisfullyrecovered",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Patienthadsymptomsbutnowisfullyrecovered",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Patient had symptoms but now is fully recovered",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:PatientneverhadanysymptomsofCOVID-19",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "PatientneverhadanysymptomsofCOVID-19",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Patient never had any symptoms of COVID-19",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:StatusunknownduetogeneralCOVID-19relatedtravelrestrictions",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "StatusunknownduetogeneralCOVID-19relatedtravelrestrictions",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Status unknown due to general COVID-19 related travel restrictions",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Statusunknownduetolackofdisease/tumorassessmentduetoCOVID-19diagnosis",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Statusunknownduetolackofdisease/tumorassessmentduetoCOVID-19diagnosis",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Status unknown due to lack of disease/tumor assessment due to COVID-19 diagnosis",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Statusunknownduetootherreasons",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Statusunknownduetootherreasons",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19CurrentStatus"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Status unknown due to other reasons",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgMantibodypositive",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgMantibodypositive",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgM antibody positive",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgGantibodypositive",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgGantibodypositive",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgG antibody positive",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgG/IgMantibodypositive",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgG/IgMantibodypositive",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgG/IgM antibody positive",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgMantibodynegative",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgMantibodynegative",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgM antibody negative",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgGantibodynegative",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgGantibodynegative",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgG antibody negative",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:SARS-CoV-2IgG/IgMantibodynegative",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "SARS-CoV-2IgG/IgMantibodynegative",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19AntibodyTesting"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "SARS-CoV-2 IgG/IgM antibody negative",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Cardiaccomplications",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Cardiaccomplications",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19ComplicationsSeverity"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Cardiac complications",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Pulmonarycomplications",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Pulmonarycomplications",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19ComplicationsSeverity"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Pulmonary complications",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Systemiccomplications",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Systemiccomplications",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:COVID19ComplicationsSeverity"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Systemic complications",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Current",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Current",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Ecigvapeuse"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Current",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Former",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Former",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Ecigvapeuse"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Former",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:Never",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "Never",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Ecigvapeuse"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Never",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -94473,6 +92443,210 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:COVID19OccurrenceIndicator",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19OccurrenceIndicator",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Occurrence Indicator",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:COVID19CurrentStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19CurrentStatus",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Current Status",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:COVID19PositiveLabTestIndicator",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19PositiveLabTestIndicator",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Positive Lab Test Indicator",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:COVID19AntibodyTesting",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19AntibodyTesting",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Antibody Testing",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:COVID19ComplicationsSeverity",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19ComplicationsSeverity",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Complications Severity",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:COVID19CancerTreatmentFollowup",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "COVID19CancerTreatmentFollowup",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "COVID19 Cancer Treatment Followup",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Ecigvapeuse",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Ecigvapeuse",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Ecig vape use",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Ecigvape30dayusenum",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Ecigvape30dayusenum",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Ecig vape 30 day use num",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Ecigvapetimesperday",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Ecigvapetimesperday",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Ecig vape times per day",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Typeofsmokeexposurecumulativeyears",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Typeofsmokeexposurecumulativeyears",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Type of smoke exposure cumulative years",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Chewingtobaccodailyusecount",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Chewingtobaccodailyusecount",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Chewing tobacco daily use count",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Secondhandsmokeexposureyears",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Secondhandsmokeexposureyears",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ClinicalDataTier2"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Second hand smoke exposure years",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:EducationLevel",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -100351,6 +98525,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Wrist",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:NotDone",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "NotDone",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Immunosuppression"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Not Done",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
