@@ -25,5 +25,5 @@ jobs:
           workflow: Data model staging
           repo: ${{ env.REPO }}
           ref: ${{ env.REF_DEV }}
-          token: ${{ secrets.SERVICE_TOKEN }}
+          token: ${{ secrets.GF_DCC_SERVICE }}
           inputs: ${{ steps.payload.outputs.INPUT }}
