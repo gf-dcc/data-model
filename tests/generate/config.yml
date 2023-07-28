@@ -2,7 +2,7 @@
 # Usage: schematic manifest -c config.yml get -dt ClinicalAssay -t "Test Manifest" --jsonld ./NF.jsonld -s
 definitions:
   synapse_config: ".synapseConfig"
-  service_acct_creds: "schematic_service_account_creds.json"
+  service_acct_creds: "creds.json"
 
 synapse:
   master_fileview: "syn28142805"

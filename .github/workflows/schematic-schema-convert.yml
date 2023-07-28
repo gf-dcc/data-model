@@ -47,3 +47,53 @@ jobs:
         with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
          branch: ${{ github.event.pull_request.head.ref }}
+
+# Additionally test PRs
+  test:
+    name: Test with schematic
+    needs: [build]
+    runs-on: ubuntu-22.04
+    env:
+      SCHEMATIC_SERVICE_ACCT_CREDS: ${{ secrets.SCHEMATIC_SERVICE_ACCT_CREDS }}
+    permissions:
+      pull-requests: write
+    strategy:
+      matrix:
+        schematic-version: [23.6.1]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+
+      - name: Setup schematic
+        id: setup-schematic
+        run: pip3 install schematicpy==${{ matrix.schematic-version }}
+
+      - name: Test generate
+        working-directory: tests/generate
+        continue-on-error: true
+        run: ./basic_templates.sh
+
+      # TODO Step for test validation of data
+
+      # TODO Step for test submission of data
+      
+      - name: Create test suite report
+        working-directory: tests
+        continue-on-error: true
+        run: docker run -v $(pwd):/tests rocker/tidyverse R -e "rmarkdown::render('tests/test-suite-report.Rmd')"
+
+      - name: Report on test suite as PR comment
+        uses: mshick/add-pr-comment@v2
+        with:
+          message-id: test-suite-report
+          message-path: |
+            tests/test-suite-report.md
+
+      - name: Upload test artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-logs-${{ matrix.schematic-version }}
+          path: tests/**/logs
