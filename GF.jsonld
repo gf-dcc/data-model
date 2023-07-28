@@ -4311,7 +4311,13 @@
                     "@id": "bts:FileFormat"
                 },
                 {
-                    "@id": "bts:LabID"
+                    "@id": "bts:ParticipantID"
+                },
+                {
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:DetailedSampleID"
                 },
                 {
                     "@id": "bts:NucleicAcidSource"
@@ -4801,7 +4807,13 @@
                     "@id": "bts:FileFormat"
                 },
                 {
-                    "@id": "bts:LabID"
+                    "@id": "bts:ParticipantID"
+                },
+                {
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:DetailedSampleID"
                 },
                 {
                     "@id": "bts:CryopreservedCellsinSample"
@@ -5251,7 +5263,13 @@
                     "@id": "bts:FileFormat"
                 },
                 {
-                    "@id": "bts:ParentFileID"
+                    "@id": "bts:ParticipantID"
+                },
+                {
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:DetailedSampleID"
                 },
                 {
                     "@id": "bts:ScRNAseqWorkflowType"
@@ -5313,6 +5331,15 @@
                 },
                 {
                     "@id": "bts:FileFormat"
+                },
+                {
+                    "@id": "bts:ParticipantID"
+                },
+                {
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:DetailedSampleID"
                 },
                 {
                     "@id": "bts:DataCategory"
@@ -5424,6 +5451,15 @@
                     "@id": "bts:FileFormat"
                 },
                 {
+                    "@id": "bts:ParticipantID"
+                },
+                {
+                    "@id": "bts:SampleID"
+                },
+                {
+                    "@id": "bts:DetailedSampleID"
+                },
+                {
                     "@id": "bts:DataCategory"
                 },
                 {
@@ -5510,6 +5546,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sample ID",
+            "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:BiospecimenID",
+            "@type": "rdfs:Class",
+            "rdfs:comment": " Alias for Sample ID",
+            "rdfs:label": "BiospecimenID",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Biospecimen"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Biospecimen ID",
             "sms:required": "sms:true",
             "sms:validationRules": []
         },
@@ -24926,23 +24979,6 @@
             "sms:validationRules": []
         },
         {
-            "@id": "bts:ParentFileID",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "ParentFileID",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:ScRNA-seqLevel2"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Parent File ID",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
             "@id": "bts:ScRNAseqWorkflowType",
             "@type": "rdfs:Class",
             "rdfs:comment": "TBD",
@@ -25177,23 +25213,6 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Linked Matrices",
-            "sms:required": "sms:false",
-            "sms:validationRules": []
-        },
-        {
-            "@id": "bts:BiospecimenID",
-            "@type": "rdfs:Class",
-            "rdfs:comment": "TBD",
-            "rdfs:label": "BiospecimenID",
-            "rdfs:subClassOf": [
-                {
-                    "@id": "bts:Biospecimen"
-                }
-            ],
-            "schema:isPartOf": {
-                "@id": "http://schema.biothings.io"
-            },
-            "sms:displayName": "Biospecimen ID",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
