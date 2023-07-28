@@ -7827,6 +7827,45 @@
             "sms:validationRules": []
         },
         {
+            "@id": "bts:PublicationTemplate",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Publication entity.",
+            "rdfs:label": "PublicationTemplate",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:Publication"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Publication Template",
+            "sms:required": "sms:false",
+            "sms:requiresComponent": [
+                {
+                    "@id": "bts:Publication"
+                }
+            ],
+            "sms:requiresDependency": [
+                {
+                    "@id": "bts:PublicationDOI"
+                },
+                {
+                    "@id": "bts:Title"
+                },
+                {
+                    "@id": "bts:Authors"
+                },
+                {
+                    "@id": "bts:LinkedProject"
+                },
+                {
+                    "@id": "bts:LinkedDatasets"
+                }
+            ],
+            "sms:validationRules": []
+        },
+        {
             "@id": "bts:BreastCarcinomaDetectionMethodType",
             "@type": "rdfs:Class",
             "rdfs:comment": "The means, manner of procedure, or systematic course of actions performed in order to discover or identify breast cancer.",
@@ -28664,6 +28703,91 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Low Grade",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:PublicationDOI",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "PublicationDOI",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PublicationTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Publication DOI",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Title",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Title",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PublicationTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Title",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:Authors",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "Authors",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PublicationTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Authors",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:LinkedProject",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "LinkedProject",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PublicationTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Linked Project",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:LinkedDatasets",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "LinkedDatasets",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PublicationTemplate"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Linked Datasets",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
