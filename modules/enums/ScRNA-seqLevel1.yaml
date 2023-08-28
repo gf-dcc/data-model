@@ -1,0 +1,18 @@
+enums:
+  SpikeInEnum:
+    permissible_values:
+      ERCC: null
+      Other Spike In: null
+      No Spike In: null
+      PhiX: null
+  ReverseTranscriptionPrimerEnum:
+    permissible_values:
+      Feature barcoding: null
+      Oligo-dT: null
+      Poly-dT: null
+      Random: null
+  EndBiasEnum:
+    permissible_values:
+      3 Prime: null
+      5 Prime: null
+      Full Length Transcript: null

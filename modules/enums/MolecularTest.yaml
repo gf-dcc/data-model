@@ -1,0 +1,372 @@
+enums:
+  PathogenicityEnum:
+    permissible_values:
+      Benign: null
+      Likely Benign: null
+      Likely Pathogenic: null
+      Pathogenic: null
+      Uncertain Significance: null
+  LabTestsforMMRStatusEnum:
+    permissible_values:
+      Not Applicable: null
+      Other: null
+      unknown: null
+      IHC staining for mismatch repair proteins: null
+      PCR to evaluate microsatellite instability: null
+      MLH1 promoter methylation analysis: null
+      BRAF sequencing: null
+  MolecularAnalysisMethodEnum:
+    permissible_values:
+      WXS: null
+      WGS: null
+      ISH: null
+      Not Reported: null
+      Microsatellite Analysis: null
+      unknown: null
+      Not Applicable: null
+      Targeted Sequencing: null
+      Nuclear Staining: null
+      FISH: null
+      IHC: null
+      Karyotype: null
+      Flow Cytometry: null
+      Other: null
+      RNA Sequencing: null
+      Sequencing NOS: null
+      Southern Blotting: null
+      Microarray: null
+      Comparative Genomic Hybridization: null
+      Cytogenetics NOS: null
+      RT-PCR: null
+  ClonalityEnum:
+    permissible_values:
+      Clonal: null
+      Non-clonal: null
+  LaboratoryTestEnum:
+    permissible_values:
+      Absolute Neutrophil: null
+      Myeloblasts: null
+      Total Protein: null
+      Not Reported: null
+      Hemoglobin: null
+      NOS: null
+      Basophil: null
+      C-Reactive Protein: null
+      M Protein: null
+      Lambda: null
+      unknown: null
+      Circulating Tumor Cells: null
+      Epstein-Barr Virus: null
+      Promonocytes: null
+      Lactate Dehydrogenase: null
+      Cellularity: null
+      Human Chorionic Gonadotropin: null
+      Alpha Fetoprotein: null
+      Hematocrit: null
+      Promyelocytes: null
+      Testosterone: null
+      Lymphoblasts: null
+      Immunoglobulin M: null
+      Lymphocytes: null
+      Leukocytes: null
+      HPV-E6/E7: null
+      Luteinizing Hormone: null
+      Segmented Neutrophil: null
+      Immunoglobulin G: null
+      Beta 2 Microglobulin: null
+      Creatinine: null
+      Glucose: null
+      Serum Free Immunoglobulin Light Chain: null
+      Calcium: null
+      Metamyelocytes: null
+      Kappa: null
+      Prolymphocytes: null
+      Human Papillomavirus: null
+      Platelets: null
+      Neutrophil Bands: null
+      Myelocytes: null
+      Albumin: null
+      Blood Urea Nitrogen: null
+      Total Bilirubin: null
+      Eosinophil: null
+      Immunoglobulin A: null
+      B-cell genotyping: null
+  MutationalSignaturesEnum:
+    permissible_values:
+      Signature 19: null
+      Signature 1A: null
+      Ig gene hypermutation: null
+      altered activity of the error-prone polymerase POLε (POLE): null
+      Signature 3: null
+      Signature 20: null
+      Not Reported: null
+      Signature 17: null
+      Signature 4: null
+      Data not available: null
+      Signature 5: null
+      Signature 9: null
+      unknown: null
+      Signature 14: null
+      Signature 13: null
+      Not Applicable: null
+      Signature 12: null
+      Signature 8: null
+      Activation Induced Deaminases (AID) associated mutations: null
+      Signature 7: null
+      microsatellite instability (additions and deletions): null
+      Alkylating Agents (Temozolomide) induced mutations: null
+      localized substitution hypermutation (kataegis): null
+      Signature 16: null
+      Signature 6: null
+      Other: null
+      Signature 21: null
+      DNA MMR Deficiency: null
+      APOBEC enzymes associated mutations: null
+      Tobacco use associated mutations: null
+      transcriptional strand bias: null
+      Signature 1B: null
+      Signature 10: null
+      UV light induced mutations: null
+      Signature 18: null
+      Signature 11: null
+      Signature 2: null
+      methylated CpG sequences mutagenesis(deamination of 5-methyl-cytosine): null
+      Signature 15: null
+      age of cancer diagnosis: null
+  MismatchRepairSystemStatusEnum:
+    permissible_values:
+      Mismatch repair deficiency MMRD: null
+      Mismatch repair proficiency MMPP: null
+      Microsatellite instability high MSIH: null
+      Microsatellite stable MSS: null
+      unknown or other: null
+  TestAnalyteTypeEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      DNA: null
+      mRNA: null
+      miRNA: null
+      Protein Analyte: null
+      Total RNA: null
+  ZygosityEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      Heterozygous: null
+      Hemizygous: null
+      Homozygous: null
+      Nullizygous: null
+  ClinicalBiospecimenTypeEnum:
+    permissible_values:
+      Connective Tissue: null
+      Peritoneal Fluid: null
+      Not Reported: null
+      Saliva: null
+      Tissue NOS: null
+      Skin: null
+      unknown: null
+      Feces: null
+      Uninvolved Tissue NOS: null
+      Plasma: null
+      Granulocyte: null
+      Embryonic Tissue: null
+      Buccal Mucosa: null
+      Blood: null
+      Muscle Tissue: null
+      Cerebrospinal Fluid: null
+      Soft Tissue: null
+      Urine: null
+      Pleural Fluid: null
+      Bone Marrow: null
+      Serum: null
+      Embryonic Fluid: null
+      Nerve Tissue: null
+      Buffy Coat: null
+  VariantTypeEnum:
+    permissible_values:
+      Duplication: null
+      Conversion: null
+      Chrimerism: null
+      Not Reported: null
+      Partial Methylation: null
+      unknown: null
+      Substitution: null
+      Deletion-Insertion: null
+      Loss: null
+      Insertion: null
+      Hypermethylation: null
+      Alleles: null
+      Methylation: null
+      Inversion: null
+      Extension: null
+      Mosaicism: null
+      Deletion: null
+      Other: null
+      Rearrangement: null
+      Translocation: null
+      Amplification: null
+      Repeated Sequences: null
+      Splice: null
+      Gain: null
+  HistoneFamilyEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      H1: null
+      H2A: null
+      H2B: null
+      H3: null
+      H4: null
+  ChromosomeEnum:
+    permissible_values:
+      chr7: null
+      chr15: null
+      Not Reported: null
+      chr3: null
+      chr1: null
+      chr18: null
+      unknown: null
+      chrY: null
+      chr22: null
+      chr14: null
+      chr12: null
+      chr11: null
+      chr17: null
+      chrM: null
+      chr4: null
+      chr21: null
+      chr6: null
+      chr10: null
+      chr16: null
+      chrX: null
+      chr23: null
+      chr8: null
+      chr2: null
+      chr13: null
+      chr19: null
+      chr20: null
+      chr5: null
+      chr9: null
+  TestResultEnum:
+    permissible_values:
+      Normal: null
+      Not Reported: null
+      Test Value Reported: null
+      unknown: null
+      Overexpressed: null
+      Intermediate: null
+      Not Applicable: null
+      Loss of Expression: null
+      Low: null
+      High: null
+      Equivocal: null
+      Copy Number Reported: null
+      Positive: null
+      Negative: null
+      Abnormal NOS: null
+  AntigenEnum:
+    permissible_values:
+      CA19-9: null
+      CD79A: null
+      CD5: null
+      CD30: null
+      Not Reported: null
+      CD20: null
+      CD14: null
+      CD19: null
+      unknown: null
+      CD34: null
+      CCND1: null
+      CD25: null
+      HLA-DR: null
+      Mesothelin: null
+      CD10: null
+      CD56: null
+      CD3: null
+      NSE: null
+      CA-125: null
+      CD22: null
+      CD23: null
+      Squamous Cell Carcinoma Antigen: null
+      CEA: null
+      CD33: null
+      CD138: null
+      BCL6: null
+      CD7: null
+      CD117: null
+      CD15: null
+      CD45: null
+  MolecularConsequenceEnum:
+    permissible_values:
+      TF Binding Site Variant: null
+      Transcript Amplification: null
+      Splice Region Variant: null
+      Downstream Gene Variant: null
+      5 Prime UTR Variant: null
+      Splice Donor Variant: null
+      Splice Acceptor Variant: null
+      Stop Gain: null
+      Stop Retained Variant: null
+      TFBS Amplification: null
+      3 Prime UTR Variant: null
+      Upstream Gene Variant: null
+      Intergenic Variant: null
+      Regulatory Region Ablation: null
+      NMD Transcript Variant: null
+      Transcript Ablation: null
+      Non-coding Transcript Exon Variant: null
+      Synonymous Variant: null
+      Regulatory Region Variant: null
+      Stop Lost: null
+      Mature miRNA Variant: null
+      Inframe Insertion: null
+      Inframe Deletion: null
+      Protein Altering Variant: null
+      Incomplete Terminal Codon Variant: null
+      TFBS Ablation: null
+      Intron Variant: null
+      Coding Sequence Variant: null
+      Missense Variant: null
+      Frameshift Variant: null
+      Non-coding Transcript Variant: null
+      Feature Truncation: null
+      Regulatory Region Amplification: null
+      Start Lost: null
+      Feature Elongation: null
+  PloidyEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      Aneuploid: null
+      Diploid: null
+      Hyperdiploid: null
+      Hypodiploid: null
+      Near Diploid: null
+      Tetraploid: null
+  VariantOriginEnum:
+    permissible_values:
+      unknown: null
+      Germline: null
+      Somatic: null
+  HistoneVariantEnum:
+    permissible_values:
+      mH2A: null
+      mH2A.1: null
+      Not Reported: null
+      H2A.Z: null
+      H3.2: null
+      unknown: null
+      H3t (H3.4): null
+      H3.X: null
+      H2A.Z.2.2: null
+      H3.Y: null
+      H3.5: null
+      H3.3: null
+      H3.1: null
+      H2A-Bbd: null
+      mH2A.2: null
+      CENP-A: null
+      H2A.Z.2: null
+      H2A.X: null
+      H2A.Z.1: null

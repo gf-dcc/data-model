@@ -1,0 +1,15 @@
+enums:
+  SingleCellIsolationMethodEnum:
+    permissible_values:
+      Microfluidics Chip: null
+      Droplets: null
+      FACS: null
+      Plates: null
+      10x: null
+      Nuclei Isolation: null
+  DissociationMethodEnum:
+    permissible_values:
+      Not Applicable: null
+      gentleMACS: null
+      Dounce: null
+      Enzymatic Digestion: null

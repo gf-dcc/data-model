@@ -1,0 +1,22 @@
+enums:
+  NucleicAcidSourceEnum:
+    permissible_values:
+      Single Cell: null
+      Bulk Whole Cell: null
+      Single Nucleus: null
+      Bulk Nuclei: null
+  LibraryConstructionMethodEnum:
+    permissible_values:
+      10xV3: null
+      inDropsV2: null
+      10xV1.1: null
+      10xV3.1: null
+      Drop-seq: null
+      10xV2: null
+      10xV1.0: null
+      Smart-seq2: null
+      Smart-SeqV4: null
+      sci-ATAC-seq: null
+      inDropsV3: null
+      CEL-seq2: null
+      TruDrop: null

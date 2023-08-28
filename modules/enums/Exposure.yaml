@@ -1,0 +1,57 @@
+enums:
+  AlcoholTypeEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Not Reported: null
+      Beer: null
+      Liquor: null
+      Wine: null
+  TobaccoSmokingStatusEnum:
+    permissible_values:
+      Not Reported: null
+      unknown: null
+      Current Reformed Smoker: null
+      Current Smoker: null
+      Current Reformed Smoker for > 15 yrs: null
+      Duration Not Specified: null
+      Smoking history not documented: null
+      Lifelong Non-Smoker: null
+      Current Reformed Smoker for < or = 15 yrs: null
+  SmokingFrequencyEnum:
+    permissible_values:
+      unknown: null
+      Every day: null
+      Some days: null
+  AlcoholExposureEnum:
+    permissible_values:
+      Yes - Alcohol Exposure: null
+      Not Reported: null
+      No - Alcohol Exposure: null
+  AlcoholHistoryEnum:
+    permissible_values:
+      'Yes': null
+      'No': null
+      unknown: null
+      Not Reported: null
+  AlcoholIntensityEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      Drinker: null
+      Heavy Drinker: null
+      Lifelong Non-Drinker: null
+      Non-Drinker: null
+      Occasional Drinker: null
+  AntibioticUseEnum:
+    permissible_values:
+      'No': null
+      unknown: null
+      Yes - within last monthh: null
+      Yes - within last 1-6 months: null
+      Yes - over 6 months ago: null
+  SmokingExposureEnum:
+    permissible_values:
+      Yes - Smoking Exposure: null
+      Not Reported: null
+      No - Smoking Exposure: null
