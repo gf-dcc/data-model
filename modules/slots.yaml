@@ -293,7 +293,7 @@ slots:
     description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: PhysicalSizeYUnitEnum
+    range: MicroscopyUnitEnum
   ReverseTranscriptionPrimer:
     title: Reverse Transcription Primer
     required: false
@@ -972,7 +972,7 @@ slots:
     description: 'Field of view X dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: FOVXUnitEnum
+    range: MicroscopyUnitEnum
   Pathogenicity:
     title: Pathogenicity
     required: false
@@ -1342,7 +1342,7 @@ slots:
     description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: PhysicalSizeZUnitEnum
+    range: MicroscopyUnitEnum
   HereditaryCancerPredispositionSyndrome:
     title: Hereditary Cancer Predisposition Syndrome
     required: false
@@ -1623,7 +1623,7 @@ slots:
     description: 'The units of the working distance. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: WorkingDistanceUnitEnum
+    range: MicroscopyUnitEnum
   PriorSitesofRadiation:
     title: Prior Sites of Radiation
     required: false
@@ -1760,7 +1760,7 @@ slots:
     description: 'Field of view Y dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: FOVYUnitEnum
+    range: MicroscopyUnitEnum
   AgeatDiagnosis:
     title: Age at Diagnosis
     required: false
@@ -1792,7 +1792,7 @@ slots:
     description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
     annotations:
       validationRules: []
-    range: PhysicalSizeXUnitEnum
+    range: MicroscopyUnitEnum
   CancerAssociatedGeneMutations:
     title: Cancer Associated Gene Mutations
     required: false

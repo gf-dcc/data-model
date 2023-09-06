@@ -34,7 +34,7 @@ enums:
       uint32: null
       bit: null
       uint8: null
-  PhysicalSizeXUnitEnum:
+  MicroscopyUnitEnum:
     permissible_values:
       cm: null
       mm: null
