@@ -962,7 +962,7 @@ slots:
     range: ClonalityEnum
   Sex:
     title: Sex
-    required: false
+    required: true
     description: Sex of individual
     annotations:
       
@@ -1203,7 +1203,7 @@ slots:
     range: MolecularAnalysisMethodEnum
   ParticipantID:
     title: Participant ID
-    required: false
+    required: true
     description: ' ID associated with a patient'
     annotations:
       
@@ -1505,7 +1505,7 @@ slots:
       
   Ethnicity:
     title: Ethnicity
-    required: false
+    required: true
     description: An individual's self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.
     annotations:
       
@@ -2066,7 +2066,7 @@ slots:
       
   Race:
     title: Race
-    required: false
+    required: true
     description: An arbitrary classification of a taxonomic group that is a division of a species. It usually arises as a consequence of geographical isolation withina a species and is characterized by shared heredity, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution.
     annotations:
       
@@ -2115,7 +2115,7 @@ slots:
       
   Age:
     title: Age
-    required: false
+    required: true
     description: Age of individual
     annotations:
       
