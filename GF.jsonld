@@ -755,8 +755,6 @@
     }, {
       "@id" : "bts:TotalReads"
     }, {
-      "@id" : "bts:ProtocolLink"
-    }, {
       "@id" : "bts:PeaksCallingSoftware"
     } ],
     "sms:displayName" : "MedianFractionofReadsinPeaks"
@@ -926,8 +924,6 @@
       "@id" : "bts:MedianPercentageofMitochondrialReadsperNucleus"
     }, {
       "@id" : "bts:TotalReads"
-    }, {
-      "@id" : "bts:ProtocolLink"
     }, {
       "@id" : "bts:PeaksCallingSoftware"
     } ],
@@ -1226,8 +1222,6 @@
       "@id" : "bts:MedianPercentageofMitochondrialReadsperNucleus"
     }, {
       "@id" : "bts:TotalReads"
-    }, {
-      "@id" : "bts:ProtocolLink"
     } ],
     "sms:displayName" : "ScATAC-seqLevel1"
   }, {
@@ -5224,7 +5218,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "BiospecimenID",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:true"
   }, {
     "@id" : "bts:BloodTestNormalRangeLower",
     "@type" : "rdfs:Class",
