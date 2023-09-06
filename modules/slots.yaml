@@ -1,2176 +1,1835 @@
 slots:
-  YearsSmoked:
-    title: Years Smoked
+  AAChange:
+    title: AA Change
     required: false
-    description: Numeric value (or unknown) to represent the number of years a person has been smoking.
+    description: 'Alphanumeric value used to describe the amino acid change for a specific genetic variant. Example: R116Q. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
     annotations:
-      
-  RelationshipGender:
-    title: Relationship Gender
+  AcquisitionMethodOtherSpecify:
+    title: Acquisition Method Other Specify
     required: false
-    description: The text term used to describe the gender of the patient's relative with a history of cancer.
+    description: A custom acquisition method [Text - max length 100 characters]
     annotations:
-      
-    range: SexEnum
-  AdjacentSampleIDs:
-    title: Adjacent Sample IDs
-    required: false
-    description: List of  Identifiers (separated by commas) of adjacent biospecimens cut from the same sample
-    annotations:
-      
-  DaystoDeath:
-    title: Days to Death
-    required: false
-    description: Number of days between the date used for index and the date from a person's date of death represented as a calculated number of days.
-    annotations:
-      
-  SentinelLymphNodeCount:
-    title: Sentinel Lymph Node Count
-    required: false
-    description: Numeric count of sentinel lymph nodes.
-    annotations:
-      
-  StopDaysfromIndex:
-    title: Stop Days from Index
-    required: false
-    description: 'Number of days from the date of birth (index date) to the end date of the event (e.g. exposure to environmental factor, treatment start, etc.). Note: if the event occurs at a single time point, e.g. a diagnosis or a lab test, the values for this column is ''Not Applicable'''
-    annotations:
-      
-  NumberofDrinksPerWeek:
-    title: Number of Drinks Per Week
-    required: false
-    description: TBD
-    annotations:
-      
-  SentinelNodePositiveAssessmentCount:
-    title: Sentinel Node Positive Assessment Count
-    required: false
-    description: The number or amount of metastatic neoplasms related to the confirmed presence of disease or specific microorganisms during examination of the first rounded mass of lymphatic tissue to which cancer is likely to spread from the primary tumor.
-    annotations:
-      
-  PreservationMethod:
-    title: Preservation Method
-    required: false
-    description: Text term that represents the method used to preserve the sample.
-    annotations:
-      
-    range: PreservationMethodEnum
-  PRReceptorStatus:
-    title: Breast Carcinoma Progesterone Receptor Status
-    required: false
-    description: Text term to represent the overall result of Progresterone Receptor (PR) testing in a participant with breast cancer
-    annotations:
-      
-    range: ReceptorStatusEnum
-  Ecigvapeuse:
-    title: Ecig vape use
-    required: false
-    description: TBD
-    annotations:
-      
-  PublicationDOI:
-    title: Publication DOI
-    required: false
-    description: TBD
-    annotations:
-      
-  DaystoBirth:
-    title: Days to Birth
-    required: false
-    description: Number of days between the date used for index and the date from a person's date of birth represented as a calculated negative number of days.
-    annotations:
-      
-  TestUnits:
-    title: Test Units
-    required: false
-    description: 'The text term used to describe the units of the test value for a molecular test. This property is used in conjunction with test_value. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
   AdjacentBiospecimenIDs:
     title: Adjacent Biospecimen IDs
     required: false
     description: TBD
     annotations:
-      
+  AdjacentSampleIDs:
+    title: Adjacent Sample IDs
+    required: false
+    description: List of  Identifiers (separated by commas) of adjacent biospecimens cut from the same sample
+    annotations:
+  Age:
+    title: Age
+    required: true
+    description: Age of individual
+    annotations:
+  AgeAtMenarche:
+    title: Age At Menarche
+    required: false
+    description: TBD
+    annotations:
+  AgeIsObfuscated:
+    title: Age Is Obfuscated
+    required: false
+    description: The age of the patient has been modified for compliance reasons. The actual age differs from what is reported. Other date intervals for this patient may also be modified.
+    annotations:
+    range: AgeIsObfuscatedEnum
+  AgeatDiagnosis:
+    title: Age at Diagnosis
+    required: false
+    description: Age at the time of diagnosis expressed in number of days since birth.
+    annotations:
+  AlcoholDaysPerWeek:
+    title: Alcohol Days Per Week
+    required: false
+    description: Numeric value used to describe the average number of days each week that a person consumes an alcoholic beverage.
+    annotations:
+  AlcoholDrinksPerDay:
+    title: Alcohol Drinks Per Day
+    required: false
+    description: Numeric value used to describe the average number of alcoholic beverages a person consumes per day.
+    annotations:
+  AlcoholExposure:
+    title: Alcohol Exposure
+    required: false
+    description: Indicate if individual has alcohol exposure
+    annotations:
+    range: AlcoholExposureEnum
+  AlcoholHistory:
+    title: Alcohol History
+    required: false
+    description: A response to a question that asks whether the participant has consumed at least 12 drinks of any kind of alcoholic beverage in their lifetime.
+    annotations:
+    range: HistoryEnum
+  AlcoholIntensity:
+    title: Alcohol Intensity
+    required: false
+    description: Category to describe the patient's current level of alcohol use as self-reported by the patient.
+    annotations:
+    range: AlcoholIntensityEnum
+  AlcoholType:
+    title: Alcohol Type
+    required: false
+    description: Type of alcohol use
+    annotations:
+    range: AlcoholTypeEnum
+  AlcoholUse:
+    title: Alcohol Use
+    required: false
+    description: TBD
+    annotations:
+  AnalyteType:
+    title: Analyte Type
+    required: false
+    description: 'The kind of molecular specimen analyte: a molecular derivative (I.e. RNA / DNA / Protein Lysate) obtained from a specimen'
+    annotations:
+    range: AnalyteTypeEnum
+  AnaplasiaPresentType:
+    title: Anaplasia Present Type
+    required: false
+    description: The text term used to describe the morphologic findings indicating the presence of a malignant cellular infiltrate characterized by the presence of large pleomorphic cells, necrosis, and high mitotic activity in a tissue sample.
+    annotations:
+    range: AnaplasiaPresentTypeEnum
+  AntibioticUse:
+    title: Antibiotic Use
+    required: false
+    description: Antibiotic use
+    annotations:
+    range: AntibioticUseEnum
+  AntibodyName:
+    title: Antibody Name
+    required: false
+    description: TBD
+    annotations:
+  Antigen:
+    title: Antigen
+    required: false
+    description: 'The text term used to describe an antigen included in molecular testing. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: AntigenEnum
+  AppliedHardTrimming:
+    title: Applied Hard Trimming
+    required: false
+    description: TBD
+    annotations:
+  Authors:
+    title: Authors
+    required: false
+    description: TBD
+    annotations:
+  BIRADSMammographyBreastDensityCategory:
+    title: BIRADS Mammography Breast Density Category
+    required: false
+    description: The category that describes the relative amount of different tissues present in the breast on a mammogram based on the updated 2015 edition of the American College of Radiology's Breast Imaging Reporting and Data System (BI-RADS) reporting guidelines.
+    annotations:
+    range: BIRADSMammographyBreastDensityCategoryEnum
+  BMI:
+    title: BMI
+    required: false
+    description: TBD
+    annotations:
+  BiospecimenDimension1:
+    title: Biospecimen Dimension 1
+    required: false
+    description: First dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
+    annotations:
+  BiospecimenDimension2:
+    title: Biospecimen Dimension 2
+    required: false
+    description: Second dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
+    annotations:
+  BiospecimenDimension3:
+    title: Biospecimen Dimension 3
+    required: false
+    description: Third dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
+    annotations:
+  BiospecimenID:
+    title: Biospecimen ID
+    required: false
+    description: ' Alias for Sample ID'
+    annotations:
+  BiospecimenType:
+    title: Biospecimen Type
+    required: false
+    description: Biospecimen Type
+    annotations:
+    range: BiospecimenTypeEnum
+  BloodTestNormalRangeLower:
+    title: Blood Test Normal Range Lower
+    required: false
+    description: Numeric value used to describe the lower limit of the normal range used to describe a healthy individual at the institution where the test was completed.
+    annotations:
+  BloodTestNormalRangeUpper:
+    title: Blood Test Normal Range Upper
+    required: false
+    description: Numeric value used to describe the upper limit of the normal range used to describe a healthy individual at the institution where the test was completed.
+    annotations:
   BreastBiopsyProcedureFindingType:
     title: Breast Biopsy Procedure Finding Type
     required: false
     description: Text term to describe the result of the examination of the breast tissue specimen or fluid as related to the presence and nature of disease.
     annotations:
     range: BreastBiopsyProcedureFindingTypeEnum
-
-  GenomicCoverageType:
-    title: Genomic Coverage Type
-    required: true
-    description: Genomic coverage
-    enum_range: 
-    - Whole Genome
-    - Targeted Genome
-    - Beadchip Array
-
-  Laterality:
-    title: Sample Laterality
-    required: false
-    description: For samples in paired organs, designates the side from which obtained.
-    annotations:
-      
-    range: SpecimenLateralityEnum
-  SpecimenLaterality:
-    title: Specimen Laterality
-    required: false
-    description: For samples in paired organs, designates the side from which obtained.
-    annotations:
-      
-    range: SpecimenLateralityEnum
-  BreastCarcinomaHistologyCategory:
-    title: Breast Carcinoma Histology Category
-    required: false
-    description: Classification of the type of invasive breast carcinoma diagnosed based on histologic attributes.
-    annotations:
-      
-    range: BreastCarcinomaHistologyCategoryEnum
-  SingleCellIsolationMethod:
-    title: Single Cell Isolation Method
-    required: false
-    description: The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)
-    annotations:
-      
-    range: SingleCellIsolationMethodEnum
-  UMIBarcodeOffset:
-    title: UMI Barcode Offset
-    required: false
-    description: 'Start position of UMI barcode in the sequence. Values: number, 0 for start of read'
-    annotations:
-      
-  DimensionsUnit:
-    title: Dimensions Unit
-    required: false
-    description: Unit of measurement used for dimension CDEs in metric system (i.e. cm, mm, etc)
-    annotations:
-      
-    range: DimensionsUnitEnum
-  TypeofSmokeExposure:
-    title: Type of Smoke Exposure
-    required: false
-    description: TBD
-    annotations:
-      
-  SizeC:
-    title: SizeC
-    required: false
-    description: Number of channels. Integer >= 1
-    annotations:
-      
-  SpecializedMolecularTest:
-    title: Specialized Molecular Test
-    required: false
-    description: 'Text term used to describe a specific test that is not covered in the list of molecular analysis methods. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  Locus:
-    title: Locus
-    required: false
-    description: 'Alphanumeric value used to describe the locus of a specific genetic variant. Example: NM_001126114.'
-    annotations:
-      
-  PlaneCount:
-    title: PlaneCount
-    required: false
-    description: Number of Z-planes (not to be confused with downsampled ""pyramid""). Integer >=1
-    annotations:
-      
-  DissociationMethod:
-    title: Dissociation Method
-    required: false
-    description: The tissue dissociation method used for scRNASeq or scATAC-seq assays
-    annotations:
-      
-    range: DissociationMethodEnum
-  BreastCarcinomaSurgicalProcedureName:
-    title: Breast Carcinoma Surgical Procedure Name
-    required: false
-    description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer
-    annotations:
-      
-    range: BreastCarcinomaSurgicalProcedureNameEnum
-  BreastCarcinomaERStatusPercentageValue:
-    title: Breast Carcinoma ER Status Percentage Value
-    required: false
-    description: A numerical quantity measured or assigned or computed which captures the estrogen receptor level measured in a participant with breast cancer
-    annotations:
-      
-  BreastCarcinomaPRStatusPercentageValue:
-    title: Breast Carcinoma PR Status Percentage Value
-    required: false
-    description: A numerical quantity measured or assigned or computed which captures the progesterone receptor level measured in a participant with breast cancer
-    annotations:
-      
-  TobaccoSmokingStatus:
-    title: Tobacco Smoking Status
-    required: false
-    description: Category describing current smoking status and smoking history as self-reported by a patient
-    annotations:
-      
-    range: TobaccoSmokingStatusEnum
-  VariantOrigin:
-    title: Variant Origin
-    required: false
-    description: 'The text term used to describe the biological origin of a specific genetic variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: VariantOriginEnum
-  CauseofDeath:
-    title: Cause of Death
-    required: false
-    description: The cause of death
-    annotations:
-      
-    range: CauseofDeathEnum
-  BreastCarcinomaHER2Status:
-    title: Breast Carcinoma HER2 Status
-    required: false
-    description: Text term to signify the result of the medical procedure that involves testing a sample of blood or tissue for HER2 in a participant with breast cancer
-    annotations:
-      
-    range: BreastCarcinomaHER2StatusEnum
-  CryopreservedCellsinSample:
-    title: Cryopreserved Cells in Sample
-    required: false
-    description: Indicate if library preparation was based on revived frozen cells.
-    annotations:
-      
-    range: CryopreservedCellsinSampleEnum
-  TotalNumberofInputCells:
-    title: Total Number of Input Cells
-    required: false
-    description: Number of cells loaded/placed on plates
-    annotations:
-      
-  LabTestsforMMRStatus:
-    title: Lab Tests for MMR Status
-    required: false
-    description: Laboratory tests used to evaluate the status of mismatch repair pathways
-    annotations:
-      
-    range: LabTestsforMMRStatusEnum
-  MetalIsotopeElement:
-    title: Metal Isotope Element
-    required: false
-    description: TBD
-    annotations:
-      
-  ValidBarcodesCellNumber:
-    title: Valid Barcodes Cell Number
-    required: false
-    description: Number
-    annotations:
-      
-  TobaccoSmokingQuitYear:
-    title: Tobacco Smoking Quit Year
-    required: false
-    description: TBD
-    annotations:
-      
-  TobaccoSmokingOnsetYear:
-    title: Tobacco Smoking Onset Year
-    required: false
-    description: TBD
-    annotations:
-      
-  ChannelPassedQC:
-    title: Channel Passed QC
-    required: false
-    description: TBD
-    annotations:
-      
-  Read1:
-    title: Read1
-    required: false
-    description: Read 1 content description
-    annotations:
-      
-    range: ReadEnum
-  Exon:
-    title: Exon
-    required: false
-    description: 'Exon number targeted or included in a molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the exon where that variant is located. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  SmokingFrequency:
-    title: Smoking Frequency
-    required: false
-    description: The text term used to generally decribe how often the patient smokes.
-    annotations:
-      
-    range: SmokingFrequencyEnum
-  PhysicalSizeYUnit:
-    title: PhysicalSizeYUnit
-    required: false
-    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
-  ReverseTranscriptionPrimer:
-    title: Reverse Transcription Primer
-    required: false
-    description: An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA
-    annotations:
-      
-    range: ReverseTranscriptionPrimerEnum
-  MedianUMIsperCellNumber:
-    title: Median UMIs per Cell Number
-    required: false
-    description: Number
-    annotations:
-      
-  TotalVolumeUnit:
-    title: Total Volume Unit
-    required: false
-    description: Unit of measurement used for the total amount of sample or specimen
-    annotations:
-      
-    range: TotalVolumeUnitEnum
-  COVID19PositiveLabTestIndicator:
-    title: COVID19 Positive Lab Test Indicator
-    required: false
-    description: TBD
-    annotations:
-      
-  SizeX:
-    title: SizeX
-    required: false
-    description: 'Size of image: X dimension (in pixels). Integer >= 1'
-    annotations:
-      
-  GenomeAnnotationURL:
-    title: Genome Annotation URL
-    required: false
-    description: TBD
-    annotations:
-      
-  OligoBarcodeLowerStrand:
-    title: Oligo Barcode Lower Strand
-    required: false
-    description: TBD
-    annotations:
-      
-  Read2:
-    title: Read2
-    required: false
-    description: Read 2 content description
-    annotations:
-      
-    range: ReadEnum
-  TotalReads:
-    title: Total Reads
-    required: false
-    description: Total number of reads per sample. Integer
-    annotations:
-      
-  HistoneVariant:
-    title: Histone Variant
-    required: false
-    description: The text term used to describe a specific histone variants, which are proteins that substitute for the core canonical histones.
-    annotations:
-      
-    range: HistoneVariantEnum
-  Chewingtobaccodailyusecount:
-    title: Chewing tobacco daily use count
-    required: false
-    description: TBD
-    annotations:
-      
-  SecondGeneSymbol:
-    title: Second Gene Symbol
-    required: false
-    description: 'The text term used to describe a secondary gene targeted or included in molecular analysis. For rearrangements, this is should represent the location of the variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  CycleNumber:
-    title: Cycle Number
-    required: false
-    description: TBD
-    annotations:
-      
-  GeneSymbol:
-    title: Gene Symbol
-    required: false
-    description: 'The text term used to describe a gene targeted or included in molecular analysis. For rearrangements, this is should be used to represent the reference gene. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  PixelType:
-    title: PixelType
-    required: false
-    description: Data type for each pixel value. E.g. ""uint16""
-    annotations:
-      
-    range: PixelTypeEnum
-  VitalStatus:
-    title: Vital Status
-    required: false
-    description: The survival state of the person registered on the protocol.
-    annotations:
-      
-    range: VitalStatusEnum
-  ParentID:
-    title: Parent ID
-    required: false
-    description: ' ID of parent biospecimen'
-    annotations:
-      
-  FileFormat:
-    title: File Format
-    required: false
-    description: Format of a file (e.g. txt, csv, fastq, bam, etc.)
-    annotations:
-      
-    range: FileFormatEnum
-  LinkedMatrices:
-    title: Linked Matrices
-    required: false
-    description: TBD
-    annotations:
-      
-  AlcoholExposure:
-    title: Alcohol Exposure
-    required: false
-    description: Indicate if individual has alcohol exposure
-    annotations:
-      
-    range: AlcoholExposureEnum
-  ScRNAseqWorkflowParametersDescription:
-    title: scRNAseq Workflow Parameters Description
-    required: false
-    description: TBD
-    annotations:
-      
-  ExcitationBandwidth:
-    title: Excitation Bandwidth
-    required: false
-    description: TBD
-    annotations:
-      
-  PriorInvasiveBreastDisease:
-    title: Prior Invasive Breast Disease
-    required: false
-    description: Text term to indicate prior invasive breast condition in the participant
-    annotations:
-      
-    range: PriorInvasiveBreastDiseaseEnum
-  SizeT:
-    title: SizeT
-    required: false
-    description: Number of time points. Integer >= 1
-    annotations:
-      
-  Intron:
-    title: Intron
-    required: false
-    description: Intron number targeted or included in molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the intron where that variant is located.
-    annotations:
-      
-  BreastCancerGenomicTestPerformed:
-    title: Breast Cancer Genomic Test Performed
-    required: false
-    description: Text term that represents the name of the genomic test performed for breast cancer.
-    annotations:
-      
-    range: BreastCancerGenomicTestPerformedEnum
-  EnvironmentalTobaccoSmokeExposure:
-    title: Environmental Tobacco Smoke Exposure
-    required: false
-    description: The yes/no/unknown indicator used to describe whether a patient was exposed to smoke that is emitted from burning tobacco, including cigarettes, pipes, and cigars. This includes tobacco smoke exhaled by smokers.
-    annotations:
-      
-    range: IndicatorEnum
-  ProtocolLink:
-    title: Protocol Link
-    required: false
-    description: URL to a free/open protocol resource describing the assay protocol (e.g. surface markers used in Smart-seq, dissociation duration, lot/batch numbers for key reagents such as primers, sequencing reagent kits, etc.) or the protocol by which the sample was obtained or generated.
-    annotations:
-      
-  RelativewithCancerHistory:
-    title: Relative with Cancer History
-    required: false
-    description: The yes/no/unknown indicator used to describe whether any of the patient's relatives have a history of cancer.
-    annotations:
-      
-    range: RelativewithCancerHistoryEnum
-  PrecancerousConditionType:
-    title: Precancerous Condition Type
-    required: false
-    description: The classification of pre-cancerous cells found in a specific collection of data being studied by the Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions (MCL).
-    annotations:
-      
-    range: PrecancerousConditionTypeEnum
-  CellBarcodeOffset:
-    title: Cell Barcode Offset
-    required: false
-    description: 'Offset in sequence for cell barcode read (in bp): number'
-    annotations:
-      
-  UMIBarcodeLength:
-    title: UMI Barcode Length
-    required: false
-    description: 'Length of UMI barcode read (in bp): number'
-    annotations:
-      
-  IschemicTime:
-    title: Ischemic Time
-    required: false
-    description: Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. Integer value.
-    annotations:
-      
-  ProgressionorRecurrenceType:
-    title: Progression or Recurrence Type
-    required: false
-    description: TBD
-    annotations:
-      
-  AlcoholType:
-    title: Alcohol Type
-    required: false
-    description: Type of alcohol use
-    annotations:
-      
-    range: AlcoholTypeEnum
-  MismatchRepairMutation:
-    title: Mismatch Repair Mutation
-    required: false
-    description: 'The yes/no/unknown indicator used to describe whether the mutation included in molecular testing was known to have an affect on the mismatch repair process. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: IndicatorEnum
-  Filename:
-    title: Filename
-    required: false
-    description: TBD
-    annotations:
-      
-  CountryofBirth:
-    title: Country of Birth
-    required: false
-    description: TBD
-    annotations:
-      
-  LibraryConstructionMethod:
-    title: Library Construction Method
-    required: false
-    description: Process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors [OBI_0000711]
-    annotations:
-      
-    range: LibraryConstructionMethodEnum
-  OtherBiopsyResectionSite:
-    title: Other Biopsy Resection Site
-    required: false
-    description: A description of the location on or within the human body where the surgical biopsy/resection procedure was performed (Not covered under  Clinical Data Tier 1)
-    annotations:
-      
-  MedianPassingReadPercentage:
-    title: Median Passing Read Percentage
-    required: false
-    description: Non-PCR duplicate nuclear genomic sequence reads not aligning to unanchored contigs out of total reads assigned to the nucleus barcode
-    annotations:
-      
-  ReadIndicator:
-    title: Read Indicator
-    required: false
-    description: TBD
-    annotations:
-      
-  InvasiveLobularBreastCarcinomaHistologicCategory:
-    title: Invasive Lobular Breast Carcinoma Histologic Category
-    required: false
-    description: The histologic subtype for an infiltrating lobular carcinoma of the breast.
-    annotations:
-      
-    range: InvasiveLobularBreastCarcinomaHistologicCategoryEnum
-  TumorExtranodalExtensionIndicator:
-    title: Tumor Extranodal Extension Indicator
-    required: false
-    description: The indicator to determine extranodal involvement or extent of the disease.
-    annotations:
-      
-    range: TumorExtranodalExtensionIndicatorEnum
-  Comment:
-    title: Comment
-    required: false
-    description: Free text field (generally for QC comment)
-    annotations:
-      
-  BreastQuadrantSite:
-    title: Breast Quadrant Site
-    required: false
-    description: The breast quadrant or structure from which the breast tissue specimen was removed for microscopic examination.
-    annotations:
-      
-    range: BreastQuadrantSiteEnum
-  LinkedDatasets:
-    title: Linked Datasets
-    required: false
-    description: TBD
-    annotations:
-      
-  BreastCarcinomaHER2Chromosome17Ratio:
-    title: Breast Carcinoma HER2 Chromosome17 Ratio
-    required: false
-    description: HER2 chromosome 17 ratio in participants with breast cancer
-    annotations:
-      
-  PhysicalSizeY:
-    title: PhysicalSizeY
-    required: false
-    description: Physical size (Y-dimension) of a pixel. Units are set by PhysicalSizeYUnit. Floating point value > 0.
-    annotations:
-      
-  MetalIsotopeMass:
-    title: Metal Isotope Mass
-    required: false
-    description: TBD
-    annotations:
-      
-  BiospecimenDimension2:
-    title: Biospecimen Dimension 2
-    required: false
-    description: Second dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
-    annotations:
-      
-  MedianFractionofReadsinPeaks:
-    title: Median Fraction of Reads in Peaks
-    required: false
-    description: Median fraction of reads in peaks (FRIP)
-    annotations:
-      
-  VariantType:
-    title: Variant Type
-    required: false
-    description: The text term used to describe the type of genetic variation.
-    annotations:
-      
-    range: VariantTypeEnum
-  CigarettesperDay:
-    title: Cigarettes per Day
-    required: false
-    description: The average number of cigarettes smoked per day.
-    annotations:
-      
-  CellBarcodeTag:
-    title: Cell Barcode Tag
-    required: false
-    description: TBD
-    annotations:
-      
-  DaystoProgressionFree:
-    title: Days to Progression Free
-    required: false
-    description: Number of days between the date used for index and the date the patient's disease was formally confirmed as progression-free.
-    annotations:
-      
-  MultifocalBreastCarcinomaPresentIndicator:
-    title: Multifocal Breast Carcinoma Present Indicator
-    required: false
-    description: A response to indicate if there is breast cancer characterized by the presence of multiple cancerous tumors that originate from the same clone and usually located in the same quadrant of the breast.
-    annotations:
-      
-    range: IndicatorEnum
-  BiospecimenID:
-    title: Biospecimen ID
-    required: false
-    description: ' Alias for Sample ID'
-    annotations:
-      
-  BloodTestNormalRangeLower:
-    title: Blood Test Normal Range Lower
-    required: false
-    description: Numeric value used to describe the lower limit of the normal range used to describe a healthy individual at the institution where the test was completed.
-    annotations:
-      
-  RuralvsUrban:
-    title: Rural vs Urban
-    required: false
-    description: TBD
-    annotations:
-      
-  MulticentricBreastCarcinomaPresentIndicator:
-    title: Multicentric Breast Carcinoma Present Indicator
-    required: false
-    description: A response to indicate if there is breast cancer characterized by the presence of multiple cancerous tumors that originate from different clones and usually located in different quadrants of the breast.
-    annotations:
-      
-    range: IndicatorEnum
-  UMITag:
-    title: UMI Tag
-    required: false
-    description: TBD
-    annotations:
-      
-  CellBarcodeLength:
-    title: Cell Barcode Length
-    required: false
-    description: 'Length of cell barcode read (in bp): number'
-    annotations:
-      
-  ClassBRCA1:
-    title: Class BRCA1
-    required: false
-    description: TBD
-    annotations:
-      
-  SectionNumberinSequence:
-    title: Section Number in Sequence
-    required: false
-    description: Numeric value (integer, including ranges) provided to a sample in a series of sections (list all adjacent sections in the Adjacent Biospecimen IDs field)
-    annotations:
-      
-  SampleCollectionCenter:
-    title: Sample Collection Center
-    required: false
-    description: TBD
-    annotations:
-      
-  CopyNumber:
-    title: Copy Number
-    required: false
-    description: 'Numeric value used to describe the number of times a section of the genome is repeated or copied within an insertion, duplication or deletion variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  SectioningDaysfromIndex:
-    title: Sectioning Days from Index
-    required: false
-    description: Number of days from the research participant's index date that the biospecimen was sectioned after collection
-    annotations:
-      
-  Immersion:
-    title: Immersion
-    required: false
-    description: Immersion medium
-    annotations:
-      
-    range: ImmersionEnum
-  ScATACseqRead1:
-    title: scATACseq Read1
-    required: false
-    description: Read 1 content description
-    annotations:
-      
-    range: ReadEnum
-  Pyramid:
-    title: Pyramid
-    required: false
-    description: Does data file contain pyramid of images
-    annotations:
-      
-    range: PyramidEnum
-  SampleSite:
-    title: Sample Site
-    required: false
-    description: TBD
-    annotations:
-      
-  MismatchRepairSystemStatus:
-    title: Mismatch Repair System Status
-    required: false
-    description: The text that best describes the condition or state of MMR (mismatch repair system) in the patient
-    annotations:
-      
-    range: MismatchRepairSystemStatusEnum
-  Tseries:
-    title: Tseries
-    required: false
-    description: Does data file contain a time-series of images
-    annotations:
-      
-    range: TseriesEnum
-  Component:
-    title: Component
-    required: false
-    description: TBD
-    annotations:
-      
-  RelativeswithCancerHistoryCount:
-    title: Relatives with Cancer History Count
-    required: false
-    description: The number of relatives the patient has with a known history of cancer.
-    annotations:
-      
-  AlcoholDrinksPerDay:
-    title: Alcohol Drinks Per Day
-    required: false
-    description: Numeric value used to describe the average number of alcoholic beverages a person consumes per day.
-    annotations:
-      
-  EndBias:
-    title: End Bias
-    required: false
-    description: The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag/end or the full length transcript
-    annotations:
-      
-    range: EndBiasEnum
-  SatelliteMetastasisPresentIndicator:
-    title: Satellite Metastasis Present Indicator
-    required: false
-    description: A yes/no indicator to ask if intransit metastases or satellite lesions are present.
-    annotations:
-      
-    range: SatelliteMetastasisPresentIndicatorEnum
-  ParentBiospecimenID:
-    title: Parent Biospecimen ID
-    required: false
-    description: ' Biospecimen identifier indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated'
-    annotations:
-      
-  AlcoholUse:
-    title: Alcohol Use
-    required: false
-    description: TBD
-    annotations:
-      
-  NucleusIdentifier:
-    title: Nucleus Identifier
-    required: false
-    description: Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from
-    annotations:
-      
-    range: NucleusIdentifierEnum
-  Title:
-    title: Title
-    required: false
-    description: TBD
-    annotations:
-      
-  ClinicalBiospecimenType:
-    title: Clinical Biospecimen Type
-    required: false
-    description: 'The text term used to describe the biological material used for testing, diagnostic, treatment or research purposes. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: ClinicalBiospecimenTypeEnum
-  Antigen:
-    title: Antigen
-    required: false
-    description: 'The text term used to describe an antigen included in molecular testing. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: AntigenEnum
-  OncotypeRiskGroup:
-    title: Oncotype Risk Group
-    required: false
-    description: Text term that represents the risk group for breast cancer as determined by assessment of the Oncotype recurrence score.
-    annotations:
-      
-    range: OncotypeRiskGroupEnum
-  ModeofCancerDetection:
-    title: Mode of Cancer Detection
-    required: false
-    description: Text term used to describe the mode of cancer detection, like standard of care screening or random detection
-    annotations:
-      
-    range: ModeofCancerDetectionEnum
-  RelationshipType:
-    title: Relationship Type
-    required: false
-    description: The subgroup that describes the state of connectedness between members of the unit of society organized around kinship ties.
-    annotations:
-      
-  FeatureReferenceId:
-    title: Feature Reference Id
-    required: false
-    description: Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref]
-    annotations:
-      
-  RelationshipAgeatDiagnosis:
-    title: Relationship Age at Diagnosis
-    required: false
-    description: The age (in years) when the patient's relative was first diagnosed.
-    annotations:
-      
-  SmokingExposure:
-    title: Smoking Exposure
-    required: false
-    description: Indicate if individual has smoking exposure
-    annotations:
-      
-    range: SmokingExposureEnum
-  TestResult:
-    title: Test Result
-    required: false
-    description: 'The text term used to describe the result of the molecular test. If the test result was a numeric value see test_value. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: TestResultEnum
-  MedianFractionofReadsinAnnotatedcisDNAElements:
-    title: Median Fraction of Reads in Annotated cis DNA Elements
-    required: false
-    description: Median fraction of reads in annotated cis-DNA elements (FRIADE)
-    annotations:
-      
-  Zygosity:
-    title: Zygosity
-    required: false
-    description: The text term used to describe the zygosity of a specific genetic variant.
-    annotations:
-      
-    range: ZygosityEnum
-  BreastImagingPerformedType:
-    title: Breast Imaging Performed Type
-    required: false
-    description: The kind of technology or method performed for screening, diagnosis, surgical procedures or therapy that aids in the visualization of the breast(s).
-    annotations:
-      
-    range: BreastImagingPerformedTypeEnum
-  PackYearsSmoked:
-    title: Pack Years Smoked
-    required: false
-    description: Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.
-    annotations:
-      
-  TobaccoUseperDay:
-    title: Tobacco Use per Day
-    required: false
-    description: Numeric value that represents the number of times the patient uses tobacco each day.
-    annotations:
-      
-  TechnicalReplicateGroup:
-    title: Technical Replicate Group
-    required: false
-    description: A common term for all files belonging to the same cell or library. Provide a numbering of each library prep batch (can differ from encapsulation and sequencing batch)
-    annotations:
-      
-  Dilution:
-    title: Dilution
-    required: false
-    description: TBD
-    annotations:
-      
-  FOVY:
-    title: FOVY
-    required: false
-    description: Field  of view Y dimension. Floating point value
-    annotations:
-      
-  PRStainingIntensity:
-    title: Breast Carcinoma PR Staining Intensity
-    required: false
-    description: Text term to indicate the PR staining intensity on pathology assessment in a participant with breast cancer
-    annotations:
-      
-    range: StainingIntensityEnum
-  SiteofResectionorBiopsy:
-    title: Site of Resection or Biopsy
-    required: false
-    description: The text term used to describe the anatomic site of origin, of the patient's malignant disease, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
-    annotations:
-      
-    range: SiteofResectionorBiopsyEnum
-  Clonality:
-    title: Clonality
-    required: false
-    description: 'The text term used to describe whether a genomic variant is related by descent from a single progenitor cell. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: ClonalityEnum
-  Sex:
-    title: Sex
-    required: true
-    description: Sex of individual
-    annotations:
-      
-    range: SexEnum
-  YearOfBirth:
-    title: Year Of Birth
-    required: false
-    description: Numeric value to represent the calendar year in which an individual was born.
-    annotations:
-      
-  FOVXUnit:
-    title: FOVXUnit
-    required: false
-    description: 'Field of view X dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
-  Pathogenicity:
-    title: Pathogenicity
-    required: false
-    description: The text used to describe a variant's level of involvement in the cause of the patient's disease according to the standards outlined by the American College of Medical Genetics and Genomics (ACMG).
-    annotations:
-      
-    range: PathogenicityEnum
-  SmokelessTobaccoQuitAge:
-    title: Smokeless Tobacco Quit Age
-    required: false
-    description: TBD
-    annotations:
-      
-  PixelsBigEndian:
-    title: Pixels BigEndian
-    required: false
-    description: Boolean (True/False)
-    annotations:
-      
-    range: PixelsBigEndianEnum
-  BreastCarcinomaDetectionMethodType:
-    title: Breast Carcinoma Detection Method Type
-    required: false
-    description: The means, manner of procedure, or systematic course of actions performed in order to discover or identify breast cancer.
-    annotations:
-      
-    range: BreastCarcinomaDetectionMethodTypeEnum
-  SizeZ:
-    title: SizeZ
-    required: false
-    description: 'Size of image: Z dimension (in pixels). Integer >= 1'
-    annotations:
-      
-  COVID19AntibodyTesting:
-    title: COVID19 Antibody Testing
-    required: false
-    description: TBD
-    annotations:
-      
-  BMI:
-    title: BMI
-    required: false
-    description: TBD
-    annotations:
-      
-  EmptyWellBarcode:
-    title: Empty Well Barcode
-    required: false
-    description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.
-    annotations:
-      
-  BreastCarcinomaHER2RatioDiagnosis:
-    title: Breast Carcinoma HER2 Ratio Diagnosis
-    required: false
-    description: HER2 ratio of the participant at diagnosis
-    annotations:
-      
-  TimebetweenWakingandFirstSmoke:
-    title: Time between Waking and First Smoke
-    required: false
-    description: TBD
-    annotations:
-      
-  MedianPercentageofMitochondrialReadsperNucleus:
-    title: Median Percentage of Mitochondrial Reads per Nucleus
-    required: false
-    description: Contamination from mitochondrial sequences
-    annotations:
-      
-  PhysicalSizeZ:
-    title: PhysicalSizeZ
-    required: false
-    description: Physical size (Z-dimension) of a pixel. Units are set by PhysicalSizeZUnit. Floating point value > 0.
-    annotations:
-      
-  CountryofResidence:
-    title: Country of Residence
-    required: false
-    description: Country of Residence at enrollment
-    annotations:
-      
-    range: CountryofResidenceEnum
-  BreastCancerAssessmentTests:
-    title: Breast Cancer Assessment Tests
-    required: false
-    description: Text term to identify assessment tests done in participants during diagnosis
-    annotations:
-      
-    range: BreastCancerAssessmentTestsEnum
-  EmissionBandwidth:
-    title: Emission Bandwidth
-    required: false
-    description: TBD
-    annotations:
-      
-  MatrixType:
-    title: Matrix Type
-    required: false
-    description: TBD
-    annotations:
-      
-  SpikeIn:
-    title: Spike In
-    required: false
-    description: A set of known synthetic RNA molecules with known sequence that are added to the cell lysis mix
-    annotations:
-      
-    range: SpikeInEnum
-  TypeofTobaccoUsed:
-    title: Type of Tobacco Used
-    required: false
-    description: TBD
-    annotations:
-      
-  HistologicMorphologyCode:
-    title: Histologic Morphology Code
-    required: false
-    description: 'Histologic Morphology Code, based on ICD-O-3. Any valid ICD-O-3 morphology code. See https://seer.cancer.gov/icd-o-3/ and https://seer.cancer.gov/icd-o-3/sitetype.icdo3.20200629.xlsx. Examples: 80510'
-    annotations:
-      
-  PhysicalSizeX:
-    title: PhysicalSizeX
-    required: false
-    description: Physical size (X-dimension) of a pixel. Units are set by PhysicalSizeXUnit. Floating point value > 0.
-    annotations:
-      
-  Ecigvape30dayusenum:
-    title: Ecig vape 30 day use num
-    required: false
-    description: TBD
-    annotations:
-      
-  CauseofDeathSource:
-    title: Cause of Death Source
-    required: false
-    description: TBD
-    annotations:
-      
-  YearofDeath:
-    title: Year of Death
-    required: false
-    description: Numeric value to represent the year of the death of an individual.
-    annotations:
-      
-  LinkedProject:
-    title: Linked Project
-    required: false
-    description: TBD
-    annotations:
-      
-  CancerIncidence:
-    title: Cancer Incidence
-    required: false
-    description: TBD
-    annotations:
-      
   BreastCancerAllredEstrogenReceptorScore:
     title: Breast Cancer Allred Estrogen Receptor Score
     required: false
     description: The numeric Allred score, that is cell staining percentage plus intensity, to determine estrogen receptor status.
     annotations:
-      
     range: BreastCancerAllredEstrogenReceptorScoreEnum
-  FOVX:
-    title: FOVX
+  BreastCancerAssessmentTests:
+    title: Breast Cancer Assessment Tests
     required: false
-    description: Field of view X dimension. Floating point
+    description: Text term to identify assessment tests done in participants during diagnosis
     annotations:
-      
-  HormoneTherapyBreastCancerPreventionIndicator:
-    title: Hormone Therapy Breast Cancer Prevention Indicator
+    range: BreastCancerAssessmentTestsEnum
+  BreastCancerGenomicTestPerformed:
+    title: Breast Cancer Genomic Test Performed
     required: false
-    description: Did the patient receive hormonal therapy for prevention of breast cancer?
+    description: Text term that represents the name of the genomic test performed for breast cancer.
     annotations:
-      
-    range: HormoneTherapyBreastCancerPreventionIndicatorEnum
-  SequencingPlatform:
-    title: Sequencing Platform
-    required: false
-    description: A platform is an object aggregate that is the set of instruments and software needed to perform a process [OBI_0000050]. Specific model of the sequencing instrument.
-    annotations:
-      
-    range: SequencingPlatformEnum
-  SlideChargeType:
-    title: Slide Charge Type
-    required: false
-    description: A description of the charge on the glass slide.
-    annotations:
-      
-    range: SlideChargeTypeEnum
-  COVID19CancerTreatmentFollowup:
-    title: COVID19 Cancer Treatment Followup
-    required: false
-    description: TBD
-    annotations:
-      
-  ChannelName:
-    title: Channel Name
-    required: false
-    description: TBD
-    annotations:
-      
-  ConcomitantMedicationReceivedType:
-    title: Concomitant Medication Received Type
-    required: false
-    description: TBD
-    annotations:
-      
-  CellTotal:
-    title: Cell Total
-    required: false
-    description: Number of sequenced  cells. Applies to raw counts matrix only.
-    annotations:
-      
-  MolecularAnalysisMethod:
-    title: Molecular Analysis Method
-    required: false
-    description: 'The text term used to describe the method used for molecular analysis. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: MolecularAnalysisMethodEnum
-  ParticipantID:
-    title: Participant ID
-    required: true
-    description: ' ID associated with a patient'
-    annotations:
-      
-  COVID19CurrentStatus:
-    title: COVID19 Current Status
-    required: false
-    description: TBD
-    annotations:
-      
-  FrameAveraging:
-    title: Frame Averaging
-    required: false
-    description: Number of frames averaged together (if no averaging, set to 1). Integer >= 1
-    annotations:
-      
-  ChannelID:
-    title: Channel ID
-    required: false
-    description: TBD
-    annotations:
-      
-  Vendor:
-    title: Vendor
-    required: false
-    description: TBD
-    annotations:
-      
-  LociCount:
-    title: Loci Count
-    required: false
-    description: Numeric value used to describe the number of loci tested.
-    annotations:
-      
-  DaystoRecurrence:
-    title: Days to Recurrence
-    required: false
-    description: TBD
-    annotations:
-      
-  AcquisitionMethodOtherSpecify:
-    title: Acquisition Method Other Specify
-    required: false
-    description: A custom acquisition method [Text - max length 100 characters]
-    annotations:
-      
-  WellIndex:
-    title: Well Index
-    required: false
-    description: Indicate if protein expression (EPCAM/CD45) positive/negative data  is available for each cell in CEL-seq2 assays
-    annotations:
-      
-    range: WellIndexEnum
+    range: BreastCancerGenomicTestPerformedEnum
   BreastCarcinomaCentromere17CopyNumber:
     title: Breast Carcinoma Centromere 17 Copy Number
     required: false
     description: Result of Centromere 17 testing in a sample or specimen of metastatic breast carcinoma, expressed as a range of values.
     annotations:
-      
-  NominalMagnification:
-    title: NominalMagnification
+  BreastCarcinomaDetectionMethodType:
+    title: Breast Carcinoma Detection Method Type
     required: false
-    description: The magnification of the lens as specified by the manufacturer - i.e. '60' is a 60X lens. floating point value > 1(no units)
+    description: The means, manner of procedure, or systematic course of actions performed in order to discover or identify breast cancer.
     annotations:
-      
-  COVID19OccurrenceIndicator:
-    title: COVID19 Occurrence Indicator
+    range: BreastCarcinomaDetectionMethodTypeEnum
+  BreastCarcinomaERStatusPercentageValue:
+    title: Breast Carcinoma ER Status Percentage Value
     required: false
-    description: TBD
+    description: A numerical quantity measured or assigned or computed which captures the estrogen receptor level measured in a participant with breast cancer
     annotations:
-      
-  OvarianCancerHistologicSubtype:
-    title: Ovarian Cancer Histologic Subtype
-    required: false
-    description: Text term to describe the histological subtype of ovarian cancer in the participant
-    annotations:
-      
-    range: OvarianCancerHistologicSubtypeEnum
-  TotalVolume:
-    title: Total Volume
-    required: false
-    description: Numeric value for the total amount of sample or specimen
-    annotations:
-      
-  TumorTissueType:
-    title: Tumor Tissue Type
-    required: false
-    description: Text that describes the kind of disease present in the tumor specimen as related to a specific timepoint (add rows to select multiple values along with timepoints)
-    annotations:
-      
-    range: TumorTissueTypeEnum
-  CellMedianNumberGenes:
-    title: Cell Median Number Genes
-    required: false
-    description: Median number of genes detected per cell. Number
-    annotations:
-      
-  Lot:
-    title: Lot
-    required: false
-    description: TBD
-    annotations:
-      
-  COVID19ComplicationsSeverity:
-    title: COVID19 Complications Severity
-    required: false
-    description: TBD
-    annotations:
-      
-  ProgressionorRecurrenceAnatomicSite:
-    title: Progression or Recurrence Anatomic Site
-    required: false
-    description: TBD
-    annotations:
-      
-  EmissionWavelength:
-    title: Emission Wavelength
-    required: false
-    description: TBD
-    annotations:
-      
-  ImageID:
-    title: Image ID
-    required: false
-    description: Unique internal image identifier. eg ""Image:0"". (To be extracted from OME-XML)
-    annotations:
-      
-  SingleNucleusBuffer:
-    title: Single Nucleus Buffer
-    required: false
-    description: Nuclei isolation buffer
-    annotations:
-      
-    range: SingleNucleusBufferEnum
-  LensNA:
-    title: LensNA
-    required: false
-    description: The numerical aperture of the lens. Floating point value > 0.
-    annotations:
-      
-  PhysicalSizeZUnit:
-    title: PhysicalSizeZUnit
-    required: false
-    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
-  HereditaryCancerPredispositionSyndrome:
-    title: Hereditary Cancer Predisposition Syndrome
-    required: false
-    description: History of presence of inherited genetic predisposition syndrome that confers heightened susceptibility to cancer in the patient.
-    annotations:
-      
-    range: HereditaryCancerPredispositionSyndromeEnum
-  PrimaryDiagnosis:
-    title: Primary Diagnosis
-    required: false
-    description: Text term used to describe the patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
-    annotations:
-      
-    range: PrimaryDiagnosisEnum
-  Gravidity:
-    title: Gravidity
-    required: false
-    description: Total number of pregnancies regardless of outcome
-    annotations:
-      
-  TotalNumberofPassingNuclei:
-    title: Total Number of Passing Nuclei
-    required: false
-    description: Number of nuclei sequenced
-    annotations:
-      
-  Objective:
-    title: Objective
-    required: false
-    description: Objective
-    annotations:
-      
-  VascularInvasionType:
-    title: Vascular Invasion Type
-    required: false
-    description: Text term that represents the type of vascular tumor invasion.
-    annotations:
-      
-    range: VascularInvasionTypeEnum
-  AntibodyName:
-    title: Antibody Name
-    required: false
-    description: TBD
-    annotations:
-      
-  TestValue:
-    title: Test Value
-    required: false
-    description: 'The text term or numeric value used to describe a specific result of a molecular test. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here'
-    annotations:
-      
-  Concentration:
-    title: Concentration
-    required: false
-    description: TBD
-    annotations:
-      
-  PRStatus:
-    title: PR Status
-    required: false
-    description: TBD
-    annotations:
-      
-  IschemicTemperature:
-    title: Ischemic Temperature
-    required: false
-    description: Specify whether specimen experienced warm or cold ischemia.
-    annotations:
-      
-    range: IschemicTemperatureEnum
-  Microscope:
-    title: Microscope
-    required: false
-    description: Microscope type (manufacturer, model, etc) used for this experiment
-    annotations:
-      
-  TranspositionReaction:
-    title: Transposition Reaction
-    required: false
-    description: Name of the transposase, transposon sequences
-    annotations:
-      
-    range: TranspositionReactionEnum
-  MedicallyUnderservedArea:
-    title: Medically Underserved Area
-    required: false
-    description: TBD
-    annotations:
-      
-  DetailedSampleID:
-    title: Detailed Sample ID
-    required: false
-    description: ' Additional alternative ID associated with a biosample'
-    annotations:
-      
-  WorkflowLink:
-    title: Workflow Link
-    required: false
-    description: TBD
-    annotations:
-      
-  ScATACseqRead2:
-    title: scATACseq Read2
-    required: false
-    description: Read 2 content description
-    annotations:
-      
-    range: ReadEnum
-  HER2Status:
-    title: HER2 Status
-    required: false
-    description: TBD
-    annotations:
-      
-  PassedQC:
-    title: Passed QC
-    required: false
-    description: Did all channels pass QC (if not add free text Comment)
-    annotations:
-      
-    range: PassedQCEnum
-  AgeAtMenarche:
-    title: Age At Menarche
-    required: false
-    description: TBD
-    annotations:
-      
-  ScRNAseqWorkflowType:
-    title: scRNAseq Workflow Type
-    required: false
-    description: TBD
-    annotations:
-      
-  InvasiveDuctalBreastCarcinomaHistologicCategory:
-    title: Invasive Ductal Breast Carcinoma Histologic Category
-    required: false
-    description: The histologic subtype for the most common type of invasive breast carcinoma.
-    annotations:
-      
-    range: InvasiveDuctalBreastCarcinomaHistologicCategoryEnum
-  TestAnalyteType:
-    title: Test Analyte Type
-    required: false
-    description: 'The text term used to describe the type of analyte used for molecular testing. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-    range: TestAnalyteTypeEnum
-  DataCategory:
-    title: Data Category
-    required: false
-    description: TBD
-    annotations:
-      
-  Ethnicity:
-    title: Ethnicity
-    required: true
-    description: An individual's self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.
-    annotations:
-      
-    range: EthnicityEnum
-  WorkingDistance:
-    title: WorkingDistance
-    required: false
-    description: The working distance of the lens, expressed as a floating point number. Floating point > 0.
-    annotations:
-      
-  FixationDuration:
-    title: Fixation Duration
-    required: false
-    description: The length of time, from beginning to end, required to process or preserve biospecimens in fixative (measured in minutes)
-    annotations:
-      
-  LaboratoryTest:
-    title: Laboratory Test
-    required: false
-    description: The text term used to describe the medical testing used to diagnose, treat or further understand a patient's disease.
-    annotations:
-      
-    range: LaboratoryTestEnum
-  LociAbnormalCount:
-    title: Loci Abnormal Count
-    required: false
-    description: Numeric value used to describe the number of loci determined to be abnormal.
-    annotations:
-      
-  CatalogNumber:
-    title: Catalog Number
-    required: false
-    description: TBD
-    annotations:
-      
-  ImagingAssayType:
-    title: Imaging Assay Type
-    required: false
-    description: Type of imaging assay
-    annotations:
-      
-    range: ImagingAssayTypeEnum
-  NucleiBarcodeRead:
-    title: Nuclei Barcode Read
-    required: false
-    description: Nuclei Barcode Read
-    annotations:
-      
-  OligoBarcodeUpperStrand:
-    title: Oligo Barcode Upper Strand
-    required: false
-    description: TBD
-    annotations:
-      
   BreastCarcinomaHER2Centromere17CopynumberTotal:
     title: Breast Carcinoma HER2 Centromere17 Copynumber Total
     required: false
     description: Number of Cells Counted for HER2 & Centromere 17 Copy Numbers in a participant with breast cancer
     annotations:
-      
-  BiospecimenType:
-    title: Biospecimen Type
+  BreastCarcinomaHER2Chromosome17Ratio:
+    title: Breast Carcinoma HER2 Chromosome17 Ratio
     required: false
-    description: Biospecimen Type
+    description: HER2 chromosome 17 ratio in participants with breast cancer
     annotations:
-      
-    range: BiospecimenTypeEnum
-  SmokeExposureDuration:
-    title: Smoke Exposure Duration
+  BreastCarcinomaHER2RatioDiagnosis:
+    title: Breast Carcinoma HER2 Ratio Diagnosis
     required: false
-    description: TBD
+    description: HER2 ratio of the participant at diagnosis
     annotations:
-      
-  MenstrualCyclePhase:
-    title: Menstrual Cycle Phase
+  BreastCarcinomaHER2Status:
+    title: Breast Carcinoma HER2 Status
     required: false
-    description: TBD
+    description: Text term to signify the result of the medical procedure that involves testing a sample of blood or tissue for HER2 in a participant with breast cancer
     annotations:
-      
-  ThresholdforMinimumPassingReads:
-    title: Threshold for Minimum Passing Reads
+    range: BreastCarcinomaHER2StatusEnum
+  BreastCarcinomaHistologyCategory:
+    title: Breast Carcinoma Histology Category
     required: false
-    description: Threshold for calling cells
+    description: Classification of the type of invasive breast carcinoma diagnosed based on histologic attributes.
     annotations:
-      
-  ShippingConditionType:
-    title: Shipping Condition Type
+    range: BreastCarcinomaHistologyCategoryEnum
+  BreastCarcinomaPRStatusPercentageValue:
+    title: Breast Carcinoma PR Status Percentage Value
     required: false
-    description: Text descriptor of the shipping environment of a biospecimen.
+    description: A numerical quantity measured or assigned or computed which captures the progesterone receptor level measured in a participant with breast cancer
     annotations:
-      
-    range: ShippingConditionTypeEnum
-  AntibioticUse:
-    title: Antibiotic Use
+  BreastCarcinomaSurgicalProcedureName:
+    title: Breast Carcinoma Surgical Procedure Name
     required: false
-    description: Antibiotic use
+    description: Text name of a surgical procedure performed for a person with a diagnosis of breast cancer
     annotations:
-      
-    range: AntibioticUseEnum
-  ERStatus:
-    title: ER Status
+    range: BreastCarcinomaSurgicalProcedureNameEnum
+  BreastImagingPerformedType:
+    title: Breast Imaging Performed Type
     required: false
-    description: TBD
+    description: The kind of technology or method performed for screening, diagnosis, surgical procedures or therapy that aids in the visualization of the breast(s).
     annotations:
-      
-  MolecularConsequence:
-    title: Molecular Consequence
+    range: BreastImagingPerformedTypeEnum
+  BreastQuadrantSite:
+    title: Breast Quadrant Site
     required: false
-    description: 'The text term used to describe the molecular consequence of genetic variation. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    description: The breast quadrant or structure from which the breast tissue specimen was removed for microscopic examination.
     annotations:
-      
-    range: MolecularConsequenceEnum
-  SampleCollectionYear:
-    title: Sample Collection Year
+    range: BreastQuadrantSiteEnum
+  COVID19AntibodyTesting:
+    title: COVID19 Antibody Testing
     required: false
     description: TBD
     annotations:
-      
-  WorkingDistanceUnit:
-    title: WorkingDistanceUnit
-    required: false
-    description: 'The units of the working distance. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
-  PriorSitesofRadiation:
-    title: Prior Sites of Radiation
+  COVID19CancerTreatmentFollowup:
+    title: COVID19 Cancer Treatment Followup
     required: false
     description: TBD
     annotations:
-      
-  AlcoholHistory:
-    title: Alcohol History
-    required: false
-    description: A response to a question that asks whether the participant has consumed at least 12 drinks of any kind of alcoholic beverage in their lifetime.
-    annotations:
-      
-    range: HistoryEnum
-  AgeIsObfuscated:
-    title: Age Is Obfuscated
-    required: false
-    description: The age of the patient has been modified for compliance reasons. The actual age differs from what is reported. Other date intervals for this patient may also be modified.
-    annotations:
-      
-    range: AgeIsObfuscatedEnum
-  TargetName:
-    title: Target Name
+  COVID19ComplicationsSeverity:
+    title: COVID19 Complications Severity
     required: false
     description: TBD
     annotations:
-      
-  SecondExon:
-    title: Second Exon
-    required: false
-    description: The second exon number involved in molecular variation. If a specific genetic variant is being reported, this property can be used to capture the second exon where that variant is located. This property is typically used for a translocation where two different locations are involved in the variation.
-    annotations:
-      
-  HistoneFamily:
-    title: Histone Family
-    required: false
-    description: The text term used to describe the family, or classification of a group of basic proteins found in chromatin, called histones.
-    annotations:
-      
-    range: HistoneFamilyEnum
-  BloodTestNormalRangeUpper:
-    title: Blood Test Normal Range Upper
-    required: false
-    description: Numeric value used to describe the upper limit of the normal range used to describe a healthy individual at the institution where the test was completed.
-    annotations:
-      
-  ScATACseqLibraryLayout:
-    title: scATACseq Library Layout
-    required: false
-    description: Sequencing read type
-    annotations:
-      
-    range: ScATACseqLibraryLayoutEnum
-  Immunosuppression:
-    title: Immunosuppression
+  COVID19CurrentStatus:
+    title: COVID19 Current Status
     required: false
     description: TBD
     annotations:
-      
-  Authors:
-    title: Authors
+  COVID19OccurrenceIndicator:
+    title: COVID19 Occurrence Indicator
     required: false
     description: TBD
     annotations:
-      
-  OvarianCancerPlatinumStatus:
-    title: Ovarian Cancer Platinum Status
-    required: false
-    description: Text term to indicate the status of treatment with platinum in participant with ovarian cancer
-    annotations:
-      
-    range: OvarianCancerPlatinumStatusEnum
-  ScATACseqRead3:
-    title: scATACseq Read3
-    required: false
-    description: Read 3 content description
-    annotations:
-      
-    range: ReadEnum
-  AlcoholIntensity:
-    title: Alcohol Intensity
-    required: false
-    description: Category to describe the patient's current level of alcohol use as self-reported by the patient.
-    annotations:
-      
-    range: AlcoholIntensityEnum
-  Transcript:
-    title: Transcript
-    required: false
-    description: 'Alphanumeric value used to describe the transcript of a specific genetic variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  EducationLevel:
-    title: Education Level
+  COVID19PositiveLabTestIndicator:
+    title: COVID19 Positive Lab Test Indicator
     required: false
     description: TBD
     annotations:
-      
-  DimensionOrder:
-    title: DimensionOrder
-    required: false
-    description: The order in which the individual planes of data are interleaved.
-    annotations:
-      
-    range: DimensionOrderEnum
-  Parity:
-    title: Parity
-    required: false
-    description: Number of pregnancies carried over the threshold of viability
-    annotations:
-      
-  AlcoholDaysPerWeek:
-    title: Alcohol Days Per Week
-    required: false
-    description: Numeric value used to describe the average number of days each week that a person consumes an alcoholic beverage.
-    annotations:
-      
-  ERReceptorStatus:
-    title: Breast Carcinoma Estrogen Receptor Status
-    required: false
-    description: Text term to represent the overall result of Estrogen Receptor (ER) testing in a participant with breast cancer
-    annotations:
-      
-    range: ReceptorStatusEnum
-  AnalyteType:
-    title: Analyte Type
-    required: false
-    description: 'The kind of molecular specimen analyte: a molecular derivative (I.e. RNA / DNA / Protein Lysate) obtained from a specimen'
-    annotations:
-      
-    range: AnalyteTypeEnum
-  FOVYUnit:
-    title: FOVYUnit
-    required: false
-    description: 'Field of view Y dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
-  AgeatDiagnosis:
-    title: Age at Diagnosis
-    required: false
-    description: Age at the time of diagnosis expressed in number of days since birth.
-    annotations:
-      
-  Cytoband:
-    title: Cytoband
-    required: false
-    description: 'Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the cytoband where the variant is located. Format: [chromosome][chromosome arm].[band+sub-bands]. Example: 17p13.1. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  PeaksCallingSoftware:
-    title: Peaks Calling Software
-    required: false
-    description: TBD
-    annotations:
-      
-  SecondhandSmokeasChild:
-    title: Secondhand Smoke as Child
-    required: false
-    description: The text term used to indicate whether the patient was exposed to secondhand smoke as a child.
-    annotations:
-      
-    range: HistoryEnum
-  PhysicalSizeXUnit:
-    title: PhysicalSizeXUnit
-    required: false
-    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
-    annotations:
-      
-    range: MicroscopyUnitEnum
   CancerAssociatedGeneMutations:
     title: Cancer Associated Gene Mutations
     required: false
     description: Type of inherited germline or other gene mutations that confers heightened susceptibility to cancer identified in patient history
     annotations:
-      
     range: CancerAssociatedGeneMutationsEnum
-  FOVnumber:
-    title: FOV number
-    required: false
-    description: Index of FOV (as it pertains to its sequence order). Integer >= 1
-    annotations:
-      
-  ChannelMetadataFilename:
-    title: Channel Metadata Filename
-    required: false
-    description: Full path of uploaded companion CSV file containing channel-level metadata details
-    annotations:
-      
-  Secondhandsmokeexposureyears:
-    title: Second hand smoke exposure years
+  CancerIncidence:
+    title: Cancer Incidence
     required: false
     description: TBD
     annotations:
-      
-  CellMedianNumberReads:
-    title: Cell Median Number Reads
-    required: false
-    description: Median number of reads per cell. Number
-    annotations:
-      
-  Gender:
-    title: Gender
-    required: false
-    description: Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
-    annotations:
-      
-    range: SexEnum
-  WorkflowVersion:
-    title: Workflow Version
+  CancerIncidenceLocation:
+    title: Cancer Incidence Location
     required: false
     description: TBD
     annotations:
-      
-  MenopauseStatus:
-    title: Menopause Status
+  CatalogNumber:
+    title: Catalog Number
     required: false
     description: TBD
     annotations:
-      
-  SubCycleNumber:
-    title: Sub Cycle Number
+  CauseofDeath:
+    title: Cause of Death
+    required: false
+    description: The cause of death
+    annotations:
+    range: CauseofDeathEnum
+  CauseofDeathSource:
+    title: Cause of Death Source
     required: false
     description: TBD
     annotations:
-      
-  GenomicReferenceURL:
-    title: Genomic Reference URL
+  CellBarcodeLength:
+    title: Cell Barcode Length
+    required: false
+    description: 'Length of cell barcode read (in bp): number'
+    annotations:
+  CellBarcodeOffset:
+    title: Cell Barcode Offset
+    required: false
+    description: 'Offset in sequence for cell barcode read (in bp): number'
+    annotations:
+  CellBarcodeTag:
+    title: Cell Barcode Tag
     required: false
     description: TBD
     annotations:
-      
-  GenomicReference:
-    title: Genomic Reference
-    required: false
-    description: TBD
-    annotations:
-      
-  SizeY:
-    title: SizeY
-    required: false
-    description: 'Size of image: Y dimension (in pixels). Integer >= 1'
-    annotations:
-      
   CellCount:
     title: Cell Count
     required: false
     description: 'Numeric value used to describe the number of cells used for molecular testing. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
     annotations:
-      
-  AnaplasiaPresentType:
-    title: Anaplasia Present Type
+  CellMedianNumberGenes:
+    title: Cell Median Number Genes
     required: false
-    description: The text term used to describe the morphologic findings indicating the presence of a malignant cellular infiltrate characterized by the presence of large pleomorphic cells, necrosis, and high mitotic activity in a tissue sample.
+    description: Median number of genes detected per cell. Number
     annotations:
-      
-    range: AnaplasiaPresentTypeEnum
-  SampleID:
-    title: Sample ID
+  CellMedianNumberReads:
+    title: Cell Median Number Reads
     required: false
-    description: ' ID associated with a biosample'
+    description: Median number of reads per cell. Number
     annotations:
-      
+  CellTotal:
+    title: Cell Total
+    required: false
+    description: Number of sequenced  cells. Applies to raw counts matrix only.
+    annotations:
+  ChannelID:
+    title: Channel ID
+    required: false
+    description: TBD
+    annotations:
+  ChannelMetadataFilename:
+    title: Channel Metadata Filename
+    required: false
+    description: Full path of uploaded companion CSV file containing channel-level metadata details
+    annotations:
+  ChannelName:
+    title: Channel Name
+    required: false
+    description: TBD
+    annotations:
+  ChannelPassedQC:
+    title: Channel Passed QC
+    required: false
+    description: TBD
+    annotations:
+  Chewingtobaccodailyusecount:
+    title: Chewing tobacco daily use count
+    required: false
+    description: TBD
+    annotations:
+  Chromosome:
+    title: Chromosome
+    required: false
+    description: 'The text term used to describe a chromosome targeted or included in molecular testing. If a specific genetic variant is being reported, this property can be used to capture the chromosome where that variant is located. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: ChromosomeEnum
+  CigarettesperDay:
+    title: Cigarettes per Day
+    required: false
+    description: The average number of cigarettes smoked per day.
+    annotations:
+  ClassBRCA1:
+    title: Class BRCA1
+    required: false
+    description: TBD
+    annotations:
+  ClassBRCA2:
+    title: Class BRCA2
+    required: false
+    description: TBD
+    annotations:
+  ClinicalBiospecimenType:
+    title: Clinical Biospecimen Type
+    required: false
+    description: 'The text term used to describe the biological material used for testing, diagnostic, treatment or research purposes. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: ClinicalBiospecimenTypeEnum
+  Clonality:
+    title: Clonality
+    required: false
+    description: 'The text term used to describe whether a genomic variant is related by descent from a single progenitor cell. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: ClonalityEnum
+  Clone:
+    title: Clone
+    required: false
+    description: TBD
+    annotations:
+  Comment:
+    title: Comment
+    required: false
+    description: Free text field (generally for QC comment)
+    annotations:
+  Component:
+    title: Component
+    required: false
+    description: TBD
+    annotations:
+  Concentration:
+    title: Concentration
+    required: false
+    description: TBD
+    annotations:
+  ConcomitantMedicationReceivedType:
+    title: Concomitant Medication Received Type
+    required: false
+    description: TBD
+    annotations:
+  CopyNumber:
+    title: Copy Number
+    required: false
+    description: 'Numeric value used to describe the number of times a section of the genome is repeated or copied within an insertion, duplication or deletion variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  CountryofBirth:
+    title: Country of Birth
+    required: false
+    description: TBD
+    annotations:
+  CountryofResidence:
+    title: Country of Residence
+    required: false
+    description: Country of Residence at enrollment
+    annotations:
+    range: CountryofResidenceEnum
+  CryopreservedCellsinSample:
+    title: Cryopreserved Cells in Sample
+    required: true
+    description: Indicate if library preparation was based on revived frozen cells.
+    annotations:
+    range: CryopreservedCellsinSampleEnum
+  CycleNumber:
+    title: Cycle Number
+    required: false
+    description: TBD
+    annotations:
+  Cytoband:
+    title: Cytoband
+    required: false
+    description: 'Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the cytoband where the variant is located. Format: [chromosome][chromosome arm].[band+sub-bands]. Example: 17p13.1. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  DataCategory:
+    title: Data Category
+    required: false
+    description: TBD
+    annotations:
+  DaystoBirth:
+    title: Days to Birth
+    required: false
+    description: Number of days between the date used for index and the date from a person's date of birth represented as a calculated negative number of days.
+    annotations:
+  DaystoDeath:
+    title: Days to Death
+    required: false
+    description: Number of days between the date used for index and the date from a person's date of death represented as a calculated number of days.
+    annotations:
+  DaystoProgression:
+    title: Days to Progression
+    required: false
+    description: Number of days between the date used for index and the date the patient's disease progressed.
+    annotations:
+  DaystoProgressionFree:
+    title: Days to Progression Free
+    required: false
+    description: Number of days between the date used for index and the date the patient's disease was formally confirmed as progression-free.
+    annotations:
+  DaystoRecurrence:
+    title: Days to Recurrence
+    required: false
+    description: TBD
+    annotations:
+  DetailedSampleID:
+    title: Detailed Sample ID
+    required: false
+    description: ' Additional alternative ID associated with a biosample'
+    annotations:
+  DiagnosisStatusType:
+    title: Diagnosis Status Type
+    required: false
+    description: TBD
+    annotations:
+  Dilution:
+    title: Dilution
+    required: false
+    description: TBD
+    annotations:
+  DimensionOrder:
+    title: DimensionOrder
+    required: false
+    description: The order in which the individual planes of data are interleaved.
+    annotations:
+    range: DimensionOrderEnum
+  DimensionsUnit:
+    title: Dimensions Unit
+    required: false
+    description: Unit of measurement used for dimension CDEs in metric system (i.e. cm, mm, etc)
+    annotations:
+    range: DimensionsUnitEnum
+  DissociationMethod:
+    title: Dissociation Method
+    required: true
+    description: The tissue dissociation method used for scRNASeq or scATAC-seq assays
+    annotations:
+    range: DissociationMethodEnum
+  ERReceptorStatus:
+    title: Breast Carcinoma Estrogen Receptor Status
+    required: false
+    description: Text term to represent the overall result of Estrogen Receptor (ER) testing in a participant with breast cancer
+    annotations:
+    range: ReceptorStatusEnum
+  ERStainingIntensity:
+    title: Breast Carcinoma ER Staining Intensity
+    required: false
+    description: Text term to indicate the ER staining intensity on pathology assessment in a participant with breast cancer
+    annotations:
+    range: StainingIntensityEnum
+  ERStatus:
+    title: ER Status
+    required: false
+    description: TBD
+    annotations:
+  Ecigvape30dayusenum:
+    title: Ecig vape 30 day use num
+    required: false
+    description: TBD
+    annotations:
+  Ecigvapetimesperday:
+    title: Ecig vape times per day
+    required: false
+    description: TBD
+    annotations:
+  Ecigvapeuse:
+    title: Ecig vape use
+    required: false
+    description: TBD
+    annotations:
+  EducationLevel:
+    title: Education Level
+    required: false
+    description: TBD
+    annotations:
+  EmissionBandwidth:
+    title: Emission Bandwidth
+    required: false
+    description: TBD
+    annotations:
+  EmissionWavelength:
+    title: Emission Wavelength
+    required: false
+    description: TBD
+    annotations:
+  EmptyWellBarcode:
+    title: Empty Well Barcode
+    required: false
+    description: Unique cell barcode assigned to empty cells used as controls in CEL-seq2 assays.
+    annotations:
+  EndBias:
+    title: End Bias
+    required: false
+    description: The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag/end or the full length transcript
+    annotations:
+    range: EndBiasEnum
+  EnvironmentalTobaccoSmokeExposure:
+    title: Environmental Tobacco Smoke Exposure
+    required: false
+    description: The yes/no/unknown indicator used to describe whether a patient was exposed to smoke that is emitted from burning tobacco, including cigarettes, pipes, and cigars. This includes tobacco smoke exhaled by smokers.
+    annotations:
+    range: IndicatorEnum
+  Ethnicity:
+    title: Ethnicity
+    required: true
+    description: An individual's self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino. The provided values are based on the categories defined by the U.S. Office of Management and Business and used by the U.S. Census Bureau.
+    annotations:
+    range: EthnicityEnum
+  ExcitationBandwidth:
+    title: Excitation Bandwidth
+    required: false
+    description: TBD
+    annotations:
   ExcitationWavelength:
     title: Excitation Wavelength
     required: false
     description: TBD
     annotations:
-      
-  BIRADSMammographyBreastDensityCategory:
-    title: BIRADS Mammography Breast Density Category
+  Exon:
+    title: Exon
     required: false
-    description: The category that describes the relative amount of different tissues present in the breast on a mammogram based on the updated 2015 edition of the American College of Radiology's Breast Imaging Reporting and Data System (BI-RADS) reporting guidelines.
+    description: 'Exon number targeted or included in a molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the exon where that variant is located. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
     annotations:
-      
-    range: BIRADSMammographyBreastDensityCategoryEnum
-  Weight:
-    title: Weight
-    required: false
-    description: TBD
-    annotations:
-      
-  OvarianCancerSurgicalOutcome:
-    title: Ovarian Cancer Surgical Outcome
-    required: false
-    description: Text term that describes the kind of surgical treatment administered.
-    annotations:
-      
-    range: OvarianCancerSurgicalOutcomeEnum
-  RelationshipPrimaryDiagnosis:
-    title: Relationship Primary Diagnosis
-    required: false
-    description: The text term used to describe the malignant diagnosis of the patient's relative with a history of cancer.
-    annotations:
-      
-    range: RelationshipPrimaryDiagnosisEnum
-  AppliedHardTrimming:
-    title: Applied Hard Trimming
-    required: false
-    description: TBD
-    annotations:
-      
-  AAChange:
-    title: AA Change
-    required: false
-    description: 'Alphanumeric value used to describe the amino acid change for a specific genetic variant. Example: R116Q. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
-    annotations:
-      
-  NucleicAcidSource:
-    title: Nucleic Acid Source
-    required: false
-    description: The source of the input nucleic molecule
-    annotations:
-      
-    range: NucleicAcidSourceEnum
   ExtentofTumorResection:
     title: Extent of Tumor Resection
     required: false
     description: The degree to which the lesion has been cut out, or resected.
     annotations:
-      
     range: ExtentofTumorResectionEnum
-  TimepointLabel:
-    title: Timepoint Label
+  FOVX:
+    title: FOVX
     required: false
-    description: Label to identify the time point at which the clinical data or biospecimen was obtained (e.g. Baseline, End of Treatment, Overall survival, Final). NO PHI/PII INFORMATION IS ALLOWED.
+    description: Field of view X dimension. Floating point
     annotations:
-      
+  FOVXUnit:
+    title: FOVXUnit
+    required: false
+    description: 'Field of view X dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  FOVY:
+    title: FOVY
+    required: false
+    description: Field  of view Y dimension. Floating point value
+    annotations:
+  FOVYUnit:
+    title: FOVYUnit
+    required: false
+    description: 'Field of view Y dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  FOVnumber:
+    title: FOV number
+    required: false
+    description: Index of FOV (as it pertains to its sequence order). Integer >= 1
+    annotations:
+  FamilyMemberVitalStatusIndicator:
+    title: Family Member Vital Status Indicator
+    required: false
+    description: The response indicates whether the family member of the patient with a history of cancer is alive. (Extension to GDC attributes in Family History Tier 1)
+    annotations:
+    range: IndicatorEnum
+  FeatureReferenceId:
+    title: Feature Reference Id
+    required: false
+    description: Unique ID for this feature. Must not contain whitespace, quote or comma characters. Each ID must be unique and must not collide with a gene identifier from the transcriptome [https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/feature-bc-analysis#feature-ref]
+    annotations:
+  FileFormat:
+    title: File Format
+    required: false
+    description: Format of a file (e.g. txt, csv, fastq, bam, etc.)
+    annotations:
+    range: FileFormatEnum
+  Filename:
+    title: Filename
+    required: false
+    description: TBD
+    annotations:
+  FixationDuration:
+    title: Fixation Duration
+    required: false
+    description: The length of time, from beginning to end, required to process or preserve biospecimens in fixative (measured in minutes)
+    annotations:
+  Fluorophore:
+    title: Fluorophore
+    required: false
+    description: TBD
+    annotations:
+  FrameAveraging:
+    title: Frame Averaging
+    required: false
+    description: Number of frames averaged together (if no averaging, set to 1). Integer >= 1
+    annotations:
+  Gender:
+    title: Gender
+    required: false
+    description: Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]
+    annotations:
+    range: SexEnum
+  GeneSymbol:
+    title: Gene Symbol
+    required: false
+    description: 'The text term used to describe a gene targeted or included in molecular analysis. For rearrangements, this is should be used to represent the reference gene. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  GenomeAnnotationURL:
+    title: Genome Annotation URL
+    required: false
+    description: TBD
+    annotations:
+  GenomicCoverageType:
+    title: Genomic Coverage Type
+    required: true
+    description: Genomic coverage
+    enum_range:
+      - Whole Genome
+      - Targeted Genome
+      - Beadchip Array
+  GenomicReference:
+    title: Genomic Reference
+    required: false
+    description: TBD
+    annotations:
+  GenomicReferenceURL:
+    title: Genomic Reference URL
+    required: false
+    description: TBD
+    annotations:
+  Gravidity:
+    title: Gravidity
+    required: false
+    description: Total number of pregnancies regardless of outcome
+    annotations:
+  HER2BreastCarcinomaCopyNumberTotal:
+    title: HER2 Breast Carcinoma Copy Number Total
+    required: false
+    description: Result of HER2 Copy Number testing (in a participant with breast cancer), expressed as a range of values.
+    annotations:
+  HER2Status:
+    title: HER2 Status
+    required: false
+    description: TBD
+    annotations:
+  Height:
+    title: Height
+    required: false
+    description: TBD
+    annotations:
+  HereditaryCancerPredispositionSyndrome:
+    title: Hereditary Cancer Predisposition Syndrome
+    required: false
+    description: History of presence of inherited genetic predisposition syndrome that confers heightened susceptibility to cancer in the patient.
+    annotations:
+    range: HereditaryCancerPredispositionSyndromeEnum
+  HistologicMorphologyCode:
+    title: Histologic Morphology Code
+    required: false
+    description: 'Histologic Morphology Code, based on ICD-O-3. Any valid ICD-O-3 morphology code. See https://seer.cancer.gov/icd-o-3/ and https://seer.cancer.gov/icd-o-3/sitetype.icdo3.20200629.xlsx. Examples: 80510'
+    annotations:
+  HistoneFamily:
+    title: Histone Family
+    required: false
+    description: The text term used to describe the family, or classification of a group of basic proteins found in chromatin, called histones.
+    annotations:
+    range: HistoneFamilyEnum
+  HistoneVariant:
+    title: Histone Variant
+    required: false
+    description: The text term used to describe a specific histone variants, which are proteins that substitute for the core canonical histones.
+    annotations:
+    range: HistoneVariantEnum
+  HormoneTherapyBreastCancerPreventionIndicator:
+    title: Hormone Therapy Breast Cancer Prevention Indicator
+    required: false
+    description: Did the patient receive hormonal therapy for prevention of breast cancer?
+    annotations:
+    range: HormoneTherapyBreastCancerPreventionIndicatorEnum
+  ImageID:
+    title: Image ID
+    required: false
+    description: Unique internal image identifier. eg ""Image:0"". (To be extracted from OME-XML)
+    annotations:
+  ImagingAssayType:
+    title: Imaging Assay Type
+    required: false
+    description: Type of imaging assay
+    annotations:
+    range: ImagingAssayTypeEnum
+  Immersion:
+    title: Immersion
+    required: false
+    description: Immersion medium
+    annotations:
+    range: ImmersionEnum
+  Immunosuppression:
+    title: Immunosuppression
+    required: false
+    description: TBD
+    annotations:
+  InputCellsandNuclei:
+    title: Input Cells and Nuclei
+    required: false
+    description: 'Number of cells and number of nuclei input; entry format: number, number'
+    annotations:
+  Intron:
+    title: Intron
+    required: false
+    description: Intron number targeted or included in molecular analysis. If a specific genetic variant is being reported, this property can be used to capture the intron where that variant is located.
+    annotations:
+  InvasiveDuctalBreastCarcinomaHistologicCategory:
+    title: Invasive Ductal Breast Carcinoma Histologic Category
+    required: false
+    description: The histologic subtype for the most common type of invasive breast carcinoma.
+    annotations:
+    range: InvasiveDuctalBreastCarcinomaHistologicCategoryEnum
+  InvasiveLobularBreastCarcinomaHistologicCategory:
+    title: Invasive Lobular Breast Carcinoma Histologic Category
+    required: false
+    description: The histologic subtype for an infiltrating lobular carcinoma of the breast.
+    annotations:
+    range: InvasiveLobularBreastCarcinomaHistologicCategoryEnum
+  IschemicTemperature:
+    title: Ischemic Temperature
+    required: false
+    description: Specify whether specimen experienced warm or cold ischemia.
+    annotations:
+    range: IschemicTemperatureEnum
+  IschemicTime:
+    title: Ischemic Time
+    required: false
+    description: Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. Integer value.
+    annotations:
+  KnownGeneticPredispositionMutation:
+    title: Known Genetic Predisposition Mutation
+    required: false
+    description: A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient.
+    annotations:
+    range: IndicatorEnum
+  LabID:
+    title: Lab ID
+    required: false
+    description: TBD
+    annotations:
+  LabTestsforMMRStatus:
+    title: Lab Tests for MMR Status
+    required: false
+    description: Laboratory tests used to evaluate the status of mismatch repair pathways
+    annotations:
+    range: LabTestsforMMRStatusEnum
+  LaboratoryTest:
+    title: Laboratory Test
+    required: false
+    description: The text term used to describe the medical testing used to diagnose, treat or further understand a patient's disease.
+    annotations:
+    range: LaboratoryTestEnum
+  Laterality:
+    title: Sample Laterality
+    required: false
+    description: For samples in paired organs, designates the side from which obtained.
+    annotations:
+    range: SpecimenLateralityEnum
+  LensNA:
+    title: LensNA
+    required: false
+    description: The numerical aperture of the lens. Floating point value > 0.
+    annotations:
+  LibraryConstructionMethod:
+    title: Library Construction Method
+    required: true
+    description: Process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors [OBI_0000711]
+    annotations:
+    range: LibraryConstructionMethodEnum
+  LinkedDatasets:
+    title: Linked Datasets
+    required: false
+    description: TBD
+    annotations:
+  LinkedMatrices:
+    title: Linked Matrices
+    required: false
+    description: TBD
+    annotations:
+  LinkedProject:
+    title: Linked Project
+    required: false
+    description: TBD
+    annotations:
+  LociAbnormalCount:
+    title: Loci Abnormal Count
+    required: false
+    description: Numeric value used to describe the number of loci determined to be abnormal.
+    annotations:
+  LociCount:
+    title: Loci Count
+    required: false
+    description: Numeric value used to describe the number of loci tested.
+    annotations:
+  Locus:
+    title: Locus
+    required: false
+    description: 'Alphanumeric value used to describe the locus of a specific genetic variant. Example: NM_001126114.'
+    annotations:
+  Lot:
+    title: Lot
+    required: false
+    description: TBD
+    annotations:
+  MammaprintRiskGroup:
+    title: Mammaprint Risk Group
+    required: false
+    description: Text term that represents the risk group for breast cancer as determined by assessment of the MammaPrint test.
+    annotations:
+    range: OncotypeRiskGroupEnum
+  MatrixType:
+    title: Matrix Type
+    required: false
+    description: TBD
+    annotations:
+  MedianFractionofReadsinAnnotatedcisDNAElements:
+    title: Median Fraction of Reads in Annotated cis DNA Elements
+    required: false
+    description: Median fraction of reads in annotated cis-DNA elements (FRIADE)
+    annotations:
+  MedianFractionofReadsinPeaks:
+    title: Median Fraction of Reads in Peaks
+    required: false
+    description: Median fraction of reads in peaks (FRIP)
+    annotations:
+  MedianPassingReadPercentage:
+    title: Median Passing Read Percentage
+    required: false
+    description: Non-PCR duplicate nuclear genomic sequence reads not aligning to unanchored contigs out of total reads assigned to the nucleus barcode
+    annotations:
+  MedianPercentageofMitochondrialReadsperNucleus:
+    title: Median Percentage of Mitochondrial Reads per Nucleus
+    required: false
+    description: Contamination from mitochondrial sequences
+    annotations:
+  MedianUMIsperCellNumber:
+    title: Median UMIs per Cell Number
+    required: false
+    description: Number
+    annotations:
+  MedicallyUnderservedArea:
+    title: Medically Underserved Area
+    required: false
+    description: TBD
+    annotations:
+  MenopauseStatus:
+    title: Menopause Status
+    required: false
+    description: TBD
+    annotations:
+  MenstrualCyclePhase:
+    title: Menstrual Cycle Phase
+    required: false
+    description: TBD
+    annotations:
+  MetalIsotopeElement:
+    title: Metal Isotope Element
+    required: false
+    description: TBD
+    annotations:
+  MetalIsotopeMass:
+    title: Metal Isotope Mass
+    required: false
+    description: TBD
+    annotations:
+  Microscope:
+    title: Microscope
+    required: false
+    description: Microscope type (manufacturer, model, etc) used for this experiment
+    annotations:
+  MismatchRepairMutation:
+    title: Mismatch Repair Mutation
+    required: false
+    description: 'The yes/no/unknown indicator used to describe whether the mutation included in molecular testing was known to have an affect on the mismatch repair process. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: IndicatorEnum
+  MismatchRepairSystemStatus:
+    title: Mismatch Repair System Status
+    required: false
+    description: The text that best describes the condition or state of MMR (mismatch repair system) in the patient
+    annotations:
+    range: MismatchRepairSystemStatusEnum
+  ModeofCancerDetection:
+    title: Mode of Cancer Detection
+    required: false
+    description: Text term used to describe the mode of cancer detection, like standard of care screening or random detection
+    annotations:
+    range: ModeofCancerDetectionEnum
+  MolecularAnalysisMethod:
+    title: Molecular Analysis Method
+    required: false
+    description: 'The text term used to describe the method used for molecular analysis. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: MolecularAnalysisMethodEnum
+  MolecularConsequence:
+    title: Molecular Consequence
+    required: false
+    description: 'The text term used to describe the molecular consequence of genetic variation. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: MolecularConsequenceEnum
+  MulticentricBreastCarcinomaPresentIndicator:
+    title: Multicentric Breast Carcinoma Present Indicator
+    required: false
+    description: A response to indicate if there is breast cancer characterized by the presence of multiple cancerous tumors that originate from different clones and usually located in different quadrants of the breast.
+    annotations:
+    range: IndicatorEnum
+  MultifocalBreastCarcinomaPresentIndicator:
+    title: Multifocal Breast Carcinoma Present Indicator
+    required: false
+    description: A response to indicate if there is breast cancer characterized by the presence of multiple cancerous tumors that originate from the same clone and usually located in the same quadrant of the breast.
+    annotations:
+    range: IndicatorEnum
+  MutationalSignatures:
+    title: Mutational Signatures
+    required: false
+    description: 'Mutational signatures identified in the patient, includes signatures linked to selected exogenous carcinogens, endogenous and enzymatic modification of DNA or defective DNA repair. Note: Include only outputs of tests that were completed clinically for the participant and only include data from a diagnostic array that was completed prior to research sequencing was done. '
+    annotations:
+    range: MutationalSignaturesEnum
+  NominalMagnification:
+    title: NominalMagnification
+    required: false
+    description: The magnification of the lens as specified by the manufacturer - i.e. '60' is a 60X lens. floating point value > 1(no units)
+    annotations:
+  NucleiBarcodeLength:
+    title: Nuclei Barcode Length
+    required: false
+    description: Nuclei Barcode Length
+    annotations:
+  NucleiBarcodeRead:
+    title: Nuclei Barcode Read
+    required: false
+    description: Nuclei Barcode Read
+    annotations:
+  NucleicAcidSource:
+    title: Nucleic Acid Source
+    required: false
+    description: The source of the input nucleic molecule
+    annotations:
+    range: NucleicAcidSourceEnum
+  NucleusIdentifier:
+    title: Nucleus Identifier
+    required: false
+    description: Unique nuclei barcode; added at transposition step. Determines which nucleus the reads originated from
+    annotations:
+    range: NucleusIdentifierEnum
+  NumberofDrinksPerWeek:
+    title: Number of Drinks Per Week
+    required: false
+    description: TBD
+    annotations:
+  Objective:
+    title: Objective
+    required: false
+    description: Objective
+    annotations:
+  OligoBarcodeLowerStrand:
+    title: Oligo Barcode Lower Strand
+    required: false
+    description: TBD
+    annotations:
+  OligoBarcodeUpperStrand:
+    title: Oligo Barcode Upper Strand
+    required: false
+    description: TBD
+    annotations:
+  OncotypeRiskGroup:
+    title: Oncotype Risk Group
+    required: false
+    description: Text term that represents the risk group for breast cancer as determined by assessment of the Oncotype recurrence score.
+    annotations:
+    range: OncotypeRiskGroupEnum
+  OncotypeScore:
+    title: Oncotype Score
+    required: false
+    description: OncotypeDX recurrence score
+    annotations:
+  OtherBiopsyResectionSite:
+    title: Other Biopsy Resection Site
+    required: false
+    description: A description of the location on or within the human body where the surgical biopsy/resection procedure was performed (Not covered under  Clinical Data Tier 1)
+    annotations:
+  OvarianCancerHistologicSubtype:
+    title: Ovarian Cancer Histologic Subtype
+    required: false
+    description: Text term to describe the histological subtype of ovarian cancer in the participant
+    annotations:
+    range: OvarianCancerHistologicSubtypeEnum
+  OvarianCancerPlatinumStatus:
+    title: Ovarian Cancer Platinum Status
+    required: false
+    description: Text term to indicate the status of treatment with platinum in participant with ovarian cancer
+    annotations:
+    range: OvarianCancerPlatinumStatusEnum
+  OvarianCancerSurgicalOutcome:
+    title: Ovarian Cancer Surgical Outcome
+    required: false
+    description: Text term that describes the kind of surgical treatment administered.
+    annotations:
+    range: OvarianCancerSurgicalOutcomeEnum
+  PRReceptorStatus:
+    title: Breast Carcinoma Progesterone Receptor Status
+    required: false
+    description: Text term to represent the overall result of Progresterone Receptor (PR) testing in a participant with breast cancer
+    annotations:
+    range: ReceptorStatusEnum
+  PRStainingIntensity:
+    title: Breast Carcinoma PR Staining Intensity
+    required: false
+    description: Text term to indicate the PR staining intensity on pathology assessment in a participant with breast cancer
+    annotations:
+    range: StainingIntensityEnum
+  PRStatus:
+    title: PR Status
+    required: false
+    description: TBD
+    annotations:
+  PackYearsSmoked:
+    title: Pack Years Smoked
+    required: false
+    description: Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.
+    annotations:
+  ParentBiospecimenID:
+    title: Parent Biospecimen ID
+    required: false
+    description: ' Biospecimen identifier indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated'
+    annotations:
+  ParentID:
+    title: Parent ID
+    required: false
+    description: ' ID of parent biospecimen'
+    annotations:
+  Parity:
+    title: Parity
+    required: false
+    description: Number of pregnancies carried over the threshold of viability
+    annotations:
+  ParticipantID:
+    title: Participant ID
+    required: true
+    description: ' ID associated with a patient'
+    annotations:
+  PassedQC:
+    title: Passed QC
+    required: false
+    description: Did all channels pass QC (if not add free text Comment)
+    annotations:
+    range: PassedQCEnum
+  Pathogenicity:
+    title: Pathogenicity
+    required: false
+    description: The text used to describe a variant's level of involvement in the cause of the patient's disease according to the standards outlined by the American College of Medical Genetics and Genomics (ACMG).
+    annotations:
+    range: PathogenicityEnum
+  PeaksCallingSoftware:
+    title: Peaks Calling Software
+    required: false
+    description: TBD
+    annotations:
+  PhysicalSizeX:
+    title: PhysicalSizeX
+    required: false
+    description: Physical size (X-dimension) of a pixel. Units are set by PhysicalSizeXUnit. Floating point value > 0.
+    annotations:
+  PhysicalSizeXUnit:
+    title: PhysicalSizeXUnit
+    required: false
+    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  PhysicalSizeY:
+    title: PhysicalSizeY
+    required: false
+    description: Physical size (Y-dimension) of a pixel. Units are set by PhysicalSizeYUnit. Floating point value > 0.
+    annotations:
+  PhysicalSizeYUnit:
+    title: PhysicalSizeYUnit
+    required: false
+    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  PhysicalSizeZ:
+    title: PhysicalSizeZ
+    required: false
+    description: Physical size (Z-dimension) of a pixel. Units are set by PhysicalSizeZUnit. Floating point value > 0.
+    annotations:
+  PhysicalSizeZUnit:
+    title: PhysicalSizeZUnit
+    required: false
+    description: 'The units of the physical size of a pixel. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  PixelType:
+    title: PixelType
+    required: false
+    description: Data type for each pixel value. E.g. ""uint16""
+    annotations:
+    range: PixelTypeEnum
+  PixelsBigEndian:
+    title: Pixels BigEndian
+    required: false
+    description: Boolean (True/False)
+    annotations:
+    range: PixelsBigEndianEnum
+  PlaneCount:
+    title: PlaneCount
+    required: false
+    description: Number of Z-planes (not to be confused with downsampled ""pyramid""). Integer >=1
+    annotations:
   Ploidy:
     title: Ploidy
     required: false
     description: Text term used to describe the number of sets of homologous chromosomes.
     annotations:
-      
     range: PloidyEnum
   PortionWeight:
     title: Portion Weight
     required: false
     description: Numeric value that represents the sample portion weight, measured in milligrams.
     annotations:
-      
-  DaystoProgression:
-    title: Days to Progression
+  PrecancerousConditionType:
+    title: Precancerous Condition Type
     required: false
-    description: Number of days between the date used for index and the date the patient's disease progressed.
+    description: The classification of pre-cancerous cells found in a specific collection of data being studied by the Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions (MCL).
     annotations:
-      
+    range: PrecancerousConditionTypeEnum
+  PreservationMethod:
+    title: Preservation Method
+    required: false
+    description: Text term that represents the method used to preserve the sample.
+    annotations:
+    range: PreservationMethodEnum
+  PrimaryDiagnosis:
+    title: Primary Diagnosis
+    required: false
+    description: Text term used to describe the patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
+    annotations:
+    range: PrimaryDiagnosisEnum
+  PriorInvasiveBreastDisease:
+    title: Prior Invasive Breast Disease
+    required: false
+    description: Text term to indicate prior invasive breast condition in the participant
+    annotations:
+    range: PriorInvasiveBreastDiseaseEnum
+  PriorSitesofRadiation:
+    title: Prior Sites of Radiation
+    required: false
+    description: TBD
+    annotations:
+  ProgressionorRecurrenceAnatomicSite:
+    title: Progression or Recurrence Anatomic Site
+    required: false
+    description: TBD
+    annotations:
+  ProgressionorRecurrenceType:
+    title: Progression or Recurrence Type
+    required: false
+    description: TBD
+    annotations:
+  ProtocolLink:
+    title: Protocol Link
+    required: false
+    description: URL to a free/open protocol resource describing the assay protocol (e.g. surface markers used in Smart-seq, dissociation duration, lot/batch numbers for key reagents such as primers, sequencing reagent kits, etc.) or the protocol by which the sample was obtained or generated.
+    annotations:
+  PublicationDOI:
+    title: Publication DOI
+    required: false
+    description: TBD
+    annotations:
+  Pyramid:
+    title: Pyramid
+    required: false
+    description: Does data file contain pyramid of images
+    annotations:
+    range: PyramidEnum
   RRIDidentifier:
     title: RRID identifier
     required: false
     description: TBD
     annotations:
-      
-  ClassBRCA2:
-    title: Class BRCA2
-    required: false
-    description: TBD
-    annotations:
-      
-  WhitelistCellBarcodeFileLink:
-    title: Whitelist Cell Barcode File Link
-    required: false
-    description: TBD
-    annotations:
-      
-  StartDaysfromIndex:
-    title: Start Days from Index
-    required: false
-    description: Number of days from the date of birth (index date) to the date of an event (e.g. exposure to environmental factor, treatment start, etc.). If not applicable please enter 'Not Applicable'
-    annotations:
-      
-  Ecigvapetimesperday:
-    title: Ecig vape times per day
-    required: false
-    description: TBD
-    annotations:
-      
-  FamilyMemberVitalStatusIndicator:
-    title: Family Member Vital Status Indicator
-    required: false
-    description: The response indicates whether the family member of the patient with a history of cancer is alive. (Extension to GDC attributes in Family History Tier 1)
-    annotations:
-      
-    range: IndicatorEnum
-  SectionThicknessValue:
-    title: Section Thickness Value
-    required: false
-    description: Numeric value to describe the thickness of a slice to tissue taken from a biospecimen, measured in microns (um).
-    annotations:
-      
-  SoftwareandVersion:
-    title: Software and Version
-    required: false
-    description: TBD
-    annotations:
-      
-  KnownGeneticPredispositionMutation:
-    title: Known Genetic Predisposition Mutation
-    required: false
-    description: A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient.
-    annotations:
-      
-    range: IndicatorEnum
-  BiospecimenDimension1:
-    title: Biospecimen Dimension 1
-    required: false
-    description: First dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
-    annotations:
-      
-  NucleiBarcodeLength:
-    title: Nuclei Barcode Length
-    required: false
-    description: Nuclei Barcode Length
-    annotations:
-      
-  HER2BreastCarcinomaCopyNumberTotal:
-    title: HER2 Breast Carcinoma Copy Number Total
-    required: false
-    description: Result of HER2 Copy Number testing (in a participant with breast cancer), expressed as a range of values.
-    annotations:
-      
-  MammaprintRiskGroup:
-    title: Mammaprint Risk Group
-    required: false
-    description: Text term that represents the risk group for breast cancer as determined by assessment of the MammaPrint test.
-    annotations:
-      
-    range: OncotypeRiskGroupEnum
-  Height:
-    title: Height
-    required: false
-    description: TBD
-    annotations:
-      
   Race:
     title: Race
     required: true
     description: An arbitrary classification of a taxonomic group that is a division of a species. It usually arises as a consequence of geographical isolation withina a species and is characterized by shared heredity, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution.
     annotations:
-      
     range: RaceEnum
-  BiospecimenDimension3:
-    title: Biospecimen Dimension 3
-    required: false
-    description: Third dimension of tissue fragment (number, up to one decimal place) measured in units as defined by the ""dimensions_unit"" CDE
-    annotations:
-      
-  OncotypeScore:
-    title: Oncotype Score
-    required: false
-    description: OncotypeDX recurrence score
-    annotations:
-      
-  InputCellsandNuclei:
-    title: Input Cells and Nuclei
-    required: false
-    description: 'Number of cells and number of nuclei input; entry format: number, number'
-    annotations:
-      
-  Fluorophore:
-    title: Fluorophore
-    required: false
-    description: TBD
-    annotations:
-      
-  Typeofsmokeexposurecumulativeyears:
-    title: Type of smoke exposure cumulative years
-    required: false
-    description: TBD
-    annotations:
-      
-  Clone:
-    title: Clone
-    required: false
-    description: TBD
-    annotations:
-      
-  DiagnosisStatusType:
-    title: Diagnosis Status Type
-    required: false
-    description: TBD
-    annotations:
-      
-  Age:
-    title: Age
+  Read1:
+    title: Read1
     required: true
-    description: Age of individual
+    description: Read 1 content description
     annotations:
-      
+    range: ReadEnum
+  Read2:
+    title: Read2
+    required: true
+    description: Read 2 content description
+    annotations:
+    range: ReadEnum
+  ReadIndicator:
+    title: Read Indicator
+    required: false
+    description: TBD
+    annotations:
+  RelationshipAgeatDiagnosis:
+    title: Relationship Age at Diagnosis
+    required: false
+    description: The age (in years) when the patient's relative was first diagnosed.
+    annotations:
+  RelationshipGender:
+    title: Relationship Gender
+    required: false
+    description: The text term used to describe the gender of the patient's relative with a history of cancer.
+    annotations:
+    range: SexEnum
+  RelationshipPrimaryDiagnosis:
+    title: Relationship Primary Diagnosis
+    required: false
+    description: The text term used to describe the malignant diagnosis of the patient's relative with a history of cancer.
+    annotations:
+    range: RelationshipPrimaryDiagnosisEnum
+  RelationshipType:
+    title: Relationship Type
+    required: false
+    description: The subgroup that describes the state of connectedness between members of the unit of society organized around kinship ties.
+    annotations:
+  RelativeswithCancerHistoryCount:
+    title: Relatives with Cancer History Count
+    required: false
+    description: The number of relatives the patient has with a known history of cancer.
+    annotations:
+  RelativewithCancerHistory:
+    title: Relative with Cancer History
+    required: false
+    description: The yes/no/unknown indicator used to describe whether any of the patient's relatives have a history of cancer.
+    annotations:
+    range: RelativewithCancerHistoryEnum
+  ReverseTranscriptionPrimer:
+    title: Reverse Transcription Primer
+    required: false
+    description: An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA
+    annotations:
+    range: ReverseTranscriptionPrimerEnum
+  RuralvsUrban:
+    title: Rural vs Urban
+    required: false
+    description: TBD
+    annotations:
+  SampleCollectionCenter:
+    title: Sample Collection Center
+    required: false
+    description: TBD
+    annotations:
+  SampleCollectionYear:
+    title: Sample Collection Year
+    required: false
+    description: TBD
+    annotations:
+  SampleID:
+    title: Sample ID
+    required: true
+    description: ' ID associated with a biosample'
+    annotations:
+  SampleSite:
+    title: Sample Site
+    required: false
+    description: TBD
+    annotations:
+  SatelliteMetastasisPresentIndicator:
+    title: Satellite Metastasis Present Indicator
+    required: false
+    description: A yes/no indicator to ask if intransit metastases or satellite lesions are present.
+    annotations:
+    range: SatelliteMetastasisPresentIndicatorEnum
+  ScATACseqLibraryLayout:
+    title: scATACseq Library Layout
+    required: false
+    description: Sequencing read type
+    annotations:
+    range: ScATACseqLibraryLayoutEnum
+  ScATACseqRead1:
+    title: scATACseq Read1
+    required: false
+    description: Read 1 content description
+    annotations:
+    range: ReadEnum
+  ScATACseqRead2:
+    title: scATACseq Read2
+    required: false
+    description: Read 2 content description
+    annotations:
+    range: ReadEnum
+  ScATACseqRead3:
+    title: scATACseq Read3
+    required: false
+    description: Read 3 content description
+    annotations:
+    range: ReadEnum
+  ScRNAseqWorkflowParametersDescription:
+    title: scRNAseq Workflow Parameters Description
+    required: false
+    description: TBD
+    annotations:
+  ScRNAseqWorkflowType:
+    title: scRNAseq Workflow Type
+    required: false
+    description: TBD
+    annotations:
+  SecondExon:
+    title: Second Exon
+    required: false
+    description: The second exon number involved in molecular variation. If a specific genetic variant is being reported, this property can be used to capture the second exon where that variant is located. This property is typically used for a translocation where two different locations are involved in the variation.
+    annotations:
+  SecondGeneSymbol:
+    title: Second Gene Symbol
+    required: false
+    description: 'The text term used to describe a secondary gene targeted or included in molecular analysis. For rearrangements, this is should represent the location of the variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  SecondhandSmokeasChild:
+    title: Secondhand Smoke as Child
+    required: false
+    description: The text term used to indicate whether the patient was exposed to secondhand smoke as a child.
+    annotations:
+    range: HistoryEnum
+  Secondhandsmokeexposureyears:
+    title: Second hand smoke exposure years
+    required: false
+    description: TBD
+    annotations:
+  SectionNumberinSequence:
+    title: Section Number in Sequence
+    required: false
+    description: Numeric value (integer, including ranges) provided to a sample in a series of sections (list all adjacent sections in the Adjacent Biospecimen IDs field)
+    annotations:
+  SectionThicknessValue:
+    title: Section Thickness Value
+    required: false
+    description: Numeric value to describe the thickness of a slice to tissue taken from a biospecimen, measured in microns (um).
+    annotations:
+  SectioningDaysfromIndex:
+    title: Sectioning Days from Index
+    required: false
+    description: Number of days from the research participant's index date that the biospecimen was sectioned after collection
+    annotations:
+  SentinelLymphNodeCount:
+    title: Sentinel Lymph Node Count
+    required: false
+    description: Numeric count of sentinel lymph nodes.
+    annotations:
+  SentinelNodePositiveAssessmentCount:
+    title: Sentinel Node Positive Assessment Count
+    required: false
+    description: The number or amount of metastatic neoplasms related to the confirmed presence of disease or specific microorganisms during examination of the first rounded mass of lymphatic tissue to which cancer is likely to spread from the primary tumor.
+    annotations:
+  SequencingPlatform:
+    title: Sequencing Platform
+    required: true
+    description: A platform is an object aggregate that is the set of instruments and software needed to perform a process [OBI_0000050]. Specific model of the sequencing instrument.
+    annotations:
+    range: SequencingPlatformEnum
+  Sex:
+    title: Sex
+    required: true
+    description: Sex of individual
+    annotations:
+    range: SexEnum
+  ShippingConditionType:
+    title: Shipping Condition Type
+    required: false
+    description: Text descriptor of the shipping environment of a biospecimen.
+    annotations:
+    range: ShippingConditionTypeEnum
+  SingleCellIsolationMethod:
+    title: Single Cell Isolation Method
+    required: true
+    description: The method by which cells are isolated into individual reaction containers at a single cell resolution (e.g. wells, micro-droplets)
+    annotations:
+    range: SingleCellIsolationMethodEnum
+  SingleNucleusBuffer:
+    title: Single Nucleus Buffer
+    required: false
+    description: Nuclei isolation buffer
+    annotations:
+    range: SingleNucleusBufferEnum
+  SiteofResectionorBiopsy:
+    title: Site of Resection or Biopsy
+    required: false
+    description: The text term used to describe the anatomic site of origin, of the patient's malignant disease, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
+    annotations:
+    range: SiteofResectionorBiopsyEnum
+  SizeC:
+    title: SizeC
+    required: false
+    description: Number of channels. Integer >= 1
+    annotations:
+  SizeT:
+    title: SizeT
+    required: false
+    description: Number of time points. Integer >= 1
+    annotations:
+  SizeX:
+    title: SizeX
+    required: false
+    description: 'Size of image: X dimension (in pixels). Integer >= 1'
+    annotations:
+  SizeY:
+    title: SizeY
+    required: false
+    description: 'Size of image: Y dimension (in pixels). Integer >= 1'
+    annotations:
+  SizeZ:
+    title: SizeZ
+    required: false
+    description: 'Size of image: Z dimension (in pixels). Integer >= 1'
+    annotations:
+  SlideChargeType:
+    title: Slide Charge Type
+    required: false
+    description: A description of the charge on the glass slide.
+    annotations:
+    range: SlideChargeTypeEnum
+  SmokeExposureDuration:
+    title: Smoke Exposure Duration
+    required: false
+    description: TBD
+    annotations:
+  SmokelessTobaccoQuitAge:
+    title: Smokeless Tobacco Quit Age
+    required: false
+    description: TBD
+    annotations:
+  SmokingExposure:
+    title: Smoking Exposure
+    required: false
+    description: Indicate if individual has smoking exposure
+    annotations:
+    range: SmokingExposureEnum
+  SmokingFrequency:
+    title: Smoking Frequency
+    required: false
+    description: The text term used to generally decribe how often the patient smokes.
+    annotations:
+    range: SmokingFrequencyEnum
+  SoftwareandVersion:
+    title: Software and Version
+    required: false
+    description: TBD
+    annotations:
+  SpecializedMolecularTest:
+    title: Specialized Molecular Test
+    required: false
+    description: 'Text term used to describe a specific test that is not covered in the list of molecular analysis methods. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  SpecimenLaterality:
+    title: Specimen Laterality
+    required: false
+    description: For samples in paired organs, designates the side from which obtained.
+    annotations:
+    range: SpecimenLateralityEnum
+  SpikeIn:
+    title: Spike In
+    required: true
+    description: A set of known synthetic RNA molecules with known sequence that are added to the cell lysis mix
+    annotations:
+    range: SpikeInEnum
+  StartDaysfromIndex:
+    title: Start Days from Index
+    required: false
+    description: Number of days from the date of birth (index date) to the date of an event (e.g. exposure to environmental factor, treatment start, etc.). If not applicable please enter 'Not Applicable'
+    annotations:
+  StopDaysfromIndex:
+    title: Stop Days from Index
+    required: false
+    description: 'Number of days from the date of birth (index date) to the end date of the event (e.g. exposure to environmental factor, treatment start, etc.). Note: if the event occurs at a single time point, e.g. a diagnosis or a lab test, the values for this column is ''Not Applicable'''
+    annotations:
+  SubCycleNumber:
+    title: Sub Cycle Number
+    required: false
+    description: TBD
+    annotations:
+  TargetName:
+    title: Target Name
+    required: false
+    description: TBD
+    annotations:
+  TechnicalReplicateGroup:
+    title: Technical Replicate Group
+    required: false
+    description: A common term for all files belonging to the same cell or library. Provide a numbering of each library prep batch (can differ from encapsulation and sequencing batch)
+    annotations:
+  TestAnalyteType:
+    title: Test Analyte Type
+    required: false
+    description: 'The text term used to describe the type of analyte used for molecular testing. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: TestAnalyteTypeEnum
+  TestResult:
+    title: Test Result
+    required: false
+    description: 'The text term used to describe the result of the molecular test. If the test result was a numeric value see test_value. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: TestResultEnum
+  TestUnits:
+    title: Test Units
+    required: false
+    description: 'The text term used to describe the units of the test value for a molecular test. This property is used in conjunction with test_value. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  TestValue:
+    title: Test Value
+    required: false
+    description: 'The text term or numeric value used to describe a specific result of a molecular test. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here'
+    annotations:
+  ThresholdforMinimumPassingReads:
+    title: Threshold for Minimum Passing Reads
+    required: false
+    description: Threshold for calling cells
+    annotations:
+  TimebetweenWakingandFirstSmoke:
+    title: Time between Waking and First Smoke
+    required: false
+    description: TBD
+    annotations:
+  TimepointLabel:
+    title: Timepoint Label
+    required: false
+    description: Label to identify the time point at which the clinical data or biospecimen was obtained (e.g. Baseline, End of Treatment, Overall survival, Final). NO PHI/PII INFORMATION IS ALLOWED.
+    annotations:
+  Title:
+    title: Title
+    required: false
+    description: TBD
+    annotations:
+  TobaccoSmokingOnsetYear:
+    title: Tobacco Smoking Onset Year
+    required: false
+    description: TBD
+    annotations:
+  TobaccoSmokingQuitYear:
+    title: Tobacco Smoking Quit Year
+    required: false
+    description: TBD
+    annotations:
+  TobaccoSmokingStatus:
+    title: Tobacco Smoking Status
+    required: false
+    description: Category describing current smoking status and smoking history as self-reported by a patient
+    annotations:
+    range: TobaccoSmokingStatusEnum
   TobaccoUse:
     title: Tobacco Use
     required: false
     description: TBD
     annotations:
-      
+  TobaccoUseperDay:
+    title: Tobacco Use per Day
+    required: false
+    description: Numeric value that represents the number of times the patient uses tobacco each day.
+    annotations:
+  TotalNumberofInputCells:
+    title: Total Number of Input Cells
+    required: false
+    description: Number of cells loaded/placed on plates
+    annotations:
+  TotalNumberofPassingNuclei:
+    title: Total Number of Passing Nuclei
+    required: false
+    description: Number of nuclei sequenced
+    annotations:
+  TotalReads:
+    title: Total Reads
+    required: false
+    description: Total number of reads per sample. Integer
+    annotations:
+  TotalVolume:
+    title: Total Volume
+    required: false
+    description: Numeric value for the total amount of sample or specimen
+    annotations:
+  TotalVolumeUnit:
+    title: Total Volume Unit
+    required: false
+    description: Unit of measurement used for the total amount of sample or specimen
+    annotations:
+    range: TotalVolumeUnitEnum
+  Transcript:
+    title: Transcript
+    required: false
+    description: 'Alphanumeric value used to describe the transcript of a specific genetic variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+  TranspositionReaction:
+    title: Transposition Reaction
+    required: false
+    description: Name of the transposase, transposon sequences
+    annotations:
+    range: TranspositionReactionEnum
+  Tseries:
+    title: Tseries
+    required: false
+    description: Does data file contain a time-series of images
+    annotations:
+    range: TseriesEnum
+  TumorExtranodalExtensionIndicator:
+    title: Tumor Extranodal Extension Indicator
+    required: false
+    description: The indicator to determine extranodal involvement or extent of the disease.
+    annotations:
+    range: TumorExtranodalExtensionIndicatorEnum
+  TumorTissueType:
+    title: Tumor Tissue Type
+    required: false
+    description: Text that describes the kind of disease present in the tumor specimen as related to a specific timepoint (add rows to select multiple values along with timepoints)
+    annotations:
+    range: TumorTissueTypeEnum
+  TypeofSmokeExposure:
+    title: Type of Smoke Exposure
+    required: false
+    description: TBD
+    annotations:
+  TypeofTobaccoUsed:
+    title: Type of Tobacco Used
+    required: false
+    description: TBD
+    annotations:
+  Typeofsmokeexposurecumulativeyears:
+    title: Type of smoke exposure cumulative years
+    required: false
+    description: TBD
+    annotations:
+  UMIBarcodeLength:
+    title: UMI Barcode Length
+    required: false
+    description: 'Length of UMI barcode read (in bp): number'
+    annotations:
+  UMIBarcodeOffset:
+    title: UMI Barcode Offset
+    required: false
+    description: 'Start position of UMI barcode in the sequence. Values: number, 0 for start of read'
+    annotations:
+  UMITag:
+    title: UMI Tag
+    required: false
+    description: TBD
+    annotations:
+  ValidBarcodesCellNumber:
+    title: Valid Barcodes Cell Number
+    required: false
+    description: Number
+    annotations:
+  VariantOrigin:
+    title: Variant Origin
+    required: false
+    description: 'The text term used to describe the biological origin of a specific genetic variant. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    annotations:
+    range: VariantOriginEnum
+  VariantType:
+    title: Variant Type
+    required: false
+    description: The text term used to describe the type of genetic variation.
+    annotations:
+    range: VariantTypeEnum
+  VascularInvasionType:
+    title: Vascular Invasion Type
+    required: false
+    description: Text term that represents the type of vascular tumor invasion.
+    annotations:
+    range: VascularInvasionTypeEnum
+  Vendor:
+    title: Vendor
+    required: false
+    description: TBD
+    annotations:
+  VitalStatus:
+    title: Vital Status
+    required: false
+    description: The survival state of the person registered on the protocol.
+    annotations:
+    range: VitalStatusEnum
+  Weight:
+    title: Weight
+    required: false
+    description: TBD
+    annotations:
+  WellIndex:
+    title: Well Index
+    required: false
+    description: Indicate if protein expression (EPCAM/CD45) positive/negative data  is available for each cell in CEL-seq2 assays
+    annotations:
+    range: WellIndexEnum
+  WhitelistCellBarcodeFileLink:
+    title: Whitelist Cell Barcode File Link
+    required: false
+    description: TBD
+    annotations:
+  WorkflowLink:
+    title: Workflow Link
+    required: false
+    description: TBD
+    annotations:
+  WorkflowVersion:
+    title: Workflow Version
+    required: false
+    description: TBD
+    annotations:
+  WorkingDistance:
+    title: WorkingDistance
+    required: false
+    description: The working distance of the lens, expressed as a floating point number. Floating point > 0.
+    annotations:
+  WorkingDistanceUnit:
+    title: WorkingDistanceUnit
+    required: false
+    description: 'The units of the working distance. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)'
+    annotations:
+    range: MicroscopyUnitEnum
+  YearOfBirth:
+    title: Year Of Birth
+    required: false
+    description: Numeric value to represent the calendar year in which an individual was born.
+    annotations:
+  YearofDeath:
+    title: Year of Death
+    required: false
+    description: Numeric value to represent the year of the death of an individual.
+    annotations:
+  YearsSmoked:
+    title: Years Smoked
+    required: false
+    description: Numeric value (or unknown) to represent the number of years a person has been smoking.
+    annotations:
   Zstack:
     title: Zstack
     required: false
     description: Does data file contain a Z-stack of images
     annotations:
-      
     range: ZstackEnum
-  Chromosome:
-    title: Chromosome
+  Zygosity:
+    title: Zygosity
     required: false
-    description: 'The text term used to describe a chromosome targeted or included in molecular testing. If a specific genetic variant is being reported, this property can be used to capture the chromosome where that variant is located. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.'
+    description: The text term used to describe the zygosity of a specific genetic variant.
     annotations:
-      
-    range: ChromosomeEnum
-  MutationalSignatures:
-    title: Mutational Signatures
-    required: false
-    description: 'Mutational signatures identified in the patient, includes signatures linked to selected exogenous carcinogens, endogenous and enzymatic modification of DNA or defective DNA repair. Note: Include only outputs of tests that were completed clinically for the participant and only include data from a diagnostic array that was completed prior to research sequencing was done. '
-    annotations:
-      
-    range: MutationalSignaturesEnum
-  LabID:
-    title: Lab ID
-    required: false
-    description: TBD
-    annotations:
-      
-  ERStainingIntensity:
-    title: Breast Carcinoma ER Staining Intensity
-    required: false
-    description: Text term to indicate the ER staining intensity on pathology assessment in a participant with breast cancer
-    annotations:
-      
-    range: StainingIntensityEnum
-  CancerIncidenceLocation:
-    title: Cancer Incidence Location
-    required: false
-    description: TBD
-    annotations:
-      
+    range: ZygosityEnum
