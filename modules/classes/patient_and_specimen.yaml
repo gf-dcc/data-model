@@ -2,6 +2,9 @@ classes:
  
   CohortCoreTemplate:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - ParticipantID
     - Age
@@ -34,6 +37,9 @@ classes:
     - HER2Status
 
   Patient:
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - ParticipantID
@@ -41,6 +47,9 @@ classes:
 
   PatientExtended:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - StartDaysfromIndex
     - StopDaysfromIndex
@@ -83,6 +92,9 @@ classes:
   
   BreastCancerPatient:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - BreastCarcinomaDetectionMethodType
     - BreastCarcinomaHistologyCategory
@@ -118,6 +130,9 @@ classes:
 
   OvarianCancerPatient:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - OvarianCancerHistologicSubtype
     - OvarianCancerSurgicalOutcome
@@ -125,6 +140,9 @@ classes:
   
   Exposure:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - ParticipantID
@@ -135,6 +153,9 @@ classes:
   
   Yes-SmokingExposure:
     is_a: Exposure
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - YearsSmoked
     - PackYearsSmoked
@@ -152,6 +173,9 @@ classes:
     - SmokelessTobaccoQuitAge
   
   MolecularTest:
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - ParticipantID
@@ -196,6 +220,9 @@ classes:
   
   Yes-CancerHistoryRelative:
     is_a: FamilyHistory
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - RelativeswithCancerHistoryCount
     - RelationshipType
@@ -205,6 +232,9 @@ classes:
   
   Yes-AlcoholExposure:
     is_a: Exposure
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - AlcoholDaysPerWeek
     - AlcoholDrinksPerDay
@@ -214,16 +244,25 @@ classes:
   
   Yes-VascularInvasionPresent:
     is_a: Diagnosis
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - VascularInvasionType
   
   TotalVolume:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - TotalVolumeUnit
   
   Yes-ProgressionorRecurrence:
     is_a: Diagnosis
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - ProgressionorRecurrenceType
     - DaystoProgression
@@ -234,6 +273,9 @@ classes:
   
   Dead:
     is_a: Demographics
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - YearofDeath
     - CauseofDeath
@@ -245,6 +287,9 @@ classes:
 #################
 
   SampleCoreTemplate:
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - ParticipantID
     - SampleID
@@ -257,6 +302,9 @@ classes:
     - Laterality
 
   Biospecimen:
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - BiospecimenID
     - ParentID
@@ -267,6 +315,9 @@ classes:
     - SpecimenLaterality
   
   TissueBiospecimenType:
+    annotations:
+      requiresComponent: ''
+      required: false
     is_a: Biospecimen
     slots:
     - IschemicTime
@@ -284,11 +335,17 @@ classes:
   
   FamilyHistory:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - RelativewithCancerHistory
   
   Demographics:
     is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Ethnicity
     - Gender
@@ -301,16 +358,25 @@ classes:
   
   BiospecimenDimension1:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - DimensionsUnit
   
   BloodBiospecimenType:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - ShippingConditionType
   
   UrineBiospecimenType:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - IschemicTime
     - IschemicTemperature
@@ -324,6 +390,9 @@ classes:
 
   BoneMarrowBiospecimenType:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - IschemicTime
     - IschemicTemperature
@@ -341,6 +410,9 @@ classes:
   
   AnalyteBiospecimenType:
     is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - AnalyteType
     - FixationDuration

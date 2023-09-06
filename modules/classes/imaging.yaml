@@ -2,6 +2,9 @@ classes:
 
   ImagingLevel2:
     is_a: Assay
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -46,13 +49,11 @@ classes:
     - SizeZ
     - PixelType
   
-  No-ChannelsQC:
-    is_a: ImagingLevel2
-    slots:
-    - Comment
-
   ImagingLevel2Channels:
     is_a: ImagingLevel2
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - ChannelID
     - ChannelName

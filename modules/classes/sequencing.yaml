@@ -2,6 +2,9 @@ classes:
   
   ScRNA-seqLevel1:
     is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -27,6 +30,9 @@ classes:
   
   ScRNA-seqLevel2:
     is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -48,6 +54,9 @@ classes:
 
   ScRNA-seqLevel3:
     is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -68,6 +77,9 @@ classes:
 
   ScRNA-seqLevel4:
     is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -88,6 +100,9 @@ classes:
   
   ScATAC-seqLevel1:
     is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - Component
     - Filename
@@ -121,12 +136,18 @@ classes:
   
   CEL-seq2:
     is_a: ScRNA-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - EmptyWellBarcode
     - WellIndex
   
   CellBarcodeandUMI:
     is_a: ScRNA-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - UMIBarcodeOffset
     - UMIBarcodeLength
@@ -137,11 +158,17 @@ classes:
   
   MedianFractionofReadsinPeaks:
     is_a: ScATAC-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - PeaksCallingSoftware
 
   MedianFractionofReadsinAnnotatedcisDNAElements:
     is_a: ScATAC-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
     slots:
     - PeaksCallingSoftware
   
