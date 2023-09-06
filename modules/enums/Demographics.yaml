@@ -1,4 +1,11 @@
 enums:
+  SexEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      female: null
+      male: null
+      unspecified: null
   CauseofDeathEnum:
     permissible_values:
       Not Reported: null

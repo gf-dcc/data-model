@@ -18,9 +18,6 @@ classes:
     - Read1
     - Read2
     - TechnicalReplicateGroup
-    - EndBias
-    - ReverseTranscriptionPrimer
-    - SpikeIn
 
   SingleCellSequencing:
     is_a: Sequencing
@@ -33,6 +30,9 @@ classes:
     - SingleCellIsolationMethod
     - TotalNumberofInputCells
     - InputCellsandNuclei
+    - ReverseTranscriptionPrimer
+    - SpikeIn
+    - EndBias
 
   ScRNA-seqLevel1:
     is_a: SingleCellSequencing
@@ -106,15 +106,14 @@ classes:
       required: false
     slots:
     - SingleNucleusBuffer
-    - SingleCellIsolationMethod
     - TranspositionReaction
     - ScATACseqLibraryLayout
     - NucleusIdentifier
     - NucleiBarcodeLength
     - NucleiBarcodeRead
-    - ScATACseqRead1
-    - ScATACseqRead2
-    - ScATACseqRead3
+    - Read1
+    - Read2
+    - Read3
     - LibraryConstructionMethod
     - ThresholdforMinimumPassingReads
     - TotalNumberofPassingNuclei

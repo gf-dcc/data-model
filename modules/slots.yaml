@@ -1291,6 +1291,12 @@ slots:
     description: Read 2 content description
     annotations:
     range: ReadEnum
+  Read3:
+    title: Read3
+    required: true
+    description: Read 3 content description
+    annotations:
+    range: ReadEnum
   ReadIndicator:
     title: Read Indicator
     required: false
@@ -1372,24 +1378,6 @@ slots:
     description: Sequencing read type
     annotations:
     range: ScATACseqLibraryLayoutEnum
-  ScATACseqRead1:
-    title: scATACseq Read1
-    required: false
-    description: Read 1 content description
-    annotations:
-    range: ReadEnum
-  ScATACseqRead2:
-    title: scATACseq Read2
-    required: false
-    description: Read 2 content description
-    annotations:
-    range: ReadEnum
-  ScATACseqRead3:
-    title: scATACseq Read3
-    required: false
-    description: Read 3 content description
-    annotations:
-    range: ReadEnum
   ScRNAseqWorkflowParametersDescription:
     title: scRNAseq Workflow Parameters Description
     required: false
