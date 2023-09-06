@@ -6,15 +6,16 @@ For quick and reproducible workflow, this guide is based on devcontainers, which
 - Should have the correct version of schematic installed with the schematic `config.yml` in the repository.
 - Has all the creds you need.
 
-In upper menu button, codespace > Create codespace on main.
+In upper menu button, **Code > Create codespace on main**. 
+You may need to wait a bit for the container to install tools and finish other setup.
 
 ## Generate templates
 
 This is the command-line equivalent of using the schematic API or using the DCA UI to generate a template.
 
-1. For generating templates, you need creds. (You only need to do this once with a new codespace. Locally, we can keep the `creds.json` In the command line and gitignore it so it is not committed to the repo.) Run the bash script `./scripts/setup_creds.sh`. You should see a `creds.json` file at the root of the repo, next to the `.jsonld` file, etc. Feel free to skim the bash script and the `.json` file.
+1. For generating templates, you need creds. (You only need to do this once with a new codespace. Locally, we can keep the `creds.json` In the command line and gitignore it so it is not committed to the repo.) Run this simple bash script at the codespace command line: `./scripts/setup_creds.sh`. You should see a `creds.json` file at the root of the repo, next to the `.jsonld` file, etc. Feel free to skim the bash script and the `.json` file.
 
-2. Generate a blank Excel template for e.g. scRNAseq-Level1 by running `./scripts/new_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
+2. Generate a blank Excel template for e.g. scRNAseq-Level1 by running `./scripts/gen_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
 
 TODO - update script for these steps
 
