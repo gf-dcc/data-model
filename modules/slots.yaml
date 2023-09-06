@@ -99,6 +99,13 @@ slots:
     annotations:
       validationRules: []
     range: BreastBiopsyProcedureFindingTypeEnum
+  Laterality:
+    title: Sample Laterality
+    required: false
+    description: For samples in paired organs, designates the side from which obtained.
+    annotations:
+      validationRules: []
+    range: SpecimenLateralityEnum
   SpecimenLaterality:
     title: Specimen Laterality
     required: false
