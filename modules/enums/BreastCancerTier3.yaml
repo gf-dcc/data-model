@@ -27,12 +27,6 @@ enums:
       Oncotype: null
       MammaPrint: null
       Not performed: null
-  MultifocalBreastCarcinomaPresentIndicatorEnum:
-    permissible_values:
-      'Yes': null
-      'No': null
-      unknown: null
-      Data not available: null
   OncotypeRiskGroupEnum:
     permissible_values:
       unknown: null

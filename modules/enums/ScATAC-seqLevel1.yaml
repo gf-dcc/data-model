@@ -13,7 +13,7 @@ enums:
       Diagenode-unloaded Apex-Bio: null
       Diagenode-loaded Apex-Bio: null
       In-House: null
-  ScATACseqRead3Enum:
+  ReadEnum:
     permissible_values:
       Cell Barcode and DNA Insert: null
       Sample Index and DNA Insert: null

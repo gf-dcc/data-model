@@ -927,7 +927,7 @@ enums:
       Scar - no residual melanoma: null
       Invasive melanoma - nodular type: null
       Prostatic Intraepithelial Neoplasia: null
-  SatelliteMetastasisPresentIndicatorEnum:
+  IndicatorEnum:
     permissible_values:
       'Yes': null
       'No': null
