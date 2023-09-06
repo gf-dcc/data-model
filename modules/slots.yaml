@@ -97,8 +97,17 @@ slots:
     required: false
     description: Text term to describe the result of the examination of the breast tissue specimen or fluid as related to the presence and nature of disease.
     annotations:
-      
     range: BreastBiopsyProcedureFindingTypeEnum
+
+  GenomicCoverageType:
+    title: Genomic Coverage Type
+    required: true
+    description: Genomic coverage
+    enum_range: 
+    - Whole Genome
+    - Targeted Genome
+    - Beadchip Array
+
   Laterality:
     title: Sample Laterality
     required: false
