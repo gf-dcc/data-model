@@ -1,0 +1,357 @@
+classes:
+ 
+  CohortCoreTemplate:
+    is_a: Patient
+    slots:
+    - ParticipantID
+    - Age
+    - Sex
+    - BMI
+    - Race
+    - Ethnicity
+    - VitalStatus
+    - Height
+    - Weight
+    - Gravidity
+    - Parity
+    - AgeAtMenarche
+    - MenstrualCyclePhase
+    - MenopauseStatus
+    - PrimaryDiagnosis
+    - AgeatDiagnosis
+    - DiagnosisStatusType
+    - ClassBRCA1
+    - ClassBRCA2
+    - TobaccoUse
+    - PackYearsSmoked
+    - AlcoholUse
+    - NumberofDrinksPerWeek
+    - AntibioticUse
+    - SampleCollectionCenter
+    - SampleCollectionYear
+    - ERStatus
+    - PRStatus
+    - HER2Status
+
+  Patient:
+    slots:
+    - Component
+    - ParticipantID
+    - TimepointLabel
+
+  PatientExtended:
+    is_a: Patient
+    slots:
+    - StartDaysfromIndex
+    - StopDaysfromIndex
+    - SentinelLymphNodeCount
+    - SentinelNodePositiveAssessmentCount
+    - TumorExtranodalExtensionIndicator
+    - SatelliteMetastasisPresentIndicator
+    - OtherBiopsyResectionSite
+    - ExtentofTumorResection
+    - PrecancerousConditionType
+    - PriorSitesofRadiation
+    - Immunosuppression
+    - ConcomitantMedicationReceivedType
+    - FamilyMemberVitalStatusIndicator
+    - COVID19OccurrenceIndicator
+    - COVID19CurrentStatus
+    - COVID19PositiveLabTestIndicator
+    - COVID19AntibodyTesting
+    - COVID19ComplicationsSeverity
+    - COVID19CancerTreatmentFollowup
+    - Ecigvapeuse
+    - Ecigvape30dayusenum
+    - Ecigvapetimesperday
+    - Typeofsmokeexposurecumulativeyears
+    - Chewingtobaccodailyusecount
+    - Secondhandsmokeexposureyears
+    - KnownGeneticPredispositionMutation
+    - HereditaryCancerPredispositionSyndrome
+    - CancerAssociatedGeneMutations
+    - MutationalSignatures
+    - MismatchRepairSystemStatus
+    - LabTestsforMMRStatus
+    - ModeofCancerDetection
+    - EducationLevel
+    - CountryofBirth
+    - MedicallyUnderservedArea
+    - RuralvsUrban
+    - CancerIncidence
+    - CancerIncidenceLocation
+  
+  BreastCancerPatient:
+    is_a: Patient
+    slots:
+    - BreastCarcinomaDetectionMethodType
+    - BreastCarcinomaHistologyCategory
+    - InvasiveLobularBreastCarcinomaHistologicCategory
+    - InvasiveDuctalBreastCarcinomaHistologicCategory
+    - BreastBiopsyProcedureFindingType
+    - BreastQuadrantSite
+    - BreastCancerAssessmentTests
+    - BreastCancerGenomicTestPerformed
+    - MammaprintRiskGroup
+    - OncotypeRiskGroup
+    - ERReceptorStatus
+    - PRReceptorStatus
+    - BreastCancerAllredEstrogenReceptorScore
+    - PriorInvasiveBreastDisease
+    - BreastCarcinomaERStatusPercentageValue
+    - BreastCarcinomaPRStatusPercentageValue
+    - HER2BreastCarcinomaCopyNumberTotal
+    - BreastCarcinomaCentromere17CopyNumber
+    - BreastCarcinomaHER2Centromere17CopynumberTotal
+    - BreastCarcinomaHER2Chromosome17Ratio
+    - BreastCarcinomaSurgicalProcedureName
+    - BreastCarcinomaHER2RatioDiagnosis
+    - BreastCarcinomaHER2Status
+    - HormoneTherapyBreastCancerPreventionIndicator
+    - ERStainingIntensity
+    - PRStainingIntensity
+    - OncotypeScore
+    - BreastImagingPerformedType
+    - MultifocalBreastCarcinomaPresentIndicator
+    - MulticentricBreastCarcinomaPresentIndicator
+    - BIRADSMammographyBreastDensityCategory
+
+  OvarianCancerPatient:
+    is_a: Patient
+    slots:
+    - OvarianCancerHistologicSubtype
+    - OvarianCancerSurgicalOutcome
+    - OvarianCancerPlatinumStatus
+  
+  Exposure:
+    is_a: Patient
+    slots:
+    - Component
+    - ParticipantID
+    - StartDaysfromIndex
+    - SmokingExposure
+    - AlcoholExposure
+    - EnvironmentalTobaccoSmokeExposure
+  
+  Yes-SmokingExposure:
+    is_a: Exposure
+    slots:
+    - YearsSmoked
+    - PackYearsSmoked
+    - CigarettesperDay
+    - SmokingFrequency
+    - TypeofSmokeExposure
+    - TimebetweenWakingandFirstSmoke
+    - TobaccoSmokingOnsetYear
+    - TobaccoSmokingQuitYear
+    - TobaccoSmokingStatus
+    - TypeofTobaccoUsed
+    - SecondhandSmokeasChild
+    - SmokeExposureDuration
+    - TobaccoUseperDay
+    - SmokelessTobaccoQuitAge
+  
+  MolecularTest:
+    slots:
+    - Component
+    - ParticipantID
+    - TimepointLabel
+    - StartDaysfromIndex
+    - StopDaysfromIndex
+    - GeneSymbol
+    - MolecularAnalysisMethod
+    - TestResult
+    - AAChange
+    - Antigen
+    - ClinicalBiospecimenType
+    - BloodTestNormalRangeUpper
+    - BloodTestNormalRangeLower
+    - CellCount
+    - Chromosome
+    - Clonality
+    - CopyNumber
+    - Cytoband
+    - Exon
+    - HistoneFamily
+    - HistoneVariant
+    - Intron
+    - LaboratoryTest
+    - LociAbnormalCount
+    - LociCount
+    - Locus
+    - MismatchRepairMutation
+    - MolecularConsequence
+    - Pathogenicity
+    - Ploidy
+    - SecondExon
+    - SecondGeneSymbol
+    - SpecializedMolecularTest
+    - TestAnalyteType
+    - TestUnits
+    - TestValue
+    - Transcript
+    - VariantOrigin
+    - VariantType
+    - Zygosity
+  
+  Yes-CancerHistoryRelative:
+    is_a: FamilyHistory
+    slots:
+    - RelativeswithCancerHistoryCount
+    - RelationshipType
+    - RelationshipPrimaryDiagnosis
+    - RelationshipGender
+    - RelationshipAgeatDiagnosis
+  
+  Yes-AlcoholExposure:
+    is_a: Exposure
+    slots:
+    - AlcoholDaysPerWeek
+    - AlcoholDrinksPerDay
+    - AlcoholHistory
+    - AlcoholIntensity
+    - AlcoholType
+  
+  Yes-VascularInvasionPresent:
+    is_a: Diagnosis
+    slots:
+    - VascularInvasionType
+  
+  TotalVolume:
+    is_a: Biospecimen
+    slots:
+    - TotalVolumeUnit
+  
+  Yes-ProgressionorRecurrence:
+    is_a: Diagnosis
+    slots:
+    - ProgressionorRecurrenceType
+    - DaystoProgression
+    - DaystoProgressionFree
+    - DaystoRecurrence
+    - DaystoRecurrence
+    - ProgressionorRecurrenceAnatomicSite
+  
+  Dead:
+    is_a: Demographics
+    slots:
+    - YearofDeath
+    - CauseofDeath
+    - CauseofDeathSource
+    - DaystoDeath
+  
+################## 
+# Biospecimen 
+#################
+
+  SampleCoreTemplate:
+    slots:
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - AdjacentSampleIDs
+    - SampleSite
+    - ERStatus
+    - PRStatus
+    - HER2Status
+    - Laterality
+  
+  TissueBiospecimenType:
+    is_a: Biospecimen
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+    - BiospecimenDimension1
+    - BiospecimenDimension2
+    - BiospecimenDimension3
+    - SectionNumberinSequence
+  
+  FamilyHistory:
+    is_a: Patient
+    slots:
+    - Component
+    - ParticipantID
+    - RelativewithCancerHistory
+  
+  Demographics:
+    is_a: Patient
+    slots:
+    - Component
+    - ParticipantID
+    - Ethnicity
+    - Gender
+    - Race
+    - VitalStatus
+    - DaystoBirth
+    - CountryofResidence
+    - AgeIsObfuscated
+    - YearOfBirth
+
+  Biospecimen:
+    is_a: Patient
+    slots:
+    - BiospecimenID
+    - ParentID
+    - ParentBiospecimenID
+    - AdjacentBiospecimenIDs
+    - BiospecimenType
+    - TimepointLabel
+    - SpecimenLaterality
+  
+  BiospecimenDimension1:
+    is_a: Biospecimen
+    slots:
+    - DimensionsUnit
+  
+  BloodBiospecimenType:
+    is_a: Biospecimen
+    slots:
+    - ShippingConditionType
+  
+  UrineBiospecimenType:
+    is_a: Biospecimen
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - SpecimenLaterality
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+
+  BoneMarrowBiospecimenType:
+    is_a: Biospecimen
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - SpecimenLaterality
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+    - BiospecimenDimension1
+    - BiospecimenDimension2
+    - BiospecimenDimension3
+    - SectionNumberinSequence
+  
+  AnalyteBiospecimenType:
+    is_a: Biospecimen
+    slots:
+    - AnalyteType
+    - FixationDuration
+    - SlideChargeType
+    - SectionThicknessValue
+    - SectioningDaysfromIndex
+    - ShippingConditionType
+    - IschemicTime
+    - IschemicTemperature

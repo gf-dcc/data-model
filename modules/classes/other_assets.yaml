@@ -1,0 +1,10 @@
+classes:
+ 
+  PublicationTemplate:
+    is_a: Publication
+    slots:
+    - PublicationDOI
+    - Title
+    - Authors
+    - LinkedProject
+    - LinkedDatasets

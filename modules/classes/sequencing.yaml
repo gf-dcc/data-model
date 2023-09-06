@@ -1,0 +1,147 @@
+classes:
+  
+  ScRNA-seqLevel1:
+    is_a: SingleCellSequencing
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - CryopreservedCellsinSample
+    - SingleCellIsolationMethod
+    - DissociationMethod
+    - LibraryConstructionMethod
+    - ReadIndicator
+    - Read1
+    - Read2
+    - EndBias
+    - ReverseTranscriptionPrimer
+    - SpikeIn
+    - SequencingPlatform
+    - TotalNumberofInputCells
+    - InputCellsandNuclei
+    - ProtocolLink
+    - TechnicalReplicateGroup
+  
+  ScRNA-seqLevel2:
+    is_a: SingleCellSequencing
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - ScRNAseqWorkflowType
+    - WorkflowVersion
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - GenomicReference
+    - GenomicReferenceURL
+    - GenomeAnnotationURL
+    - WhitelistCellBarcodeFileLink
+    - CellBarcodeTag
+    - UMITag
+    - AppliedHardTrimming
+
+  ScRNA-seqLevel3:
+    is_a: SingleCellSequencing
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - DataCategory
+    - MatrixType
+    - LinkedMatrices
+    - CellMedianNumberReads
+    - CellMedianNumberGenes
+    - CellTotal
+    - ScRNAseqWorkflowType
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - WorkflowVersion
+
+  ScRNA-seqLevel4:
+    is_a: SingleCellSequencing
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - DataCategory
+    - MatrixType
+    - LinkedMatrices
+    - CellMedianNumberReads
+    - CellMedianNumberGenes
+    - CellTotal
+    - ScRNAseqWorkflowType
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - WorkflowVersion
+  
+  ScATAC-seqLevel1:
+    is_a: SingleCellSequencing
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - NucleicAcidSource
+    - DissociationMethod
+    - SingleNucleusBuffer
+    - SingleCellIsolationMethod
+    - TranspositionReaction
+    - ScATACseqLibraryLayout
+    - NucleusIdentifier
+    - NucleiBarcodeLength
+    - NucleiBarcodeRead
+    - ScATACseqRead1
+    - ScATACseqRead2
+    - ScATACseqRead3
+    - LibraryConstructionMethod
+    - SequencingPlatform
+    - ThresholdforMinimumPassingReads
+    - TotalNumberofPassingNuclei
+    - MedianFractionofReadsinPeaks
+    - MedianFractionofReadsinAnnotatedcisDNAElements
+    - MedianPassingReadPercentage
+    - MedianPercentageofMitochondrialReadsperNucleus
+    - TechnicalReplicateGroup
+    - TotalReads
+    - ProtocolLink
+  
+  CEL-seq2:
+    is_a: ScRNA-seqLevel1
+    slots:
+    - EmptyWellBarcode
+    - WellIndex
+  
+  CellBarcodeandUMI:
+    is_a: ScRNA-seqLevel1
+    slots:
+    - UMIBarcodeOffset
+    - UMIBarcodeLength
+    - MedianUMIsperCellNumber
+    - CellBarcodeOffset
+    - CellBarcodeLength
+    - ValidBarcodesCellNumber
+  
+  MedianFractionofReadsinPeaks:
+    is_a: ScATAC-seqLevel1
+    slots:
+    - PeaksCallingSoftware
+
+  MedianFractionofReadsinAnnotatedcisDNAElements:
+    is_a: ScATAC-seqLevel1
+    slots:
+    - PeaksCallingSoftware
+  
