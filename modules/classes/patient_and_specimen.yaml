@@ -255,6 +255,16 @@ classes:
     - PRStatus
     - HER2Status
     - Laterality
+
+  Biospecimen:
+    slots:
+    - BiospecimenID
+    - ParentID
+    - ParentBiospecimenID
+    - AdjacentBiospecimenIDs
+    - BiospecimenType
+    - TimepointLabel
+    - SpecimenLaterality
   
   TissueBiospecimenType:
     is_a: Biospecimen
@@ -275,15 +285,11 @@ classes:
   FamilyHistory:
     is_a: Patient
     slots:
-    - Component
-    - ParticipantID
     - RelativewithCancerHistory
   
   Demographics:
     is_a: Patient
     slots:
-    - Component
-    - ParticipantID
     - Ethnicity
     - Gender
     - Race
@@ -292,17 +298,6 @@ classes:
     - CountryofResidence
     - AgeIsObfuscated
     - YearOfBirth
-
-  Biospecimen:
-    is_a: Patient
-    slots:
-    - BiospecimenID
-    - ParentID
-    - ParentBiospecimenID
-    - AdjacentBiospecimenIDs
-    - BiospecimenType
-    - TimepointLabel
-    - SpecimenLaterality
   
   BiospecimenDimension1:
     is_a: Biospecimen
