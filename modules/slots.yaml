@@ -932,13 +932,13 @@ slots:
     description: Field  of view Y dimension. Floating point value
     annotations:
       validationRules: []
-  BreastCarcinomaPRStainingIntensity:
+  PRStainingIntensity:
     title: Breast Carcinoma PR Staining Intensity
     required: false
     description: Text term to indicate the PR staining intensity on pathology assessment in a participant with breast cancer
     annotations:
       validationRules: []
-    range: BreastCarcinomaPRStainingIntensityEnum
+    range: StainingIntensityEnum
   SiteofResectionorBiopsy:
     title: Site of Resection or Biopsy
     required: false
@@ -2145,13 +2145,13 @@ slots:
     description: TBD
     annotations:
       validationRules: []
-  BreastCarcinomaERStainingIntensity:
+  ERStainingIntensity:
     title: Breast Carcinoma ER Staining Intensity
     required: false
     description: Text term to indicate the ER staining intensity on pathology assessment in a participant with breast cancer
     annotations:
       validationRules: []
-    range: BreastCarcinomaERStainingIntensityEnum
+    range: StainingIntensityEnum
   CancerIncidenceLocation:
     title: Cancer Incidence Location
     required: false

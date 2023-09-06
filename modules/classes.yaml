@@ -332,8 +332,8 @@ classes:
     - BreastCarcinomaHER2RatioDiagnosis
     - BreastCarcinomaHER2Status
     - HormoneTherapyBreastCancerPreventionIndicator
-    - BreastCarcinomaERStainingIntensity
-    - BreastCarcinomaPRStainingIntensity
+    - ERStainingIntensity
+    - PRStainingIntensity
     - OncotypeScore
     - BreastImagingPerformedType
     - MultifocalBreastCarcinomaPresentIndicator

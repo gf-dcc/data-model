@@ -88,7 +88,7 @@ enums:
       Other: null
       Lumpectomy: null
       Re-excision: null
-  BreastCarcinomaPRStainingIntensityEnum:
+  StainingIntensityEnum:
     permissible_values:
       Other: null
       unknown: null
