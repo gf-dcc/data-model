@@ -146,7 +146,7 @@ slots:
     annotations:
   BiospecimenID:
     title: Biospecimen ID
-    required: false
+    required: true
     description: ' Alias for Sample ID'
     annotations:
   BiospecimenType:

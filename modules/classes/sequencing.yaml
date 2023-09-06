@@ -111,19 +111,14 @@ classes:
     - NucleusIdentifier
     - NucleiBarcodeLength
     - NucleiBarcodeRead
-    - Read1
-    - Read2
     - Read3
-    - LibraryConstructionMethod
     - ThresholdforMinimumPassingReads
     - TotalNumberofPassingNuclei
     - MedianFractionofReadsinPeaks
     - MedianFractionofReadsinAnnotatedcisDNAElements
     - MedianPassingReadPercentage
     - MedianPercentageofMitochondrialReadsperNucleus
-    - TechnicalReplicateGroup
     - TotalReads
-    - ProtocolLink
   
   BulkMethylation-seqLevel1:
     is_a: Sequencing
