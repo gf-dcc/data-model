@@ -1,0 +1,13 @@
+classes:
+ 
+  PublicationTemplate:
+    is_a: Publication
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - PublicationDOI
+    - Title
+    - Authors
+    - LinkedProject
+    - LinkedDatasets

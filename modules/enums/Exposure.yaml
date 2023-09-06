@@ -1,0 +1,57 @@
+enums:
+  AlcoholTypeEnum:
+    permissible_values:
+      Other: 
+      unknown: 
+      Not Reported: 
+      Beer: 
+      Liquor: 
+      Wine: 
+  TobaccoSmokingStatusEnum:
+    permissible_values:
+      Not Reported: 
+      unknown: 
+      Current Reformed Smoker: 
+      Current Smoker: 
+      Current Reformed Smoker for > 15 yrs: 
+      Duration Not Specified: 
+      Smoking history not documented: 
+      Lifelong Non-Smoker: 
+      Current Reformed Smoker for < or = 15 yrs: 
+  SmokingFrequencyEnum:
+    permissible_values:
+      unknown: 
+      Every day: 
+      Some days: 
+  AlcoholExposureEnum:
+    permissible_values:
+      Yes - Alcohol Exposure: 
+      Not Reported: 
+      No - Alcohol Exposure: 
+  HistoryEnum:
+    permissible_values:
+      'Yes': 
+      'No': 
+      unknown: 
+      Not Reported: 
+  AlcoholIntensityEnum:
+    permissible_values:
+      unknown: 
+      Not Reported: 
+      Drinker: 
+      Heavy Drinker: 
+      Lifelong Non-Drinker: 
+      Non-Drinker: 
+      Occasional Drinker: 
+  AntibioticUseEnum:
+    permissible_values:
+      'No': 
+      unknown: 
+      Yes - within last monthh: 
+      Yes - within last 1-6 months: 
+      Yes - over 6 months ago: 
+  SmokingExposureEnum:
+    permissible_values:
+      Yes - Smoking Exposure: 
+      Not Reported: 
+      No - Smoking Exposure: 

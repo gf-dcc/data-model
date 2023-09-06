@@ -1,0 +1,74 @@
+enums:
+  NucleicAcidSourceEnum:
+    permissible_values:
+      Single Cell: null
+      Bulk Whole Cell: null
+      Single Nucleus: null
+      Bulk Nuclei: null
+  LibraryConstructionMethodEnum:
+    permissible_values:
+      10xV3: null
+      inDropsV2: null
+      10xV1.1: null
+      10xV3.1: null
+      Drop-seq: null
+      10xV2: null
+      10xV1.0: null
+      Smart-seq2: null
+      Smart-SeqV4: null
+      sci-ATAC-seq: null
+      inDropsV3: null
+      CEL-seq2: null
+      TruDrop: null
+  SingleCellIsolationMethodEnum:
+    permissible_values:
+      Microfluidics Chip: null
+      Droplets: null
+      FACS: null
+      Plates: null
+      10x: null
+      Nuclei Isolation: null
+  DissociationMethodEnum:
+    permissible_values:
+      Not Applicable: null
+      gentleMACS: null
+      Dounce: null
+      Enzymatic Digestion: null
+  SpikeInEnum:
+    permissible_values:
+      ERCC: null
+      Other Spike In: null
+      No Spike In: null
+      PhiX: null
+  ReverseTranscriptionPrimerEnum:
+    permissible_values:
+      Feature barcoding: null
+      Oligo-dT: null
+      Poly-dT: null
+      Random: null
+  EndBiasEnum:
+    permissible_values:
+      3 Prime: null
+      5 Prime: null
+      Full Length Transcript: null
+  SingleNucleusBufferEnum:
+    permissible_values:
+      10x: null
+      NIB: null
+      Omni: null
+  TranspositionReactionEnum:
+    permissible_values:
+      Tn5: null
+      EZ-Tn5: null
+      Tn5-059: null
+      Nextera Tn5: null
+      Diagenode-unloaded Apex-Bio: null
+      Diagenode-loaded Apex-Bio: null
+      In-House: null
+  ReadEnum:
+    permissible_values:
+      Cell Barcode and DNA Insert: null
+      Sample Index and DNA Insert: null
+      DNA Insert: null
+      Sample Index: null
+      Cell Barcode: null

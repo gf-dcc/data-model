@@ -1,2 +1,0 @@
-Attribute,Description,Valid Values,DependsOn,Properties,Required,Parent,DependsOn Component,Source,Validation Rules
-Publication Template,Publication entity.,,"Publication DOI, Title, Authors, Linked Project, Linked Datasets",,FALSE,Publication,Publication,,

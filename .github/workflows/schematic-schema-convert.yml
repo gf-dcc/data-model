@@ -10,8 +10,6 @@ on:
 
   workflow_dispatch:
 
-env:
-  schema_filename: GF.csv
   
 jobs:
   build:
@@ -30,17 +28,18 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository
  
-      - name: Install schematic and convert schema
+      - name: Convert schema
         shell: bash
         run: |
-          pip3 install schematicpy
+          bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)
+          git clone --depth 1 https://github.com/anngvu/retold.git
           make
     
       - name: Commit files
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "github-actions"
-          git commit -m "Build csv, jsonld" -a
+          git commit -m "Build jsonld" -a
     
       - name: Push changes
         uses: ad-m/github-push-action@master
@@ -59,7 +58,7 @@ jobs:
       pull-requests: write
     strategy:
       matrix:
-        schematic-version: [23.6.1]
+        schematic-version: [23.9.1]
 
     steps:
       - uses: actions/checkout@v3

@@ -1,0 +1,156 @@
+classes:
+  
+  Sequencing:
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - SequencingPlatform
+    - NucleicAcidSource
+    - LibraryConstructionMethod
+    - ReadIndicator
+    - Read1
+    - Read2
+    - TechnicalReplicateGroup
+
+  SingleCellSequencing:
+    is_a: Sequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - DissociationMethod
+    - CryopreservedCellsinSample
+    - SingleCellIsolationMethod
+    - TotalNumberofInputCells
+    - InputCellsandNuclei
+    - ReverseTranscriptionPrimer
+    - SpikeIn
+    - EndBias
+
+  ScRNA-seqLevel1:
+    is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - UMIBarcodeOffset
+    - UMIBarcodeLength
+    - MedianUMIsperCellNumber
+    - CellBarcodeOffset
+    - CellBarcodeLength
+    - ValidBarcodesCellNumber
+  
+  ScRNA-seqLevel2:
+    is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ScRNAseqWorkflowType
+    - WorkflowVersion
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - GenomicReference
+    - GenomicReferenceURL
+    - GenomeAnnotationURL
+    - WhitelistCellBarcodeFileLink
+    - CellBarcodeTag
+    - UMITag
+    - AppliedHardTrimming
+
+  ScRNA-seqLevel3:
+    is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - DataCategory
+    - MatrixType
+    - LinkedMatrices
+    - CellMedianNumberReads
+    - CellMedianNumberGenes
+    - CellTotal
+    - ScRNAseqWorkflowType
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - WorkflowVersion
+
+  ScRNA-seqLevel4:
+    is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - DataCategory
+    - MatrixType
+    - LinkedMatrices
+    - CellMedianNumberReads
+    - CellMedianNumberGenes
+    - CellTotal
+    - ScRNAseqWorkflowType
+    - ScRNAseqWorkflowParametersDescription
+    - WorkflowLink
+    - WorkflowVersion
+  
+  ScATAC-seqLevel1:
+    is_a: SingleCellSequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - SingleNucleusBuffer
+    - TranspositionReaction
+    - ScATACseqLibraryLayout
+    - NucleusIdentifier
+    - NucleiBarcodeLength
+    - NucleiBarcodeRead
+    - Read3
+    - ThresholdforMinimumPassingReads
+    - TotalNumberofPassingNuclei
+    - MedianFractionofReadsinPeaks
+    - MedianFractionofReadsinAnnotatedcisDNAElements
+    - MedianPassingReadPercentage
+    - MedianPercentageofMitochondrialReadsperNucleus
+    - TotalReads
+  
+  BulkMethylation-seqLevel1:
+    is_a: Sequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - GenomicCoverageType
+    
+  
+  CEL-seq2:
+    is_a: ScRNA-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - EmptyWellBarcode
+    - WellIndex
+  
+  MedianFractionofReadsinPeaks:
+    is_a: ScATAC-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - PeaksCallingSoftware
+
+  MedianFractionofReadsinAnnotatedcisDNAElements:
+    is_a: ScATAC-seqLevel1
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - PeaksCallingSoftware
+  

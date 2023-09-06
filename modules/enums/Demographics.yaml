@@ -1,0 +1,284 @@
+enums:
+  SexEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      female: null
+      male: null
+      unspecified: null
+  CauseofDeathEnum:
+    permissible_values:
+      Not Reported: null
+      Renal Disorder NOS: null
+      Toxicity: null
+      Cardiovascular Disorder NOS: null
+      unknown: null
+      Not Applicable: null
+      Infection: null
+      Spinal Muscular Atrophy: null
+      Cancer Related: null
+      End-stage Renal Disease: null
+      Surgical Complications: null
+      Not Cancer Related: null
+  EthnicityEnum:
+    permissible_values:
+      unknown: null
+      Not Reported: null
+      hispanic or latino: null
+      not hispanic or latino: null
+      not allowed to collect: null
+  RaceEnum:
+    permissible_values:
+      american indian or alaska native: null
+      Not Reported: null
+      white: null
+      unknown: null
+      black or african american: null
+      not allowed to collect: null
+      asian: null
+      Other: null
+      native hawaiian or other pacific islander: null
+  AgeIsObfuscatedEnum:
+    permissible_values:
+      'True': null
+      'False': null
+  CountryofResidenceEnum:
+    permissible_values:
+      Trinidad and Tobago: null
+      Botswana: null
+      Malaysia: null
+      Suriname: null
+      Uruguay: null
+      Gibraltar: null
+      Andorra: null
+      Cayman Islands: null
+      Mozambique: null
+      Dominica: null
+      Tajikistan: null
+      Barbados: null
+      Seychelles: null
+      Curacao: null
+      Cote d'Ivoire: null
+      Albania: null
+      China: null
+      Oman: null
+      Congo: null
+      Burundi: null
+      Falkland Islands (Malvinas): null
+      Kazakhstan: null
+      Australia: null
+      France: null
+      Bahrain: null
+      Solomon Islands: null
+      Tanzania: null
+      French Guiana: null
+      Federated States of Micronesia: null
+      Antigua and Barbuda: null
+      Colombia: null
+      Fiji: null
+      Sao Tome and Principe: null
+      Brazil: null
+      Guam: null
+      South Africa: null
+      Denmark: null
+      Kyrgyzstan: null
+      Tunisia: null
+      Mexico: null
+      Martinique: null
+      Burkina Faso: null
+      India: null
+      Myanmar: null
+      Malawi: null
+      Sweden: null
+      Macau: null
+      Cambodia: null
+      Equatorial Guinea: null
+      Senegal: null
+      Guernsey: null
+      Azerbaijan: null
+      Angola: null
+      Kuwait: null
+      Papua New Guinea: null
+      Central African Republic: null
+      Bhutan: null
+      Uzbekistan: null
+      Portugal: null
+      Isle of Man: null
+      Guatemala: null
+      Saint Helena Ascension and Tristan da Cunha: null
+      Kiribati: null
+      Peru: null
+      South Sudan: null
+      North Macedonia: null
+      Democratic Republic of the Congo: null
+      Belarus: null
+      Madagascar: null
+      Singapore: null
+      Togo: null
+      Gambia: null
+      Georgia: null
+      Italy: null
+      Tuvalu: null
+      Eswatini: null
+      Nepal: null
+      Kenya: null
+      Niger: null
+      Israel: null
+      Iran: null
+      Liberia: null
+      Mali: null
+      Belize: null
+      Hungary: null
+      Holy See: null
+      Serbia: null
+      Belgium: null
+      Bermuda: null
+      Anguilla: null
+      Jamaica: null
+      Lebanon: null
+      Svalbard & Jan Mayen Islands: null
+      Cyprus: null
+      Norway: null
+      Somalia: null
+      Japan: null
+      Guyana: null
+      Paraguay: null
+      New Zealand: null
+      Palau: null
+      Laos: null
+      Latvia: null
+      Ethiopia: null
+      Cuba: null
+      French Polynesia: null
+      Slovenia: null
+      Philippines: null
+      Mongolia: null
+      Switzerland: null
+      Bahamas: null
+      Samoa: null
+      El Salvador: null
+      Chad: null
+      Honduras: null
+      Bangladesh: null
+      Tonga: null
+      Croatia: null
+      Bosnia and Herzegovina: null
+      Eritrea: null
+      Saint Kitts and Nevis: null
+      Vietnam: null
+      Northern Mariana Islands: null
+      Cape Verde: null
+      Cook Islands: null
+      Turkmenistan: null
+      Western Sahara: null
+      Jordan: null
+      Romania: null
+      Uganda: null
+      Aruba: null
+      Hong Kong: null
+      Syria: null
+      Germany: null
+      Chile: null
+      Austria: null
+      Gabon: null
+      Kosovo: null
+      Qatar: null
+      Comoros: null
+      Mayotte: null
+      Spain: null
+      Libya: null
+      Costa Rica: null
+      Bolivia: null
+      Taiwan: null
+      Iraq: null
+      Finland: null
+      Netherlands: null
+      Venezuela: null
+      Malta: null
+      Niue: null
+      Algeria: null
+      Guinea: null
+      Ireland: null
+      Montenegro: null
+      United Arab Emirates: null
+      Maldives: null
+      Zambia: null
+      Slovakia: null
+      Lesotho: null
+      Dominican Republic: null
+      Saint Pierre and Miquelon: null
+      Moldova: null
+      San Marino: null
+      Nauru: null
+      Luxembourg: null
+      Monaco: null
+      Zimbabwe: null
+      Saudi Arabia: null
+      Mauritania: null
+      Panama: null
+      United States: null
+      Montserrat: null
+      Nicaragua: null
+      Faroe Islands: null
+      United Kingdom: null
+      Canada: null
+      Ghana: null
+      Armenia: null
+      Bulgaria: null
+      Egypt: null
+      Reunion: null
+      Cameroon: null
+      Rwanda: null
+      Timor-Leste: null
+      Yemen: null
+      Saint Lucia: null
+      Poland: null
+      Namibia: null
+      Guinea-Bissau: null
+      Thailand: null
+      Argentina: null
+      Turkey: null
+      Djibouti: null
+      Greece: null
+      Jersey: null
+      Mauritius: null
+      Wallis and Futuna: null
+      Pakistan: null
+      Ukraine: null
+      State of Palestine: null
+      Ecuador: null
+      South Korea: null
+      Russia: null
+      Greenland: null
+      Liechtenstein: null
+      Nigeria: null
+      Benin: null
+      Vanuatu: null
+      Sri Lanka: null
+      Tokelau: null
+      Czech Republic (Czechia): null
+      Marshall Islands: null
+      Estonia: null
+      Saint Vincent and the Grenadines: null
+      Puerto Rico: null
+      Grenada: null
+      Guadeloupe: null
+      Sierra Leone: null
+      Afghanistan: null
+      Haiti: null
+      Lithuania: null
+      Indonesia: null
+      Virgin Islands British: null
+      Virgin Islands U.S.: null
+      Sudan: null
+      Morocco: null
+      Iceland: null
+      North Korea: null
+      New Caledonia: null
+      Brunei: null
+  VitalStatusEnum:
+    permissible_values:
+      Dead: null
+      unknown: null
+      Not Reported: null
+      Alive: null

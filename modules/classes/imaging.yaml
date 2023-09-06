@@ -1,0 +1,82 @@
+classes:
+
+  ImagingLevel2:
+    is_a: Assay
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Component
+    - Filename
+    - FileFormat
+    - LabID
+    - ChannelMetadataFilename
+    - ImagingAssayType
+    - ProtocolLink
+    - SoftwareandVersion
+    - Microscope
+    - Objective
+    - NominalMagnification
+    - LensNA
+    - WorkingDistance
+    - WorkingDistanceUnit
+    - Immersion
+    - Pyramid
+    - Zstack
+    - Tseries
+    - PassedQC
+    - Comment
+    - FOVnumber
+    - FOVX
+    - FOVXUnit
+    - FOVY
+    - FOVYUnit
+    - FrameAveraging
+    - ImageID
+    - DimensionOrder
+    - PhysicalSizeX
+    - PhysicalSizeXUnit
+    - PhysicalSizeY
+    - PhysicalSizeYUnit
+    - PhysicalSizeZ
+    - PhysicalSizeZUnit
+    - PixelsBigEndian
+    - PlaneCount
+    - SizeC
+    - SizeT
+    - SizeX
+    - SizeY
+    - SizeZ
+    - PixelType
+  
+  ImagingLevel2Channels:
+    is_a: ImagingLevel2
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ChannelID
+    - ChannelName
+    - ChannelPassedQC
+    - CycleNumber
+    - SubCycleNumber
+    - TargetName
+    - AntibodyName
+    - RRIDidentifier
+    - Fluorophore
+    - Clone
+    - Lot
+    - Vendor
+    - CatalogNumber
+    - ExcitationWavelength
+    - EmissionWavelength
+    - ExcitationBandwidth
+    - EmissionBandwidth
+    - MetalIsotopeElement
+    - MetalIsotopeMass
+    - OligoBarcodeUpperStrand
+    - OligoBarcodeLowerStrand
+    - Dilution
+    - Concentration
+  
+  

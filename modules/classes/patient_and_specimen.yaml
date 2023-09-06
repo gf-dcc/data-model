@@ -1,0 +1,424 @@
+classes:
+ 
+  CohortCoreTemplate:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ParticipantID
+    - Age
+    - Sex
+    - BMI
+    - Race
+    - Ethnicity
+    - VitalStatus
+    - Height
+    - Weight
+    - Gravidity
+    - Parity
+    - AgeAtMenarche
+    - MenstrualCyclePhase
+    - MenopauseStatus
+    - PrimaryDiagnosis
+    - AgeatDiagnosis
+    - DiagnosisStatusType
+    - ClassBRCA1
+    - ClassBRCA2
+    - TobaccoUse
+    - PackYearsSmoked
+    - AlcoholUse
+    - NumberofDrinksPerWeek
+    - AntibioticUse
+    - SampleCollectionCenter
+    - SampleCollectionYear
+    - ERStatus
+    - PRStatus
+    - HER2Status
+
+  Patient:
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Component
+    - ParticipantID
+    - TimepointLabel
+
+  PatientExtended:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - StartDaysfromIndex
+    - StopDaysfromIndex
+    - SentinelLymphNodeCount
+    - SentinelNodePositiveAssessmentCount
+    - TumorExtranodalExtensionIndicator
+    - SatelliteMetastasisPresentIndicator
+    - OtherBiopsyResectionSite
+    - ExtentofTumorResection
+    - PrecancerousConditionType
+    - PriorSitesofRadiation
+    - Immunosuppression
+    - ConcomitantMedicationReceivedType
+    - FamilyMemberVitalStatusIndicator
+    - COVID19OccurrenceIndicator
+    - COVID19CurrentStatus
+    - COVID19PositiveLabTestIndicator
+    - COVID19AntibodyTesting
+    - COVID19ComplicationsSeverity
+    - COVID19CancerTreatmentFollowup
+    - Ecigvapeuse
+    - Ecigvape30dayusenum
+    - Ecigvapetimesperday
+    - Typeofsmokeexposurecumulativeyears
+    - Chewingtobaccodailyusecount
+    - Secondhandsmokeexposureyears
+    - KnownGeneticPredispositionMutation
+    - HereditaryCancerPredispositionSyndrome
+    - CancerAssociatedGeneMutations
+    - MutationalSignatures
+    - MismatchRepairSystemStatus
+    - LabTestsforMMRStatus
+    - ModeofCancerDetection
+    - EducationLevel
+    - CountryofBirth
+    - MedicallyUnderservedArea
+    - RuralvsUrban
+    - CancerIncidence
+    - CancerIncidenceLocation
+  
+  BreastCancerPatient:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - BreastCarcinomaDetectionMethodType
+    - BreastCarcinomaHistologyCategory
+    - InvasiveLobularBreastCarcinomaHistologicCategory
+    - InvasiveDuctalBreastCarcinomaHistologicCategory
+    - BreastBiopsyProcedureFindingType
+    - BreastQuadrantSite
+    - BreastCancerAssessmentTests
+    - BreastCancerGenomicTestPerformed
+    - MammaprintRiskGroup
+    - OncotypeRiskGroup
+    - ERReceptorStatus
+    - PRReceptorStatus
+    - BreastCancerAllredEstrogenReceptorScore
+    - PriorInvasiveBreastDisease
+    - BreastCarcinomaERStatusPercentageValue
+    - BreastCarcinomaPRStatusPercentageValue
+    - HER2BreastCarcinomaCopyNumberTotal
+    - BreastCarcinomaCentromere17CopyNumber
+    - BreastCarcinomaHER2Centromere17CopynumberTotal
+    - BreastCarcinomaHER2Chromosome17Ratio
+    - BreastCarcinomaSurgicalProcedureName
+    - BreastCarcinomaHER2RatioDiagnosis
+    - BreastCarcinomaHER2Status
+    - HormoneTherapyBreastCancerPreventionIndicator
+    - ERStainingIntensity
+    - PRStainingIntensity
+    - OncotypeScore
+    - BreastImagingPerformedType
+    - MultifocalBreastCarcinomaPresentIndicator
+    - MulticentricBreastCarcinomaPresentIndicator
+    - BIRADSMammographyBreastDensityCategory
+
+  OvarianCancerPatient:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - OvarianCancerHistologicSubtype
+    - OvarianCancerSurgicalOutcome
+    - OvarianCancerPlatinumStatus
+  
+  Exposure:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Component
+    - ParticipantID
+    - StartDaysfromIndex
+    - SmokingExposure
+    - AlcoholExposure
+    - EnvironmentalTobaccoSmokeExposure
+  
+  Yes-SmokingExposure:
+    is_a: Exposure
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - YearsSmoked
+    - PackYearsSmoked
+    - CigarettesperDay
+    - SmokingFrequency
+    - TypeofSmokeExposure
+    - TimebetweenWakingandFirstSmoke
+    - TobaccoSmokingOnsetYear
+    - TobaccoSmokingQuitYear
+    - TobaccoSmokingStatus
+    - TypeofTobaccoUsed
+    - SecondhandSmokeasChild
+    - SmokeExposureDuration
+    - TobaccoUseperDay
+    - SmokelessTobaccoQuitAge
+  
+  MolecularTest:
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Component
+    - ParticipantID
+    - TimepointLabel
+    - StartDaysfromIndex
+    - StopDaysfromIndex
+    - GeneSymbol
+    - MolecularAnalysisMethod
+    - TestResult
+    - AAChange
+    - Antigen
+    - ClinicalBiospecimenType
+    - BloodTestNormalRangeUpper
+    - BloodTestNormalRangeLower
+    - CellCount
+    - Chromosome
+    - Clonality
+    - CopyNumber
+    - Cytoband
+    - Exon
+    - HistoneFamily
+    - HistoneVariant
+    - Intron
+    - LaboratoryTest
+    - LociAbnormalCount
+    - LociCount
+    - Locus
+    - MismatchRepairMutation
+    - MolecularConsequence
+    - Pathogenicity
+    - Ploidy
+    - SecondExon
+    - SecondGeneSymbol
+    - SpecializedMolecularTest
+    - TestAnalyteType
+    - TestUnits
+    - TestValue
+    - Transcript
+    - VariantOrigin
+    - VariantType
+    - Zygosity
+  
+  Yes-CancerHistoryRelative:
+    is_a: FamilyHistory
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - RelativeswithCancerHistoryCount
+    - RelationshipType
+    - RelationshipPrimaryDiagnosis
+    - RelationshipGender
+    - RelationshipAgeatDiagnosis
+  
+  Yes-AlcoholExposure:
+    is_a: Exposure
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - AlcoholDaysPerWeek
+    - AlcoholDrinksPerDay
+    - AlcoholHistory
+    - AlcoholIntensity
+    - AlcoholType
+  
+  Yes-VascularInvasionPresent:
+    is_a: Diagnosis
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - VascularInvasionType
+  
+  TotalVolume:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - TotalVolumeUnit
+  
+  Yes-ProgressionorRecurrence:
+    is_a: Diagnosis
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ProgressionorRecurrenceType
+    - DaystoProgression
+    - DaystoProgressionFree
+    - DaystoRecurrence
+    - DaystoRecurrence
+    - ProgressionorRecurrenceAnatomicSite
+  
+  Dead:
+    is_a: Demographics
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - YearofDeath
+    - CauseofDeath
+    - CauseofDeathSource
+    - DaystoDeath
+  
+################## 
+# Biospecimen 
+#################
+
+  SampleCoreTemplate:
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ParticipantID
+    - SampleID
+    - DetailedSampleID
+    - AdjacentSampleIDs
+    - SampleSite
+    - ERStatus
+    - PRStatus
+    - HER2Status
+    - Laterality
+
+  Biospecimen:
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - BiospecimenID
+    - ParentID
+    - ParentBiospecimenID
+    - AdjacentBiospecimenIDs
+    - BiospecimenType
+    - TimepointLabel
+    - SpecimenLaterality
+  
+  TissueBiospecimenType:
+    annotations:
+      requiresComponent: ''
+      required: false
+    is_a: Biospecimen
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+    - BiospecimenDimension1
+    - BiospecimenDimension2
+    - BiospecimenDimension3
+    - SectionNumberinSequence
+  
+  FamilyHistory:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - RelativewithCancerHistory
+  
+  Demographics:
+    is_a: Patient
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - Ethnicity
+    - Gender
+    - Race
+    - VitalStatus
+    - DaystoBirth
+    - CountryofResidence
+    - AgeIsObfuscated
+    - YearOfBirth
+  
+  BiospecimenDimension1:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - DimensionsUnit
+  
+  BloodBiospecimenType:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - ShippingConditionType
+  
+  UrineBiospecimenType:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - SpecimenLaterality
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+
+  BoneMarrowBiospecimenType:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - IschemicTime
+    - IschemicTemperature
+    - SiteofResectionorBiopsy
+    - SpecimenLaterality
+    - PortionWeight
+    - TotalVolume
+    - TumorTissueType
+    - HistologicMorphologyCode
+    - PreservationMethod
+    - BiospecimenDimension1
+    - BiospecimenDimension2
+    - BiospecimenDimension3
+    - SectionNumberinSequence
+  
+  AnalyteBiospecimenType:
+    is_a: Biospecimen
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - AnalyteType
+    - FixationDuration
+    - SlideChargeType
+    - SectionThicknessValue
+    - SectioningDaysfromIndex
+    - ShippingConditionType
+    - IschemicTime
+    - IschemicTemperature

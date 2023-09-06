@@ -1,0 +1,168 @@
+enums:
+  BreastCancerAssessmentTestsEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Data not available: null
+      Estrogen receptor IHC: null
+      Progesterone receptor IHC: null
+      HER2 IHC: null
+      HER2 FISH-CISH: null
+      HER2 FISH: null
+  BreastCarcinomaDetectionMethodTypeEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Clinical Exam: null
+      Data not available: null
+      Nipple Discharge: null
+      Screening Mammography: null
+      Screening MRI: null
+      Self exam: null
+  BreastCancerGenomicTestPerformedEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Data not available: null
+      Oncotype: null
+      MammaPrint: null
+      Not performed: null
+  OncotypeRiskGroupEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      High risk: null
+      Intermediate risk: null
+      Low risk: null
+  InvasiveDuctalBreastCarcinomaHistologicCategoryEnum:
+    permissible_values:
+      Invasive carcinoma-type cannot be determined: null
+      Medullary carcinoma: null
+      Invasive papillary carcinoma: null
+      Invasive tubular carcinoma: null
+      Data not available: null
+      unknown: null
+      Invasive cribriform carcinoma: null
+      Invasive micropapillary carcinoma: null
+      Tubulolobular carcinoma: null
+      Other: null
+      Classical type: null
+      Mucinous carcinoma: null
+  PriorInvasiveBreastDiseaseEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Data not available: null
+      DCIS: null
+      LCIS: null
+      Invasive breast cancer (unrelated to the current cancer): null
+  BreastBiopsyProcedureFindingTypeEnum:
+    permissible_values:
+      Other: null
+      Atypical hyperplasia: null
+      DCIS: null
+      LCIS: null
+      Cancer: null
+      No cancer: null
+  InvasiveLobularBreastCarcinomaHistologicCategoryEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      Alveolar type: null
+      Classical type: null
+      Pleomorphic type: null
+  BreastCarcinomaSurgicalProcedureNameEnum:
+    permissible_values:
+      Radical mastectomy: null
+      unknown: null
+      Simple mastectomy: null
+      Modified radical mastectomy: null
+      Partial mastectomy: null
+      Surgery not performed: null
+      Other: null
+      Lumpectomy: null
+      Re-excision: null
+  StainingIntensityEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Strong: null
+      Moderate: null
+      Weak: null
+      Weak-Moderate: null
+      Moderate-Strong: null
+      Weak-Strong: null
+  BreastCarcinomaHER2StatusEnum:
+    permissible_values:
+      unknown: null
+      Equivocal: null
+      Indeterminate: null
+      Negative: null
+      Not Performed: null
+      Positive: null
+      Amplified: null
+      Non-amplified: null
+  BIRADSMammographyBreastDensityCategoryEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      Predominantly fatty: null
+      Scattered fibroglandular densities: null
+      Heterogeneously dense: null
+      Extremely dense: null
+  HormoneTherapyBreastCancerPreventionIndicatorEnum:
+    permissible_values:
+      Not Applicable: null
+      'Yes': null
+      'No': null
+      unknown: null
+  ReceptorStatusEnum:
+    permissible_values:
+      unknown: null
+      Borderline: null
+      Equivocal: null
+      Indeterminate: null
+      Negative: null
+      Not Performed: null
+      Performed but Not Available: null
+      Positive: null
+  BreastCancerAllredEstrogenReceptorScoreEnum:
+    permissible_values:
+      unknown: null
+      '10': null
+      '0': null
+      '4': null
+      '7': null
+      '1': null
+      '8': null
+      '2': null
+      '5': null
+      '3': null
+      '6': null
+  BreastQuadrantSiteEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      Upper outer quadrant: null
+      Lower outer quadrant: null
+      Upper inner quadrant: null
+      Lower inner quadrant: null
+      Central: null
+      Nipple: null
+  BreastCarcinomaHistologyCategoryEnum:
+    permissible_values:
+      Other: null
+      Infiltrating ductal carcinoma: null
+      Infiltrating lobular carcinoma: null
+      Invasive mammary carcinoma NOS: null
+      Invasive mixed ductal and lobular carcinoma: null
+  BreastImagingPerformedTypeEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      Mammogram: null
+      Ultrasound: null
+      MRI: null
+      PET/CT: null
+      CT: null
+      Multiple imaging modalities: null

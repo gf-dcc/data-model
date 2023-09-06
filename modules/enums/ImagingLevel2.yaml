@@ -1,0 +1,57 @@
+enums:
+  DimensionOrderEnum:
+    permissible_values:
+      XYZCT: null
+      XYZTC: null
+      XYCTZ: null
+      XYCZT: null
+      XYTZC: null
+      ZYX: null
+  ImagingAssayTypeEnum:
+    permissible_values:
+      MIBI: null
+      MxIF: null
+      IMC: null
+      Not Applicable: null
+      mIHC: null
+      H&E: null
+      IHC: null
+      CODEX: null
+      SABER: null
+      MERFISH: null
+      CyCIF: null
+      t-CyCIF: null
+      GeoMX-DSP: null
+      ExSeq: null
+  PixelTypeEnum:
+    permissible_values:
+      int32: null
+      int16: null
+      double: null
+      float: null
+      uint16: null
+      int8: null
+      uint32: null
+      bit: null
+      uint8: null
+  MicroscopyUnitEnum:
+    permissible_values:
+      cm: null
+      mm: null
+      µm: null
+      nm: null
+      Å: null
+  TseriesEnum:
+    permissible_values:
+      'Yes': null
+      'No': null
+  ImmersionEnum:
+    permissible_values:
+      Air: null
+      Oil: null
+      Water: null
+      Other: null
+  PassedQCEnum:
+    permissible_values:
+      No - Channels QC: null
+      'Yes': null

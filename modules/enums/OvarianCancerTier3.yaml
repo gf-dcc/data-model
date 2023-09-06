@@ -1,0 +1,29 @@
+enums:
+  OvarianCancerPlatinumStatusEnum:
+    permissible_values:
+      unknown: null
+      Data not available: null
+      Platinum-refractory: null
+      Platinum-sensitive: null
+      Platinum-resistant: null
+  OvarianCancerHistologicSubtypeEnum:
+    permissible_values:
+      High-grade serous: null
+      Data not available: null
+      unknown: null
+      Germ cell: null
+      High-grade endometrioid: null
+      Other: null
+      Low-grade serous: null
+      Clear cell: null
+      Low-grade endometrioid: null
+      Mucinous: null
+      Sex-cord stromal: null
+  OvarianCancerSurgicalOutcomeEnum:
+    permissible_values:
+      Other: null
+      unknown: null
+      Data not available: null
+      R0 resection: null
+      Optimal cytoreduction: null
+      Sub-optimal cytoreduction: null
