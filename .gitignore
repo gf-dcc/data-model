@@ -1,4 +1,5 @@
 # Creds
+creds.json
 schematic_service_account_creds.json
 
 # Tests and template files generated locally
@@ -6,6 +7,9 @@ schematic_service_account_creds.json
 tests/generate/GF.jsonld
 tests/generate/config.json
 tests/generate/creds.json
+
+# Tools
+retold
 
 # Ignore test logs
 logs
