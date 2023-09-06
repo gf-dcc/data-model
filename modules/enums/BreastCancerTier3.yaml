@@ -122,7 +122,7 @@ enums:
       'Yes': null
       'No': null
       unknown: null
-  BreastCarcinomaEstrogenReceptorStatusEnum:
+  ReceptorStatusEnum:
     permissible_values:
       unknown: null
       Borderline: null

@@ -318,8 +318,8 @@ classes:
     - BreastCancerGenomicTestPerformed
     - MammaprintRiskGroup
     - OncotypeRiskGroup
-    - BreastCarcinomaEstrogenReceptorStatus
-    - BreastCarcinomaProgesteronerReceptorStatus
+    - ERReceptorStatus
+    - PRReceptorStatus
     - BreastCancerAllredEstrogenReceptorScore
     - PriorInvasiveBreastDisease
     - BreastCarcinomaERStatusPercentageValue

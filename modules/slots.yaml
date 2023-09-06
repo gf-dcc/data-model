@@ -55,13 +55,13 @@ slots:
     annotations:
       validationRules: []
     range: PreservationMethodEnum
-  BreastCarcinomaProgesteronerReceptorStatus:
-    title: Breast Carcinoma Progesteroner Receptor Status
+  PRReceptorStatus:
+    title: Breast Carcinoma Progesterone Receptor Status
     required: false
     description: Text term to represent the overall result of Progresterone Receptor (PR) testing in a participant with breast cancer
     annotations:
       validationRules: []
-    range: BreastCarcinomaProgesteronerReceptorStatusEnum
+    range: ReceptorStatusEnum
   Ecigvapeuse:
     title: Ecig vape use
     required: false
@@ -1740,13 +1740,13 @@ slots:
     description: Numeric value used to describe the average number of days each week that a person consumes an alcoholic beverage.
     annotations:
       validationRules: []
-  BreastCarcinomaEstrogenReceptorStatus:
+  ERReceptorStatus:
     title: Breast Carcinoma Estrogen Receptor Status
     required: false
     description: Text term to represent the overall result of Estrogen Receptor (ER) testing in a participant with breast cancer
     annotations:
       validationRules: []
-    range: BreastCarcinomaEstrogenReceptorStatusEnum
+    range: ReceptorStatusEnum
   AnalyteType:
     title: Analyte Type
     required: false
