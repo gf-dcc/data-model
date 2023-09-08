@@ -473,11 +473,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -634,11 +656,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -703,11 +747,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -730,8 +796,6 @@
       "@id" : "bts:SingleNucleusBuffer"
     }, {
       "@id" : "bts:TranspositionReaction"
-    }, {
-      "@id" : "bts:ScATACseqLibraryLayout"
     }, {
       "@id" : "bts:NucleusIdentifier"
     }, {
@@ -873,11 +937,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -900,8 +986,6 @@
       "@id" : "bts:SingleNucleusBuffer"
     }, {
       "@id" : "bts:TranspositionReaction"
-    }, {
-      "@id" : "bts:ScATACseqLibraryLayout"
     }, {
       "@id" : "bts:NucleusIdentifier"
     }, {
@@ -956,7 +1040,7 @@
     "sms:required" : "sms:false",
     "sms:requiresComponent" : "",
     "rdfs:label" : "Sequencing",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "Base template for some type of sequencing data, for which below properties are relevant/in common.",
     "@type" : "rdfs:Class",
     "sms:requiresDependency" : [ {
       "@id" : "bts:Component"
@@ -977,11 +1061,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     } ],
@@ -1018,11 +1124,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -1044,9 +1172,9 @@
     }, {
       "@id" : "bts:ScRNAseqWorkflowType"
     }, {
-      "@id" : "bts:WorkflowVersion"
-    }, {
       "@id" : "bts:ScRNAseqWorkflowParametersDescription"
+    }, {
+      "@id" : "bts:WorkflowVersion"
     }, {
       "@id" : "bts:WorkflowLink"
     }, {
@@ -1114,11 +1242,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -1171,11 +1321,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -1198,8 +1370,6 @@
       "@id" : "bts:SingleNucleusBuffer"
     }, {
       "@id" : "bts:TranspositionReaction"
-    }, {
-      "@id" : "bts:ScATACseqLibraryLayout"
     }, {
       "@id" : "bts:NucleusIdentifier"
     }, {
@@ -1287,11 +1457,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -1671,6 +1863,71 @@
     "sms:displayName" : "Dead"
   }, {
     "rdfs:subClassOf" : [ {
+      "@id" : "bts:Sequencing"
+    } ],
+    "@id" : "bts:BulkDNA-seqLevel1",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "sms:requiresComponent" : "",
+    "rdfs:label" : "BulkDNA-seqLevel1",
+    "rdfs:comment" : "TBD",
+    "@type" : "rdfs:Class",
+    "sms:requiresDependency" : [ {
+      "@id" : "bts:Component"
+    }, {
+      "@id" : "bts:Filename"
+    }, {
+      "@id" : "bts:FileFormat"
+    }, {
+      "@id" : "bts:ParticipantID"
+    }, {
+      "@id" : "bts:SampleID"
+    }, {
+      "@id" : "bts:DetailedSampleID"
+    }, {
+      "@id" : "bts:SequencingPlatform"
+    }, {
+      "@id" : "bts:NucleicAcidSource"
+    }, {
+      "@id" : "bts:LibraryConstructionMethod"
+    }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
+      "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
+    }, {
+      "@id" : "bts:Read1"
+    }, {
+      "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
+    }, {
+      "@id" : "bts:TechnicalReplicateGroup"
+    }, {
+      "@id" : "bts:TargetCaptureKit"
+    } ],
+    "sms:displayName" : "BulkDNA-seqLevel1"
+  }, {
+    "rdfs:subClassOf" : [ {
       "@id" : "bts:Patient"
     } ],
     "@id" : "bts:CohortCoreTemplate",
@@ -1854,11 +2111,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -1968,11 +2247,33 @@
     }, {
       "@id" : "bts:LibraryConstructionMethod"
     }, {
+      "@id" : "bts:LibrarySelectionMethod"
+    }, {
+      "@id" : "bts:LibraryLayout"
+    }, {
+      "@id" : "bts:LibraryPreparationKitName"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVendor"
+    }, {
+      "@id" : "bts:LibraryPreparationKitVersion"
+    }, {
       "@id" : "bts:ReadIndicator"
+    }, {
+      "@id" : "bts:ReadLength"
     }, {
       "@id" : "bts:Read1"
     }, {
       "@id" : "bts:Read2"
+    }, {
+      "@id" : "bts:TargetDepth"
+    }, {
+      "@id" : "bts:AdapterName"
+    }, {
+      "@id" : "bts:AdapterSequence"
+    }, {
+      "@id" : "bts:BatchID"
+    }, {
+      "@id" : "bts:LaneNumber"
     }, {
       "@id" : "bts:TechnicalReplicateGroup"
     }, {
@@ -2825,6 +3126,17 @@
     "sms:displayName" : "DissociationMethodEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:LibraryLayoutEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LibraryLayoutEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryLayoutEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:BreastCancerAllredEstrogenReceptorScoreEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -3232,6 +3544,17 @@
     "sms:displayName" : "AdjacentSampleIDs",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:AdapterSequence",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Base sequence of the sequencing adapter. String",
+    "rdfs:label" : "AdapterSequence",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AdapterSequence",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:DaystoDeath",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "Number of days between the date used for index and the date from a person's date of death represented as a calculated number of days.",
@@ -3419,6 +3742,26 @@
     "rdfs:comment" : "Text term to describe the result of the examination of the breast tissue specimen or fluid as related to the presence and nature of disease.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "BreastBiopsyProcedureFindingType"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:LibraryLayout",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:PairedEnd"
+    }, {
+      "@id" : "bts:SingleRead"
+    }, {
+      "@id" : "bts:Mid-length"
+    }, {
+      "@id" : "bts:LongRead"
+    } ],
+    "rdfs:label" : "LibraryLayout",
+    "rdfs:comment" : "Sequencing read type",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "LibraryLayout"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:SpecimenLaterality",
@@ -4199,6 +4542,17 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "GenomicCoverageType"
   }, {
+    "@id" : "bts:TargetDepth",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Targeted read depth prior to sequencing. Integer",
+    "rdfs:label" : "TargetDepth",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TargetDepth",
+    "sms:required" : "sms:false"
+  }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:PixelType",
     "schema:isPartOf" : {
@@ -4799,6 +5153,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Filename",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AdapterName",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Name of the sequencing adapter. String",
+    "rdfs:label" : "AdapterName",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AdapterName",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:CountryofBirth",
@@ -6824,6 +7189,34 @@
     "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:LibrarySelectionMethod",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:true",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:hybridselection"
+    }, {
+      "@id" : "bts:PCR"
+    }, {
+      "@id" : "bts:affinityenrichment"
+    }, {
+      "@id" : "bts:poly-Tenrichment"
+    }, {
+      "@id" : "bts:random"
+    }, {
+      "@id" : "bts:rRNAdepletion"
+    }, {
+      "@id" : "bts:miRNAsizefractionation"
+    }, {
+      "@id" : "bts:other"
+    } ],
+    "rdfs:label" : "LibrarySelectionMethod",
+    "rdfs:comment" : "How RNA molecules are isolated",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "LibrarySelectionMethod"
+  }, {
+    "rdfs:subClassOf" : [ ],
     "@id" : "bts:CountryofResidence",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
@@ -7746,6 +8139,17 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "MolecularAnalysisMethod"
   }, {
+    "@id" : "bts:LaneNumber",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Basic machine unit for sequencing. For Illumina machines, this reflects the physical lane number. Wrong or missing information may affect analysis results. Integer",
+    "rdfs:label" : "LaneNumber",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LaneNumber",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:ParticipantID",
     "@type" : "rdfs:Class",
     "rdfs:comment" : " ID associated with a patient",
@@ -7833,6 +8237,18 @@
     },
     "sms:displayName" : "AcquisitionMethodOtherSpecify",
     "sms:required" : "sms:false"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ReadLength",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "sms:validationRules" : [ "num" ],
+    "rdfs:label" : "ReadLength",
+    "rdfs:comment" : "Length of the sequencing reads. Can be integer, null",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ReadLength"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:WellIndex",
@@ -8049,6 +8465,17 @@
     "rdfs:comment" : "Nuclei isolation buffer",
     "@type" : "rdfs:Class",
     "sms:displayName" : "SingleNucleusBuffer"
+  }, {
+    "@id" : "bts:LibraryPreparationKitVendor",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Vendor of Library Preparation Kit. String",
+    "rdfs:label" : "LibraryPreparationKitVendor",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPreparationKitVendor",
+    "sms:required" : "sms:false"
   }, {
     "@id" : "bts:LensNA",
     "@type" : "rdfs:Class",
@@ -9248,6 +9675,17 @@
     "sms:displayName" : "Objective",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:BatchID",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BatchID",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BatchID",
+    "sms:required" : "sms:false"
+  }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:VascularInvasionType",
     "schema:isPartOf" : {
@@ -10084,6 +10522,17 @@
     "sms:displayName" : "TargetName",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:TargetCaptureKit",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TargetCaptureKit",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TargetCaptureKit",
+    "sms:required" : "sms:true"
+  }, {
     "@id" : "bts:SecondExon",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "The second exon number involved in molecular variation. If a specific genetic variant is being reported, this property can be used to capture the second exon where that variant is located. This property is typically used for a translocation where two different locations are involved in the variation.",
@@ -10131,18 +10580,6 @@
     },
     "sms:displayName" : "BloodTestNormalRangeUpper",
     "sms:required" : "sms:false"
-  }, {
-    "rdfs:subClassOf" : [ ],
-    "@id" : "bts:ScATACseqLibraryLayout",
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:required" : "sms:false",
-    "schema:rangeIncludes" : [ ],
-    "rdfs:label" : "ScATACseqLibraryLayout",
-    "rdfs:comment" : "Sequencing read type",
-    "@type" : "rdfs:Class",
-    "sms:displayName" : "ScATACseqLibraryLayout"
   }, {
     "@id" : "bts:Immunosuppression",
     "@type" : "rdfs:Class",
@@ -10576,6 +11013,17 @@
     "sms:displayName" : "FOVnumber",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:LibraryPreparationKitName",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Name of Library Preparation Kit. String",
+    "rdfs:label" : "LibraryPreparationKitName",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPreparationKitName",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:ChannelMetadataFilename",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "Full path of uploaded companion CSV file containing channel-level metadata details",
@@ -10952,6 +11400,17 @@
     "rdfs:comment" : "The text term used to describe the malignant diagnosis of the patient's relative with a history of cancer.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "RelationshipPrimaryDiagnosis"
+  }, {
+    "@id" : "bts:LibraryPreparationKitVersion",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Version of Library Preparation Kit. String",
+    "rdfs:label" : "LibraryPreparationKitVersion",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPreparationKitVersion",
+    "sms:required" : "sms:true"
   }, {
     "@id" : "bts:AppliedHardTrimming",
     "@type" : "rdfs:Class",
@@ -12871,6 +13330,17 @@
     "sms:displayName" : "vcf",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:random",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "random",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "random",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:CD25",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -14497,6 +14967,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Karyotype",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SingleRead",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SingleRead",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Single Read",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:bgzip",
@@ -16961,6 +17442,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Bile duct adenoma",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:poly-Tenrichment",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "poly-Tenrichment",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "poly-T enrichment",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Overlappinglesionofbladder",
@@ -19634,6 +20126,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "mm",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:affinityenrichment",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "affinityenrichment",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "affinity enrichment",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:CranialnerveNOS",
@@ -24685,6 +25188,17 @@
     "sms:displayName" : "Floor of mouth NOS",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:PairedEnd",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PairedEnd",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Paired End",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:LymphaticleukemicNOS",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -24771,6 +25285,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Illumina Genome Analyzer IIx",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:LongRead",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LongRead",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Long Read",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Bodyofpenis",
@@ -26797,6 +27322,17 @@
     "sms:displayName" : "Burkitt tumor",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:rRNAdepletion",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "rRNAdepletion",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "rRNA depletion",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:H1",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -28194,6 +28730,17 @@
     "sms:displayName" : "CDKN2A mutation",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:PCR",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PCR",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PCR",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Peripheralnervesandautonomicnervoussystemofabdomen",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -28665,6 +29212,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "chr13",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:other",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "other",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "other",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:OrbitNOS",
@@ -30889,6 +31447,17 @@
     "sms:displayName" : "Submandibular gland",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:hybridselection",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "hybridselection",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "hybrid selection",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:PigmentednevusNOS",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -32264,6 +32833,17 @@
     "sms:displayName" : "Familial gastrointestinal stromal tumor",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Mid-length",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Mid-length",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Mid-length",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:H2A.Z",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -32823,6 +33403,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Grenada",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:miRNAsizefractionation",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "miRNAsizefractionation",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "miRNA size fractionation",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Niue",
