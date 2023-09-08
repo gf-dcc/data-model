@@ -1,6 +1,8 @@
 classes:
   
   Sequencing:
+    abstract: true
+    description: Base template for some type of sequencing data, for which below properties are relevant/in common.
     annotations:
       requiresComponent: ''
       required: false
@@ -14,9 +16,20 @@ classes:
     - SequencingPlatform
     - NucleicAcidSource
     - LibraryConstructionMethod
+    - LibrarySelectionMethod
+    - LibraryLayout
+    - LibraryPreparationKitName
+    - LibraryPreparationKitVendor
+    - LibraryPreparationKitVersion
     - ReadIndicator
+    - ReadLength
     - Read1
     - Read2
+    - TargetDepth
+    - AdapterName
+    - AdapterSequence
+    - BatchID
+    - LaneNumber
     - TechnicalReplicateGroup
 
   SingleCellSequencing:
@@ -54,8 +67,8 @@ classes:
       required: false
     slots:
     - ScRNAseqWorkflowType
-    - WorkflowVersion
     - ScRNAseqWorkflowParametersDescription
+    - WorkflowVersion
     - WorkflowLink
     - GenomicReference
     - GenomicReferenceURL
@@ -107,7 +120,6 @@ classes:
     slots:
     - SingleNucleusBuffer
     - TranspositionReaction
-    - ScATACseqLibraryLayout
     - NucleusIdentifier
     - NucleiBarcodeLength
     - NucleiBarcodeRead
@@ -120,6 +132,16 @@ classes:
     - MedianPercentageofMitochondrialReadsperNucleus
     - TotalReads
   
+  
+  BulkDNA-seqLevel1:
+    is_a: Sequencing
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - TargetCaptureKit
+
+  
   BulkMethylation-seqLevel1:
     is_a: Sequencing
     annotations:
@@ -127,8 +149,10 @@ classes:
       required: false
     slots:
     - GenomicCoverageType
-    
-  
+
+
+# These are not templates, schematic-specific way of adding specific dependencies 
+
   CEL-seq2:
     is_a: ScRNA-seqLevel1
     annotations:

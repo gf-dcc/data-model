@@ -9,6 +9,14 @@ slots:
     required: false
     description: A custom acquisition method [Text - max length 100 characters]
     annotations:
+  AdapterName:
+    title: Adapter Name
+    required: false
+    description: Name of the sequencing adapter. String
+  AdapterSequence:
+    title: Adapter Sequence
+    required: false
+    description: Base sequence of the sequencing adapter. String
   AdjacentBiospecimenIDs:
     title: Adjacent Biospecimen IDs
     required: false
@@ -115,6 +123,11 @@ slots:
     annotations:
   Authors:
     title: Authors
+    required: false
+    description: TBD
+    annotations:
+  BatchID:
+    title: Batch ID, for sequencing or other experimental run context.
     required: false
     description: TBD
     annotations:
@@ -846,6 +859,11 @@ slots:
     description: The text term used to describe the medical testing used to diagnose, treat or further understand a patient's disease.
     annotations:
     range: LaboratoryTestEnum
+  LaneNumber:
+    title: Lane Number
+    required: false
+    description: Basic machine unit for sequencing. For Illumina machines, this reflects the physical lane number. Wrong or missing information may affect analysis results. Integer
+    annotations:
   Laterality:
     title: Sample Laterality
     required: false
@@ -863,6 +881,38 @@ slots:
     description: Process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors [OBI_0000711]
     annotations:
     range: LibraryConstructionMethodEnum
+  LibraryLayout:
+    title: Library Layout
+    required: false
+    description: Sequencing read type
+    annotations:
+    range: LibraryLayoutEnum
+  LibraryPreparationKitName:
+    title: Library Preparation Kit Name
+    required: false
+    description: Name of Library Preparation Kit. String
+  LibraryPreparationKitVendor:
+    title: Library Preparation Kit Vendor
+    required: false
+    description: Vendor of Library Preparation Kit. String
+  LibraryPreparationKitVersion:
+    title: Library Preparation Kit Version
+    required: true
+    description: Version of Library Preparation Kit. String
+  LibrarySelectionMethod:
+    title: Library Selection Method
+    required: true
+    description: How RNA molecules are isolated
+    annotations:
+    enum_range:
+    - hybrid selection
+    - PCR
+    - affinity enrichment
+    - poly-T enrichment
+    - random
+    - rRNA depletion
+    - miRNA size fractionation
+    - other
   LinkedDatasets:
     title: Linked Datasets
     required: false
@@ -1302,6 +1352,12 @@ slots:
     required: false
     description: TBD
     annotations:
+  ReadLength:
+    title: Read Length
+    required: false
+    description: Length of the sequencing reads. Can be integer, null
+    annotations:
+      validationRules: 'num'
   RelationshipAgeatDiagnosis:
     title: Relationship Age at Diagnosis
     required: false
@@ -1372,12 +1428,6 @@ slots:
     description: A yes/no indicator to ask if intransit metastases or satellite lesions are present.
     annotations:
     range: SatelliteMetastasisPresentIndicatorEnum
-  ScATACseqLibraryLayout:
-    title: scATACseq Library Layout
-    required: false
-    description: Sequencing read type
-    annotations:
-    range: ScATACseqLibraryLayoutEnum
   ScRNAseqWorkflowParametersDescription:
     title: scRNAseq Workflow Parameters Description
     required: false
@@ -1560,6 +1610,15 @@ slots:
     required: false
     description: TBD
     annotations:
+  TargetCaptureKit:
+    title: Uniquely identify a target capture kit. Suggested value is a combination of vendor, kit name, and kit version
+    required: true
+    description: TBD
+    annotations:
+  TargetDepth:
+    title: Target Depth
+    required: false
+    description: Targeted read depth prior to sequencing. Integer
   TargetName:
     title: Target Name
     required: false
