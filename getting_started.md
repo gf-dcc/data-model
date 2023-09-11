@@ -12,7 +12,9 @@ You may need to wait a bit for the container to install tools and finish other s
 ## Update and make data model jsonld
 
 1. Modify a `.yaml` file in the `modules` directory.
-2. In the devcontainer at the root of the repo, type `make`. The animated `gif` shows what it should look like.
+2. In the devcontainer at the root of the repo, type `make`. Animation of what it should look like:
+
+![make demonstration](docs/make.gif)
 
 ## Generate templates
 
