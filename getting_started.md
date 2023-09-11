@@ -9,6 +9,13 @@ For quick and reproducible workflow, this guide is based on devcontainers, which
 In upper menu button, **Code > Create codespace on main**. 
 You may need to wait a bit for the container to install tools and finish other setup.
 
+## Update and make data model jsonld
+
+1. Modify a `.yaml` file in the `modules` directory.
+2. In the devcontainer at the root of the repo, type `make`. Animation of what it should look like:
+
+![make demonstration](docs/make.gif)
+
 ## Generate templates
 
 This is the command-line equivalent of using the schematic API or using the DCA UI to generate a template.
