@@ -17,11 +17,11 @@ This is the command-line equivalent of using the schematic API or using the DCA 
 
 2. Generate a blank Excel template for e.g. scRNAseq-Level1 by running `./scripts/gen_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
 
-TODO - update script for these steps
+TODO - adapt script to allow these steps @cconrad8
 
 3. Generate a blank Google template.
 
-4. Generate a *filled-in* Google or Excel template for existing files on Synapse.
+4. Generate a *filled-in* Google or Excel template for existing files on Synapse. An example for where this would apply is the public ScRNA-seqLevel1 dataset `syn26560315`.
 
  
 ## Validate manifest
