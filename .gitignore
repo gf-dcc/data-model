@@ -1,6 +1,7 @@
 # Creds
 creds.json
 schematic_service_account_creds.json
+.synapseConfig
 
 # Tests and template files generated locally
 *.schema.json
