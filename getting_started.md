@@ -20,15 +20,15 @@ You may need to wait a bit for the container to install tools and finish other s
 
 This is the command-line equivalent of using the schematic API or using the DCA UI to generate a template.
 
-1. For generating templates, you need creds. (You only need to do this once with a new codespace. Locally, we can keep the `creds.json` In the command line and gitignore it so it is not committed to the repo.) Run this simple bash script at the codespace command line: `./scripts/setup_creds.sh`. You should see a `creds.json` file at the root of the repo, next to the `.jsonld` file, etc. Feel free to skim the bash script and the `.json` file.
+1. For generating templates, you need creds. You only need to do this once when starting up a new codespace. Run this simple bash script at the codespace command line: `./scripts/setup_creds.sh`. You should see a `creds.json` and `.synapseConfig` file at the root of the repo, next to the `.jsonld` file. Locally, we can keep these files around but .gitignore them so they are **not committed to the repo**. Also, for local use, you may want to set up `.synapseConfig` using your own credentials. Feel free to skim the bash script and creds files.
 
 2. Generate a blank Excel template for e.g. scRNAseq-Level1 by running `./scripts/gen_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
 
-TODO - update script for these steps
+TODO - adapt script to allow these steps @cconrad8
 
 3. Generate a blank Google template.
 
-4. Generate a *filled-in* Google or Excel template for existing files on Synapse.
+4. Generate a *filled-in* Google or Excel template for existing files on Synapse. An example for where this would apply is the public ScRNA-seqLevel1 dataset `syn26560315`.
 
  
 ## Validate manifest
