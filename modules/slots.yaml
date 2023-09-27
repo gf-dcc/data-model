@@ -513,7 +513,7 @@ slots:
   AltSampleID:
     title: Alt Sample ID
     required: false
-    description: ' Additional alternative ID associated with a biosample'
+    description: Additional alternative ID associated with a biosample
     annotations:
   DiagnosisStatusType:
     title: Diagnosis Status Type
@@ -1183,7 +1183,7 @@ slots:
   ParticipantID:
     title: Participant ID
     required: true
-    description: ID associated with a patient'
+    description: ID associated with a patient
     annotations:
   PassedQC:
     title: Passed QC
