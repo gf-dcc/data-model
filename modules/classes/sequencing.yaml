@@ -12,7 +12,7 @@ classes:
     - FileFormat
     - ParticipantID
     - SampleID
-    - DetailedSampleID
+    - AltSampleID
     - SequencingPlatform
     - NucleicAcidSource
     - LibraryConstructionMethod

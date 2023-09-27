@@ -510,8 +510,8 @@ slots:
     required: false
     description: TBD
     annotations:
-  DetailedSampleID:
-    title: Detailed Sample ID
+  AltSampleID:
+    title: Alt Sample ID
     required: false
     description: ' Additional alternative ID associated with a biosample'
     annotations:
