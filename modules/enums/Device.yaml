@@ -1,35 +1,36 @@
 enums:
   SequencingPlatformEnum:
     permissible_values:
-      PromethION: null
-      Illumina NovaSeq 6000: null
-      PacBio RS: null
-      Not Reported: null
-      Illumina Next Seq 500: null
-      NovaSeq 6000: null
-      Illumina Next Seq 2500: null
-      Illumina HiSeq 4000: null
-      unknown: null
-      Complete Genomics: null
-      Ultima Genomics UG100: null
-      Illumina MiSeq: null
-      Illumina HiSeq X Ten: null
-      Illumina Genome Analyzer IIx: null
-      Ion Torrent Proton: null
-      AB SOLiD 4 AB SOLiD 2: null
-      Illumina Genome Analyzer II: null
-      NovaSeqS4: null
-      Revio: null
-      Illumina HiSeq 2500: null
-      454 GS FLX Titanium: null
-      Illumina Next Seq 550: null
-      GridION: null
-      Other: null
-      Illumina HiSeq 2000: null
-      Illumina HiSeq X Five: null
-      Illumina NextSeq: null
-      Ion Torrent S5: null
-      Ion Torrent PGM: null
-      Oxford Nanopore minION: null
-      AB SOLiD 3: null
-      PacBio Sequel2: null
+      454 GS FLX Titanium:
+      AB SOLiD 3:
+      AB SOLiD 4 AB SOLiD 2:
+      Complete Genomics:
+      GridION:
+      Illumina Genome Analyzer II:
+      Illumina Genome Analyzer IIx:
+      Illumina HiSeq 2000:
+      Illumina HiSeq 2500:
+      Illumina HiSeq 4000:
+      Illumina HiSeq X Five:
+      Illumina HiSeq X Ten:
+      Illumina MiSeq:
+      Illumina NextSeq 1000:
+      Illumina NextSeq 2000:
+      Illumina NextSeq 2500:
+      Illumina NextSeq 500:
+      Illumina NextSeq 550:
+      Illumina NovaSeq 6000:
+      Ion Torrent PGM:
+      Ion Torrent Proton: 
+      Ion Torrent S5:
+      Not Reported:
+      NovaSeq 6000:
+      NovaSeqS4:
+      Other:
+      Oxford Nanopore minION:
+      PacBio RS:
+      PacBio Sequel2:
+      PromethION:
+      Revio:
+      Ultima Genomics UG100:
+      Unknown:
