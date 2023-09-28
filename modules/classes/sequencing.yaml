@@ -12,7 +12,7 @@ classes:
     - FileFormat
     - ParticipantID
     - SampleID
-    - DetailedSampleID
+    - AltSampleID
     - SequencingPlatform
     - NucleicAcidSource
     - LibraryConstructionMethod
@@ -22,9 +22,7 @@ classes:
     - LibraryPreparationKitVendor
     - LibraryPreparationKitVersion
     - ReadIndicator
-    - ReadLength
-    - Read1
-    - Read2
+    - ReadContent
     - TargetDepth
     - AdapterName
     - AdapterSequence
@@ -123,14 +121,14 @@ classes:
     - NucleusIdentifier
     - NucleiBarcodeLength
     - NucleiBarcodeRead
-    - Read3
-    - ThresholdforMinimumPassingReads
-    - TotalNumberofPassingNuclei
-    - MedianFractionofReadsinPeaks
-    - MedianFractionofReadsinAnnotatedcisDNAElements
-    - MedianPassingReadPercentage
-    - MedianPercentageofMitochondrialReadsperNucleus
-    - TotalReads
+    # - ThresholdforMinimumPassingReads
+    # - TotalNumberofPassingNuclei
+    # - MedianFractionofReadsinPeaks
+    # - MedianFractionofReadsinAnnotatedcisDNAElements
+    # - MedianPassingReadPercentage
+    # - MedianPercentageofMitochondrialReadsperNucleus
+    # - PeaksCallingSoftware
+    # - TotalReads
   
   
   BulkDNA-seqLevel1:
@@ -151,8 +149,6 @@ classes:
     - GenomicCoverageType
 
 
-# These are not templates, schematic-specific way of adding specific dependencies 
-
   CEL-seq2:
     is_a: ScRNA-seqLevel1
     annotations:
@@ -161,20 +157,4 @@ classes:
     slots:
     - EmptyWellBarcode
     - WellIndex
-  
-  MedianFractionofReadsinPeaks:
-    is_a: ScATAC-seqLevel1
-    annotations:
-      requiresComponent: ''
-      required: false
-    slots:
-    - PeaksCallingSoftware
-
-  MedianFractionofReadsinAnnotatedcisDNAElements:
-    is_a: ScATAC-seqLevel1
-    annotations:
-      requiresComponent: ''
-      required: false
-    slots:
-    - PeaksCallingSoftware
   
