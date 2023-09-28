@@ -887,18 +887,18 @@ slots:
     description: Sequencing read type
     annotations:
     range: LibraryLayoutEnum
-  LibraryPreparationKitName:
-    title: Library Preparation Kit Name
+  LibraryPrepKitName:
+    title: Library Prep Kit Name
     required: true
-    description: Name of Library Preparation Kit. String
-  LibraryPreparationKitVendor:
-    title: Library Preparation Kit Vendor
+    description: Name of Library Prep Kit. String
+  LibraryPrepKitVendor:
+    title: Library Prep Kit Vendor
     required: false
-    description: Vendor of Library Preparation Kit. String
-  LibraryPreparationKitVersion:
-    title: Library Preparation Kit Version
+    description: Vendor of Library Prep Kit. String
+  LibraryPrepKitVersion:
+    title: Library Prep Kit Version
     required: true
-    description: Version of Library Preparation Kit. String
+    description: Version of Library Prep Kit. String
   LibrarySelectionMethod:
     title: Library Selection Method
     required: true
