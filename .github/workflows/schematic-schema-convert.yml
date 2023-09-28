@@ -37,8 +37,8 @@ jobs:
     
       - name: Commit files
         run: |
-          git config user.email "github-actions@github.com"
-          git config user.name "github-actions"
+          git config user.email "gray-foundation-service@sagebase.org"
+          git config user.name "gf-dcc-service"
           git commit -m "Build jsonld" -a
     
       - name: Push changes
