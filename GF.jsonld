@@ -477,11 +477,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -656,11 +656,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -843,11 +843,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -902,11 +902,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1016,11 +1016,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1091,11 +1091,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1207,11 +1207,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1639,11 +1639,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1853,11 +1853,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -1985,11 +1985,11 @@
     }, {
       "@id" : "bts:LibraryLayout"
     }, {
-      "@id" : "bts:LibraryPreparationKitName"
+      "@id" : "bts:LibraryPrepKitName"
     }, {
-      "@id" : "bts:LibraryPreparationKitVendor"
+      "@id" : "bts:LibraryPrepKitVersion"
     }, {
-      "@id" : "bts:LibraryPreparationKitVersion"
+      "@id" : "bts:LibraryPrepKitVendor"
     }, {
       "@id" : "bts:ReadIndicator"
     }, {
@@ -3601,6 +3601,17 @@
     "rdfs:comment" : "The yes/no/unknown indicator used to describe whether any of the patient's relatives have a history of cancer.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "RelativewithCancerHistory"
+  }, {
+    "@id" : "bts:LibraryPrepKitVendor",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Vendor of Library Prep Kit. String",
+    "rdfs:label" : "LibraryPrepKitVendor",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPrepKitVendor",
+    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:PrecancerousConditionType",
@@ -7122,6 +7133,17 @@
     "sms:displayName" : "ImageID",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:LibraryPrepKitName",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Name of Library Prep Kit. String",
+    "rdfs:label" : "LibraryPrepKitName",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPrepKitName",
+    "sms:required" : "sms:true"
+  }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:SingleNucleusBuffer",
     "schema:isPartOf" : {
@@ -7139,17 +7161,6 @@
     "rdfs:comment" : "Nuclei isolation buffer",
     "@type" : "rdfs:Class",
     "sms:displayName" : "SingleNucleusBuffer"
-  }, {
-    "@id" : "bts:LibraryPreparationKitVendor",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Vendor of Library Preparation Kit. String",
-    "rdfs:label" : "LibraryPreparationKitVendor",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LibraryPreparationKitVendor",
-    "sms:required" : "sms:false"
   }, {
     "@id" : "bts:LensNA",
     "@type" : "rdfs:Class",
@@ -9244,6 +9255,17 @@
     "sms:displayName" : "BloodTestNormalRangeUpper",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:LibraryPrepKitVersion",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Version of Library Prep Kit. String",
+    "rdfs:label" : "LibraryPrepKitVersion",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryPrepKitVersion",
+    "sms:required" : "sms:true"
+  }, {
     "@id" : "bts:Immunosuppression",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -9676,17 +9698,6 @@
     "sms:displayName" : "FOVnumber",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:LibraryPreparationKitName",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Name of Library Preparation Kit. String",
-    "rdfs:label" : "LibraryPreparationKitName",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LibraryPreparationKitName",
-    "sms:required" : "sms:true"
-  }, {
     "@id" : "bts:ChannelMetadataFilename",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "Full path of uploaded companion CSV file containing channel-level metadata details",
@@ -10064,17 +10075,6 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "RelationshipPrimaryDiagnosis"
   }, {
-    "@id" : "bts:LibraryPreparationKitVersion",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Version of Library Preparation Kit. String",
-    "rdfs:label" : "LibraryPreparationKitVersion",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LibraryPreparationKitVersion",
-    "sms:required" : "sms:true"
-  }, {
     "@id" : "bts:AppliedHardTrimming",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -10106,11 +10106,13 @@
     "schema:rangeIncludes" : [ {
       "@id" : "bts:SingleCell"
     }, {
-      "@id" : "bts:BulkWholeCell"
-    }, {
       "@id" : "bts:SingleNucleus"
     }, {
       "@id" : "bts:BulkNuclei"
+    }, {
+      "@id" : "bts:BulkWholeCell"
+    }, {
+      "@id" : "bts:Micro-region"
     } ],
     "rdfs:label" : "NucleicAcidSource",
     "rdfs:comment" : "The source of the input nucleic molecule",
@@ -13344,6 +13346,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Intergenic Variant",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Micro-region",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Micro-region",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Micro-region",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Epithelialtumorbenign",
