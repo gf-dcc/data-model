@@ -1,91 +1,96 @@
 enums:
   FileFormatEnum:
     permissible_values:
-      dat: null
-      R script: null
-      tif: null
-      bam: null
-      M: null
-      7z: null
-      csv: null
-      png: null
-      tar: null
-      bai: null
-      OME-TIFF: null
-      dup: null
-      hic: null
-      cell am: null
-      idat: null
-      txt: null
-      raw: null
-      hdf5: null
-      bgzip: null
-      seg: null
-      rmd: null
-      scn: null
-      vcf: null
-      maf: null
-      tsv: null
-      pdf: null
-      sam: null
-      bedgraph: null
-      sra: null
-      abf: null
-      fastq: null
-      pzfx: null
-      bed narrowPeak: null
-      fig: null
-      am: null
-      gct: null
-      tagAlign: null
-      gzip: null
-      gtf: null
-      DICOM: null
-      cloupe: null
-      czi: null
-      tiff: null
-      powerpoint: null
-      zip: null
-      bed: null
-      mex: null
-      ab1: null
-      Python script: null
-      msf: null
-      mzML: null
-      svg: null
-      cel: null
-      mtx: null
-      bigwig: null
-      chp: null
-      svs: null
-      wiggle: null
-      mov: null
-      bcf: null
-      hyperlink: null
-      sdf: null
-      recal: null
-      idx: null
-      sif: null
-      json: null
-      avi: null
-      HEIC: null
-      gff3: null
-      bpm: null
-      bed broadPeak: null
-      excel: null
-      flagstat: null
-      mpg: null
-      RData: null
-      Sentrix descriptor file: null
-      jpg: null
-      doc: null
-      bed gappedPeak: null
-      xml: null
-      sqlite: null
-      tranches: null
-      plink: null
-      sav: null
-      locs: null
-      html: null
-      md: null
-      fasta: null
+      dat: 
+      R script: 
+      tif: 
+      bam: 
+      M: 
+      7z: 
+      csv: 
+      png: 
+      tar: 
+      bai: 
+      OME-TIFF: 
+      dup: 
+      hic: 
+      cell am: 
+      idat: 
+      txt: 
+      raw: 
+      hdf5: 
+      bgzip: 
+      seg: 
+      rmd: 
+      scn: 
+      vcf: 
+      maf: 
+      tsv: 
+      pdf: 
+      sam: 
+      bedgraph: 
+      sra: 
+      abf: 
+      fastq: 
+      pzfx: 
+      bed narrowPeak: 
+      fig: 
+      am: 
+      gct: 
+      tagAlign: 
+      gzip: 
+      gtf: 
+      DICOM: 
+      cloupe: 
+      czi: 
+      tiff: 
+      powerpoint: 
+      zip: 
+      bed: 
+      mex: 
+      ab1: 
+      Python script: 
+      msf: 
+      mzML: 
+      svg: 
+      cel: 
+      mtx: 
+      bigwig: 
+      chp: 
+      svs: 
+      wiggle: 
+      mov: 
+      bcf: 
+      hyperlink: 
+      sdf: 
+      recal: 
+      idx: 
+      sif: 
+      json: 
+      avi: 
+      HEIC: 
+      gff3: 
+      bpm: 
+      bed broadPeak: 
+      excel: 
+      flagstat: 
+      mpg: 
+      RData: 
+      Sentrix descriptor file: 
+      jpg: 
+      doc: 
+      bed gappedPeak: 
+      xml: 
+      sqlite: 
+      tranches: 
+      plink: 
+      sav: 
+      locs: 
+      html: 
+      md: 
+      fasta: 
+
+  BooleanEnum:
+    permissible_values:
+      Yes: 
+      No: 
