@@ -2763,7 +2763,11 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:true",
-    "schema:rangeIncludes" : [ ],
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Yes"
+    }, {
+      "@id" : "bts:No"
+    } ],
     "rdfs:label" : "CryopreservedCellsinSample",
     "rdfs:comment" : "Indicate if library preparation was based on revived frozen cells.",
     "@type" : "rdfs:Class",
@@ -3892,6 +3896,8 @@
       "@id" : "bts:R2"
     }, {
       "@id" : "bts:R1&R2"
+    }, {
+      "@id" : "bts:R3"
     }, {
       "@id" : "bts:NotApplicable"
     } ],
@@ -6635,69 +6641,71 @@
     },
     "sms:required" : "sms:true",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:PromethION"
-    }, {
-      "@id" : "bts:IlluminaNovaSeq6000"
-    }, {
-      "@id" : "bts:PacBioRS"
-    }, {
-      "@id" : "bts:NotReported"
-    }, {
-      "@id" : "bts:IlluminaNextSeq500"
-    }, {
-      "@id" : "bts:NovaSeq6000"
-    }, {
-      "@id" : "bts:IlluminaNextSeq2500"
-    }, {
-      "@id" : "bts:IlluminaHiSeq4000"
-    }, {
-      "@id" : "bts:unknown"
-    }, {
-      "@id" : "bts:CompleteGenomics"
-    }, {
-      "@id" : "bts:UltimaGenomicsUG100"
-    }, {
-      "@id" : "bts:IlluminaMiSeq"
-    }, {
-      "@id" : "bts:IlluminaHiSeqXTen"
-    }, {
-      "@id" : "bts:IlluminaGenomeAnalyzerIIx"
-    }, {
-      "@id" : "bts:IonTorrentProton"
-    }, {
-      "@id" : "bts:ABSOLiD4ABSOLiD2"
-    }, {
-      "@id" : "bts:IlluminaGenomeAnalyzerII"
-    }, {
-      "@id" : "bts:NovaSeqS4"
-    }, {
-      "@id" : "bts:Revio"
-    }, {
-      "@id" : "bts:IlluminaHiSeq2500"
-    }, {
       "@id" : "bts:454GSFLXTitanium"
-    }, {
-      "@id" : "bts:IlluminaNextSeq550"
-    }, {
-      "@id" : "bts:GridION"
-    }, {
-      "@id" : "bts:Other"
-    }, {
-      "@id" : "bts:IlluminaHiSeq2000"
-    }, {
-      "@id" : "bts:IlluminaHiSeqXFive"
-    }, {
-      "@id" : "bts:IlluminaNextSeq"
-    }, {
-      "@id" : "bts:IonTorrentS5"
-    }, {
-      "@id" : "bts:IonTorrentPGM"
-    }, {
-      "@id" : "bts:OxfordNanoporeminION"
     }, {
       "@id" : "bts:ABSOLiD3"
     }, {
+      "@id" : "bts:ABSOLiD4ABSOLiD2"
+    }, {
+      "@id" : "bts:CompleteGenomics"
+    }, {
+      "@id" : "bts:GridION"
+    }, {
+      "@id" : "bts:IlluminaGenomeAnalyzerII"
+    }, {
+      "@id" : "bts:IlluminaGenomeAnalyzerIIx"
+    }, {
+      "@id" : "bts:IlluminaHiSeq2000"
+    }, {
+      "@id" : "bts:IlluminaHiSeq2500"
+    }, {
+      "@id" : "bts:IlluminaHiSeq4000"
+    }, {
+      "@id" : "bts:IlluminaHiSeqXFive"
+    }, {
+      "@id" : "bts:IlluminaHiSeqXTen"
+    }, {
+      "@id" : "bts:IlluminaMiSeq"
+    }, {
+      "@id" : "bts:IlluminaNextSeq1000"
+    }, {
+      "@id" : "bts:IlluminaNextSeq2000"
+    }, {
+      "@id" : "bts:IlluminaNextSeq2500"
+    }, {
+      "@id" : "bts:IlluminaNextSeq500"
+    }, {
+      "@id" : "bts:IlluminaNextSeq550"
+    }, {
+      "@id" : "bts:IlluminaNovaSeq6000"
+    }, {
+      "@id" : "bts:IonTorrentPGM"
+    }, {
+      "@id" : "bts:IonTorrentProton"
+    }, {
+      "@id" : "bts:IonTorrentS5"
+    }, {
+      "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:NovaSeq6000"
+    }, {
+      "@id" : "bts:NovaSeqS4"
+    }, {
+      "@id" : "bts:Other"
+    }, {
+      "@id" : "bts:OxfordNanoporeminION"
+    }, {
+      "@id" : "bts:PacBioRS"
+    }, {
       "@id" : "bts:PacBioSequel2"
+    }, {
+      "@id" : "bts:PromethION"
+    }, {
+      "@id" : "bts:Revio"
+    }, {
+      "@id" : "bts:UltimaGenomicsUG100"
+    }, {
+      "@id" : "bts:Unknown"
     } ],
     "rdfs:label" : "SequencingPlatform",
     "rdfs:comment" : "A platform is an object aggregate that is the set of instruments and software needed to perform a process [OBI_0000050]. Specific model of the sequencing instrument.",
@@ -11016,6 +11024,17 @@
     "sms:displayName" : "TotalVolumeUnitEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:BooleanEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BooleanEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BooleanEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:MolecularAnalysisMethodEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -12677,6 +12696,17 @@
     "sms:displayName" : "Uruguay",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:IlluminaNextSeq2000",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IlluminaNextSeq2000",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Illumina NextSeq 2000",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Mixedsmallcellcarcinoma",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -13808,6 +13838,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "rmd",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:R3",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "R3",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "R3",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Signature20",
@@ -16230,17 +16271,6 @@
     "sms:displayName" : "bed narrowPeak",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:IlluminaNextSeq550",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IlluminaNextSeq550",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Illumina Next Seq 550",
-    "sms:required" : "sms:false"
-  }, {
     "@id" : "bts:CyCIF",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -18065,6 +18095,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "BRAF sequencing",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:IlluminaNextSeq550",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IlluminaNextSeq550",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Illumina NextSeq 550",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Carcinomainpleomorphicadenoma",
@@ -20069,6 +20110,17 @@
     "sms:displayName" : "FLCN mutation",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:IlluminaNextSeq1000",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IlluminaNextSeq1000",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Illumina NextSeq 1000",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Carneycomplex",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -20848,6 +20900,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Rearrangement",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Unknown",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Unknown",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Unknown",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:CENP-A",
@@ -25184,6 +25247,17 @@
     "sms:displayName" : "Slovakia",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:IlluminaNextSeq2500",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IlluminaNextSeq2500",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Illumina NextSeq 2500",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Somalia",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -25479,17 +25553,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Hepatocellular carcinoma NOS",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:IlluminaNextSeq2500",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IlluminaNextSeq2500",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Illumina Next Seq 2500",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:PAX5mutation",
@@ -30343,6 +30406,17 @@
     "sms:displayName" : "Total RNA Analyte",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:IlluminaNextSeq500",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IlluminaNextSeq500",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Illumina NextSeq 500",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:GumNOS",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -32884,17 +32958,6 @@
     "sms:displayName" : "Dermatofibroma NOS",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:IlluminaNextSeq",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IlluminaNextSeq",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Illumina NextSeq",
-    "sms:required" : "sms:false"
-  }, {
     "@id" : "bts:Benign",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -33058,17 +33121,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Clear cell",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:IlluminaNextSeq500",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IlluminaNextSeq500",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Illumina Next Seq 500",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Hereditarydiffusegastriccancer",

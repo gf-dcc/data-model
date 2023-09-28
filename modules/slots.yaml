@@ -469,7 +469,7 @@ slots:
     required: true
     description: Indicate if library preparation was based on revived frozen cells.
     annotations:
-    range: CryopreservedCellsinSampleEnum
+    range: BooleanEnum
   CycleNumber:
     title: Cycle Number
     required: false
@@ -1363,6 +1363,7 @@ slots:
     - R1
     - R2
     - R1 & R2
+    - R3
     - Not Applicable
   ReadLength:
     title: Read Length
