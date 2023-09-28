@@ -2,9 +2,10 @@ enums:
   NucleicAcidSourceEnum:
     permissible_values:
       Single Cell: 
-      Bulk Whole Cell: 
       Single Nucleus: 
-      Bulk Nuclei: 
+      Bulk Nuclei:
+      Bulk Whole Cell:  
+      Micro-region:
   LibraryConstructionMethodEnum:
     permissible_values:
       10xV3: 
