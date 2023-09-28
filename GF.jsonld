@@ -2378,7 +2378,7 @@
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:required" : "sms:false",
+    "sms:required" : "sms:true",
     "schema:rangeIncludes" : [ {
       "@id" : "bts:PairedEnd"
     }, {
@@ -6822,7 +6822,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "LaneNumber",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:true"
   }, {
     "@id" : "bts:ParticipantID",
     "@type" : "rdfs:Class",
@@ -9685,7 +9685,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "LibraryPreparationKitName",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:true"
   }, {
     "@id" : "bts:ChannelMetadataFilename",
     "@type" : "rdfs:Class",
