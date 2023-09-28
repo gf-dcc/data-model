@@ -18,9 +18,9 @@ classes:
     - LibraryConstructionMethod
     - LibrarySelectionMethod
     - LibraryLayout
-    - LibraryPreparationKitName
-    - LibraryPreparationKitVendor
-    - LibraryPreparationKitVersion
+    - LibraryPrepKitName
+    - LibraryPrepKitVersion
+    - LibraryPrepKitVendor
     - ReadIndicator
     - ReadContent
     - TargetDepth
