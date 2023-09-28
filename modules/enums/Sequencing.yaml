@@ -6,6 +6,7 @@ enums:
       Bulk Nuclei:
       Bulk Whole Cell:  
       Micro-region:
+  
   LibraryConstructionMethodEnum:
     permissible_values:
       10xV3: 
@@ -21,12 +22,14 @@ enums:
       inDropsV3: 
       CEL-seq2: 
       TruDrop: 
+  
   LibraryLayoutEnum:
     permissible_values:
       Paired End: 
       Single Read:
       Mid-length:
       Long Read:
+  
   SingleCellIsolationMethodEnum:
     permissible_values:
       Microfluidics Chip: 
@@ -35,34 +38,40 @@ enums:
       Plates: 
       10x: 
       Nuclei Isolation: 
+  
   DissociationMethodEnum:
     permissible_values:
       Not Applicable: 
       gentleMACS: 
       Dounce: 
       Enzymatic Digestion: 
+  
   SpikeInEnum:
     permissible_values:
       ERCC: 
       Other Spike In: 
       No Spike In: 
       PhiX: 
+  
   ReverseTranscriptionPrimerEnum:
     permissible_values:
       Feature barcoding: 
       Oligo-dT: 
       Poly-dT: 
       Random: 
+  
   EndBiasEnum:
     permissible_values:
       3 Prime: 
       5 Prime: 
       Full Length Transcript: 
+  
   SingleNucleusBufferEnum:
     permissible_values:
       10x: 
       NIB: 
       Omni: 
+  
   TranspositionReactionEnum:
     permissible_values:
       Tn5: 
@@ -72,6 +81,7 @@ enums:
       Diagenode-unloaded Apex-Bio: 
       Diagenode-loaded Apex-Bio: 
       In-House: 
+  
   ReadEnum:
     permissible_values:
       Cell Barcode and DNA Insert: 
