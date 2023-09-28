@@ -861,7 +861,7 @@ slots:
     range: LaboratoryTestEnum
   LaneNumber:
     title: Lane Number
-    required: false
+    required: true
     description: Basic machine unit for sequencing. For Illumina machines, this reflects the physical lane number. Wrong or missing information may affect analysis results. Integer
     annotations:
   Laterality:
@@ -883,13 +883,13 @@ slots:
     range: LibraryConstructionMethodEnum
   LibraryLayout:
     title: Library Layout
-    required: false
+    required: true
     description: Sequencing read type
     annotations:
     range: LibraryLayoutEnum
   LibraryPreparationKitName:
     title: Library Preparation Kit Name
-    required: false
+    required: true
     description: Name of Library Preparation Kit. String
   LibraryPreparationKitVendor:
     title: Library Preparation Kit Vendor
