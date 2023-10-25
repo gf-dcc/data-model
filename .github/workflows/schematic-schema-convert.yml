@@ -70,7 +70,7 @@ jobs:
         id: setup-schematic
         run: pip3 install schematicpy==${{ matrix.schematic-version }}
 
-      - name: Test generate
+      - name: Test generate googlesheets
         working-directory: tests/generate
         continue-on-error: true
         run: ./basic_templates.sh
