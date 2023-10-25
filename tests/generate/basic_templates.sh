@@ -1,12 +1,15 @@
 #!/bin/bash
-# Test generate GoogleSheets templates
+# Test generate 1) Googleheets or 2) Excel templates
+# Generally for 1) this is run in test directory with other tests
 
-CONFIG=https://raw.githubusercontent.com/gf-dcc/data_curator/staging/www/config.json
+OUTPUT=${1:-google_sheet}   
+CONFIG=https://raw.githubusercontent.com/Sage-Bionetworks/data_curator_config/staging/GF/dca-template-config.json
 TEST_CONFIG=config.json
 CREDS=creds.json
 DATA_MODEL_PATH=../../GF.jsonld
 DATA_MODEL=GF.jsonld
 LOG_DIR=logs
+TEMPLATE_DIR=../../templates
 SLEEP_THROTTLE=17 # API rate-limiting, need to better figure out dynamically based on # of templates
 
 # Setup for creds
@@ -45,8 +48,8 @@ mkdir -p $LOG_DIR
 for i in ${!TEMPLATES[@]}
 do
   echo ">>>>>>> Generating ${TEMPLATES[$i]}" 
-  schematic manifest --config config.yml \
-  get -dt ${TEMPLATES[$i]} --title ${TEMPLATES[$i]} -s | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt # get -dt ${TEMPLATES[$i]} --title ${TEMPLATES[$i]} --output_csv ../templates/${TEMPLATES[$i]}.csv --output_xlsx ../templates/${TEMPLATES[$i]}.xlsx | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
+  [[ $OUTPUT == "google_sheet" ]] && schematic manifest --config config.yml get -dt ${TEMPLATES[$i]} --title ${TEMPLATES[$i]} -s | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
+  [[ $OUTPUT == "excel" ]] && schematic manifest --config config.yml get -dt ${TEMPLATES[$i]} --title ${TEMPLATES[$i]} --output_csv $TEMPLATE_DIR/${TEMPLATES[$i]}.csv --output_xlsx $TEMPLATE_DIR/${TEMPLATES[$i]}.xlsx | tee $LOG_DIR/${TEMPLATES[$i]%.*}_log.txt
   sleep $SLEEP_THROTTLE
 done
 
