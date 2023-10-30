@@ -271,17 +271,6 @@ classes:
     - DaystoRecurrence
     - ProgressionorRecurrenceAnatomicSite
   
-  Dead:
-    is_a: Demographics
-    annotations:
-      requiresComponent: ''
-      required: false
-    slots:
-    - YearofDeath
-    - CauseofDeath
-    - CauseofDeathSource
-    - DaystoDeath
-  
 ################## 
 # Biospecimen 
 #################
