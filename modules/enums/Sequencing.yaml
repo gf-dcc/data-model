@@ -89,3 +89,11 @@ enums:
       DNA Insert: 
       Sample Index: 
       Cell Barcode: 
+  
+  BisulfiteConversionKitEnum:
+    permissible_values:
+      Zimo EZ DNA Methylation Kit:
+      Zimo EZ-96 DNA Methylation Shallow Kit:
+      Zimo EZ-96 DNA Methylation Deep Kit:
+      NEBNext Enzymatic Methyl-seq Kit:
+      Agilent SureSelectXT Methyl-Seq:	
