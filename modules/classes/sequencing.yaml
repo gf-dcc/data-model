@@ -169,15 +169,21 @@ classes:
   # Bulk Methylation ##############################################################################################
 
   BulkMethylation-seqLevel1:
-    is_a: SequencingData
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
     description: Raw data for bulk methylation sequencing, such as FASTQs and unaligned BAMs
     slots:
+    - ParticipantID
+    - SampleID
+    - AltSampleID
+    - NucleicAcidSource
     - BisulfiteConversionKit
     - BulkMethylationAssayType
-    - TotalDNAInput
+    - SequencingPlatform
+    - TechnicalReplicateGroup
+
 
   BulkMethylation-seqLevel2:
     is_a: File
