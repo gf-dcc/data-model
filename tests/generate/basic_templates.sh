@@ -9,7 +9,7 @@ DATA_MODEL_PATH=../../GF.jsonld
 DATA_MODEL=GF.jsonld
 LOG_DIR=logs
 TEMPLATE_DIR=../../templates
-SLEEP_THROTTLE=17 # API rate-limiting, need to better figure out dynamically based on # of templates
+SLEEP_THROTTLE=30 # API rate-limiting, need to better figure out dynamically based on # of templates
 
 # Setup for creds
 # If testing locally, it might already be in folder; 
