@@ -1594,8 +1594,6 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
       "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:SampleID"
@@ -1757,7 +1755,7 @@
     "sms:displayName" : "Yes-AlcoholExposure"
   }, {
     "rdfs:subClassOf" : [ {
-      "@id" : "bts:SequencingData"
+      "@id" : "bts:File"
     } ],
     "@id" : "bts:BulkMethylation-seqLevel3",
     "schema:isPartOf" : {
@@ -1775,49 +1773,9 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
-      "@id" : "bts:ParticipantID"
-    }, {
-      "@id" : "bts:SampleID"
-    }, {
-      "@id" : "bts:AltSampleID"
-    }, {
-      "@id" : "bts:SequencingPlatform"
-    }, {
-      "@id" : "bts:NucleicAcidSource"
-    }, {
-      "@id" : "bts:LibraryConstructionMethod"
-    }, {
-      "@id" : "bts:LibrarySelectionMethod"
-    }, {
-      "@id" : "bts:LibraryLayout"
-    }, {
-      "@id" : "bts:LibraryPrepKitName"
-    }, {
-      "@id" : "bts:LibraryPrepKitVersion"
-    }, {
-      "@id" : "bts:LibraryPrepKitVendor"
-    }, {
-      "@id" : "bts:ReadIndicator"
-    }, {
-      "@id" : "bts:ReadContent"
-    }, {
-      "@id" : "bts:TargetDepth"
-    }, {
-      "@id" : "bts:AdapterName"
-    }, {
-      "@id" : "bts:AdapterSequence"
-    }, {
-      "@id" : "bts:BatchID"
-    }, {
-      "@id" : "bts:LaneNumber"
-    }, {
-      "@id" : "bts:TechnicalReplicateGroup"
-    }, {
       "@id" : "bts:DMCallingTool"
     }, {
-      "@id" : "bts:WorkflowURL"
+      "@id" : "bts:WorkflowLink"
     }, {
       "@id" : "bts:PUC19methylationratio"
     }, {
@@ -1843,8 +1801,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
@@ -2032,8 +1988,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     } ],
     "sms:displayName" : "File"
   }, {
@@ -2055,8 +2009,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
@@ -2172,8 +2124,6 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
       "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:SampleID"
@@ -2248,8 +2198,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
@@ -2366,8 +2314,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
@@ -2655,8 +2601,6 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
       "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:SampleID"
@@ -2698,7 +2642,7 @@
     "sms:displayName" : "SequencingData"
   }, {
     "rdfs:subClassOf" : [ {
-      "@id" : "bts:SequencingData"
+      "@id" : "bts:File"
     } ],
     "@id" : "bts:BulkMethylation-seqLevel2",
     "schema:isPartOf" : {
@@ -2715,46 +2659,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
-      "@id" : "bts:ParticipantID"
-    }, {
-      "@id" : "bts:SampleID"
-    }, {
-      "@id" : "bts:AltSampleID"
-    }, {
-      "@id" : "bts:SequencingPlatform"
-    }, {
-      "@id" : "bts:NucleicAcidSource"
-    }, {
-      "@id" : "bts:LibraryConstructionMethod"
-    }, {
-      "@id" : "bts:LibrarySelectionMethod"
-    }, {
-      "@id" : "bts:LibraryLayout"
-    }, {
-      "@id" : "bts:LibraryPrepKitName"
-    }, {
-      "@id" : "bts:LibraryPrepKitVersion"
-    }, {
-      "@id" : "bts:LibraryPrepKitVendor"
-    }, {
-      "@id" : "bts:ReadIndicator"
-    }, {
-      "@id" : "bts:ReadContent"
-    }, {
-      "@id" : "bts:TargetDepth"
-    }, {
-      "@id" : "bts:AdapterName"
-    }, {
-      "@id" : "bts:AdapterSequence"
-    }, {
-      "@id" : "bts:BatchID"
-    }, {
-      "@id" : "bts:LaneNumber"
-    }, {
-      "@id" : "bts:TechnicalReplicateGroup"
     }, {
       "@id" : "bts:WorkflowVersion"
     }, {
@@ -2891,8 +2795,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
@@ -3108,8 +3010,6 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:ParentDataFileID"
-    }, {
       "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:SampleID"
@@ -3241,8 +3141,6 @@
       "@id" : "bts:Filename"
     }, {
       "@id" : "bts:FileFormat"
-    }, {
-      "@id" : "bts:ParentDataFileID"
     }, {
       "@id" : "bts:ParticipantID"
     }, {
