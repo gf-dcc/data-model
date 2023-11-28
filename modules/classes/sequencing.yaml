@@ -1,8 +1,8 @@
 classes:
   
-  Sequencing:
+  File:
     abstract: true
-    description: Base template for some type of sequencing data, for which below properties are relevant/in common.
+    description: Basic metadata for a file entity that contains data (whether sequencing, imaging, etc.) will inherit.
     annotations:
       requiresComponent: ''
       required: false
@@ -10,6 +10,16 @@ classes:
     - Component
     - Filename
     - FileFormat
+    - ParentDataFileID # in most cases use a Synapse ID
+
+  
+  SequencingData:
+    is_a: File
+    description: Base template for some type of sequencing data file, for which below properties are relevant/in common.
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
     - ParticipantID
     - SampleID
     - AltSampleID
@@ -30,8 +40,10 @@ classes:
     - LaneNumber
     - TechnicalReplicateGroup
 
+  # Single-cell base ######################################################################################
+
   SingleCellSequencing:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
@@ -44,6 +56,8 @@ classes:
     - ReverseTranscriptionPrimer
     - SpikeIn
     - EndBias
+
+  # ScRNA-seq ##############################################################################################
 
   ScRNA-seqLevel1:
     is_a: SingleCellSequencing
@@ -132,24 +146,12 @@ classes:
   
   
   BulkDNA-seqLevel1:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
     slots:
     - TargetCaptureKit
-
-  
-  BulkMethylation-seqLevel1:
-    is_a: Sequencing
-    annotations:
-      requiresComponent: ''
-      required: false
-    description: Raw data for bulk methylation sequencing, such as FASTQs and unaligned BAMs
-    slots:
-    - BisulfiteConversionKit
-    - BulkMethylationAssayType
-    - TotalDNAInput
 
 
   CEL-seq2:
@@ -161,9 +163,21 @@ classes:
     - EmptyWellBarcode
     - WellIndex
 
-  
+  # Bulk Methylation ##############################################################################################
+
+  BulkMethylation-seqLevel1:
+    is_a: SequencingData
+    annotations:
+      requiresComponent: ''
+      required: false
+    description: Raw data for bulk methylation sequencing, such as FASTQs and unaligned BAMs
+    slots:
+    - BisulfiteConversionKit
+    - BulkMethylationAssayType
+    - TotalDNAInput
+
   BulkMethylation-seqLevel2:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
@@ -176,7 +190,7 @@ classes:
     - ProportionofMinimumCpGCoverage10X
   
   BulkMethylation-seqLevel3:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
@@ -186,6 +200,6 @@ classes:
     - WorkflowURL
     - PUC19methylationratio
     - Lambdamethylationratio
-    # - DMCdatafileformat -- omitting as unnecessary/low value/info is obvious or easily obtained
-    # - DMRdatafileFormat -- omitting as unnecessar/low value/info is obvious or easily obtained
+    # - DMCdatafileformat -- omitting as unnecessary/low value
+    # - DMRdatafileFormat -- omitting as unnecessar/low value
   
