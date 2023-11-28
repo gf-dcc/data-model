@@ -10,9 +10,7 @@ classes:
     - Component
     - Filename
     - FileFormat
-    - ParentDataFileID # currently not used much
 
-  
   SequencingData:
     is_a: File
     description: Base template for some type of sequencing data file, for which below properties are relevant/in common.
@@ -182,7 +180,7 @@ classes:
     - TotalDNAInput
 
   BulkMethylation-seqLevel2:
-    is_a: SequencingData
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
@@ -196,14 +194,14 @@ classes:
     # Omitting optional metrics as these can be referenced/re-generated during reprocessing
   
   BulkMethylation-seqLevel3:
-    is_a: SequencingData
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
     description: Sample level summary data for bulk methylation sequencing, such as t-SNE plot coordinates, etc.
     slots:
     - DMCallingTool
-    - WorkflowURL
+    - WorkflowLink
     - PUC19methylationratio
     - Lambdamethylationratio
     # - DMCdatafileformat -- omitting this optional metadata as unnecessary/low value
