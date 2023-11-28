@@ -10,7 +10,7 @@ classes:
     - Component
     - Filename
     - FileFormat
-    - ParentDataFileID # in most cases use a Synapse ID
+    - ParentDataFileID # currently not used much
 
   
   SequencingData:
