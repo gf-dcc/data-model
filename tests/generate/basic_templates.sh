@@ -3,8 +3,7 @@
 # Generally for 1) this is run in test directory with other tests
 
 OUTPUT=${1:-google_sheet}   
-CONFIG=../../dca-template-config.json
-TEST_CONFIG=config.json
+TEST_CONFIG=../../dca-template-config.json
 CREDS=creds.json
 DATA_MODEL_PATH=../../GF.jsonld
 DATA_MODEL=GF.jsonld
@@ -26,14 +25,6 @@ else
   exit 1
 fi
 
-# Setup config
-if [ -f "$TEST_CONFIG" ]; then
-  echo "Repository $TEST_CONFIG present, running test with this config..."
-# Referenced config stored somewhere else
-else 
-  echo "Getting remote $CONFIG to use as test config..."
-  wget $CONFIG -O $TEST_CONFIG
-fi
 
 TEMPLATES=($(jq '.manifest_schemas[] | .schema_name' $TEST_CONFIG | tr -d '"'))
 #TITLES=($(jq '.manifest_schemas[] | .display_name' $TEST_CONFIG | tr -d '"'))
