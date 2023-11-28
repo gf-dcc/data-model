@@ -19,7 +19,7 @@ The `dca-template-config.json` defines which templates in the data model can be 
 If you've cooked up a new template that's ready for production, you will need to add it to the menu through updating this file. 
 This will make sure that:
 - It shows up in the DCA menu. 
-- Continuous integration tests are run for this template. For example, if an attribute is accidentally removed that a user-facing template depends on, it will be break the test and alert us that the pull request contains an incompatible change.
+- Continuous integration tests are run for this template; if a change breaks a user-facing template, it show up in the test for the pull request.
 
 ## External comments, questions, contributions
 
