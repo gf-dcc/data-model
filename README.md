@@ -11,7 +11,7 @@ This will run some automated checks and "compile" the full model files (`.csv` a
 
 ### Using the LinkML framework
 
-For now, please reference the doc in our sister DCC repo to understand the LinkML framework and files.
+For now, please reference [the docs in our sister DCC repo](https://github.com/nf-osi/nf-metadata-dictionary/#data-model-framework) to understand the LinkML framework and files.
 
 ### Updating DCA configuration
 
