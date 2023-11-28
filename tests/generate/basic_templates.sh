@@ -3,7 +3,7 @@
 # Generally for 1) this is run in test directory with other tests
 
 OUTPUT=${1:-google_sheet}   
-CONFIG=https://raw.githubusercontent.com/Sage-Bionetworks/data_curator_config/staging/GF/dca-template-config.json
+CONFIG=../../dca-template-config.json
 TEST_CONFIG=config.json
 CREDS=creds.json
 DATA_MODEL_PATH=../../GF.jsonld
@@ -28,9 +28,10 @@ fi
 
 # Setup config
 if [ -f "$TEST_CONFIG" ]; then
-  echo "Local $TEST_CONFIG present, running test with this local config..."
+  echo "Repository $TEST_CONFIG present, running test with this config..."
+# Referenced config stored somewhere else
 else 
-  echo "Getting $CONFIG to use as test config..."
+  echo "Getting remote $CONFIG to use as test config..."
   wget $CONFIG -O $TEST_CONFIG
 fi
 
