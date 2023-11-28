@@ -2297,7 +2297,7 @@
     "sms:displayName" : "TotalVolume"
   }, {
     "rdfs:subClassOf" : [ {
-      "@id" : "bts:SequencingData"
+      "@id" : "bts:File"
     } ],
     "@id" : "bts:BulkMethylation-seqLevel1",
     "schema:isPartOf" : {
@@ -2321,43 +2321,15 @@
     }, {
       "@id" : "bts:AltSampleID"
     }, {
-      "@id" : "bts:SequencingPlatform"
-    }, {
       "@id" : "bts:NucleicAcidSource"
-    }, {
-      "@id" : "bts:LibraryConstructionMethod"
-    }, {
-      "@id" : "bts:LibrarySelectionMethod"
-    }, {
-      "@id" : "bts:LibraryLayout"
-    }, {
-      "@id" : "bts:LibraryPrepKitName"
-    }, {
-      "@id" : "bts:LibraryPrepKitVersion"
-    }, {
-      "@id" : "bts:LibraryPrepKitVendor"
-    }, {
-      "@id" : "bts:ReadIndicator"
-    }, {
-      "@id" : "bts:ReadContent"
-    }, {
-      "@id" : "bts:TargetDepth"
-    }, {
-      "@id" : "bts:AdapterName"
-    }, {
-      "@id" : "bts:AdapterSequence"
-    }, {
-      "@id" : "bts:BatchID"
-    }, {
-      "@id" : "bts:LaneNumber"
-    }, {
-      "@id" : "bts:TechnicalReplicateGroup"
     }, {
       "@id" : "bts:BisulfiteConversionKit"
     }, {
       "@id" : "bts:BulkMethylationAssayType"
     }, {
-      "@id" : "bts:TotalDNAInput"
+      "@id" : "bts:SequencingPlatform"
+    }, {
+      "@id" : "bts:TechnicalReplicateGroup"
     } ],
     "sms:displayName" : "BulkMethylation-seqLevel1"
   }, {
@@ -8100,17 +8072,6 @@
     "sms:displayName" : "Vendor",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:Lambdamethylationratio",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Methylation ratio of mostly unmethylated lambda control, as a percentage",
-    "rdfs:label" : "Lambdamethylationratio",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Lambda methylation ratio",
-    "sms:required" : "sms:true"
-  }, {
     "@id" : "bts:LociCount",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "Numeric value used to describe the number of loci tested.",
@@ -11104,6 +11065,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "PUC19methylationratio",
+    "sms:required" : "sms:true"
+  }, {
+    "@id" : "bts:Lambdamethylationratio",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Methylation ratio of mostly unmethylated lambda control, as a percentage",
+    "rdfs:label" : "Lambdamethylationratio",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Lambdamethylationratio",
     "sms:required" : "sms:true"
   }, {
     "@id" : "bts:SizeY",
