@@ -147,7 +147,7 @@ classes:
       required: false
     description: Raw data for bulk methylation sequencing, such as FASTQs and unaligned BAMs
     slots:
-    - BisulfiteConversion
+    - BisulfiteConversionKit
     - BulkMethylationAssayType
     - TotalDNAInput
 
@@ -169,29 +169,11 @@ classes:
       required: false
     description: Aligned primary data for bulk methylation sequencing, such as gene expression matrix files, VCFs, etc.
     slots:
-    - ScRNAseqWorkflowType
-    - ScRNAseqWorkflowParametersDescription
     - WorkflowVersion
     - WorkflowLink
     - GenomicReference
     - GenomicReferenceURL
-    - LibraryLayout
-    - AverageBaseQuality
-    - AverageInsertSize
-    - AverageReadLength
-    - Contamination
-    - ContaminationError
-    - PairsOnDiffCHR
-    - TotalReads
-    - TotalUniquelyMapped
-    - TotalUnmappedreads
-    - ProportionReadsDuplicated
-    - ProportionReadsMapped
-    - ProportionTargetsNoCoverage
-    - ProportionBaseMismatch
-    - ShortReads
     - ProportionofMinimumCpGCoverage10X
-    - ProportionCoverage30X
   
   BulkMethylation-seqLevel3:
     is_a: Sequencing
@@ -200,12 +182,10 @@ classes:
       required: false
     description: Sample level summary data for bulk methylation sequencing, such as t-SNE plot coordinates, etc.
     slots:
-    - DMCCallingTool
-    - DMCCallingWorkflowURL
-    - DMRCallingTool
-    - DMRCallingWorkflowURL
+    - DMCallingTool
+    - WorkflowURL
     - PUC19methylationratio
     - Lambdamethylationratio
-    - DMCdatafileformat
-    - DMRdatafileFormat
+    # - DMCdatafileformat -- omitting as unnecessary/low value/info is obvious or easily obtained
+    # - DMRdatafileFormat -- omitting as unnecessar/low value/info is obvious or easily obtained
   
