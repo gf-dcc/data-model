@@ -31,6 +31,21 @@
       "type": "file"
     },
     {
+      "display_name": "Bulk Methylation-seq Level 1",
+      "schema_name": "BulkMethylation-seqLevel1",
+      "type": "file"
+    },
+    {
+      "display_name": "Bulk Methylation-seq Level 2",
+      "schema_name": "BulkMethylation-seqLevel2",
+      "type": "file"
+    },
+    {
+      "display_name": "Bulk Methylation-seq Level 3",
+      "schema_name": "BulkMethylation-seqLevel3",
+      "type": "file"
+    },
+    {
       "display_name": "Patient Cohort Data",
       "schema_name": "CohortCoreTemplate",
       "type": "record"
