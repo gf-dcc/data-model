@@ -57,7 +57,7 @@ classes:
     - SpikeIn
     - EndBias
 
-  # ScRNA-seq ##############################################################################################
+  ####### ScRNA-seq ########################################################################################
 
   ScRNA-seqLevel1:
     is_a: SingleCellSequencing
@@ -123,6 +123,18 @@ classes:
     - ScRNAseqWorkflowParametersDescription
     - WorkflowLink
     - WorkflowVersion
+
+  CEL-seq2:
+    is_a: ScRNA-seqLevel1
+    description: Highly-multiplexed plate-based single-cell RNA-Seq assay (so a subtype of scRNA-seq, and some additional metadata parameters are collected)
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - EmptyWellBarcode
+    - WellIndex
+  
+  ####### ScATAC-seq ########################################################################################
   
   ScATAC-seqLevel1:
     is_a: SingleCellSequencing
@@ -145,6 +157,8 @@ classes:
     # - TotalReads
   
   
+  # BulkDNA-seq ##############################################################################################
+
   BulkDNA-seqLevel1:
     is_a: SequencingData
     annotations:
@@ -153,15 +167,6 @@ classes:
     slots:
     - TargetCaptureKit
 
-
-  CEL-seq2:
-    is_a: ScRNA-seqLevel1
-    annotations:
-      requiresComponent: ''
-      required: false
-    slots:
-    - EmptyWellBarcode
-    - WellIndex
 
   # Bulk Methylation ##############################################################################################
 
@@ -188,6 +193,7 @@ classes:
     - GenomicReference
     - GenomicReferenceURL
     - ProportionofMinimumCpGCoverage10X
+    # Omitting optional metrics as these can be referenced/re-generated during reprocessing
   
   BulkMethylation-seqLevel3:
     is_a: SequencingData
@@ -200,6 +206,6 @@ classes:
     - WorkflowURL
     - PUC19methylationratio
     - Lambdamethylationratio
-    # - DMCdatafileformat -- omitting as unnecessary/low value
-    # - DMRdatafileFormat -- omitting as unnecessar/low value
+    # - DMCdatafileformat -- omitting this optional metadata as unnecessary/low value
+    # - DMRdatafileFormat --omitting this optional metadata as unnecessar/low value
   
