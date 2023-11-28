@@ -96,7 +96,7 @@ enums:
       Zimo EZ-96 DNA Methylation Shallow Kit:
       Zimo EZ-96 DNA Methylation Deep Kit:
       NEBNext Enzymatic Methyl-seq Kit:
-      Agilent SureSelectXT Methyl-Seq:	
+      Agilent SureSelectXT Methyl-Seq:
 
   SequencingStrategy:
     permissible_values:

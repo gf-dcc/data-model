@@ -1340,7 +1340,7 @@ slots:
     description: TBD
     annotations:
   PUC19methylationratio:
-    title: 	pUC19 methylation ratio
+    title: pUC19 methylation ratio
     required: true
     description: Methylation ratio of mostly methylated pUC19 control, as a percentage
     annotations:
