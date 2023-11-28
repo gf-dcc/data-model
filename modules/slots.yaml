@@ -876,7 +876,7 @@ slots:
     description: The text term used to describe the medical testing used to diagnose, treat or further understand a patient's disease.
     annotations:
     range: LaboratoryTestEnum
-  Lambda methylation ratio:
+  Lambdamethylationratio:
     title: Lambda methylation ratio
     required: true
     description: Methylation ratio of mostly unmethylated lambda control, as a percentage
