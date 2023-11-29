@@ -1161,7 +1161,7 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:LabID"
+      "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:ChannelMetadataFilename"
     }, {
@@ -2397,7 +2397,7 @@
     }, {
       "@id" : "bts:FileFormat"
     }, {
-      "@id" : "bts:LabID"
+      "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:ChannelMetadataFilename"
     }, {
