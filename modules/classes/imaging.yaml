@@ -1,14 +1,11 @@
 classes:
 
   ImagingLevel2:
-    is_a: Assay
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
     slots:
-    - Component
-    - Filename
-    - FileFormat
     - LabID
     - ChannelMetadataFilename
     - ImagingAssayType
