@@ -11989,17 +11989,6 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "MutationalSignatures"
   }, {
-    "@id" : "bts:LabID",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LabID",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LabID",
-    "sms:required" : "sms:false"
-  }, {
     "@id" : "bts:CancerIncidenceLocation",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
