@@ -1,7 +1,7 @@
 classes:
 
   ImagingLevel2:
-    is_a: File
+    is_a: Assay
     annotations:
       requiresComponent: ''
       required: false
