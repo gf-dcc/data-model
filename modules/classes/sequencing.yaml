@@ -1,8 +1,8 @@
 classes:
   
-  Sequencing:
+  File:
     abstract: true
-    description: Base template for some type of sequencing data, for which below properties are relevant/in common.
+    description: Basic metadata for a file entity that contains data (whether sequencing, imaging, etc.) will inherit.
     annotations:
       requiresComponent: ''
       required: false
@@ -10,6 +10,14 @@ classes:
     - Component
     - Filename
     - FileFormat
+
+  SequencingData:
+    is_a: File
+    description: Base template for some type of sequencing data file, for which below properties are relevant/in common.
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
     - ParticipantID
     - SampleID
     - AltSampleID
@@ -30,8 +38,10 @@ classes:
     - LaneNumber
     - TechnicalReplicateGroup
 
+  # Single-cell base ######################################################################################
+
   SingleCellSequencing:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
@@ -44,6 +54,8 @@ classes:
     - ReverseTranscriptionPrimer
     - SpikeIn
     - EndBias
+
+  ####### ScRNA-seq ########################################################################################
 
   ScRNA-seqLevel1:
     is_a: SingleCellSequencing
@@ -109,6 +121,18 @@ classes:
     - ScRNAseqWorkflowParametersDescription
     - WorkflowLink
     - WorkflowVersion
+
+  CEL-seq2:
+    is_a: ScRNA-seqLevel1
+    description: Highly-multiplexed plate-based single-cell RNA-Seq assay (so a subtype of scRNA-seq, and some additional metadata parameters are collected)
+    annotations:
+      requiresComponent: ''
+      required: false
+    slots:
+    - EmptyWellBarcode
+    - WellIndex
+  
+  ####### ScATAC-seq ########################################################################################
   
   ScATAC-seqLevel1:
     is_a: SingleCellSequencing
@@ -131,30 +155,61 @@ classes:
     # - TotalReads
   
   
+  # BulkDNA-seq ##############################################################################################
+
   BulkDNA-seqLevel1:
-    is_a: Sequencing
+    is_a: SequencingData
     annotations:
       requiresComponent: ''
       required: false
     slots:
     - TargetCaptureKit
 
-  
+
+  # Bulk Methylation ##############################################################################################
+
   BulkMethylation-seqLevel1:
-    is_a: Sequencing
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
+    description: Raw data for bulk methylation sequencing, such as FASTQs and unaligned BAMs
     slots:
-    - GenomicCoverageType
+    - ParticipantID
+    - SampleID
+    - AltSampleID
+    - NucleicAcidSource
+    - BisulfiteConversionKit
+    - BulkMethylationAssayType
+    - SequencingPlatform
+    - TechnicalReplicateGroup
 
 
-  CEL-seq2:
-    is_a: ScRNA-seqLevel1
+  BulkMethylation-seqLevel2:
+    is_a: File
     annotations:
       requiresComponent: ''
       required: false
+    description: Aligned primary data for bulk methylation sequencing, such as gene expression matrix files, VCFs, etc.
     slots:
-    - EmptyWellBarcode
-    - WellIndex
+    - WorkflowVersion
+    - WorkflowLink
+    - GenomicReference
+    - GenomicReferenceURL
+    - ProportionofMinimumCpGCoverage10X
+    # Omitting optional metrics as these can be referenced/re-generated during reprocessing
   
+  BulkMethylation-seqLevel3:
+    is_a: File
+    annotations:
+      requiresComponent: ''
+      required: false
+    description: Sample level summary data for bulk methylation sequencing, such as t-SNE plot coordinates, etc.
+    slots:
+    - DMCallingTool
+    - WorkflowLink
+    - PUC19methylationratio
+    - Lambdamethylationratio
+    # - DMCdatafileformat -- omitting this optional metadata as unnecessary/low value
+    # - DMRdatafileFormat --omitting this optional metadata as unnecessar/low value
+

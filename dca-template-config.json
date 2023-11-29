@@ -1,0 +1,56 @@
+{
+  "manifest_schemas": [
+    {
+      "display_name": "Imaging Level 2",
+      "schema_name": "ImagingLevel2",
+      "type": "file"
+    },
+    {
+      "display_name": "Imaging Level 2 Channels",
+      "schema_name": "ImagingLevel2Channels",
+      "type": "file"
+    },
+    {
+      "display_name": "ScRNA-seq Level 1",
+      "schema_name": "ScRNA-seqLevel1",
+      "type": "file"
+    },
+    {
+      "display_name": "ScRNA-seq Level 2",
+      "schema_name": "ScRNA-seqLevel2",
+      "type": "file"
+    },
+    {
+      "display_name": "ScRNA-seq Level 3",
+      "schema_name": "ScRNA-seqLevel3",
+      "type": "file"
+    },
+    {
+      "display_name": "ScRNA-seq Level 4",
+      "schema_name": "ScRNA-seqLevel4",
+      "type": "file"
+    },
+    {
+      "display_name": "Bulk Methylation-seq Level 1",
+      "schema_name": "BulkMethylation-seqLevel1",
+      "type": "file"
+    },
+    {
+      "display_name": "Bulk Methylation-seq Level 2",
+      "schema_name": "BulkMethylation-seqLevel2",
+      "type": "file"
+    },
+    {
+      "display_name": "Bulk Methylation-seq Level 3",
+      "schema_name": "BulkMethylation-seqLevel3",
+      "type": "file"
+    },
+    {
+      "display_name": "Patient Cohort Data",
+      "schema_name": "CohortCoreTemplate",
+      "type": "record"
+    }
+  ],
+  "service_version": "v23.1.1",
+  "schema_version": ""
+}

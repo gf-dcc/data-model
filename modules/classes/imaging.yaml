@@ -9,7 +9,7 @@ classes:
     - Component
     - Filename
     - FileFormat
-    - LabID
+    - ParticipantID
     - ChannelMetadataFilename
     - ImagingAssayType
     - ProtocolLink
@@ -78,5 +78,3 @@ classes:
     - OligoBarcodeLowerStrand
     - Dilution
     - Concentration
-  
-  

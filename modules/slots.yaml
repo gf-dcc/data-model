@@ -168,6 +168,12 @@ slots:
     description: Biospecimen Type
     annotations:
     range: BiospecimenTypeEnum
+  BisulfiteConversionKit:
+    title: Bisulfite Conversion Kit
+    required: true
+    description: Name of the kit used in bisulfite conversion
+    annotations:
+    range: BisulfiteConversionKitEnum
   BloodTestNormalRangeLower:
     title: Blood Test Normal Range Lower
     required: false
@@ -268,6 +274,12 @@ slots:
     description: The breast quadrant or structure from which the breast tissue specimen was removed for microscopic examination.
     annotations:
     range: BreastQuadrantSiteEnum
+  BulkMethylationAssayType:
+    title: Bulk Methylation Assay Type
+    required: true
+    description: Assay types normally determine genomic coverage
+    annotations:
+    range: SequencingStrategy
   COVID19AntibodyTesting:
     title: COVID19 Antibody Testing
     required: false
@@ -634,6 +646,11 @@ slots:
     description: The degree to which the lesion has been cut out, or resected.
     annotations:
     range: ExtentofTumorResectionEnum
+  DMCallingTool:
+    title: DM Calling Tool
+    description: Software used for calling differentially methylated CpG (DMC) and/or differentially methylated region (DMR)
+    required: false
+    annotations:
   FOVX:
     title: FOVX
     required: false
@@ -842,11 +859,6 @@ slots:
     description: A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient.
     annotations:
     range: IndicatorEnum
-  LabID:
-    title: Lab ID
-    required: false
-    description: TBD
-    annotations:
   LabTestsforMMRStatus:
     title: Lab Tests for MMR Status
     required: false
@@ -859,6 +871,11 @@ slots:
     description: The text term used to describe the medical testing used to diagnose, treat or further understand a patient's disease.
     annotations:
     range: LaboratoryTestEnum
+  Lambdamethylationratio:
+    title: Lambda methylation ratio
+    required: true
+    description: Methylation ratio of mostly unmethylated lambda control, as a percentage
+    annotations:
   LaneNumber:
     title: Lane Number
     required: true
@@ -1170,6 +1187,11 @@ slots:
     required: false
     description: Biospecimen identifier indicating the biospecimen(s) from which these files were derived; multiple parent biospecimen should be comma-separated
     annotations:
+  ParentDataFileID:
+    title: Parent Data File ID
+    required: false
+    description: Optional, Synapse ID of a parent data file from which this data file is derived.
+    annotations:
   ParentID:
     title: Parent ID
     required: false
@@ -1302,6 +1324,11 @@ slots:
     required: false
     description: TBD
     annotations:
+  ProportionofMinimumCpGCoverage10X:
+    title: Proportion of Minimum CpG Coverage 10X
+    required: false
+    description: (For whole genome sequencing or targeted sequencing) Proportion of all reference bases for that achieves 10X or greater coverage per CpG.
+    annotations:
   ProtocolLink:
     title: Protocol Link
     required: false
@@ -1311,6 +1338,11 @@ slots:
     title: Publication DOI
     required: false
     description: TBD
+    annotations:
+  PUC19methylationratio:
+    title: pUC19 methylation ratio
+    required: true
+    description: Methylation ratio of mostly methylated pUC19 control, as a percentage
     annotations:
   Pyramid:
     title: Pyramid
@@ -1709,6 +1741,11 @@ slots:
     title: Tobacco Use per Day
     required: false
     description: Numeric value that represents the number of times the patient uses tobacco each day.
+    annotations:
+  TotalDNAInput:
+    title: Total DNA Input
+    required: false
+    description: A sample amount used for the total number of reads, in microgram or nanogram.
     annotations:
   TotalNumberofInputCells:
     title: Total Number of Input Cells
