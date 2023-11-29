@@ -6,6 +6,9 @@ classes:
       requiresComponent: ''
       required: false
     slots:
+    - Component
+    - Filename
+    - FileFormat
     - LabID
     - ChannelMetadataFilename
     - ImagingAssayType
