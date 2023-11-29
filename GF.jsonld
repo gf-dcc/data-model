@@ -1143,7 +1143,7 @@
     "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ {
-      "@id" : "bts:Assay"
+      "@id" : "bts:File"
     } ],
     "@id" : "bts:ImagingLevel2",
     "schema:isPartOf" : {
