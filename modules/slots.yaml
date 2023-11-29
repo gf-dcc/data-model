@@ -859,11 +859,6 @@ slots:
     description: A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient.
     annotations:
     range: IndicatorEnum
-  LabID:
-    title: Lab ID
-    required: false
-    description: TBD
-    annotations:
   LabTestsforMMRStatus:
     title: Lab Tests for MMR Status
     required: false
