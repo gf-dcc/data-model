@@ -1155,6 +1155,12 @@
     "rdfs:comment" : "TBD",
     "@type" : "rdfs:Class",
     "sms:requiresDependency" : [ {
+      "@id" : "bts:Component"
+    }, {
+      "@id" : "bts:Filename"
+    }, {
+      "@id" : "bts:FileFormat"
+    }, {
       "@id" : "bts:LabID"
     }, {
       "@id" : "bts:ChannelMetadataFilename"
@@ -2385,6 +2391,12 @@
     "rdfs:comment" : "TBD",
     "@type" : "rdfs:Class",
     "sms:requiresDependency" : [ {
+      "@id" : "bts:Component"
+    }, {
+      "@id" : "bts:Filename"
+    }, {
+      "@id" : "bts:FileFormat"
+    }, {
       "@id" : "bts:LabID"
     }, {
       "@id" : "bts:ChannelMetadataFilename"
