@@ -29,9 +29,10 @@ slots:
     annotations:
   Age:
     title: Age
-    required: true
+    required: false
     description: Age of individual
     annotations:
+      validationRules: num
   AgeAtMenarche:
     title: Age At Menarche
     required: false
