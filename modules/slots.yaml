@@ -29,10 +29,10 @@ slots:
     annotations:
   Age:
     title: Age
-    required: false
-    description: Age of individual
+    required: true
+    description: Age of individual as a positive number such as 40 or 56.5. If not available, cannot leave blank and must use "unknown".
     annotations:
-      validationRules: num
+      validationRules: regex match ^\d*\.?\d*$|^unknown$
   AgeAtMenarche:
     title: Age At Menarche
     required: false
