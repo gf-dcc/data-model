@@ -33,11 +33,20 @@ TODO - adapt script to allow these steps @cconrad8
  
 ## Validate manifest
 
-Note: this does not require creds setup.
+Note: this does not require creds setup, so you do not need `creds.json file` present.
 
-TODO - add script for this step
+### Examples
 
+#### CLI
+(Make sure you have config.yml and your data model in the working directory. Basically this should work as long as you're at the root of this repo.)
 
+`schematic model --config config.yml validate -mp ./Cohorts.csv -dt CohortCoreTemplate`
+
+Replace `./Cohorts.csv` with the name of another manifest file and 'CohortCoreTemplate' with the id to another template as needed.
+
+### API
+
+TBD
 
 
 
