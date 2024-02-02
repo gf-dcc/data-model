@@ -38,9 +38,10 @@ Note: this does not require creds setup, so you do not need `creds.json file` pr
 ### Examples
 
 #### CLI
-(Make sure you have config.yml and your data model in the working directory. Basically this should work as long as you're at the root of this repo.)
+- Make sure you have config.yml and your data model in the working directory. Basically this should work as long as you're at the root of this repo.
+- Make sure that the schematic version you have installed works with the config.
 
-`schematic model --config config.yml validate -mp ./Cohorts.csv -dt CohortCoreTemplate`
+`schematic model --config ./config.yml validate -mp ./tests/validate/examples/my_cohort.csv -dt CohortCoreTemplate`
 
 Replace `./Cohorts.csv` with the name of another manifest file and 'CohortCoreTemplate' with the id to another template as needed.
 
