@@ -8,6 +8,7 @@ schematic_service_account_creds.json
 tests/generate/GF.jsonld
 tests/generate/config.json
 tests/generate/creds.json
+great_expectations
 
 # Tools
 retold
