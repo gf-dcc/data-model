@@ -9,14 +9,14 @@ For quick and reproducible workflow, this guide is based on devcontainers, which
 In upper menu button, **Code > Create codespace on main**. 
 You may need to wait a bit for the container to install tools and finish other setup.
 
-## Update and make data model jsonld
+## Update the data model jsonld
 
 1. Modify a `.yaml` file in the `modules` directory.
 2. In the devcontainer at the root of the repo, type `make`. Animation of what it should look like:
 
 ![make demonstration](docs/make.gif)
 
-## Generate templates
+## Generate a template
 
 This is the command-line equivalent of using the schematic API or using the DCA UI to generate a template.
 
@@ -31,7 +31,7 @@ TODO - adapt script to allow these steps @cconrad8
 4. Generate a *filled-in* Google or Excel template for existing files on Synapse. An example for where this would apply is the public ScRNA-seqLevel1 dataset `syn26560315`.
 
  
-## Validate manifest
+## Validate a manifest
 
 Note: this does not require creds setup, so you do not need `creds.json file` present.
 
@@ -41,7 +41,7 @@ Note: this does not require creds setup, so you do not need `creds.json file` pr
 
 Exercise: Replace `./my_cohort.csv` with the path to another manifest file and 'CohortCoreTemplate' with the id to another template as needed.
 
-## Submit manifest
+## Submit a manifest
 
 
 
