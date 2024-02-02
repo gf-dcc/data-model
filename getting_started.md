@@ -1,6 +1,6 @@
 # Getting started
 
-How to care for the data model and do important operations with the schematic CLI!
+How to care for the data model and do important basic operations with the schematic CLI!
 
 For quick and reproducible workflow, this guide is based on devcontainers, which:
 - Should have the correct version of schematic installed with the schematic `config.yml` in the repository.
