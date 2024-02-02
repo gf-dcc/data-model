@@ -1,0 +1,18 @@
+{ "meta": "Validate example manifests against templates with schematic and data model.",
+  "schematic_reference": { 
+    "version": "23.1.1",
+    "flags" :
+      {
+        "great_expectations" : true
+      }
+  },
+  "tests": [
+    {
+      "manifest": "examples/my_cohort.csv",
+      "template": "CohortCoreTemplate",
+      "expect_pass": true,
+      "expectation": "Should pass",
+      "comment": "Contains mock data for two patients"
+    }
+  ]
+}
