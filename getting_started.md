@@ -1,6 +1,6 @@
 # Getting started
 
-How to care for the data model and do important operations with schematic!
+How to care for the data model and do important operations with the schematic CLI!
 
 For quick and reproducible workflow, this guide is based on devcontainers, which:
 - Should have the correct version of schematic installed with the schematic `config.yml` in the repository.
@@ -22,7 +22,7 @@ This is the command-line equivalent of using the schematic API or using the DCA 
 
 1. For generating templates, you need creds. You only need to do this once when starting up a new codespace. Run this simple bash script at the codespace command line: `./scripts/setup_creds.sh`. You should see a `creds.json` and `.synapseConfig` file at the root of the repo, next to the `.jsonld` file. Locally, we can keep these files around but .gitignore them so they are **not committed to the repo**. Also, for local use, you may want to set up `.synapseConfig` using your own credentials. Feel free to skim the bash script and creds files.
 
-2. Generate a blank Excel template for e.g. scRNAseq-Level1 by running `./scripts/gen_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
+2. Generate a blank Excel template for e.g. scRNAseq-Level1: `./scripts/gen_template.sh ImagingLevel2`. This generates an Excel template by default. Try replacing with another template ID. Try also copy-pasting contents of the script to the command-line to run schematic command natively, replacing variables as needed.
 
 TODO - adapt script to allow these steps @cconrad8
 
@@ -35,19 +35,13 @@ TODO - adapt script to allow these steps @cconrad8
 
 Note: this does not require creds setup, so you do not need `creds.json file` present.
 
-### Examples
+1. Make sure you have config.yml and your data model in the working directory. Basically this should work as long as you're at the root of this repo.
+2. Make sure that the schematic version you have installed works with the config.
+3. Run example: `schematic model --config ./config.yml validate -mp ./tests/validate/examples/my_cohort.csv -dt CohortCoreTemplate`
 
-#### CLI
-- Make sure you have config.yml and your data model in the working directory. Basically this should work as long as you're at the root of this repo.
-- Make sure that the schematic version you have installed works with the config.
+Exercise: Replace `./my_cohort.csv` with the path to another manifest file and 'CohortCoreTemplate' with the id to another template as needed.
 
-`schematic model --config ./config.yml validate -mp ./tests/validate/examples/my_cohort.csv -dt CohortCoreTemplate`
-
-Replace `./Cohorts.csv` with the name of another manifest file and 'CohortCoreTemplate' with the id to another template as needed.
-
-### API
-
-TBD
+## Submit manifest
 
 
 
