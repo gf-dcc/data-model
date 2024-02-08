@@ -2080,6 +2080,17 @@
     "sms:displayName" : "CellBarcodeTag",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:AgeAtDiagnosis",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "If applicable and known, age at the time of diagnosis in years.",
+    "rdfs:label" : "AgeAtDiagnosis",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AgeAtDiagnosis",
+    "sms:required" : "sms:false"
+  }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:ReadContent",
     "schema:isPartOf" : {
@@ -2206,7 +2217,7 @@
   }, {
     "@id" : "bts:ClassBRCA1",
     "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "BRCA1 grouping.",
     "rdfs:label" : "ClassBRCA1",
     "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
@@ -2228,7 +2239,7 @@
   }, {
     "@id" : "bts:SampleCollectionCenter",
     "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "Name of center/institution/site where the individual contributed samples.",
     "rdfs:label" : "SampleCollectionCenter",
     "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
@@ -3701,7 +3712,7 @@
   }, {
     "@id" : "bts:BMI",
     "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "Body mass index. Note that more direct height/weight information are preferred, if available.",
     "rdfs:label" : "BMI",
     "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
@@ -6235,7 +6246,7 @@
       "@id" : "bts:Tumormetastatic"
     } ],
     "rdfs:label" : "PrimaryDiagnosis",
-    "rdfs:comment" : "Text term used to describe the patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).",
+    "rdfs:comment" : "If applicable, patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).",
     "@type" : "rdfs:Class",
     "sms:displayName" : "PrimaryDiagnosis"
   }, {
@@ -6319,6 +6330,1028 @@
     },
     "sms:displayName" : "AntibodyName",
     "sms:required" : "sms:false"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:PreviousDiagnosis",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Pagetdiseaseandintraductalcarcinomaofbreast"
+    }, {
+      "@id" : "bts:Papillarymicrocarcinoma"
+    }, {
+      "@id" : "bts:Kaposisarcoma"
+    }, {
+      "@id" : "bts:CarcinomaNOS"
+    }, {
+      "@id" : "bts:AcutemyeloidleukemiaNOS"
+    }, {
+      "@id" : "bts:TumorNOS"
+    }, {
+      "@id" : "bts:Renalcelladenocarcinoma"
+    }, {
+      "@id" : "bts:MalignantlymphomalymphoblasticNOS"
+    }, {
+      "@id" : "bts:Mammarycarcinomainsitu"
+    }, {
+      "@id" : "bts:Adenocarcinomainsituintubularadenoma"
+    }, {
+      "@id" : "bts:MalignantlymphomasmallBlymphocyticNOS"
+    }, {
+      "@id" : "bts:Eosinophilicleukemia"
+    }, {
+      "@id" : "bts:AcutelymphoblasticleukemiaNOS"
+    }, {
+      "@id" : "bts:MalignantlymphomalymphocyticnodularNOS"
+    }, {
+      "@id" : "bts:Basalcellepithelioma"
+    }, {
+      "@id" : "bts:Intracysticpapilloma"
+    }, {
+      "@id" : "bts:Lobularandductalcarcinoma"
+    }, {
+      "@id" : "bts:Cancer"
+    }, {
+      "@id" : "bts:Tlymphoblasticleukemia/lymphoma"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomalymphocyte-rich"
+    }, {
+      "@id" : "bts:Esophagealintraepithelialneoplasiahighgrade"
+    }, {
+      "@id" : "bts:Burkittcellleukemia"
+    }, {
+      "@id" : "bts:MonocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:AcuteleukemiaNOS"
+    }, {
+      "@id" : "bts:Renalmedullarycarcinoma"
+    }, {
+      "@id" : "bts:Diffusemelanocytosis"
+    }, {
+      "@id" : "bts:Intraductalandlobularcarcinoma"
+    }, {
+      "@id" : "bts:MelanoticpsammomatousMPNST"
+    }, {
+      "@id" : "bts:MalignantmelanomainHutchinsonmelanoticfreckle"
+    }, {
+      "@id" : "bts:Pigmentedadenoma"
+    }, {
+      "@id" : "bts:ChronicgranulocyticleukemiaBCR/ABL"
+    }, {
+      "@id" : "bts:CervicalintraepithelialneoplasiagradeIII"
+    }, {
+      "@id" : "bts:High-gradeserouscarcinoma"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomanodularsclerosisgrade1"
+    }, {
+      "@id" : "bts:Meningiomamalignant"
+    }, {
+      "@id" : "bts:InterstitialcelltumorNOS"
+    }, {
+      "@id" : "bts:BronchialadenomaNOS"
+    }, {
+      "@id" : "bts:PrecursorT-celllymphoblasticlymphoma"
+    }, {
+      "@id" : "bts:Tubularandroblastomawithlipidstorage"
+    }, {
+      "@id" : "bts:Combinedlargecellneuroendocrinecarcinoma"
+    }, {
+      "@id" : "bts:NephroblastomaNOS"
+    }, {
+      "@id" : "bts:Tumorcellsbenign"
+    }, {
+      "@id" : "bts:Tumorletbenign"
+    }, {
+      "@id" : "bts:Pleomorphiclipoma"
+    }, {
+      "@id" : "bts:Adenocarcinomaofanalducts"
+    }, {
+      "@id" : "bts:Gastrointestinalstromaltumormalignant"
+    }, {
+      "@id" : "bts:Malignantmelanomainjunctionalnevus"
+    }, {
+      "@id" : "bts:Rhabdosarcoma"
+    }, {
+      "@id" : "bts:EndometrioidadenomaNOS"
+    }, {
+      "@id" : "bts:Hodgkinsarcoma"
+    }, {
+      "@id" : "bts:MalignantlymphomaimmunoblasticNOS"
+    }, {
+      "@id" : "bts:Smallcongenitalnevus"
+    }, {
+      "@id" : "bts:TumormalignantNOS"
+    }, {
+      "@id" : "bts:Undifferentiatedepithelioidsarcoma"
+    }, {
+      "@id" : "bts:NeuroendocrinecarcinomaNOS"
+    }, {
+      "@id" : "bts:Acutelymphoblasticleukemiaprecursorcelltype"
+    }, {
+      "@id" : "bts:Inflammatoryadenocarcinoma"
+    }, {
+      "@id" : "bts:Tubularadenocarcinoma"
+    }, {
+      "@id" : "bts:Combinedsmallcell-adenocarcinoma"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomanodularsclerosiscellularphase"
+    }, {
+      "@id" : "bts:Mixedadenocarcinomaandepidermoidcarcinoma"
+    }, {
+      "@id" : "bts:EpidermoidcarcinomainsituNOS"
+    }, {
+      "@id" : "bts:Undifferentiatedhigh-gradepleomorphicsarcoma"
+    }, {
+      "@id" : "bts:Sclerosinghepaticcarcinoma"
+    }, {
+      "@id" : "bts:Pagetoidreticulosis"
+    }, {
+      "@id" : "bts:Centralneurocytoma"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomaNOS"
+    }, {
+      "@id" : "bts:Chroniclymphoidleukemia"
+    }, {
+      "@id" : "bts:Paragangliomamalignant"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomanodularsclerosisgrade2"
+    }, {
+      "@id" : "bts:B-ALL"
+    }, {
+      "@id" : "bts:Skinappendagecarcinoma"
+    }, {
+      "@id" : "bts:Epithelialtumorbenign"
+    }, {
+      "@id" : "bts:Blymphoblasticleukemia/lymphomaNOS"
+    }, {
+      "@id" : "bts:HodgkinlymphomanodularsclerosisNOS"
+    }, {
+      "@id" : "bts:MalignantlymphomalymphocyticdiffuseNOS"
+    }, {
+      "@id" : "bts:Pro-BALL"
+    }, {
+      "@id" : "bts:GastrinomaNOS"
+    }, {
+      "@id" : "bts:Intraductalcarcinomaclinging"
+    }, {
+      "@id" : "bts:Non-invasivelowgradeserouscarcinoma"
+    }, {
+      "@id" : "bts:AcutepromyelocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:Malignantlymphomanon-HodgkinNOS"
+    }, {
+      "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Melanoticschwannoma"
+    }, {
+      "@id" : "bts:SplenicmarginalzonelymphomaNOS"
+    }, {
+      "@id" : "bts:Transitionalcellcarcinomainsitu"
+    }, {
+      "@id" : "bts:Chronicmonocyticleukemia"
+    }, {
+      "@id" : "bts:Gastrincelltumor"
+    }, {
+      "@id" : "bts:Papillaryserouscystadenocarcinoma"
+    }, {
+      "@id" : "bts:TeratomamalignantNOS"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomalymphocytedepletionreticular"
+    }, {
+      "@id" : "bts:Tumorcellsuncertainwhetherbenignormalignant"
+    }, {
+      "@id" : "bts:Epithelialtumormalignant"
+    }, {
+      "@id" : "bts:TubularandroblastomaNOS"
+    }, {
+      "@id" : "bts:Papillarycarcinomainsitu"
+    }, {
+      "@id" : "bts:PituitarycarcinomaNOS"
+    }, {
+      "@id" : "bts:Typicalcarcinoid"
+    }, {
+      "@id" : "bts:Non-smallcellcarcinoma"
+    }, {
+      "@id" : "bts:MeningiomaNOS"
+    }, {
+      "@id" : "bts:EndometrialsarcomaNOS"
+    }, {
+      "@id" : "bts:NeuroblastomaNOS"
+    }, {
+      "@id" : "bts:BcelllymphomaNOS"
+    }, {
+      "@id" : "bts:PeripheralT-celllymphomalargecell"
+    }, {
+      "@id" : "bts:RenalcellcarcinomaNOS"
+    }, {
+      "@id" : "bts:Renalcellcarcinomaspindlecell"
+    }, {
+      "@id" : "bts:Hepatocholangiocarcinoma"
+    }, {
+      "@id" : "bts:MalignantlymphomanodularNOS"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomanon-mucinous"
+    }, {
+      "@id" : "bts:unknown"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomaindeterminatetype"
+    }, {
+      "@id" : "bts:Pleomorphiccarcinoma"
+    }, {
+      "@id" : "bts:PapillarycystadenomaNOS"
+    }, {
+      "@id" : "bts:Burkitttumor"
+    }, {
+      "@id" : "bts:BasalcellcarcinomaNOS"
+    }, {
+      "@id" : "bts:HepatocellularcarcinomaNOS"
+    }, {
+      "@id" : "bts:Undifferentiatedleukaemia"
+    }, {
+      "@id" : "bts:Gastrincelltumormalignant"
+    }, {
+      "@id" : "bts:Melanoameloblastoma"
+    }, {
+      "@id" : "bts:ProstaticintraepithelialneoplasiagradeIII"
+    }, {
+      "@id" : "bts:Mixedpinealtumor"
+    }, {
+      "@id" : "bts:Smallcellsarcoma"
+    }, {
+      "@id" : "bts:Carcinomainadenomatouspolyp"
+    }, {
+      "@id" : "bts:Pagetdiseaseextramammary"
+    }, {
+      "@id" : "bts:Intraductalcarcinomasolidtype"
+    }, {
+      "@id" : "bts:Livercellcarcinoma"
+    }, {
+      "@id" : "bts:Undifferentiatedsarcoma"
+    }, {
+      "@id" : "bts:Squamouscellcarcinomaclearcelltype"
+    }, {
+      "@id" : "bts:PituitaryadenomaNOS"
+    }, {
+      "@id" : "bts:EndometrioidcarcinomaNOS"
+    }, {
+      "@id" : "bts:PapillaryadenocarcinomaNOS"
+    }, {
+      "@id" : "bts:Ductcarcinomadesmoplastictype"
+    }, {
+      "@id" : "bts:Chroniclymphaticleukemia"
+    }, {
+      "@id" : "bts:SquamouscellcarcinomainsituNOS"
+    }, {
+      "@id" : "bts:Intraductalpapillaryadenocarcinomawithinvasion"
+    }, {
+      "@id" : "bts:Adenocarcinomacombinedwithothertypesofcarcinoma"
+    }, {
+      "@id" : "bts:Combinedhepatocellularcarcinomaandcholangiocarcinoma"
+    }, {
+      "@id" : "bts:Primaryamyloidosis"
+    }, {
+      "@id" : "bts:Preleukemia"
+    }, {
+      "@id" : "bts:Adenocarcinomaofanalglands"
+    }, {
+      "@id" : "bts:Secondarycarcinoma"
+    }, {
+      "@id" : "bts:Dermalnevus"
+    }, {
+      "@id" : "bts:Infiltratingductandcribriformcarcinoma"
+    }, {
+      "@id" : "bts:Eosinophiladenocarcinoma"
+    }, {
+      "@id" : "bts:Chronicmyeloproliferativedisorder"
+    }, {
+      "@id" : "bts:Malignantmelanomaregressing"
+    }, {
+      "@id" : "bts:Osteoblastomamalignant"
+    }, {
+      "@id" : "bts:Papillotubularadenocarcinoma"
+    }, {
+      "@id" : "bts:CarcinomametastaticNOS"
+    }, {
+      "@id" : "bts:Sclerosinghemangioma"
+    }, {
+      "@id" : "bts:LymphocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:PrecursorcelllymphoblasticleukemiaNOS"
+    }, {
+      "@id" : "bts:PapillarycarcinomaNOS"
+    }, {
+      "@id" : "bts:Bronchio-alveolarcarcinomamucinous"
+    }, {
+      "@id" : "bts:CarcinomainapolypNOS"
+    }, {
+      "@id" : "bts:AcutemyeloidleukemiaMLL"
+    }, {
+      "@id" : "bts:Tubulocysticrenalcellcarcinoma"
+    }, {
+      "@id" : "bts:MelanocytomaNOS"
+    }, {
+      "@id" : "bts:ChronicmyelogenousleukemiaPhiladelphiachromosome(Ph1)positive"
+    }, {
+      "@id" : "bts:Ewingsarcoma"
+    }, {
+      "@id" : "bts:GliomaNOS"
+    }, {
+      "@id" : "bts:Bronchial-associatedlymphoidtissuelymphoma"
+    }, {
+      "@id" : "bts:Papillotubularadenoma"
+    }, {
+      "@id" : "bts:Papillomaofbladder"
+    }, {
+      "@id" : "bts:Bronchio-alveolarcarcinomamixedmucinousandnon-mucinous"
+    }, {
+      "@id" : "bts:Carcinomainpleomorphicadenoma"
+    }, {
+      "@id" : "bts:Chondrosarcomagrade2/3"
+    }, {
+      "@id" : "bts:Neoplasmsecondary"
+    }, {
+      "@id" : "bts:Rhabdomyosarcomawithganglionicdifferentiation"
+    }, {
+      "@id" : "bts:Chroniclymphocyticleukemia"
+    }, {
+      "@id" : "bts:Liposarcomawelldifferentiated"
+    }, {
+      "@id" : "bts:Undifferentiatedpleomorphicsarcoma"
+    }, {
+      "@id" : "bts:Secretorycarcinomaofbreast"
+    }, {
+      "@id" : "bts:Lobularcarcinomanoninfiltrating"
+    }, {
+      "@id" : "bts:Mixedadenocarcinomaandsquamouscellcarcinoma"
+    }, {
+      "@id" : "bts:Melanoticneurofibroma"
+    }, {
+      "@id" : "bts:ChronicgranulocyticleukemiaPhiladelphiachromosome(Ph1)positive"
+    }, {
+      "@id" : "bts:Hepatocellularadenoma"
+    }, {
+      "@id" : "bts:BurkittlymphomaNOS(Includesallvariants)"
+    }, {
+      "@id" : "bts:ParagangliomaNOS"
+    }, {
+      "@id" : "bts:DiffuselargeB-celllymphomaNOS"
+    }, {
+      "@id" : "bts:NevusNOS"
+    }, {
+      "@id" : "bts:Hepatoidcarcinoma"
+    }, {
+      "@id" : "bts:MixedtumormalignantNOS"
+    }, {
+      "@id" : "bts:Rhabdoidsarcoma"
+    }, {
+      "@id" : "bts:Tubulolobularcarcinoma"
+    }, {
+      "@id" : "bts:Papillomatosisglandular"
+    }, {
+      "@id" : "bts:Bronchialadenomacarcinoid"
+    }, {
+      "@id" : "bts:Tumorembolus"
+    }, {
+      "@id" : "bts:DuctcarcinomaNOS"
+    }, {
+      "@id" : "bts:RhabdomyosarcomaNOS"
+    }, {
+      "@id" : "bts:LobularcarcinomaNOS"
+    }, {
+      "@id" : "bts:Bronchialadenomacylindroid"
+    }, {
+      "@id" : "bts:EpidermoidcarcinomaNOS"
+    }, {
+      "@id" : "bts:Papillaryglioneuronaltumor"
+    }, {
+      "@id" : "bts:DuctalcarcinomainsituNOS"
+    }, {
+      "@id" : "bts:Unclassifiedtumormalignantuncertainwhetherprimaryormetastatic"
+    }, {
+      "@id" : "bts:Glioblastoma"
+    }, {
+      "@id" : "bts:Papillaryandfollicularcarcinoma"
+    }, {
+      "@id" : "bts:DuctalcarcinomaNOS"
+    }, {
+      "@id" : "bts:Tumorbenign"
+    }, {
+      "@id" : "bts:Pagetdiseasemammary"
+    }, {
+      "@id" : "bts:Diffuseastrocytomalowgrade"
+    }, {
+      "@id" : "bts:Ductcellcarcinoma"
+    }, {
+      "@id" : "bts:Preleukemicsyndrome"
+    }, {
+      "@id" : "bts:Carcinomadiffusetype"
+    }, {
+      "@id" : "bts:Neurosarcoma"
+    }, {
+      "@id" : "bts:PapillomatosisNOS"
+    }, {
+      "@id" : "bts:Therapyrelatedmyeloidneoplasm"
+    }, {
+      "@id" : "bts:Renalcarcinomacollectingducttype"
+    }, {
+      "@id" : "bts:NeurofibromaNOS"
+    }, {
+      "@id" : "bts:Meningiomaanaplastic"
+    }, {
+      "@id" : "bts:CementomaNOS"
+    }, {
+      "@id" : "bts:DermatofibromaNOS"
+    }, {
+      "@id" : "bts:AstrocytomaNOS"
+    }, {
+      "@id" : "bts:Livercelladenoma"
+    }, {
+      "@id" : "bts:TubulovillousadenomaNOS"
+    }, {
+      "@id" : "bts:MelanomaNOS"
+    }, {
+      "@id" : "bts:PapillomaNOS"
+    }, {
+      "@id" : "bts:Esophagealglandulardysplasia(intraepithelialneoplasia)highgrade"
+    }, {
+      "@id" : "bts:Tumorcellsmalignant"
+    }, {
+      "@id" : "bts:MalignantlymphomadiffuseNOS"
+    }, {
+      "@id" : "bts:Renalcellcarcinomachromophobetype"
+    }, {
+      "@id" : "bts:Tubularcarcinoid"
+    }, {
+      "@id" : "bts:Nonpigmentednevus"
+    }, {
+      "@id" : "bts:Rodentulcer"
+    }, {
+      "@id" : "bts:HodgkindiseaseNOS"
+    }, {
+      "@id" : "bts:Acinarcellcarcinoma"
+    }, {
+      "@id" : "bts:Papillaryadenofibroma"
+    }, {
+      "@id" : "bts:Oatcellcarcinoma"
+    }, {
+      "@id" : "bts:Adenocarcinomainadenomatouspolyp"
+    }, {
+      "@id" : "bts:SpindlecellcarcinomaNOS"
+    }, {
+      "@id" : "bts:Adenocarcinomainpolypoidadenoma"
+    }, {
+      "@id" : "bts:Papillaryserousadenocarcinoma"
+    }, {
+      "@id" : "bts:SplenicdiffuseredpulpsmallB-celllymphoma"
+    }, {
+      "@id" : "bts:ChondromaNOS"
+    }, {
+      "@id" : "bts:Bileductadenoma"
+    }, {
+      "@id" : "bts:Adenocarcinomainvillousadenoma"
+    }, {
+      "@id" : "bts:SpindlecellmelanomaNOS"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomamixedcellularityNOS"
+    }, {
+      "@id" : "bts:Combinedsmallcell-largecarcinoma"
+    }, {
+      "@id" : "bts:Eosinophilcarcinoma"
+    }, {
+      "@id" : "bts:PancreaticendocrinetumorNOS"
+    }, {
+      "@id" : "bts:AdenocarcinomaNOS"
+    }, {
+      "@id" : "bts:SarcomaNOS"
+    }, {
+      "@id" : "bts:ChronicmyelocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:Adenocarcinomainsitunon-mucinous"
+    }, {
+      "@id" : "bts:ChronicleukemiaNOS"
+    }, {
+      "@id" : "bts:Pro-TALL"
+    }, {
+      "@id" : "bts:Esophagealglandulardysplasia(intraepithelialneoplasia)lowgrade"
+    }, {
+      "@id" : "bts:Lymphoblastoma"
+    }, {
+      "@id" : "bts:Mixedmedullary-papillarycarcinoma"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomanodularsclerosisNOS"
+    }, {
+      "@id" : "bts:OsteoblastomaNOS"
+    }, {
+      "@id" : "bts:CerebellarsarcomaNOS"
+    }, {
+      "@id" : "bts:Paragangliomabenign"
+    }, {
+      "@id" : "bts:Intraductaltubular-papillaryneoplasmlowgrade"
+    }, {
+      "@id" : "bts:Familialadenomatouspolyposis"
+    }, {
+      "@id" : "bts:Mixedsquamouscellandglandularpapilloma"
+    }, {
+      "@id" : "bts:IntraductalcarcinomaNOS"
+    }, {
+      "@id" : "bts:Transitionalcarcinoma"
+    }, {
+      "@id" : "bts:Gastrinomamalignant"
+    }, {
+      "@id" : "bts:Melanocytomaeyeball"
+    }, {
+      "@id" : "bts:Mixedmedullary-follicularcarcinoma"
+    }, {
+      "@id" : "bts:ChronicmyelogenousleukemiaBCR-ABLpositive"
+    }, {
+      "@id" : "bts:Basophilcarcinoma"
+    }, {
+      "@id" : "bts:NeuroepitheliomaNOS"
+    }, {
+      "@id" : "bts:Adenocarcinomapancreatobiliarytype"
+    }, {
+      "@id" : "bts:PrecancerousmelanosisNOS"
+    }, {
+      "@id" : "bts:Undifferentiatedroundcellsarcoma"
+    }, {
+      "@id" : "bts:MalignantlymphomalargecellNOS"
+    }, {
+      "@id" : "bts:Tubulo-papillaryadenoma"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomalymphocytedepletiondiffusefibrosis"
+    }, {
+      "@id" : "bts:Cerebellarliponeurocytoma"
+    }, {
+      "@id" : "bts:Pulmonaryblastoma"
+    }, {
+      "@id" : "bts:Burkitt-likelymphoma"
+    }, {
+      "@id" : "bts:GangliogliomaNOS"
+    }, {
+      "@id" : "bts:T-celllymphomaNOS"
+    }, {
+      "@id" : "bts:Papillarytumorofthepinealregion"
+    }, {
+      "@id" : "bts:IntraductalpapillaryadenocarcinomaNOS"
+    }, {
+      "@id" : "bts:MalignantlymphomaNOS"
+    }, {
+      "@id" : "bts:Hepatoidadenocarcinoma"
+    }, {
+      "@id" : "bts:PapillaryadenomaNOS"
+    }, {
+      "@id" : "bts:Carcinomainsituinadenomatouspolyp"
+    }, {
+      "@id" : "bts:Eosinophilicgranuloma"
+    }, {
+      "@id" : "bts:Medullaryadenocarcinoma"
+    }, {
+      "@id" : "bts:Malignantlymphomamixedcelltypenodular"
+    }, {
+      "@id" : "bts:IntraductalcarcinomanoninfiltratingNOS"
+    }, {
+      "@id" : "bts:Interstitialcelltumormalignant"
+    }, {
+      "@id" : "bts:LymphomaNOS"
+    }, {
+      "@id" : "bts:Unclassifiedtumorborderlinemalignancy"
+    }, {
+      "@id" : "bts:Adenocarcinomaintubularadenoma"
+    }, {
+      "@id" : "bts:Intraductalpapillarycarcinoma"
+    }, {
+      "@id" : "bts:MyelocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:TumorcellsNOS"
+    }, {
+      "@id" : "bts:LiposarcomaNOS"
+    }, {
+      "@id" : "bts:Interstitialcelltumorbenign"
+    }, {
+      "@id" : "bts:Neoplasmmetastatic"
+    }, {
+      "@id" : "bts:Chronicneutrophilicleukemia"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomagobletcelltype"
+    }, {
+      "@id" : "bts:Papillaryadenocarcinomafollicularvariant"
+    }, {
+      "@id" : "bts:Hepatocarcinoma"
+    }, {
+      "@id" : "bts:Undifferentiateduterinesarcoma"
+    }, {
+      "@id" : "bts:Renalcellcarcinomaunclassified"
+    }, {
+      "@id" : "bts:Papillaryepidermoidcarcinoma"
+    }, {
+      "@id" : "bts:PigmentednevusNOS"
+    }, {
+      "@id" : "bts:MyeloidleukemiaNOS"
+    }, {
+      "@id" : "bts:Esophagealsquamousintraepithelialneoplasia(dysplasia)highgrade"
+    }, {
+      "@id" : "bts:MalignantlymphomalargeB-cellNOS"
+    }, {
+      "@id" : "bts:Non-lymphocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:Basalcelladenocarcinoma"
+    }, {
+      "@id" : "bts:AdultT-celllymphoma/leukemia"
+    }, {
+      "@id" : "bts:Mixedpancreaticendocrineandexocrinetumormalignant"
+    }, {
+      "@id" : "bts:EpendymomaNOS"
+    }, {
+      "@id" : "bts:PeripheralT-celllymphomaNOS"
+    }, {
+      "@id" : "bts:Pulmonaryadenomatosis"
+    }, {
+      "@id" : "bts:Pleomorphiclobularcarcinoma"
+    }, {
+      "@id" : "bts:Pagetdiseaseofbreast"
+    }, {
+      "@id" : "bts:HodgkinparagranulomaNOS"
+    }, {
+      "@id" : "bts:MalignantmelanomaNOS"
+    }, {
+      "@id" : "bts:Papillarytransitionalcellcarcinoma"
+    }, {
+      "@id" : "bts:Acutelymphocyticleukemia"
+    }, {
+      "@id" : "bts:Seroussurfacepapillarycarcinoma"
+    }, {
+      "@id" : "bts:Basalcelltumor"
+    }, {
+      "@id" : "bts:ChronicmyelomonocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:LymphaticleukemicNOS"
+    }, {
+      "@id" : "bts:TeratomaNOS"
+    }, {
+      "@id" : "bts:Malignantlymphomamixedcelltypefollicular"
+    }, {
+      "@id" : "bts:Bronchiolaradenocarcinoma"
+    }, {
+      "@id" : "bts:Basophiladenocarcinoma"
+    }, {
+      "@id" : "bts:Non-HodgkinlymphomaNOS"
+    }, {
+      "@id" : "bts:Haemangioblastoma"
+    }, {
+      "@id" : "bts:Intraductaltubular-papillaryneoplasmhighgrade"
+    }, {
+      "@id" : "bts:ChronicmyeloproliferativediseaseNOS"
+    }, {
+      "@id" : "bts:Rhabdoidmeningioma"
+    }, {
+      "@id" : "bts:RhabdoidtumorNOS"
+    }, {
+      "@id" : "bts:Carcinomaintestinaltype"
+    }, {
+      "@id" : "bts:ClassicalHodgkinlymphomalymphocytedepletionNOS"
+    }, {
+      "@id" : "bts:ChronicmyeloidleukemiaNOS"
+    }, {
+      "@id" : "bts:Melanoticmedulloblastoma"
+    }, {
+      "@id" : "bts:Melanoticneuroectodermaltumor"
+    }, {
+      "@id" : "bts:LobularcarcinomainsituNOS"
+    }, {
+      "@id" : "bts:Mixedsmallcellcarcinoma"
+    }, {
+      "@id" : "bts:Intradermalnevus"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomaClaracell"
+    }, {
+      "@id" : "bts:Papillarysquamouscellcarcinomainsitu"
+    }, {
+      "@id" : "bts:Smallcellneuroendocrinecarcinoma"
+    }, {
+      "@id" : "bts:Malignantmelanomainprecancerousmelanosis"
+    }, {
+      "@id" : "bts:CarcinomaanaplasticNOS"
+    }, {
+      "@id" : "bts:Dysplasticnevus"
+    }, {
+      "@id" : "bts:Liposarcomadifferentiated"
+    }, {
+      "@id" : "bts:Combinedsmallcell-squamouscellcarcinoma"
+    }, {
+      "@id" : "bts:Acutelymphaticleukemia"
+    }, {
+      "@id" : "bts:Gliomamalignant"
+    }, {
+      "@id" : "bts:AdenocarcinomainsituNOS"
+    }, {
+      "@id" : "bts:Mucosal-associatedlymphoidtissuelymphoma"
+    }, {
+      "@id" : "bts:Spleniclymphomawithvillouslymphocytes"
+    }, {
+      "@id" : "bts:LargecellcarcinomaNOS"
+    }, {
+      "@id" : "bts:MicropapillarycarcinomaNOS"
+    }, {
+      "@id" : "bts:Undifferentiatedspindlecellsarcoma"
+    }, {
+      "@id" : "bts:IntraepidermalsquamouscellcarcinomaBowentype"
+    }, {
+      "@id" : "bts:EndometrioidadenofibromaNOS"
+    }, {
+      "@id" : "bts:MedullarycarcinomaNOS"
+    }, {
+      "@id" : "bts:T-celllargegranularlymphocytosis"
+    }, {
+      "@id" : "bts:IntraductaladenocarcinomanoninfiltratingNOS"
+    }, {
+      "@id" : "bts:OsteosarcomaNOS"
+    }, {
+      "@id" : "bts:Pancreatobiliary-typecarcinoma"
+    }, {
+      "@id" : "bts:Adenocarcinoidtumor"
+    }, {
+      "@id" : "bts:DiffuseastrocytomaIDH-mutant"
+    }, {
+      "@id" : "bts:Medullaryosteosarcoma"
+    }, {
+      "@id" : "bts:Adenocarcinomaintestinaltype"
+    }, {
+      "@id" : "bts:CarcinomainsituinapolypNOS"
+    }, {
+      "@id" : "bts:CarcinosarcomaNOS"
+    }, {
+      "@id" : "bts:Basalcelladenoma"
+    }, {
+      "@id" : "bts:AdultT-celllymphoma"
+    }, {
+      "@id" : "bts:Lobularadenocarcinoma"
+    }, {
+      "@id" : "bts:Melanocyticnevus"
+    }, {
+      "@id" : "bts:AdenocarcinomametastaticNOS"
+    }, {
+      "@id" : "bts:Pigmentedbasalcellcarcinoma"
+    }, {
+      "@id" : "bts:Astrocytomaanaplastic"
+    }, {
+      "@id" : "bts:Melanomamalignantofsoftparts"
+    }, {
+      "@id" : "bts:Smallcellosteosarcoma"
+    }, {
+      "@id" : "bts:Unclassifiedtumoruncertainwhetherbenignormalignant"
+    }, {
+      "@id" : "bts:Transitionalcellcarcinoma"
+    }, {
+      "@id" : "bts:Intraductalcarcinomaandlobularcarcinomainsitu"
+    }, {
+      "@id" : "bts:RhabdomyomaNOS"
+    }, {
+      "@id" : "bts:B-celllymphocyticleukemia/smalllymphocyticlymphoma"
+    }, {
+      "@id" : "bts:Capillaryhemangioma"
+    }, {
+      "@id" : "bts:PrecursorB-celllymphoblasticleukemia"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolarcarcinomaClaracellandgobletcelltype"
+    }, {
+      "@id" : "bts:Eosinophiladenoma"
+    }, {
+      "@id" : "bts:SplenicB-celllymphoma/leukemiaunclassifiable"
+    }, {
+      "@id" : "bts:CompositeHodgkinandnon-Hodgkinlymphoma"
+    }, {
+      "@id" : "bts:Pagetdiseaseandinfiltratingductcarcinomaofbreast"
+    }, {
+      "@id" : "bts:NeurofibromatosisNOS"
+    }, {
+      "@id" : "bts:HodgkinlymphomaNOS"
+    }, {
+      "@id" : "bts:Melanomainsitu"
+    }, {
+      "@id" : "bts:SerouscystadenocarcinomaNOS"
+    }, {
+      "@id" : "bts:MalignantlymphomaHodgkin"
+    }, {
+      "@id" : "bts:Acutelymphoblasticleukemia-lymphomaNOS"
+    }, {
+      "@id" : "bts:Unclassifiedtumormalignant"
+    }, {
+      "@id" : "bts:Adultrhabdomyoma"
+    }, {
+      "@id" : "bts:Neoplasmuncertainwhetherbenignormalignant"
+    }, {
+      "@id" : "bts:ChronicmyelomonocyticleukemiaType1"
+    }, {
+      "@id" : "bts:DuctadenomaNOS"
+    }, {
+      "@id" : "bts:Neoplasmbenign"
+    }, {
+      "@id" : "bts:CarcinomaundifferentiatedNOS"
+    }, {
+      "@id" : "bts:Malignancy"
+    }, {
+      "@id" : "bts:Adenocarcinomainsitumucinous"
+    }, {
+      "@id" : "bts:Papillarysquamouscellcarcinoma"
+    }, {
+      "@id" : "bts:Blymphoblasticleukemia/lymphomawithhyperdiploidy"
+    }, {
+      "@id" : "bts:PrecursorT-celllymphoblasticleukemia"
+    }, {
+      "@id" : "bts:Tumorsecondary"
+    }, {
+      "@id" : "bts:Pancreatobiliaryneoplasmnon-invasive"
+    }, {
+      "@id" : "bts:Malignantmelanomaingiantpigmentednevus"
+    }, {
+      "@id" : "bts:Squamouscellcarcinomaadenoid"
+    }, {
+      "@id" : "bts:Acutemyelomonocyticleukemia"
+    }, {
+      "@id" : "bts:Bileductcystadenocarcinoma"
+    }, {
+      "@id" : "bts:Pancreaticendocrinetumornonfunctioning"
+    }, {
+      "@id" : "bts:Pleomorphicadenoma"
+    }, {
+      "@id" : "bts:Blymphoblasticleukemia/lymphomawithhypodiploidy(HypodiploidALL)"
+    }, {
+      "@id" : "bts:Renalcellcarcinomasarcomatoid"
+    }, {
+      "@id" : "bts:SplenicmarginalzoneB-celllymphoma"
+    }, {
+      "@id" : "bts:MalignantlymphomalargeB-celldiffuseNOS"
+    }, {
+      "@id" : "bts:Infiltratingductandcolloidcarcinoma"
+    }, {
+      "@id" : "bts:ChronicmyelomonocyticleukemiaTypeII"
+    }, {
+      "@id" : "bts:DuctadenocarcinomaNOS"
+    }, {
+      "@id" : "bts:Combined/mixedcarcinoidandadenocarcinoma"
+    }, {
+      "@id" : "bts:Haemangiosarcoma"
+    }, {
+      "@id" : "bts:Acutelymphoidleukemia"
+    }, {
+      "@id" : "bts:DiffuseastrocytomaIDH-wildtype"
+    }, {
+      "@id" : "bts:Intraductaltubulopapillaryneoplasm"
+    }, {
+      "@id" : "bts:Acutebasophilicleukaemia"
+    }, {
+      "@id" : "bts:Unclassifiedtumorbenign"
+    }, {
+      "@id" : "bts:Intraductalmicropapillarycarcinoma"
+    }, {
+      "@id" : "bts:Hodgkingranuloma"
+    }, {
+      "@id" : "bts:ChroniclymphocyticleukemiaB-celltype(includesallvariantsofBCLL)"
+    }, {
+      "@id" : "bts:Pancreatoblastoma"
+    }, {
+      "@id" : "bts:Bileductadenocarcinoma"
+    }, {
+      "@id" : "bts:Meningealmelanocytoma"
+    }, {
+      "@id" : "bts:HodgkinlymphomamixedcellularityNOS"
+    }, {
+      "@id" : "bts:InfiltratingductcarcinomaNOS"
+    }, {
+      "@id" : "bts:Esophagealsquamousintraepithelialneoplasia(dysplasia)lowgrade"
+    }, {
+      "@id" : "bts:SmallcellcarcinomaNOS"
+    }, {
+      "@id" : "bts:Inflammatorycarcinoma"
+    }, {
+      "@id" : "bts:Papillaryurothelialcarcinoma"
+    }, {
+      "@id" : "bts:Melanoticprogonoma"
+    }, {
+      "@id" : "bts:Centralneuroblastoma"
+    }, {
+      "@id" : "bts:MalignantlymphomalymphocyticNOS"
+    }, {
+      "@id" : "bts:MyelomaNOS"
+    }, {
+      "@id" : "bts:Adenocarcinomaendocervicaltype"
+    }, {
+      "@id" : "bts:AdenocarcinomainsituinapolypNOS"
+    }, {
+      "@id" : "bts:Neoplasmmalignantuncertainwhetherprimaryormetastatic"
+    }, {
+      "@id" : "bts:Pulmonaryarteryintimalsarcoma"
+    }, {
+      "@id" : "bts:IntraepidermalcarcinomaNOS"
+    }, {
+      "@id" : "bts:PapillaryserouscystadenomaNOS"
+    }, {
+      "@id" : "bts:CarcinomainsituNOS"
+    }, {
+      "@id" : "bts:TubularadenomaNOS"
+    }, {
+      "@id" : "bts:Tubulopapillaryadenocarcinoma"
+    }, {
+      "@id" : "bts:Pancreaticmicroadenoma"
+    }, {
+      "@id" : "bts:AcutelymphoblasticleukemiamatureB-celltype"
+    }, {
+      "@id" : "bts:c-ALL"
+    }, {
+      "@id" : "bts:AcuteleukemiaBurkitttype"
+    }, {
+      "@id" : "bts:Cervicalintraepithelialneoplasialowgrade"
+    }, {
+      "@id" : "bts:MixedtumorNOS"
+    }, {
+      "@id" : "bts:Bronchiolo-alveolaradenocarcinomaNOS"
+    }, {
+      "@id" : "bts:Myoepithelioma"
+    }, {
+      "@id" : "bts:Pancreaticendocrinetumormalignant"
+    }, {
+      "@id" : "bts:EndometrioidadenocarcinomaNOS"
+    }, {
+      "@id" : "bts:InfiltratingbasalcellcarcinomaNOS"
+    }, {
+      "@id" : "bts:PrecursorB-celllymphoblasticlymphoma"
+    }, {
+      "@id" : "bts:Pleomorphiclobularcarcinomainsitu"
+    }, {
+      "@id" : "bts:Mucousadenocarcinoma"
+    }, {
+      "@id" : "bts:Meningealmelanoma"
+    }, {
+      "@id" : "bts:Acutemyeloidleukemiaminimaldifferentiation"
+    }, {
+      "@id" : "bts:LymphoblasticleukemiaNOS"
+    }, {
+      "@id" : "bts:MelanoticMPNST"
+    }, {
+      "@id" : "bts:Astrocytomalowgrade"
+    }, {
+      "@id" : "bts:Multiplemyeloma"
+    }, {
+      "@id" : "bts:Papillaryrenalcellcarcinoma"
+    }, {
+      "@id" : "bts:MedulloblastomaNOS"
+    }, {
+      "@id" : "bts:AdenocarcinomainapolypNOS"
+    }, {
+      "@id" : "bts:Combinedsmallcellcarcinoma"
+    }, {
+      "@id" : "bts:Bileductcarcinoma"
+    }, {
+      "@id" : "bts:ChronicgranulocyticleukemiaNOS"
+    }, {
+      "@id" : "bts:Juvenilemyelomonocyticleukemia"
+    }, {
+      "@id" : "bts:NeoplasmNOS"
+    }, {
+      "@id" : "bts:Capillarylymphangioma"
+    }, {
+      "@id" : "bts:Malignantlymphomamixedcelltypediffuse"
+    }, {
+      "@id" : "bts:Neoplasmmalignant"
+    }, {
+      "@id" : "bts:Papillarymeningioma"
+    }, {
+      "@id" : "bts:Bileductcystadenoma"
+    }, {
+      "@id" : "bts:Malignantmelanomaincongenitalmelanocyticnevus"
+    }, {
+      "@id" : "bts:Adenocarcinomadiffusetype"
+    }, {
+      "@id" : "bts:Pancreaticendocrinetumorbenign"
+    }, {
+      "@id" : "bts:SquamouscellcarcinomaNOS"
+    }, {
+      "@id" : "bts:Chronicmyelomonocyticleukemiaintransformation"
+    }, {
+      "@id" : "bts:T-celllargegranularlymphocyticleukemia"
+    }, {
+      "@id" : "bts:Basophiladenoma"
+    }, {
+      "@id" : "bts:Bronchiolarcarcinoma"
+    }, {
+      "@id" : "bts:Tubularcarcinoma"
+    }, {
+      "@id" : "bts:Neurofibrosarcoma"
+    }, {
+      "@id" : "bts:Adenocarcinomainsituinadenomatouspolyp"
+    }, {
+      "@id" : "bts:IntravascularB-celllymphoma"
+    }, {
+      "@id" : "bts:Pleomorphicliposarcoma"
+    }, {
+      "@id" : "bts:Tumormetastatic"
+    } ],
+    "rdfs:label" : "PreviousDiagnosis",
+    "rdfs:comment" : "Name of cancer corresponding to a previous diagnosis.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "PreviousDiagnosis"
   }, {
     "@id" : "bts:TestValue",
     "@type" : "rdfs:Class",
@@ -6894,16 +7927,29 @@
     "sms:displayName" : "SmokeExposureDuration",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:MenstrualCyclePhase",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MenstrualCyclePhase",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:MenstrualCyclePhase",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "MenstrualCyclePhase",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Inactive"
+    }, {
+      "@id" : "bts:Secretory"
+    }, {
+      "@id" : "bts:Proliferative"
+    }, {
+      "@id" : "bts:WeaklyProliferative"
+    }, {
+      "@id" : "bts:LateProliferative/EarlySecretory"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "MenstrualCyclePhase",
+    "rdfs:comment" : "Phase of the menstrual cycle at patient sample collection.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "MenstrualCyclePhase"
   }, {
     "@id" : "bts:ThresholdforMinimumPassingReads",
     "@type" : "rdfs:Class",
@@ -7061,7 +8107,7 @@
   }, {
     "@id" : "bts:SampleCollectionYear",
     "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "Year the sample was collected from the individual.",
     "rdfs:label" : "SampleCollectionYear",
     "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
@@ -7435,17 +8481,6 @@
     "rdfs:comment" : "Field of view Y dimension units. See OME enumeration of allowed values for the UnitsLength attribute -- default: microns (um)",
     "@type" : "rdfs:Class",
     "sms:displayName" : "FOVYUnit"
-  }, {
-    "@id" : "bts:AgeatDiagnosis",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Age at the time of diagnosis in years.",
-    "rdfs:label" : "AgeatDiagnosis",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AgeatDiagnosis",
-    "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Cytoband",
     "@type" : "rdfs:Class",
@@ -8253,7 +9288,7 @@
   }, {
     "@id" : "bts:ClassBRCA2",
     "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
+    "rdfs:comment" : "BRCA2 grouping.",
     "rdfs:label" : "ClassBRCA2",
     "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
@@ -8596,16 +9631,25 @@
     "sms:displayName" : "Clone",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:DiagnosisStatusType",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DiagnosisStatusType",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:DiagnosisStatusType",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "DiagnosisStatusType",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Neverreceiveddiagnosisofcancer"
+    }, {
+      "@id" : "bts:Previousdiagnosisofcancer"
+    }, {
+      "@id" : "bts:Currentdiagnosisofcancer"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "DiagnosisStatusType",
+    "rdfs:comment" : "Diagnosis status to provide information on any history with cancer (if applicable).",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "DiagnosisStatusType"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:Age",
@@ -8615,7 +9659,7 @@
     "sms:required" : "sms:true",
     "sms:validationRules" : [ "regex match ^\\d*\\.?\\d*$|^Unknown$" ],
     "rdfs:label" : "Age",
-    "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available, cannot leave blank and must use \"unknown\".",
+    "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value \"Unknown\".",
     "@type" : "rdfs:Class",
     "sms:displayName" : "Age"
   }, {
@@ -9253,6 +10297,17 @@
     "sms:displayName" : "ModeofCancerDetectionEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:DiagnosisEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DiagnosisEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DiagnosisEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:BreastBiopsyProcedureFindingTypeEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -9306,17 +10361,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "DimensionsUnitEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PrimaryDiagnosisEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PrimaryDiagnosisEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PrimaryDiagnosisEnum",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:TestAnalyteTypeEnum",
@@ -9460,6 +10504,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "BreastCarcinomaHER2StatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DiagnosisStatusTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DiagnosisStatusTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DiagnosisStatusTypeEnum",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:ClinicalBiospecimenTypeEnum",
@@ -11666,11 +12721,11 @@
     }, {
       "@id" : "bts:MenopauseStatus"
     }, {
-      "@id" : "bts:PrimaryDiagnosis"
-    }, {
-      "@id" : "bts:AgeatDiagnosis"
-    }, {
       "@id" : "bts:DiagnosisStatusType"
+    }, {
+      "@id" : "bts:PreviousDiagnosis"
+    }, {
+      "@id" : "bts:AgeAtDiagnosis"
     }, {
       "@id" : "bts:ClassBRCA1"
     }, {
@@ -11686,10 +12741,6 @@
     }, {
       "@id" : "bts:AntibioticUse"
     }, {
-      "@id" : "bts:SampleCollectionCenter"
-    }, {
-      "@id" : "bts:SampleCollectionYear"
-    }, {
       "@id" : "bts:ERStatus"
     }, {
       "@id" : "bts:PRStatus"
@@ -11697,6 +12748,10 @@
       "@id" : "bts:HER2Status"
     }, {
       "@id" : "bts:SurgeryReason"
+    }, {
+      "@id" : "bts:SampleCollectionCenter"
+    }, {
+      "@id" : "bts:SampleCollectionYear"
     } ],
     "sms:displayName" : "CohortCoreTemplate"
   }, {
@@ -17404,6 +18459,17 @@
     "sms:displayName" : "Constitutional mismatch repair deficiency",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Neverreceiveddiagnosisofcancer",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Neverreceiveddiagnosisofcancer",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Never received diagnosis of cancer",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:chr18",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -18876,6 +19942,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Intraductal carcinoma clinging",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Previousdiagnosisofcancer",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Previousdiagnosisofcancer",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Previous diagnosis of cancer",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Lowerlobelung",
@@ -30756,6 +31833,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Choroid",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Currentdiagnosisofcancer",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Currentdiagnosisofcancer",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Current diagnosis of cancer",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:MEN1mutation",
