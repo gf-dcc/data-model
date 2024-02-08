@@ -528,29 +528,27 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:false",
-    "schema:rangeIncludes" : [ {
-      "@id" : "bts:NotReported"
-    }, {
-      "@id" : "bts:unknown"
-    }, {
-      "@id" : "bts:CurrentReformedSmoker"
-    }, {
-      "@id" : "bts:CurrentSmoker"
-    }, {
-      "@id" : "bts:CurrentReformedSmokerfor>15yrs"
-    }, {
-      "@id" : "bts:DurationNotSpecified"
-    }, {
-      "@id" : "bts:Smokinghistorynotdocumented"
-    }, {
-      "@id" : "bts:LifelongNon-Smoker"
-    }, {
-      "@id" : "bts:CurrentReformedSmokerfor<or=15yrs"
-    } ],
+    "schema:rangeIncludes" : [ ],
     "rdfs:label" : "TobaccoSmokingStatus",
     "rdfs:comment" : "Category describing current smoking status and smoking history as self-reported by a patient",
     "@type" : "rdfs:Class",
     "sms:displayName" : "TobaccoSmokingStatus"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:AtlasCohort",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:true",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:BreastAtlasCohort"
+    }, {
+      "@id" : "bts:OvarianAtlasCohort"
+    } ],
+    "rdfs:label" : "AtlasCohort",
+    "rdfs:comment" : "Label for cohort/atlas that this individual belongs to.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "AtlasCohort"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:VariantOrigin",
@@ -782,11 +780,11 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:unknown"
-    }, {
       "@id" : "bts:Everyday"
     }, {
       "@id" : "bts:Somedays"
+    }, {
+      "@id" : "bts:unknown"
     } ],
     "rdfs:label" : "SmokingFrequency",
     "rdfs:comment" : "The text term used to generally decribe how often the patient smokes.",
@@ -1331,11 +1329,11 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:Yes-AlcoholExposure"
+      "@id" : "bts:No-AlcoholExposure"
     }, {
       "@id" : "bts:NotReported"
     }, {
-      "@id" : "bts:No-AlcoholExposure"
+      "@id" : "bts:Yes-AlcoholExposure"
     } ],
     "rdfs:label" : "AlcoholExposure",
     "rdfs:comment" : "Indicate if individual has alcohol exposure",
@@ -1631,17 +1629,17 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:Other"
-    }, {
-      "@id" : "bts:unknown"
-    }, {
-      "@id" : "bts:NotReported"
-    }, {
       "@id" : "bts:Beer"
     }, {
       "@id" : "bts:Liquor"
     }, {
+      "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Other"
+    }, {
       "@id" : "bts:Wine"
+    }, {
+      "@id" : "bts:unknown"
     } ],
     "rdfs:label" : "AlcoholType",
     "rdfs:comment" : "Type of alcohol use",
@@ -2425,16 +2423,25 @@
     "sms:displayName" : "ParentBiospecimenID",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:AlcoholUse",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AlcoholUse",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:AlcoholUse",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "AlcoholUse",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:FormerDrinker"
+    }, {
+      "@id" : "bts:NeverDrinker"
+    }, {
+      "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "AlcoholUse",
+    "rdfs:comment" : "Alcohol use characterization. More quantitative data may be available in NumberofDrinksPerWeek.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "AlcoholUse"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:NucleusIdentifier",
@@ -2675,11 +2682,11 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:Yes-SmokingExposure"
+      "@id" : "bts:No-SmokingExposure"
     }, {
       "@id" : "bts:NotReported"
     }, {
-      "@id" : "bts:No-SmokingExposure"
+      "@id" : "bts:Yes-SmokingExposure"
     } ],
     "rdfs:label" : "SmokingExposure",
     "rdfs:comment" : "Indicate if individual has smoking exposure",
@@ -7949,6 +7956,9 @@
     "rdfs:label" : "MenstrualCyclePhase",
     "rdfs:comment" : "Phase of the menstrual cycle at patient sample collection.",
     "@type" : "rdfs:Class",
+    "sms:requiresDependency" : [ {
+      "@id" : "bts:OvarianAtlasCohort"
+    } ],
     "sms:displayName" : "MenstrualCyclePhase"
   }, {
     "@id" : "bts:ThresholdforMinimumPassingReads",
@@ -7999,13 +8009,13 @@
     "schema:rangeIncludes" : [ {
       "@id" : "bts:No"
     }, {
-      "@id" : "bts:unknown"
-    }, {
-      "@id" : "bts:Yes-withinlastmonthh"
+      "@id" : "bts:Yes-over6monthsago"
     }, {
       "@id" : "bts:Yes-withinlast1-6months"
     }, {
-      "@id" : "bts:Yes-over6monthsago"
+      "@id" : "bts:Yes-withinlastmonthh"
+    }, {
+      "@id" : "bts:Unknown"
     } ],
     "rdfs:label" : "AntibioticUse",
     "rdfs:comment" : "Antibiotic use",
@@ -8156,13 +8166,13 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:Yes"
-    }, {
       "@id" : "bts:No"
     }, {
-      "@id" : "bts:unknown"
-    }, {
       "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Yes"
+    }, {
+      "@id" : "bts:unknown"
     } ],
     "rdfs:label" : "AlcoholHistory",
     "rdfs:comment" : "A response to a question that asks whether the participant has consumed at least 12 drinks of any kind of alcoholic beverage in their lifetime.",
@@ -8339,10 +8349,6 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:unknown"
-    }, {
-      "@id" : "bts:NotReported"
-    }, {
       "@id" : "bts:Drinker"
     }, {
       "@id" : "bts:HeavyDrinker"
@@ -8351,7 +8357,11 @@
     }, {
       "@id" : "bts:Non-Drinker"
     }, {
+      "@id" : "bts:NotReported"
+    }, {
       "@id" : "bts:OccasionalDrinker"
+    }, {
+      "@id" : "bts:unknown"
     } ],
     "rdfs:label" : "AlcoholIntensity",
     "rdfs:comment" : "Category to describe the patient's current level of alcohol use as self-reported by the patient.",
@@ -8511,18 +8521,29 @@
     },
     "sms:required" : "sms:false",
     "schema:rangeIncludes" : [ {
-      "@id" : "bts:Yes"
-    }, {
       "@id" : "bts:No"
     }, {
-      "@id" : "bts:unknown"
-    }, {
       "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Yes"
+    }, {
+      "@id" : "bts:unknown"
     } ],
     "rdfs:label" : "SecondhandSmokeasChild",
     "rdfs:comment" : "The text term used to indicate whether the patient was exposed to secondhand smoke as a child.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "SecondhandSmokeasChild"
+  }, {
+    "@id" : "bts:OvarianAtlasCohort",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Group of individuals featured in the ovarian precancer atlas.",
+    "rdfs:label" : "OvarianAtlasCohort",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "OvarianAtlasCohort",
+    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:PhysicalSizeXUnit",
@@ -9399,6 +9420,9 @@
     "rdfs:label" : "TypeContraceptiveUse",
     "rdfs:comment" : "Type of contraceptive(s) used within the individual's history.",
     "@type" : "rdfs:Class",
+    "sms:requiresDependency" : [ {
+      "@id" : "bts:OvarianAtlasCohort"
+    } ],
     "sms:displayName" : "TypeContraceptiveUse"
   }, {
     "@id" : "bts:SoftwareandVersion",
@@ -9663,16 +9687,33 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "Age"
   }, {
-    "@id" : "bts:TobaccoUse",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TobaccoUse",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:TobaccoUse",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "TobaccoUse",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:CurrentSmoker"
+    }, {
+      "@id" : "bts:CurrentReformedSmoker"
+    }, {
+      "@id" : "bts:CurrentReformedSmokerfor<or=15yrs"
+    }, {
+      "@id" : "bts:CurrentReformedSmokerfor>15yrs"
+    }, {
+      "@id" : "bts:DurationNotSpecified"
+    }, {
+      "@id" : "bts:NeverSmoker"
+    }, {
+      "@id" : "bts:NotReported"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "TobaccoUse",
+    "rdfs:comment" : "Tobacco use characterization. More quantitative data may be available in PackYearsSmoked.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "TobaccoUse"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:Zstack",
@@ -9685,6 +9726,17 @@
     "rdfs:comment" : "Does data file contain a Z-stack of images",
     "@type" : "rdfs:Class",
     "sms:displayName" : "Zstack"
+  }, {
+    "@id" : "bts:BreastAtlasCohort",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Group of individuals featured in the breast precancer atlas.",
+    "rdfs:label" : "BreastAtlasCohort",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastAtlasCohort",
+    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:Chromosome",
@@ -10044,6 +10096,17 @@
     "sms:displayName" : "ReverseTranscriptionPrimerEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:TobaccoUseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TobaccoUseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TobaccoUseEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:CountryofResidenceEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -10053,17 +10116,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "CountryofResidenceEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TobaccoSmokingStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TobaccoSmokingStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TobaccoSmokingStatusEnum",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:OncotypeRiskGroupEnum",
@@ -10220,6 +10272,17 @@
     "sms:displayName" : "SiteofResectionorBiopsyEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:AlcoholUseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AlcoholUseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AlcoholUseEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:VascularInvasionTypeEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -10361,6 +10424,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "DimensionsUnitEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MarkerStatus",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MarkerStatus",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MarkerStatus",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:TestAnalyteTypeEnum",
@@ -12691,6 +12765,8 @@
     "sms:requiresDependency" : [ {
       "@id" : "bts:Component"
     }, {
+      "@id" : "bts:Cohort"
+    }, {
       "@id" : "bts:ParticipantID"
     }, {
       "@id" : "bts:TimepointLabel"
@@ -12720,6 +12796,8 @@
       "@id" : "bts:MenstrualCyclePhase"
     }, {
       "@id" : "bts:MenopauseStatus"
+    }, {
+      "@id" : "bts:TypeContraceptiveUse"
     }, {
       "@id" : "bts:DiagnosisStatusType"
     }, {
@@ -14257,17 +14335,6 @@
     "sms:displayName" : "Not applicable",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:Smokinghistorynotdocumented",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "Smokinghistorynotdocumented",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Smoking history not documented",
-    "sms:required" : "sms:false"
-  }, {
     "@id" : "bts:Conjunctiva",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -14475,6 +14542,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Cambodia",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:FormerDrinker",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "FormerDrinker",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Former Drinker",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:HodgkinlymphomaNOS",
@@ -15819,6 +15897,17 @@
     "sms:displayName" : "Malignant lymphoma Hodgkin",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:NeverDrinker",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "NeverDrinker",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Never Drinker",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:NaturalSon",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -15938,6 +16027,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Clinical Exam",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:OvarianAtlasCohort",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "OvarianAtlasCohort",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Ovarian Atlas Cohort",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:MalignantlymphomalymphoblasticNOS",
@@ -19260,17 +19360,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Malignant melanoma in giant pigmented nevus",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:LifelongNon-Smoker",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LifelongNon-Smoker",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Lifelong Non-Smoker",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:MaternalGrandparent",
@@ -24210,6 +24299,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Greece",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:WeaklyPositive",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "WeaklyPositive",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Weakly Positive",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:AdrenalglandNOS",
@@ -31516,6 +31616,17 @@
     "sms:displayName" : "Undifferentiated round cell sarcoma",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:BreastAtlasCohort",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastAtlasCohort",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Breast Atlas Cohort",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:CellBarcodeandDNAInsert",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -32658,6 +32769,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Signature 7",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:NeverSmoker",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "NeverSmoker",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Never Smoker",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Upperinnerquadrant",
@@ -33978,6 +34100,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Peripheral nerves and autonomic nervous system of pelvis",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:StronglyPositive",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "StronglyPositive",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Strongly Positive",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Invasivemelanoma-lentigomaligna",
