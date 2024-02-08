@@ -417,12 +417,12 @@ slots:
   ClassBRCA1:
     title: Class BRCA1
     required: false
-    description: TBD
+    description: BRCA1 grouping.
     annotations:
   ClassBRCA2:
     title: Class BRCA2
     required: false
-    description: TBD
+    description: BRCA2 grouping.
     annotations:
   ClinicalBiospecimenType:
     title: Clinical Biospecimen Type
@@ -1459,12 +1459,12 @@ slots:
   SampleCollectionCenter:
     title: Sample Collection Center
     required: false
-    description: TBD
+    description: Name of center/institution/site where the individual contributed samples.
     annotations:
   SampleCollectionYear:
     title: Sample Collection Year
     required: false
-    description: TBD
+    description: Year the sample was collected from the individual.
     annotations:
   SampleID:
     title: Sample ID

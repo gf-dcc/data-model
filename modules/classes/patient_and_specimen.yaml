@@ -38,12 +38,12 @@ classes:
     - AlcoholUse
     - NumberofDrinksPerWeek
     - AntibioticUse
-    - SampleCollectionCenter
-    - SampleCollectionYear
     - ERStatus
     - PRStatus
     - HER2Status
     - SurgeryReason
+    - SampleCollectionCenter
+    - SampleCollectionYear
 
 
   PatientExtended:
