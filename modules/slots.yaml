@@ -1015,7 +1015,8 @@ slots:
   MenstrualCyclePhase:
     title: Menstrual Cycle Phase
     required: false
-    description: TBD
+    description: Phase of the menstrual cycle at patient sample collection.
+    range: MenstrualCyclePhaseEnum
     annotations:
   MetalIsotopeElement:
     title: Metal Isotope Element
