@@ -29,6 +29,7 @@ classes:
     - AgeAtMenarche
     - MenstrualCyclePhase
     - MenopauseStatus
+    - TypeContraceptiveUse
     - DiagnosisStatusType
     - PreviousDiagnosis
     - AgeAtDiagnosis

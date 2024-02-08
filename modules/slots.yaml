@@ -1842,6 +1842,8 @@ slots:
     required: false
     description: Type of contraceptive(s) used within the individual's history.
     range: Contraceptive
+    annotations:
+      requiresDependency: OvarianAtlasCohort
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false
