@@ -442,6 +442,24 @@ slots:
     required: false
     description: TBD
     annotations:
+  AtlasCohort:
+    title: Cohort
+    required: true
+    description: Label for cohort/atlas that this individual belongs to.
+    enum_range:
+    - Breast Atlas Cohort
+    - Ovarian Atlas Cohort
+    annotations:
+  BreastAtlasCohort:
+    title: Breast Atlas Cohort
+    required: false
+    description: Group of individuals featured in the breast precancer atlas.
+    annotations:
+  OvarianAtlasCohort:
+    title: Ovarian Atlas Cohort
+    required: false
+    description: Group of individuals featured in the ovarian precancer atlas.
+    annotations:
   Comment:
     title: Comment
     required: false
@@ -1020,6 +1038,7 @@ slots:
     description: Phase of the menstrual cycle at patient sample collection.
     range: MenstrualCyclePhaseEnum
     annotations:
+      requiresDependency: OvarianAtlasCohort
   MetalIsotopeElement:
     title: Metal Isotope Element
     required: false

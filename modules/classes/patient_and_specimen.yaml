@@ -13,6 +13,7 @@ classes:
       requiresComponent: ''
       required: false
     slots:
+    - Cohort
     - ParticipantID
     - TimepointLabel
     - Age
