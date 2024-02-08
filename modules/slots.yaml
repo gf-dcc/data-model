@@ -442,7 +442,7 @@ slots:
     required: false
     description: TBD
     annotations:
-  AtlasCohort:
+  Cohort:
     title: Cohort
     required: true
     description: Label for cohort/atlas that this individual belongs to.
@@ -1038,7 +1038,7 @@ slots:
     description: Phase of the menstrual cycle at patient sample collection.
     range: MenstrualCyclePhaseEnum
     annotations:
-      requiresDependency: OvarianAtlasCohort
+      requiresDependency: Ovarian Atlas Cohort
   MetalIsotopeElement:
     title: Metal Isotope Element
     required: false
@@ -1843,7 +1843,7 @@ slots:
     description: Type of contraceptive(s) used within the individual's history.
     range: Contraceptive
     annotations:
-      requiresDependency: OvarianAtlasCohort
+      requiresDependency: Ovarian Atlas Cohort
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false
