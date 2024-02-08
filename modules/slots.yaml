@@ -30,13 +30,13 @@ slots:
   Age:
     title: Age
     required: true
-    description: Age of individual as a positive number such as 40 or 56.5. If not available, cannot leave blank and must use "unknown".
+    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available, cannot leave blank and must use "unknown".
     annotations:
-      validationRules: regex match ^\d*\.?\d*$|^unknown$
+      validationRules: regex match ^\d*\.?\d*$|^Unknown$
   AgeAtMenarche:
     title: Age At Menarche
     required: false
-    description: TBD
+    description: Age at menarche.
     annotations:
   AgeIsObfuscated:
     title: Age Is Obfuscated
@@ -47,7 +47,7 @@ slots:
   AgeatDiagnosis:
     title: Age at Diagnosis
     required: false
-    description: Age at the time of diagnosis expressed in number of days since birth.
+    description: Age at the time of diagnosis in years. 
     annotations:
   AlcoholDaysPerWeek:
     title: Alcohol Days Per Week
@@ -1468,6 +1468,11 @@ slots:
     required: false
     description: TBD
     annotations:
+  SurgeryReason:
+    title: Surgery Reason
+    required: false
+    description: Reason for individual obtaining surgery
+    range: SurgeryReasonEnum
   SatelliteMetastasisPresentIndicator:
     title: Satellite Metastasis Present Indicator
     required: false
