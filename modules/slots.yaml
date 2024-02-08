@@ -44,10 +44,10 @@ slots:
     description: The age of the patient has been modified for compliance reasons. The actual age differs from what is reported. Other date intervals for this patient may also be modified.
     annotations:
     range: AgeIsObfuscatedEnum
-  AgeatDiagnosis:
+  AgeAtDiagnosis:
     title: Age at Diagnosis
     required: false
-    description: Age at the time of diagnosis in years. 
+    description: If applicable and known, age at the time of diagnosis in years. 
     annotations:
   AlcoholDaysPerWeek:
     title: Alcohol Days Per Week
@@ -141,7 +141,7 @@ slots:
   BMI:
     title: BMI
     required: false
-    description: TBD
+    description: Body mass index. Note that more direct height/weight information are preferred, if available.
     annotations:
   BiospecimenDimension1:
     title: Biospecimen Dimension 1
@@ -531,7 +531,8 @@ slots:
   DiagnosisStatusType:
     title: Diagnosis Status Type
     required: false
-    description: TBD
+    description: Diagnosis status to provide information on any history with cancer (if applicable).
+    range: DiagnosisStatusTypeEnum
     annotations:
   Dilution:
     title: Dilution
@@ -1299,12 +1300,18 @@ slots:
     description: Text term that represents the method used to preserve the sample.
     annotations:
     range: PreservationMethodEnum
+  PreviousDiagnosis:
+    title: Previous Diagnosis
+    required: false
+    description: Name of cancer corresponding to a previous diagnosis.
+    annotations:
+    range: DiagnosisEnum
   PrimaryDiagnosis:
     title: Primary Diagnosis
     required: false
-    description: Text term used to describe the patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
+    description: If applicable, patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
     annotations:
-    range: PrimaryDiagnosisEnum
+    range: DiagnosisEnum
   PriorInvasiveBreastDisease:
     title: Prior Invasive Breast Disease
     required: false

@@ -28,9 +28,9 @@ classes:
     - AgeAtMenarche
     - MenstrualCyclePhase
     - MenopauseStatus
-    - PrimaryDiagnosis
-    - AgeatDiagnosis
     - DiagnosisStatusType
+    - PreviousDiagnosis
+    - AgeAtDiagnosis
     - ClassBRCA1
     - ClassBRCA2
     - TobaccoUse

@@ -318,3 +318,10 @@ enums:
       Late Proliferative/Early Secretory:
       Unknown:
 
+  DiagnosisStatusTypeEnum:
+    permissible_values:
+      Never received diagnosis of cancer:
+      Previous diagnosis of cancer:
+      Current diagnosis of cancer:
+      Unknown:
+
