@@ -535,22 +535,6 @@
     "sms:displayName" : "TobaccoSmokingStatus"
   }, {
     "rdfs:subClassOf" : [ ],
-    "@id" : "bts:AtlasCohort",
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:required" : "sms:true",
-    "schema:rangeIncludes" : [ {
-      "@id" : "bts:BreastAtlasCohort"
-    }, {
-      "@id" : "bts:OvarianAtlasCohort"
-    } ],
-    "rdfs:label" : "AtlasCohort",
-    "rdfs:comment" : "Label for cohort/atlas that this individual belongs to.",
-    "@type" : "rdfs:Class",
-    "sms:displayName" : "AtlasCohort"
-  }, {
-    "rdfs:subClassOf" : [ ],
     "@id" : "bts:VariantOrigin",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
@@ -7933,6 +7917,22 @@
     },
     "sms:displayName" : "SmokeExposureDuration",
     "sms:required" : "sms:false"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:Cohort",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:true",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:BreastAtlasCohort"
+    }, {
+      "@id" : "bts:OvarianAtlasCohort"
+    } ],
+    "rdfs:label" : "Cohort",
+    "rdfs:comment" : "Label for cohort/atlas that this individual belongs to.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "Cohort"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:MenstrualCyclePhase",
