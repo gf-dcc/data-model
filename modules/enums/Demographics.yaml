@@ -1,284 +1,320 @@
 enums:
   SexEnum:
     permissible_values:
-      unknown: null
-      Not Reported: null
-      female: null
-      male: null
-      unspecified: null
+      Female: 
+      Male: 
+      Unspecified: 
+      Unknown: 
+  
   CauseofDeathEnum:
     permissible_values:
-      Not Reported: null
-      Renal Disorder NOS: null
-      Toxicity: null
-      Cardiovascular Disorder NOS: null
-      unknown: null
-      Not Applicable: null
-      Infection: null
-      Spinal Muscular Atrophy: null
-      Cancer Related: null
-      End-stage Renal Disease: null
-      Surgical Complications: null
-      Not Cancer Related: null
+      Not Reported: 
+      Renal Disorder NOS: 
+      Toxicity: 
+      Cardiovascular Disorder NOS: 
+      Unknown: 
+      Not Applicable: 
+      Infection: 
+      Spinal Muscular Atrophy: 
+      Cancer Related: 
+      End-stage Renal Disease: 
+      Surgical Complications: 
+      Not Cancer Related: 
+  
   EthnicityEnum:
     permissible_values:
-      unknown: null
-      Not Reported: null
-      hispanic or latino: null
-      not hispanic or latino: null
-      not allowed to collect: null
+      Hispanic or Latino: 
+      'Non-Hispanic/Non-Latino':
+      Jewish:
+      NA:
+      Not Reported: 
+      Unknown: 
+  
   RaceEnum:
     permissible_values:
-      american indian or alaska native: null
-      Not Reported: null
-      white: null
-      unknown: null
-      black or african american: null
-      not allowed to collect: null
-      asian: null
-      Other: null
-      native hawaiian or other pacific islander: null
+      American Indian or Alaska Native: 
+      White: 
+      Black: 
+      Asian:
+      Native Hawaiian or Other Pacific Islander: 
+      NA: 
+      Not Reported: 
+      Unknown:
+      Other:
+  
   AgeIsObfuscatedEnum:
     permissible_values:
-      'True': null
-      'False': null
+      'True': 
+      'False': 
+  
   CountryofResidenceEnum:
     permissible_values:
-      Trinidad and Tobago: null
-      Botswana: null
-      Malaysia: null
-      Suriname: null
-      Uruguay: null
-      Gibraltar: null
-      Andorra: null
-      Cayman Islands: null
-      Mozambique: null
-      Dominica: null
-      Tajikistan: null
-      Barbados: null
-      Seychelles: null
-      Curacao: null
-      Cote d'Ivoire: null
-      Albania: null
-      China: null
-      Oman: null
-      Congo: null
-      Burundi: null
-      Falkland Islands (Malvinas): null
-      Kazakhstan: null
-      Australia: null
-      France: null
-      Bahrain: null
-      Solomon Islands: null
-      Tanzania: null
-      French Guiana: null
-      Federated States of Micronesia: null
-      Antigua and Barbuda: null
-      Colombia: null
-      Fiji: null
-      Sao Tome and Principe: null
-      Brazil: null
-      Guam: null
-      South Africa: null
-      Denmark: null
-      Kyrgyzstan: null
-      Tunisia: null
-      Mexico: null
-      Martinique: null
-      Burkina Faso: null
-      India: null
-      Myanmar: null
-      Malawi: null
-      Sweden: null
-      Macau: null
-      Cambodia: null
-      Equatorial Guinea: null
-      Senegal: null
-      Guernsey: null
-      Azerbaijan: null
-      Angola: null
-      Kuwait: null
-      Papua New Guinea: null
-      Central African Republic: null
-      Bhutan: null
-      Uzbekistan: null
-      Portugal: null
-      Isle of Man: null
-      Guatemala: null
-      Saint Helena Ascension and Tristan da Cunha: null
-      Kiribati: null
-      Peru: null
-      South Sudan: null
-      North Macedonia: null
-      Democratic Republic of the Congo: null
-      Belarus: null
-      Madagascar: null
-      Singapore: null
-      Togo: null
-      Gambia: null
-      Georgia: null
-      Italy: null
-      Tuvalu: null
-      Eswatini: null
-      Nepal: null
-      Kenya: null
-      Niger: null
-      Israel: null
-      Iran: null
-      Liberia: null
-      Mali: null
-      Belize: null
-      Hungary: null
-      Holy See: null
-      Serbia: null
-      Belgium: null
-      Bermuda: null
-      Anguilla: null
-      Jamaica: null
-      Lebanon: null
-      Svalbard & Jan Mayen Islands: null
-      Cyprus: null
-      Norway: null
-      Somalia: null
-      Japan: null
-      Guyana: null
-      Paraguay: null
-      New Zealand: null
-      Palau: null
-      Laos: null
-      Latvia: null
-      Ethiopia: null
-      Cuba: null
-      French Polynesia: null
-      Slovenia: null
-      Philippines: null
-      Mongolia: null
-      Switzerland: null
-      Bahamas: null
-      Samoa: null
-      El Salvador: null
-      Chad: null
-      Honduras: null
-      Bangladesh: null
-      Tonga: null
-      Croatia: null
-      Bosnia and Herzegovina: null
-      Eritrea: null
-      Saint Kitts and Nevis: null
-      Vietnam: null
-      Northern Mariana Islands: null
-      Cape Verde: null
-      Cook Islands: null
-      Turkmenistan: null
-      Western Sahara: null
-      Jordan: null
-      Romania: null
-      Uganda: null
-      Aruba: null
-      Hong Kong: null
-      Syria: null
-      Germany: null
-      Chile: null
-      Austria: null
-      Gabon: null
-      Kosovo: null
-      Qatar: null
-      Comoros: null
-      Mayotte: null
-      Spain: null
-      Libya: null
-      Costa Rica: null
-      Bolivia: null
-      Taiwan: null
-      Iraq: null
-      Finland: null
-      Netherlands: null
-      Venezuela: null
-      Malta: null
-      Niue: null
-      Algeria: null
-      Guinea: null
-      Ireland: null
-      Montenegro: null
-      United Arab Emirates: null
-      Maldives: null
-      Zambia: null
-      Slovakia: null
-      Lesotho: null
-      Dominican Republic: null
-      Saint Pierre and Miquelon: null
-      Moldova: null
-      San Marino: null
-      Nauru: null
-      Luxembourg: null
-      Monaco: null
-      Zimbabwe: null
-      Saudi Arabia: null
-      Mauritania: null
-      Panama: null
-      United States: null
-      Montserrat: null
-      Nicaragua: null
-      Faroe Islands: null
-      United Kingdom: null
-      Canada: null
-      Ghana: null
-      Armenia: null
-      Bulgaria: null
-      Egypt: null
-      Reunion: null
-      Cameroon: null
-      Rwanda: null
-      Timor-Leste: null
-      Yemen: null
-      Saint Lucia: null
-      Poland: null
-      Namibia: null
-      Guinea-Bissau: null
-      Thailand: null
-      Argentina: null
-      Turkey: null
-      Djibouti: null
-      Greece: null
-      Jersey: null
-      Mauritius: null
-      Wallis and Futuna: null
-      Pakistan: null
-      Ukraine: null
-      State of Palestine: null
-      Ecuador: null
-      South Korea: null
-      Russia: null
-      Greenland: null
-      Liechtenstein: null
-      Nigeria: null
-      Benin: null
-      Vanuatu: null
-      Sri Lanka: null
-      Tokelau: null
-      Czech Republic (Czechia): null
-      Marshall Islands: null
-      Estonia: null
-      Saint Vincent and the Grenadines: null
-      Puerto Rico: null
-      Grenada: null
-      Guadeloupe: null
-      Sierra Leone: null
-      Afghanistan: null
-      Haiti: null
-      Lithuania: null
-      Indonesia: null
-      Virgin Islands British: null
-      Virgin Islands U.S.: null
-      Sudan: null
-      Morocco: null
-      Iceland: null
-      North Korea: null
-      New Caledonia: null
-      Brunei: null
+      Trinidad and Tobago: 
+      Botswana: 
+      Malaysia: 
+      Suriname: 
+      Uruguay: 
+      Gibraltar: 
+      Andorra: 
+      Cayman Islands: 
+      Mozambique: 
+      Dominica: 
+      Tajikistan: 
+      Barbados: 
+      Seychelles: 
+      Curacao: 
+      Cote d'Ivoire: 
+      Albania: 
+      China: 
+      Oman: 
+      Congo: 
+      Burundi: 
+      Falkland Islands (Malvinas): 
+      Kazakhstan: 
+      Australia: 
+      France: 
+      Bahrain: 
+      Solomon Islands: 
+      Tanzania: 
+      French Guiana: 
+      Federated States of Micronesia: 
+      Antigua and Barbuda: 
+      Colombia: 
+      Fiji: 
+      Sao Tome and Principe: 
+      Brazil: 
+      Guam: 
+      South Africa: 
+      Denmark: 
+      Kyrgyzstan: 
+      Tunisia: 
+      Mexico: 
+      Martinique: 
+      Burkina Faso: 
+      India: 
+      Myanmar: 
+      Malawi: 
+      Sweden: 
+      Macau: 
+      Cambodia: 
+      Equatorial Guinea: 
+      Senegal: 
+      Guernsey: 
+      Azerbaijan: 
+      Angola: 
+      Kuwait: 
+      Papua New Guinea: 
+      Central African Republic: 
+      Bhutan: 
+      Uzbekistan: 
+      Portugal: 
+      Isle of Man: 
+      Guatemala: 
+      Saint Helena Ascension and Tristan da Cunha: 
+      Kiribati: 
+      Peru: 
+      South Sudan: 
+      North Macedonia: 
+      Democratic Republic of the Congo: 
+      Belarus: 
+      Madagascar: 
+      Singapore: 
+      Togo: 
+      Gambia: 
+      Georgia: 
+      Italy: 
+      Tuvalu: 
+      Eswatini: 
+      Nepal: 
+      Kenya: 
+      Niger: 
+      Israel: 
+      Iran: 
+      Liberia: 
+      Mali: 
+      Belize: 
+      Hungary: 
+      Holy See: 
+      Serbia: 
+      Belgium: 
+      Bermuda: 
+      Anguilla: 
+      Jamaica: 
+      Lebanon: 
+      Svalbard & Jan Mayen Islands: 
+      Cyprus: 
+      Norway: 
+      Somalia: 
+      Japan: 
+      Guyana: 
+      Paraguay: 
+      New Zealand: 
+      Palau: 
+      Laos: 
+      Latvia: 
+      Ethiopia: 
+      Cuba: 
+      French Polynesia: 
+      Slovenia: 
+      Philippines: 
+      Mongolia: 
+      Switzerland: 
+      Bahamas: 
+      Samoa: 
+      El Salvador: 
+      Chad: 
+      Honduras: 
+      Bangladesh: 
+      Tonga: 
+      Croatia: 
+      Bosnia and Herzegovina: 
+      Eritrea: 
+      Saint Kitts and Nevis: 
+      Vietnam: 
+      Northern Mariana Islands: 
+      Cape Verde: 
+      Cook Islands: 
+      Turkmenistan: 
+      Western Sahara: 
+      Jordan: 
+      Romania: 
+      Uganda: 
+      Aruba: 
+      Hong Kong: 
+      Syria: 
+      Germany: 
+      Chile: 
+      Austria: 
+      Gabon: 
+      Kosovo: 
+      Qatar: 
+      Comoros: 
+      Mayotte: 
+      Spain: 
+      Libya: 
+      Costa Rica: 
+      Bolivia: 
+      Taiwan: 
+      Iraq: 
+      Finland: 
+      Netherlands: 
+      Venezuela: 
+      Malta: 
+      Niue: 
+      Algeria: 
+      Guinea: 
+      Ireland: 
+      Montenegro: 
+      United Arab Emirates: 
+      Maldives: 
+      Zambia: 
+      Slovakia: 
+      Lesotho: 
+      Dominican Republic: 
+      Saint Pierre and Miquelon: 
+      Moldova: 
+      San Marino: 
+      Nauru: 
+      Luxembourg: 
+      Monaco: 
+      Zimbabwe: 
+      Saudi Arabia: 
+      Mauritania: 
+      Panama: 
+      United States: 
+      Montserrat: 
+      Nicaragua: 
+      Faroe Islands: 
+      United Kingdom: 
+      Canada: 
+      Ghana: 
+      Armenia: 
+      Bulgaria: 
+      Egypt: 
+      Reunion: 
+      Cameroon: 
+      Rwanda: 
+      Timor-Leste: 
+      Yemen: 
+      Saint Lucia: 
+      Poland: 
+      Namibia: 
+      Guinea-Bissau: 
+      Thailand: 
+      Argentina: 
+      Turkey: 
+      Djibouti: 
+      Greece: 
+      Jersey: 
+      Mauritius: 
+      Wallis and Futuna: 
+      Pakistan: 
+      Ukraine: 
+      State of Palestine: 
+      Ecuador: 
+      South Korea: 
+      Russia: 
+      Greenland: 
+      Liechtenstein: 
+      Nigeria: 
+      Benin: 
+      Vanuatu: 
+      Sri Lanka: 
+      Tokelau: 
+      Czech Republic (Czechia): 
+      Marshall Islands: 
+      Estonia: 
+      Saint Vincent and the Grenadines: 
+      Puerto Rico: 
+      Grenada: 
+      Guadeloupe: 
+      Sierra Leone: 
+      Afghanistan: 
+      Haiti: 
+      Lithuania: 
+      Indonesia: 
+      Virgin Islands British: 
+      Virgin Islands U.S.: 
+      Sudan: 
+      Morocco: 
+      Iceland: 
+      North Korea: 
+      New Caledonia: 
+      Brunei: 
+  
   VitalStatusEnum:
     permissible_values:
-      Dead: null
-      unknown: null
-      Not Reported: null
-      Alive: null
+      Dead: 
+      unknown: 
+      Not Reported: 
+      Alive: 
+  
+  SurgeryReasonEnum:
+    permissible_values:
+      # For both breast/ovarian:
+      Risk Reduction:
+      Gender Affirmation:
+      # For breast surgery
+      # For ovarian surgery
+      Ovarian Cyst:
+      Tubal Sterilization:
+      Ovarian Serous Cystadenoma:
+      Endometriosis:
+      Uterine Fibroids: 
+      'Uterine Fibroids + Endometriosis':
+      'Uterine Fibroids + Adenomyosis':
+      Cesarean Section:
+      Menorrhagia:
+      Adnexal Mass:
+      Pelvic Mass:
+      Unknown: 
+
+  MenstrualCyclePhaseEnum:
+    permissible_values:
+      Inactive:
+      Secretory:
+      Proliferative:
+      Weakly Proliferative:
+      Late Proliferative/Early Secretory:
+      Unknown:
+
