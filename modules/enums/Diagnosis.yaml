@@ -1,944 +1,944 @@
 enums:
   ExtentofTumorResectionEnum:
     permissible_values:
-      Minor: null
-      Open Biopsy: null
-      Not Reported: null
-      Gross Total Resection: null
-      unknown: null
-      Not Applicable: null
-      Segmental: null
-      NTR: null
-      Suboptimal debulking: null
-      Subtotal Resection: null
-      Other: null
-      Partial debulking: null
-      Suboptimal: null
-      Optimal debulking: null
-      Extensive Subtotal: null
+      Minor: 
+      Open Biopsy: 
+      Not Reported: 
+      Gross Total Resection: 
+      unknown: 
+      Not Applicable: 
+      Segmental: 
+      NTR: 
+      Suboptimal debulking: 
+      Subtotal Resection: 
+      Other: 
+      Partial debulking: 
+      Suboptimal: 
+      Optimal debulking: 
+      Extensive Subtotal: 
   SiteofResectionorBiopsyEnum:
     permissible_values:
-      Tonsillar fossa: null
-      Overlapping lesion of lung: null
-      Overlapping lesion of other and unspecified parts of mouth: null
-      Endometrium: null
-      Bone of limb NOS: null
-      Posterior wall of nasopharynx: null
-      Small intestine NOS: null
-      Anterior wall of nasopharynx: null
-      Thoracic esophagus: null
-      Parietal lobe: null
-      Head face or neck NOS: null
-      Endocervix: null
-      Supraglottis: null
-      Ethmoid sinus: null
-      Ileum: null
-      Overlapping lesion of heart mediastinum and pleura: null
-      Exocervix: null
-      Pancreas NOS: null
-      Epididymis: null
-      Kidney NOS: null
-      Anus NOS: null
-      Cerebrum: null
-      Overlapping lesion of breast: null
-      Overlapping lesion of peripheral nerves and autonomic nervous system: null
-      Fundus of stomach: null
-      Oropharynx NOS: null
-      Urachus: null
-      Labium majus: null
-      Parametrium: null
-      Vestibule of mouth: null
-      Lower third of esophagus: null
-      Overlapping lesion of digestive system: null
-      Bones of skull and face and associated joints: null
-      Lymph nodes of axilla or arm: null
-      Soft palate NOS: null
-      Hepatic flexure of colon: null
-      Subglottis: null
-      Overlapping lesion of lip: null
-      Extrahepatic bile duct: null
-      Vallecula: null
-      Tongue NOS: null
-      Liver: null
-      Overlapping lesion of bones joints and articular cartilage: null
-      Not Reported: null
-      Peripheral nerves and autonomic nervous system of upper limb and shoulder: null
-      Lymph nodes of multiple regions: null
-      Duodenum: null
-      Maxillary sinus: null
-      Intrahepatic bile duct: null
-      Lateral wall of bladder: null
-      Overlapping lesion of hypopharynx: null
-      Overlapping lesion of rectum anus and anal canal: null
-      Middle third of esophagus: null
-      Lateral floor of mouth: null
-      Anterior mediastinum: null
-      Anterior floor of mouth: null
-      Nervous system NOS: null
-      Waldeyer ring: null
-      Rib sternum clavicle and associated joints: null
-      Long bones of lower limb and associated joints: null
-      Frontal sinus: null
-      Uterine adnexa: null
-      Trachea: null
-      Rectum NOS: null
-      Adrenal gland NOS: null
-      Pleura NOS: null
-      Lower limb NOS: null
-      Transverse colon: null
-      Lymph nodes of head face and neck: null
-      Greater curvature of stomach NOS: null
-      Upper respiratory tract NOS: null
-      Overlapping lesion of pancreas: null
-      Cerebellum NOS: null
-      Overlapping lesions of oropharynx: null
-      Axillary tail of breast: null
-      unknown: null
-      Vulva NOS: null
-      Floor of mouth NOS: null
-      Overlapping lesion of male genital organs: null
-      Uterus NOS: null
-      Body of stomach: null
-      Urethra: null
-      Middle lobe lung: null
-      Tail of pancreas: null
-      Pineal gland: null
-      Spermatic cord: null
-      Carotid body: null
-      Reticuloendothelial system NOS: null
-      Other specified parts of pancreas: null
-      External ear: null
-      Meckel diverticulum: null
-      Penis NOS: null
-      Lower-inner quadrant of breast: null
-      Superior wall of nasopharynx: null
-      Retina: null
-      Border of tongue: null
-      Intra-abdominal lymph nodes: null
-      Peripheral nerves and autonomic nervous system of thorax: null
-      Cauda equina: null
-      Overlapping lesion of palate: null
-      Nasopharynx NOS: null
-      Placenta: null
-      External lip NOS: null
-      Bone NOS: null
-      Ciliary body: null
-      Hematopoietic system NOS: null
-      Prepuce: null
-      Pelvic lymph nodes: null
-      Postcricoid region: null
-      External upper lip: null
-      Peripheral nerves and autonomic nervous system of pelvis: null
-      Pelvis NOS: null
-      Connective subcutaneous and other soft tissues of abdomen: null
-      Vertebral column: null
-      Body of pancreas: null
-      Trigone of bladder: null
-      Commissure of lip: null
-      Peripheral nerves and autonomic nervous system of abdomen: null
-      Upper-inner quadrant of breast: null
-      Palate NOS: null
-      Hypopharyngeal aspect of aryepiglottic fold: null
-      Upper gum: null
-      Thorax NOS: null
-      Spinal cord: null
-      Brain NOS: null
-      Mouth NOS: null
-      Connective subcutaneous and other soft tissues of upper limb and shoulder: null
-      Retroperitoneum: null
-      Long bones of upper limb scapula and associated joints: null
-      Hard palate: null
-      Gallbladder: null
-      Endocrine gland NOS: null
-      Brain stem: null
-      Cornea NOS: null
-      Overlapping lesion of nasopharynx: null
-      Dorsal surface of tongue NOS: null
-      Major salivary gland NOS: null
-      Abdominal esophagus: null
-      Olfactory nerve: null
-      Short bones of upper limb and associated joints: null
-      Overlapping lesion of tonsil: null
-      Autonomic nervous system NOS: null
-      Ill-defined sites within respiratory system: null
-      Lymph nodes of inguinal region or leg: null
-      Overlapping lesion of major salivary glands: null
-      Peripheral nerves and autonomic nervous system of trunk NOS: null
-      Fundus uteri: null
-      Testis NOS: null
-      Parotid gland: null
-      Ampulla of Vater: null
-      Cardia NOS: null
-      Skin of lip NOS: null
-      Overlapping lesion of stomach: null
-      Rectosigmoid junction: null
-      Gastric antrum: null
-      Cortex of adrenal gland: null
-      Renal pelvis: null
-      Middle ear: null
-      Overlapping lesion of female genital organs: null
-      Gastrointestinal tract NOS: null
-      Connective subcutaneous and other soft tissues of thorax: null
-      Skin NOS: null
-      Parathyroid gland: null
-      Pituitary gland: null
-      Overlapping lesion of tongue: null
-      Lung NOS: null
-      Cervix uteri: null
-      Skin of other and unspecified parts of face: null
-      Submandibular gland: null
-      Clitoris: null
-      Central portion of breast: null
-      Ovary: null
-      Lateral wall of oropharynx: null
-      Stomach NOS: null
-      Ventral surface of tongue NOS: null
-      Overlapping lesion of urinary organs: null
-      Sigmoid colon: null
-      Overlapping lesion of brain: null
-      Overlapping lesion of colon: null
-      Glans penis: null
-      Mediastinum NOS: null
-      Vagina NOS: null
-      Lower-outer quadrant of breast: null
-      Pharynx NOS: null
-      Intestinal tract NOS: null
-      Peripheral nerves and autonomic nervous system of head face and neck: null
-      Overlapping lesion of bladder: null
-      Pyriform sinus: null
-      Conjunctiva: null
-      Connective subcutaneous and other soft tissues NOS: null
-      Acoustic nerve: null
-      Lesser curvature of stomach NOS: null
-      Mucosa of lower lip: null
-      Bladder NOS: null
-      Intrathoracic lymph nodes: null
-      Pylorus: null
-      Blood: null
-      Biliary tract NOS: null
-      Accessory sinus NOS: null
-      Mandible: null
-      Overlapping lesion of retroperitoneum and peritoneum: null
-      Urinary system NOS: null
-      Sublingual gland: null
-      Tonsil NOS: null
-      Anterior surface of epiglottis: null
-      Branchial cleft: null
-      Peritoneum NOS: null
-      Lacrimal gland: null
-      Spleen: null
-      Optic nerve: null
-      Cervical esophagus: null
-      Fallopian tube: null
-      Base of tongue NOS: null
-      Skin of upper limb and shoulder: null
-      Craniopharyngeal duct: null
-      Specified parts of peritoneum: null
-      Pancreatic duct: null
-      External lower lip: null
-      Overlapping lesion of cervix uteri: null
-      Anterior wall of bladder: null
-      Uvula: null
-      Upper-outer quadrant of breast: null
-      Overlapping lesion of esophagus: null
-      Short bones of lower limb and associated joints: null
-      Ascending colon: null
-      Mucosa of upper lip: null
-      Connective subcutaneous and other soft tissues of head face and neck: null
-      Anal canal: null
-      Hypopharynx NOS: null
-      Aortic body and other paraganglia: null
-      Overlapping lesion of endocrine glands and related structures: null
-      Larynx NOS: null
-      Ureter: null
-      Eye NOS: null
-      Medulla of adrenal gland: null
-      Colon NOS: null
-      Lower lobe lung: null
-      Eyelid: null
-      Overlapping lesion of respiratory system and intrathoracic organs: null
-      Overlapping lesion of connective subcutaneous and other soft tissues: null
-      Esophagus NOS: null
-      Overlapping lesion of brain and central nervous system: null
-      Choroid: null
-      Bladder neck: null
-      Overlapping lesion of skin: null
-      Thyroid gland: null
-      Sphenoid sinus: null
-      Round ligament: null
-      Breast NOS: null
-      Upper lobe lung: null
-      Splenic flexure of colon: null
-      Cranial nerve NOS: null
-      Paraurethral gland: null
-      Posterior wall of oropharynx: null
-      Other specified parts of male genital organs: null
-      Undescended testis: null
-      Nasal cavity: null
-      Cerebral meninges: null
-      Overlapping lesion of floor of mouth: null
-      Overlapping lesion of corpus uteri: null
-      Lip NOS: null
-      Cheek mucosa: null
-      Upper limb NOS: null
-      Dome of bladder: null
-      Connective subcutaneous and other soft tissues of pelvis: null
-      unknown primary site: null
-      Posterior mediastinum: null
-      Ureteric orifice: null
-      Other ill-defined sites: null
-      Bone marrow: null
-      Peripheral nerves and autonomic nervous system of lower limb and hip: null
-      Lymph node NOS: null
-      Skin of scalp and neck: null
-      Retromolar area: null
-      Overlapping lesion of lip oral cavity and pharynx: null
-      Overlapping lesion of accessory sinuses: null
-      Overlapping lesion of penis: null
-      Overlapping lesion of vulva: null
-      Overlapping lesion of ill-defined sites: null
-      Occipital lobe: null
-      Overlapping lesion of eye and adnexa: null
-      Lingual tonsil: null
-      Gum NOS: null
-      Thymus: null
-      Male genital organs NOS: null
-      Islets of Langerhans: null
-      Isthmus uteri: null
-      Spinal meninges: null
-      Myometrium: null
-      Pelvic bones sacrum coccyx and associated joints: null
-      Connective subcutaneous and other soft tissues of lower limb and hip: null
-      Anterior 2/3 of tongue NOS: null
-      Upper third of esophagus: null
-      Meninges NOS: null
-      Prostate gland: null
-      Overlapping lesion of small intestine: null
-      Lower gum: null
-      Paraspinal: null
-      Appendix: null
-      Scrotum NOS: null
-      Overlapping lesion of larynx: null
-      Main bronchus: null
-      Descended testis: null
-      Cloacogenic zone: null
-      Connective subcutaneous and other soft tissues of trunk NOS: null
-      Heart: null
-      Mucosa of lip NOS: null
-      Broad ligament: null
-      Head of pancreas: null
-      Overlapping lesion of bones joints and articular cartilage of limbs: null
-      Temporal lobe: null
-      Body of penis: null
-      Overlapping lesion of biliary tract: null
-      Labium minus: null
-      Descending colon: null
-      Lateral wall of nasopharynx: null
-      Posterior wall of hypopharynx: null
-      Nipple: null
-      Jejunum: null
-      Posterior wall of bladder: null
-      Laryngeal cartilage: null
-      Cecum: null
-      Skin of lower limb and hip: null
-      Corpus uteri: null
-      Female genital tract NOS: null
-      Abdomen NOS: null
-      Tonsillar pillar: null
-      Other specified parts of female genital organs: null
-      Glottis: null
-      Orbit NOS: null
-      Skin of trunk: null
-      Ventricle NOS: null
-      Frontal lobe: null
+      Tonsillar fossa: 
+      Overlapping lesion of lung: 
+      Overlapping lesion of other and unspecified parts of mouth: 
+      Endometrium: 
+      Bone of limb NOS: 
+      Posterior wall of nasopharynx: 
+      Small intestine NOS: 
+      Anterior wall of nasopharynx: 
+      Thoracic esophagus: 
+      Parietal lobe: 
+      Head face or neck NOS: 
+      Endocervix: 
+      Supraglottis: 
+      Ethmoid sinus: 
+      Ileum: 
+      Overlapping lesion of heart mediastinum and pleura: 
+      Exocervix: 
+      Pancreas NOS: 
+      Epididymis: 
+      Kidney NOS: 
+      Anus NOS: 
+      Cerebrum: 
+      Overlapping lesion of breast: 
+      Overlapping lesion of peripheral nerves and autonomic nervous system: 
+      Fundus of stomach: 
+      Oropharynx NOS: 
+      Urachus: 
+      Labium majus: 
+      Parametrium: 
+      Vestibule of mouth: 
+      Lower third of esophagus: 
+      Overlapping lesion of digestive system: 
+      Bones of skull and face and associated joints: 
+      Lymph nodes of axilla or arm: 
+      Soft palate NOS: 
+      Hepatic flexure of colon: 
+      Subglottis: 
+      Overlapping lesion of lip: 
+      Extrahepatic bile duct: 
+      Vallecula: 
+      Tongue NOS: 
+      Liver: 
+      Overlapping lesion of bones joints and articular cartilage: 
+      Not Reported: 
+      Peripheral nerves and autonomic nervous system of upper limb and shoulder: 
+      Lymph nodes of multiple regions: 
+      Duodenum: 
+      Maxillary sinus: 
+      Intrahepatic bile duct: 
+      Lateral wall of bladder: 
+      Overlapping lesion of hypopharynx: 
+      Overlapping lesion of rectum anus and anal canal: 
+      Middle third of esophagus: 
+      Lateral floor of mouth: 
+      Anterior mediastinum: 
+      Anterior floor of mouth: 
+      Nervous system NOS: 
+      Waldeyer ring: 
+      Rib sternum clavicle and associated joints: 
+      Long bones of lower limb and associated joints: 
+      Frontal sinus: 
+      Uterine adnexa: 
+      Trachea: 
+      Rectum NOS: 
+      Adrenal gland NOS: 
+      Pleura NOS: 
+      Lower limb NOS: 
+      Transverse colon: 
+      Lymph nodes of head face and neck: 
+      Greater curvature of stomach NOS: 
+      Upper respiratory tract NOS: 
+      Overlapping lesion of pancreas: 
+      Cerebellum NOS: 
+      Overlapping lesions of oropharynx: 
+      Axillary tail of breast: 
+      unknown: 
+      Vulva NOS: 
+      Floor of mouth NOS: 
+      Overlapping lesion of male genital organs: 
+      Uterus NOS: 
+      Body of stomach: 
+      Urethra: 
+      Middle lobe lung: 
+      Tail of pancreas: 
+      Pineal gland: 
+      Spermatic cord: 
+      Carotid body: 
+      Reticuloendothelial system NOS: 
+      Other specified parts of pancreas: 
+      External ear: 
+      Meckel diverticulum: 
+      Penis NOS: 
+      Lower-inner quadrant of breast: 
+      Superior wall of nasopharynx: 
+      Retina: 
+      Border of tongue: 
+      Intra-abdominal lymph nodes: 
+      Peripheral nerves and autonomic nervous system of thorax: 
+      Cauda equina: 
+      Overlapping lesion of palate: 
+      Nasopharynx NOS: 
+      Placenta: 
+      External lip NOS: 
+      Bone NOS: 
+      Ciliary body: 
+      Hematopoietic system NOS: 
+      Prepuce: 
+      Pelvic lymph nodes: 
+      Postcricoid region: 
+      External upper lip: 
+      Peripheral nerves and autonomic nervous system of pelvis: 
+      Pelvis NOS: 
+      Connective subcutaneous and other soft tissues of abdomen: 
+      Vertebral column: 
+      Body of pancreas: 
+      Trigone of bladder: 
+      Commissure of lip: 
+      Peripheral nerves and autonomic nervous system of abdomen: 
+      Upper-inner quadrant of breast: 
+      Palate NOS: 
+      Hypopharyngeal aspect of aryepiglottic fold: 
+      Upper gum: 
+      Thorax NOS: 
+      Spinal cord: 
+      Brain NOS: 
+      Mouth NOS: 
+      Connective subcutaneous and other soft tissues of upper limb and shoulder: 
+      Retroperitoneum: 
+      Long bones of upper limb scapula and associated joints: 
+      Hard palate: 
+      Gallbladder: 
+      Endocrine gland NOS: 
+      Brain stem: 
+      Cornea NOS: 
+      Overlapping lesion of nasopharynx: 
+      Dorsal surface of tongue NOS: 
+      Major salivary gland NOS: 
+      Abdominal esophagus: 
+      Olfactory nerve: 
+      Short bones of upper limb and associated joints: 
+      Overlapping lesion of tonsil: 
+      Autonomic nervous system NOS: 
+      Ill-defined sites within respiratory system: 
+      Lymph nodes of inguinal region or leg: 
+      Overlapping lesion of major salivary glands: 
+      Peripheral nerves and autonomic nervous system of trunk NOS: 
+      Fundus uteri: 
+      Testis NOS: 
+      Parotid gland: 
+      Ampulla of Vater: 
+      Cardia NOS: 
+      Skin of lip NOS: 
+      Overlapping lesion of stomach: 
+      Rectosigmoid junction: 
+      Gastric antrum: 
+      Cortex of adrenal gland: 
+      Renal pelvis: 
+      Middle ear: 
+      Overlapping lesion of female genital organs: 
+      Gastrointestinal tract NOS: 
+      Connective subcutaneous and other soft tissues of thorax: 
+      Skin NOS: 
+      Parathyroid gland: 
+      Pituitary gland: 
+      Overlapping lesion of tongue: 
+      Lung NOS: 
+      Cervix uteri: 
+      Skin of other and unspecified parts of face: 
+      Submandibular gland: 
+      Clitoris: 
+      Central portion of breast: 
+      Ovary: 
+      Lateral wall of oropharynx: 
+      Stomach NOS: 
+      Ventral surface of tongue NOS: 
+      Overlapping lesion of urinary organs: 
+      Sigmoid colon: 
+      Overlapping lesion of brain: 
+      Overlapping lesion of colon: 
+      Glans penis: 
+      Mediastinum NOS: 
+      Vagina NOS: 
+      Lower-outer quadrant of breast: 
+      Pharynx NOS: 
+      Intestinal tract NOS: 
+      Peripheral nerves and autonomic nervous system of head face and neck: 
+      Overlapping lesion of bladder: 
+      Pyriform sinus: 
+      Conjunctiva: 
+      Connective subcutaneous and other soft tissues NOS: 
+      Acoustic nerve: 
+      Lesser curvature of stomach NOS: 
+      Mucosa of lower lip: 
+      Bladder NOS: 
+      Intrathoracic lymph nodes: 
+      Pylorus: 
+      Blood: 
+      Biliary tract NOS: 
+      Accessory sinus NOS: 
+      Mandible: 
+      Overlapping lesion of retroperitoneum and peritoneum: 
+      Urinary system NOS: 
+      Sublingual gland: 
+      Tonsil NOS: 
+      Anterior surface of epiglottis: 
+      Branchial cleft: 
+      Peritoneum NOS: 
+      Lacrimal gland: 
+      Spleen: 
+      Optic nerve: 
+      Cervical esophagus: 
+      Fallopian tube: 
+      Base of tongue NOS: 
+      Skin of upper limb and shoulder: 
+      Craniopharyngeal duct: 
+      Specified parts of peritoneum: 
+      Pancreatic duct: 
+      External lower lip: 
+      Overlapping lesion of cervix uteri: 
+      Anterior wall of bladder: 
+      Uvula: 
+      Upper-outer quadrant of breast: 
+      Overlapping lesion of esophagus: 
+      Short bones of lower limb and associated joints: 
+      Ascending colon: 
+      Mucosa of upper lip: 
+      Connective subcutaneous and other soft tissues of head face and neck: 
+      Anal canal: 
+      Hypopharynx NOS: 
+      Aortic body and other paraganglia: 
+      Overlapping lesion of endocrine glands and related structures: 
+      Larynx NOS: 
+      Ureter: 
+      Eye NOS: 
+      Medulla of adrenal gland: 
+      Colon NOS: 
+      Lower lobe lung: 
+      Eyelid: 
+      Overlapping lesion of respiratory system and intrathoracic organs: 
+      Overlapping lesion of connective subcutaneous and other soft tissues: 
+      Esophagus NOS: 
+      Overlapping lesion of brain and central nervous system: 
+      Choroid: 
+      Bladder neck: 
+      Overlapping lesion of skin: 
+      Thyroid gland: 
+      Sphenoid sinus: 
+      Round ligament: 
+      Breast NOS: 
+      Upper lobe lung: 
+      Splenic flexure of colon: 
+      Cranial nerve NOS: 
+      Paraurethral gland: 
+      Posterior wall of oropharynx: 
+      Other specified parts of male genital organs: 
+      Undescended testis: 
+      Nasal cavity: 
+      Cerebral meninges: 
+      Overlapping lesion of floor of mouth: 
+      Overlapping lesion of corpus uteri: 
+      Lip NOS: 
+      Cheek mucosa: 
+      Upper limb NOS: 
+      Dome of bladder: 
+      Connective subcutaneous and other soft tissues of pelvis: 
+      unknown primary site: 
+      Posterior mediastinum: 
+      Ureteric orifice: 
+      Other ill-defined sites: 
+      Bone marrow: 
+      Peripheral nerves and autonomic nervous system of lower limb and hip: 
+      Lymph node NOS: 
+      Skin of scalp and neck: 
+      Retromolar area: 
+      Overlapping lesion of lip oral cavity and pharynx: 
+      Overlapping lesion of accessory sinuses: 
+      Overlapping lesion of penis: 
+      Overlapping lesion of vulva: 
+      Overlapping lesion of ill-defined sites: 
+      Occipital lobe: 
+      Overlapping lesion of eye and adnexa: 
+      Lingual tonsil: 
+      Gum NOS: 
+      Thymus: 
+      Male genital organs NOS: 
+      Islets of Langerhans: 
+      Isthmus uteri: 
+      Spinal meninges: 
+      Myometrium: 
+      Pelvic bones sacrum coccyx and associated joints: 
+      Connective subcutaneous and other soft tissues of lower limb and hip: 
+      Anterior 2/3 of tongue NOS: 
+      Upper third of esophagus: 
+      Meninges NOS: 
+      Prostate gland: 
+      Overlapping lesion of small intestine: 
+      Lower gum: 
+      Paraspinal: 
+      Appendix: 
+      Scrotum NOS: 
+      Overlapping lesion of larynx: 
+      Main bronchus: 
+      Descended testis: 
+      Cloacogenic zone: 
+      Connective subcutaneous and other soft tissues of trunk NOS: 
+      Heart: 
+      Mucosa of lip NOS: 
+      Broad ligament: 
+      Head of pancreas: 
+      Overlapping lesion of bones joints and articular cartilage of limbs: 
+      Temporal lobe: 
+      Body of penis: 
+      Overlapping lesion of biliary tract: 
+      Labium minus: 
+      Descending colon: 
+      Lateral wall of nasopharynx: 
+      Posterior wall of hypopharynx: 
+      Nipple: 
+      Jejunum: 
+      Posterior wall of bladder: 
+      Laryngeal cartilage: 
+      Cecum: 
+      Skin of lower limb and hip: 
+      Corpus uteri: 
+      Female genital tract NOS: 
+      Abdomen NOS: 
+      Tonsillar pillar: 
+      Other specified parts of female genital organs: 
+      Glottis: 
+      Orbit NOS: 
+      Skin of trunk: 
+      Ventricle NOS: 
+      Frontal lobe: 
   VascularInvasionTypeEnum:
     permissible_values:
-      unknown: null
-      Not Reported: null
-      Extramural: null
-      Intramural: null
-      Macro: null
-      Micro: null
-      No Vascular Invasion: null
+      unknown: 
+      Not Reported: 
+      Extramural: 
+      Intramural: 
+      Macro: 
+      Micro: 
+      No Vascular Invasion: 
   ModeofCancerDetectionEnum:
     permissible_values:
-      Data not available: null
-      Standard of Care Screening: null
-      Clinical Examination of unrelated cancer symptoms: null
-      Incidentaloma: null
-      Interval Cancer: null
-  PrimaryDiagnosisEnum:
+      Data not available: 
+      Standard of Care Screening: 
+      Clinical Examination of unrelated cancer symptoms: 
+      Incidentaloma: 
+      Interval Cancer: 
+  DiagnosisEnum:
     permissible_values:
-      Paget disease and intraductal carcinoma of breast: null
-      Papillary microcarcinoma: null
-      Kaposi sarcoma: null
-      Carcinoma NOS: null
-      Acute myeloid leukemia NOS: null
-      Tumor NOS: null
-      Renal cell adenocarcinoma: null
-      Malignant lymphoma lymphoblastic NOS: null
-      Mammary carcinoma in situ: null
-      Adenocarcinoma in situ in tubular adenoma: null
-      Malignant lymphoma small B lymphocytic NOS: null
-      Eosinophilic leukemia: null
-      Acute lymphoblastic leukemia NOS: null
-      Malignant lymphoma lymphocytic nodular NOS: null
-      Basal cell epithelioma: null
-      Intracystic papilloma: null
-      Lobular and ductal carcinoma: null
-      Cancer: null
-      T lymphoblastic leukemia/lymphoma: null
-      Classical Hodgkin lymphoma lymphocyte-rich: null
-      Esophageal intraepithelial neoplasia high grade: null
-      Burkitt cell leukemia: null
-      Monocytic leukemia NOS: null
-      Acute leukemia NOS: null
-      Renal medullary carcinoma: null
-      Diffuse melanocytosis: null
-      Intraductal and lobular carcinoma: null
-      Melanotic psammomatous MPNST: null
-      Malignant melanoma in Hutchinson melanotic freckle: null
-      Pigmented adenoma: null
-      Chronic granulocytic leukemia BCR/ABL: null
-      Cervical intraepithelial neoplasia grade III: null
-      High-grade serous carcinoma: null
-      Classical Hodgkin lymphoma nodular sclerosis grade 1: null
-      Meningioma malignant: null
-      Interstitial cell tumor NOS: null
-      Bronchial adenoma NOS: null
-      Precursor T-cell lymphoblastic lymphoma: null
-      Tubular androblastoma with lipid storage: null
-      Combined large cell neuroendocrine carcinoma: null
-      Nephroblastoma NOS: null
-      Tumor cells benign: null
-      Tumorlet benign: null
-      Pleomorphic lipoma: null
-      Adenocarcinoma of anal ducts: null
-      Gastrointestinal stromal tumor malignant: null
-      Malignant melanoma in junctional nevus: null
-      Rhabdosarcoma: null
-      Endometrioid adenoma NOS: null
-      Hodgkin sarcoma: null
-      Malignant lymphoma immunoblastic NOS: null
-      Small congenital nevus: null
-      Tumor malignant NOS: null
-      Undifferentiated epithelioid sarcoma: null
-      Neuroendocrine carcinoma NOS: null
-      Acute lymphoblastic leukemia precursor cell type: null
-      Inflammatory adenocarcinoma: null
-      Tubular adenocarcinoma: null
-      Combined small cell-adenocarcinoma: null
-      Classical Hodgkin lymphoma nodular sclerosis cellular phase: null
-      Mixed adenocarcinoma and epidermoid carcinoma: null
-      Epidermoid carcinoma in situ NOS: null
-      Undifferentiated high-grade pleomorphic sarcoma: null
-      Sclerosing hepatic carcinoma: null
-      Pagetoid reticulosis: null
-      Central neurocytoma: null
-      Bronchiolo-alveolar carcinoma NOS: null
-      Chronic lymphoid leukemia: null
-      Paraganglioma malignant: null
-      Classical Hodgkin lymphoma nodular sclerosis grade 2: null
-      B-ALL: null
-      Skin appendage carcinoma: null
-      Epithelial tumor benign: null
-      B lymphoblastic leukemia/lymphoma NOS: null
-      Hodgkin lymphoma nodular sclerosis NOS: null
-      Malignant lymphoma lymphocytic diffuse NOS: null
-      Pro-B ALL: null
-      Gastrinoma NOS: null
-      Intraductal carcinoma clinging: null
-      Non-invasive low grade serous carcinoma: null
-      Acute promyelocytic leukemia NOS: null
-      Malignant lymphoma non-Hodgkin NOS: null
-      Not Reported: null
-      Melanotic schwannoma: null
-      Splenic marginal zone lymphoma NOS: null
-      Transitional cell carcinoma in situ: null
-      Chronic monocytic leukemia: null
-      Gastrin cell tumor: null
-      Papillary serous cystadenocarcinoma: null
-      Teratoma malignant NOS: null
-      Classical Hodgkin lymphoma lymphocyte depletion reticular: null
-      Tumor cells uncertain whether benign or malignant: null
-      Epithelial tumor malignant: null
-      Tubular androblastoma NOS: null
-      Papillary carcinoma in situ: null
-      Pituitary carcinoma NOS: null
-      Typical carcinoid: null
-      Non-small cell carcinoma: null
-      Meningioma NOS: null
-      Endometrial sarcoma NOS: null
-      Neuroblastoma NOS: null
-      B cell lymphoma NOS: null
-      Peripheral T-cell lymphoma large cell: null
-      Renal cell carcinoma NOS: null
-      Renal cell carcinoma spindle cell: null
-      Hepatocholangiocarcinoma: null
-      Malignant lymphoma nodular NOS: null
-      Bronchiolo-alveolar carcinoma non-mucinous: null
-      unknown: null
-      Bronchiolo-alveolar carcinoma indeterminate type: null
-      Pleomorphic carcinoma: null
-      Papillary cystadenoma NOS: null
-      Burkitt tumor: null
-      Basal cell carcinoma NOS: null
-      Hepatocellular carcinoma NOS: null
-      Undifferentiated leukaemia: null
-      Gastrin cell tumor malignant: null
-      Melanoameloblastoma: null
-      Prostatic intraepithelial neoplasia grade III: null
-      Mixed pineal tumor: null
-      Small cell sarcoma: null
-      Carcinoma in adenomatous polyp: null
-      Paget disease extramammary: null
-      Intraductal carcinoma solid type: null
-      Liver cell carcinoma: null
-      Undifferentiated sarcoma: null
-      Squamous cell carcinoma clear cell type: null
-      Pituitary adenoma NOS: null
-      Endometrioid carcinoma NOS: null
-      Papillary adenocarcinoma NOS: null
-      Duct carcinoma desmoplastic type: null
-      Chronic lymphatic leukemia: null
-      Squamous cell carcinoma in situ NOS: null
-      Intraductal papillary adenocarcinoma with invasion: null
-      Adenocarcinoma combined with other types of carcinoma: null
-      Combined hepatocellular carcinoma and cholangiocarcinoma: null
-      Primary amyloidosis: null
-      Preleukemia: null
-      Adenocarcinoma of anal glands: null
-      Secondary carcinoma: null
-      Dermal nevus: null
-      Infiltrating duct and cribriform carcinoma: null
-      Eosinophil adenocarcinoma: null
-      Chronic myeloproliferative disorder: null
-      Malignant melanoma regressing: null
-      Osteoblastoma malignant: null
-      Papillotubular adenocarcinoma: null
-      Carcinoma metastatic NOS: null
-      Sclerosing hemangioma: null
-      Lymphocytic leukemia NOS: null
-      Precursor cell lymphoblastic leukemia NOS: null
-      Papillary carcinoma NOS: null
-      Bronchio-alveolar carcinoma mucinous: null
-      Carcinoma in a polyp NOS: null
-      Acute myeloid leukemia MLL: null
-      Tubulocystic renal cell carcinoma: null
-      Melanocytoma NOS: null
-      Chronic myelogenous leukemia Philadelphia chromosome (Ph 1) positive: null
-      Ewing sarcoma: null
-      Glioma NOS: null
-      Bronchial-associated lymphoid tissue lymphoma: null
-      Papillotubular adenoma: null
-      Papilloma of bladder: null
-      Bronchio-alveolar carcinoma mixed mucinous and non-mucinous: null
-      Carcinoma in pleomorphic adenoma: null
-      Chondrosarcoma grade 2/3: null
-      Neoplasm secondary: null
-      Rhabdomyosarcoma with ganglionic differentiation: null
-      Chronic lymphocytic leukemia: null
-      Liposarcoma well differentiated: null
-      Undifferentiated pleomorphic sarcoma: null
-      Secretory carcinoma of breast: null
-      Lobular carcinoma noninfiltrating: null
-      Mixed adenocarcinoma and squamous cell carcinoma: null
-      Melanotic neurofibroma: null
-      Chronic granulocytic leukemia Philadelphia chromosome (Ph1) positive: null
-      Hepatocellular adenoma: null
-      Burkitt lymphoma NOS (Includes all variants): null
-      Paraganglioma NOS: null
-      Diffuse large B-cell lymphoma NOS: null
-      Nevus NOS: null
-      Hepatoid carcinoma: null
-      Mixed tumor malignant NOS: null
-      Rhabdoid sarcoma: null
-      Tubulolobular carcinoma: null
-      Papillomatosis glandular: null
-      Bronchial adenoma carcinoid: null
-      Tumor embolus: null
-      Duct carcinoma NOS: null
-      Rhabdomyosarcoma NOS: null
-      Lobular carcinoma NOS: null
-      Bronchial adenoma cylindroid: null
-      Epidermoid carcinoma NOS: null
-      Papillary glioneuronal tumor: null
-      Ductal carcinoma in situ NOS: null
-      Unclassified tumor malignant uncertain whether primary or metastatic: null
-      Glioblastoma: null
-      Papillary and follicular carcinoma: null
-      Ductal carcinoma NOS: null
-      Tumor benign: null
-      Paget disease mammary: null
-      Diffuse astrocytoma low grade: null
-      Duct cell carcinoma: null
-      Preleukemic syndrome: null
-      Carcinoma diffuse type: null
-      Neurosarcoma: null
-      Papillomatosis NOS: null
-      Therapy related myeloid neoplasm: null
-      Renal carcinoma collecting duct type: null
-      Neurofibroma NOS: null
-      Meningioma anaplastic: null
-      Cementoma NOS: null
-      Dermatofibroma NOS: null
-      Astrocytoma NOS: null
-      Liver cell adenoma: null
-      Tubulovillous adenoma NOS: null
-      Melanoma NOS: null
-      Papilloma NOS: null
-      Esophageal glandular dysplasia (intraepithelial neoplasia) high grade: null
-      Tumor cells malignant: null
-      Malignant lymphoma diffuse NOS: null
-      Renal cell carcinoma chromophobe type: null
-      Tubular carcinoid: null
-      Nonpigmented nevus: null
-      Rodent ulcer: null
-      Hodgkin disease NOS: null
-      Acinar cell carcinoma: null
-      Papillary adenofibroma: null
-      Oat cell carcinoma: null
-      Adenocarcinoma in adenomatous polyp: null
-      Spindle cell carcinoma NOS: null
-      Adenocarcinoma in polypoid adenoma: null
-      Papillary serous adenocarcinoma: null
-      Splenic diffuse red pulp small B-cell lymphoma: null
-      Chondroma NOS: null
-      Bile duct adenoma: null
-      Adenocarcinoma in villous adenoma: null
-      Spindle cell melanoma NOS: null
-      Classical Hodgkin lymphoma mixed cellularity NOS: null
-      Combined small cell-large carcinoma: null
-      Eosinophil carcinoma: null
-      Pancreatic endocrine tumor NOS: null
-      Adenocarcinoma NOS: null
-      Sarcoma NOS: null
-      Chronic myelocytic leukemia NOS: null
-      Adenocarcinoma in situ non-mucinous: null
-      Chronic leukemia NOS: null
-      Pro-T ALL: null
-      Esophageal glandular dysplasia (intraepithelial neoplasia) low grade: null
-      Lymphoblastoma: null
-      Mixed medullary-papillary carcinoma: null
-      Classical Hodgkin lymphoma nodular sclerosis NOS: null
-      Osteoblastoma NOS: null
-      Cerebellar sarcoma NOS: null
-      Paraganglioma benign: null
-      Intraductal tubular-papillary neoplasm low grade: null
-      Familial adenomatous polyposis: null
-      Mixed squamous cell and glandular papilloma: null
-      Intraductal carcinoma NOS: null
-      Transitional carcinoma: null
-      Gastrinoma malignant: null
-      Melanocytoma eyeball: null
-      Mixed medullary-follicular carcinoma: null
-      Chronic myelogenous leukemia BCR-ABL positive: null
-      Basophil carcinoma: null
-      Neuroepithelioma NOS: null
-      Adenocarcinoma pancreatobiliary type: null
-      Precancerous melanosis NOS: null
-      Undifferentiated round cell sarcoma: null
-      Malignant lymphoma large cell NOS: null
-      Tubulo-papillary adenoma: null
-      Classical Hodgkin lymphoma lymphocyte depletion diffuse fibrosis: null
-      Cerebellar liponeurocytoma: null
-      Pulmonary blastoma: null
-      Burkitt-like lymphoma: null
-      Ganglioglioma NOS: null
-      T-cell lymphoma NOS: null
-      Papillary tumor of the pineal region: null
-      Intraductal papillary adenocarcinoma NOS: null
-      Malignant lymphoma NOS: null
-      Hepatoid adenocarcinoma: null
-      Papillary adenoma NOS: null
-      Carcinoma in situ in adenomatous polyp: null
-      Eosinophilic granuloma: null
-      Medullary adenocarcinoma: null
-      Malignant lymphoma mixed cell type nodular: null
-      Intraductal carcinoma noninfiltrating NOS: null
-      Interstitial cell tumor malignant: null
-      Lymphoma NOS: null
-      Unclassified tumor borderline malignancy: null
-      Adenocarcinoma in tubular adenoma: null
-      Intraductal papillary carcinoma: null
-      Myelocytic leukemia NOS: null
-      Tumor cells NOS: null
-      Liposarcoma NOS: null
-      Interstitial cell tumor benign: null
-      Neoplasm metastatic: null
-      Chronic neutrophilic leukemia: null
-      Bronchiolo-alveolar carcinoma goblet cell type: null
-      Papillary adenocarcinoma follicular variant: null
-      Hepatocarcinoma: null
-      Undifferentiated uterine sarcoma: null
-      Renal cell carcinoma unclassified: null
-      Papillary epidermoid carcinoma: null
-      Pigmented nevus NOS: null
-      Myeloid leukemia NOS: null
-      Esophageal squamous intraepithelial neoplasia (dysplasia) high grade: null
-      Malignant lymphoma large B-cell NOS: null
-      Non-lymphocytic leukemia NOS: null
-      Basal cell adenocarcinoma: null
-      Adult T-cell lymphoma/leukemia: null
-      Mixed pancreatic endocrine and exocrine tumor malignant: null
-      Ependymoma NOS: null
-      Peripheral T-cell lymphoma NOS: null
-      Pulmonary adenomatosis: null
-      Pleomorphic lobular carcinoma: null
-      Paget disease of breast: null
-      Hodgkin paragranuloma NOS: null
-      Malignant melanoma NOS: null
-      Papillary transitional cell carcinoma: null
-      Acute lymphocytic leukemia: null
-      Serous surface papillary carcinoma: null
-      Basal cell tumor: null
-      Chronic myelomonocytic leukemia NOS: null
-      Lymphatic leukemic NOS: null
-      Teratoma NOS: null
-      Malignant lymphoma mixed cell type follicular: null
-      Bronchiolar adenocarcinoma: null
-      Basophil adenocarcinoma: null
-      Non-Hodgkin lymphoma NOS: null
-      Haemangioblastoma: null
-      Intraductal tubular-papillary neoplasm high grade: null
-      Chronic myeloproliferative disease NOS: null
-      Rhabdoid meningioma: null
-      Rhabdoid tumor NOS: null
-      Carcinoma intestinal type: null
-      Classical Hodgkin lymphoma lymphocyte depletion NOS: null
-      Chronic myeloid leukemia NOS: null
-      Melanotic medulloblastoma: null
-      Melanotic neuroectodermal tumor: null
-      Lobular carcinoma in situ NOS: null
-      Mixed small cell carcinoma: null
-      Intradermal nevus: null
-      Bronchiolo-alveolar carcinoma Clara cell: null
-      Papillary squamous cell carcinoma in situ: null
-      Small cell neuroendocrine carcinoma: null
-      Malignant melanoma in precancerous melanosis: null
-      Carcinoma anaplastic NOS: null
-      Dysplastic nevus: null
-      Liposarcoma differentiated: null
-      Combined small cell-squamous cell carcinoma: null
-      Acute lymphatic leukemia: null
-      Glioma malignant: null
-      Adenocarcinoma in situ NOS: null
-      Mucosal-associated lymphoid tissue lymphoma: null
-      Splenic lymphoma with villous lymphocytes: null
-      Large cell carcinoma NOS: null
-      Micropapillary carcinoma NOS: null
-      Undifferentiated spindle cell sarcoma: null
-      Intraepidermal squamous cell carcinoma Bowen type: null
-      Endometrioid adenofibroma NOS: null
-      Medullary carcinoma NOS: null
-      T-cell large granular lymphocytosis: null
-      Intraductal adenocarcinoma noninfiltrating NOS: null
-      Osteosarcoma NOS: null
-      Pancreatobiliary-type carcinoma: null
-      Adenocarcinoid tumor: null
-      Diffuse astrocytoma IDH-mutant: null
-      Medullary osteosarcoma: null
-      Adenocarcinoma intestinal type: null
-      Carcinoma in situ in a polyp NOS: null
-      Carcinosarcoma NOS: null
-      Basal cell adenoma: null
-      Adult T-cell lymphoma: null
-      Lobular adenocarcinoma: null
-      Melanocytic nevus: null
-      Adenocarcinoma metastatic NOS: null
-      Pigmented basal cell carcinoma: null
-      Astrocytoma anaplastic: null
-      Melanoma malignant of soft parts: null
-      Small cell osteosarcoma: null
-      Unclassified tumor uncertain whether benign or malignant: null
-      Transitional cell carcinoma: null
-      Intraductal carcinoma and lobular carcinoma in situ: null
-      Rhabdomyoma NOS: null
-      B-cell lymphocytic leukemia/small lymphocytic lymphoma: null
-      Capillary hemangioma: null
-      Precursor B-cell lymphoblastic leukemia: null
-      Bronchiolo-alveolar carcinoma Clara cell and goblet cell type: null
-      Eosinophil adenoma: null
-      Splenic B-cell lymphoma/leukemia unclassifiable: null
-      Composite Hodgkin and non-Hodgkin lymphoma: null
-      Paget disease and infiltrating duct carcinoma of breast: null
-      Neurofibromatosis NOS: null
-      Hodgkin lymphoma NOS: null
-      Melanoma in situ: null
-      Serous cystadenocarcinoma NOS: null
-      Malignant lymphoma Hodgkin: null
-      Acute lymphoblastic leukemia-lymphoma NOS: null
-      Unclassified tumor malignant: null
-      Adult rhabdomyoma: null
-      Neoplasm uncertain whether benign or malignant: null
-      Chronic myelomonocytic leukemia Type 1: null
-      Duct adenoma NOS: null
-      Neoplasm benign: null
-      Carcinoma undifferentiated NOS: null
-      Malignancy: null
-      Adenocarcinoma in situ mucinous: null
-      Papillary squamous cell carcinoma: null
-      B lymphoblastic leukemia/lymphoma with hyperdiploidy: null
-      Precursor T-cell lymphoblastic leukemia: null
-      Tumor secondary: null
-      Pancreatobiliary neoplasm non-invasive: null
-      Malignant melanoma in giant pigmented nevus: null
-      Squamous cell carcinoma adenoid: null
-      Acute myelomonocytic leukemia: null
-      Bile duct cystadenocarcinoma: null
-      Pancreatic endocrine tumor nonfunctioning: null
-      Pleomorphic adenoma: null
-      B lymphoblastic leukemia/lymphoma with hypodiploidy (Hypodiploid ALL): null
-      Renal cell carcinoma sarcomatoid: null
-      Splenic marginal zone B-cell lymphoma: null
-      Malignant lymphoma large B-cell diffuse NOS: null
-      Infiltrating duct and colloid carcinoma: null
-      Chronic myelomonocytic leukemia Type II: null
-      Duct adenocarcinoma NOS: null
-      Combined/mixed carcinoid and adenocarcinoma: null
-      Haemangiosarcoma: null
-      Acute lymphoid leukemia: null
-      Diffuse astrocytoma IDH-wildtype: null
-      Intraductal tubulopapillary neoplasm: null
-      Acute basophilic leukaemia: null
-      Unclassified tumor benign: null
-      Intraductal micropapillary carcinoma: null
-      Hodgkin granuloma: null
-      Chronic lymphocytic leukemia B-cell type (includes all variants of BCLL): null
-      Pancreatoblastoma: null
-      Bile duct adenocarcinoma: null
-      Meningeal melanocytoma: null
-      Hodgkin lymphoma mixed cellularity NOS: null
-      Infiltrating duct carcinoma NOS: null
-      Esophageal squamous intraepithelial neoplasia (dysplasia) low grade: null
-      Small cell carcinoma NOS: null
-      Inflammatory carcinoma: null
-      Papillary urothelial carcinoma: null
-      Melanotic progonoma: null
-      Central neuroblastoma: null
-      Malignant lymphoma lymphocytic NOS: null
-      Myeloma NOS: null
-      Adenocarcinoma endocervical type: null
-      Adenocarcinoma in situ in a polyp NOS: null
-      Neoplasm malignant uncertain whether primary or metastatic: null
-      Pulmonary artery intimal sarcoma: null
-      Intraepidermal carcinoma NOS: null
-      Papillary serous cystadenoma NOS: null
-      Carcinoma in situ NOS: null
-      Tubular adenoma NOS: null
-      Tubulopapillary adenocarcinoma: null
-      Pancreatic microadenoma: null
-      Acute lymphoblastic leukemia mature B-cell type: null
-      c-ALL: null
-      Acute leukemia Burkitt type: null
-      Cervical intraepithelial neoplasia low grade: null
-      Mixed tumor NOS: null
-      Bronchiolo-alveolar adenocarcinoma NOS: null
-      Myoepithelioma: null
-      Pancreatic endocrine tumor malignant: null
-      Endometrioid adenocarcinoma NOS: null
-      Infiltrating basal cell carcinoma NOS: null
-      Precursor B-cell lymphoblastic lymphoma: null
-      Pleomorphic lobular carcinoma in situ: null
-      Mucous adenocarcinoma: null
-      Meningeal melanoma: null
-      Acute myeloid leukemia minimal differentiation: null
-      Lymphoblastic leukemia NOS: null
-      Melanotic MPNST: null
-      Astrocytoma low grade: null
-      Multiple myeloma: null
-      Papillary renal cell carcinoma: null
-      Medulloblastoma NOS: null
-      Adenocarcinoma in a polyp NOS: null
-      Combined small cell carcinoma: null
-      Bile duct carcinoma: null
-      Chronic granulocytic leukemia NOS: null
-      Juvenile myelomonocytic leukemia: null
-      Neoplasm NOS: null
-      Capillary lymphangioma: null
-      Malignant lymphoma mixed cell type diffuse: null
-      Neoplasm malignant: null
-      Papillary meningioma: null
-      Bile duct cystadenoma: null
-      Malignant melanoma in congenital melanocytic nevus: null
-      Adenocarcinoma diffuse type: null
-      Pancreatic endocrine tumor benign: null
-      Squamous cell carcinoma NOS: null
-      Chronic myelomonocytic leukemia in transformation: null
-      T-cell large granular lymphocytic leukemia: null
-      Basophil adenoma: null
-      Bronchiolar carcinoma: null
-      Tubular carcinoma: null
-      Neurofibrosarcoma: null
-      Adenocarcinoma in situ in adenomatous polyp: null
-      Intravascular B-cell lymphoma: null
-      Pleomorphic liposarcoma: null
-      Tumor metastatic: null
+      Paget disease and intraductal carcinoma of breast: 
+      Papillary microcarcinoma: 
+      Kaposi sarcoma: 
+      Carcinoma NOS: 
+      Acute myeloid leukemia NOS: 
+      Tumor NOS: 
+      Renal cell adenocarcinoma: 
+      Malignant lymphoma lymphoblastic NOS: 
+      Mammary carcinoma in situ: 
+      Adenocarcinoma in situ in tubular adenoma: 
+      Malignant lymphoma small B lymphocytic NOS: 
+      Eosinophilic leukemia: 
+      Acute lymphoblastic leukemia NOS: 
+      Malignant lymphoma lymphocytic nodular NOS: 
+      Basal cell epithelioma: 
+      Intracystic papilloma: 
+      Lobular and ductal carcinoma: 
+      Cancer: 
+      T lymphoblastic leukemia/lymphoma: 
+      Classical Hodgkin lymphoma lymphocyte-rich: 
+      Esophageal intraepithelial neoplasia high grade: 
+      Burkitt cell leukemia: 
+      Monocytic leukemia NOS: 
+      Acute leukemia NOS: 
+      Renal medullary carcinoma: 
+      Diffuse melanocytosis: 
+      Intraductal and lobular carcinoma: 
+      Melanotic psammomatous MPNST: 
+      Malignant melanoma in Hutchinson melanotic freckle: 
+      Pigmented adenoma: 
+      Chronic granulocytic leukemia BCR/ABL: 
+      Cervical intraepithelial neoplasia grade III: 
+      High-grade serous carcinoma: 
+      Classical Hodgkin lymphoma nodular sclerosis grade 1: 
+      Meningioma malignant: 
+      Interstitial cell tumor NOS: 
+      Bronchial adenoma NOS: 
+      Precursor T-cell lymphoblastic lymphoma: 
+      Tubular androblastoma with lipid storage: 
+      Combined large cell neuroendocrine carcinoma: 
+      Nephroblastoma NOS: 
+      Tumor cells benign: 
+      Tumorlet benign: 
+      Pleomorphic lipoma: 
+      Adenocarcinoma of anal ducts: 
+      Gastrointestinal stromal tumor malignant: 
+      Malignant melanoma in junctional nevus: 
+      Rhabdosarcoma: 
+      Endometrioid adenoma NOS: 
+      Hodgkin sarcoma: 
+      Malignant lymphoma immunoblastic NOS: 
+      Small congenital nevus: 
+      Tumor malignant NOS: 
+      Undifferentiated epithelioid sarcoma: 
+      Neuroendocrine carcinoma NOS: 
+      Acute lymphoblastic leukemia precursor cell type: 
+      Inflammatory adenocarcinoma: 
+      Tubular adenocarcinoma: 
+      Combined small cell-adenocarcinoma: 
+      Classical Hodgkin lymphoma nodular sclerosis cellular phase: 
+      Mixed adenocarcinoma and epidermoid carcinoma: 
+      Epidermoid carcinoma in situ NOS: 
+      Undifferentiated high-grade pleomorphic sarcoma: 
+      Sclerosing hepatic carcinoma: 
+      Pagetoid reticulosis: 
+      Central neurocytoma: 
+      Bronchiolo-alveolar carcinoma NOS: 
+      Chronic lymphoid leukemia: 
+      Paraganglioma malignant: 
+      Classical Hodgkin lymphoma nodular sclerosis grade 2: 
+      B-ALL: 
+      Skin appendage carcinoma: 
+      Epithelial tumor benign: 
+      B lymphoblastic leukemia/lymphoma NOS: 
+      Hodgkin lymphoma nodular sclerosis NOS: 
+      Malignant lymphoma lymphocytic diffuse NOS: 
+      Pro-B ALL: 
+      Gastrinoma NOS: 
+      Intraductal carcinoma clinging: 
+      Non-invasive low grade serous carcinoma: 
+      Acute promyelocytic leukemia NOS: 
+      Malignant lymphoma non-Hodgkin NOS: 
+      Not Reported: 
+      Melanotic schwannoma: 
+      Splenic marginal zone lymphoma NOS: 
+      Transitional cell carcinoma in situ: 
+      Chronic monocytic leukemia: 
+      Gastrin cell tumor: 
+      Papillary serous cystadenocarcinoma: 
+      Teratoma malignant NOS: 
+      Classical Hodgkin lymphoma lymphocyte depletion reticular: 
+      Tumor cells uncertain whether benign or malignant: 
+      Epithelial tumor malignant: 
+      Tubular androblastoma NOS: 
+      Papillary carcinoma in situ: 
+      Pituitary carcinoma NOS: 
+      Typical carcinoid: 
+      Non-small cell carcinoma: 
+      Meningioma NOS: 
+      Endometrial sarcoma NOS: 
+      Neuroblastoma NOS: 
+      B cell lymphoma NOS: 
+      Peripheral T-cell lymphoma large cell: 
+      Renal cell carcinoma NOS: 
+      Renal cell carcinoma spindle cell: 
+      Hepatocholangiocarcinoma: 
+      Malignant lymphoma nodular NOS: 
+      Bronchiolo-alveolar carcinoma non-mucinous: 
+      unknown: 
+      Bronchiolo-alveolar carcinoma indeterminate type: 
+      Pleomorphic carcinoma: 
+      Papillary cystadenoma NOS: 
+      Burkitt tumor: 
+      Basal cell carcinoma NOS: 
+      Hepatocellular carcinoma NOS: 
+      Undifferentiated leukaemia: 
+      Gastrin cell tumor malignant: 
+      Melanoameloblastoma: 
+      Prostatic intraepithelial neoplasia grade III: 
+      Mixed pineal tumor: 
+      Small cell sarcoma: 
+      Carcinoma in adenomatous polyp: 
+      Paget disease extramammary: 
+      Intraductal carcinoma solid type: 
+      Liver cell carcinoma: 
+      Undifferentiated sarcoma: 
+      Squamous cell carcinoma clear cell type: 
+      Pituitary adenoma NOS: 
+      Endometrioid carcinoma NOS: 
+      Papillary adenocarcinoma NOS: 
+      Duct carcinoma desmoplastic type: 
+      Chronic lymphatic leukemia: 
+      Squamous cell carcinoma in situ NOS: 
+      Intraductal papillary adenocarcinoma with invasion: 
+      Adenocarcinoma combined with other types of carcinoma: 
+      Combined hepatocellular carcinoma and cholangiocarcinoma: 
+      Primary amyloidosis: 
+      Preleukemia: 
+      Adenocarcinoma of anal glands: 
+      Secondary carcinoma: 
+      Dermal nevus: 
+      Infiltrating duct and cribriform carcinoma: 
+      Eosinophil adenocarcinoma: 
+      Chronic myeloproliferative disorder: 
+      Malignant melanoma regressing: 
+      Osteoblastoma malignant: 
+      Papillotubular adenocarcinoma: 
+      Carcinoma metastatic NOS: 
+      Sclerosing hemangioma: 
+      Lymphocytic leukemia NOS: 
+      Precursor cell lymphoblastic leukemia NOS: 
+      Papillary carcinoma NOS: 
+      Bronchio-alveolar carcinoma mucinous: 
+      Carcinoma in a polyp NOS: 
+      Acute myeloid leukemia MLL: 
+      Tubulocystic renal cell carcinoma: 
+      Melanocytoma NOS: 
+      Chronic myelogenous leukemia Philadelphia chromosome (Ph 1) positive: 
+      Ewing sarcoma: 
+      Glioma NOS: 
+      Bronchial-associated lymphoid tissue lymphoma: 
+      Papillotubular adenoma: 
+      Papilloma of bladder: 
+      Bronchio-alveolar carcinoma mixed mucinous and non-mucinous: 
+      Carcinoma in pleomorphic adenoma: 
+      Chondrosarcoma grade 2/3: 
+      Neoplasm secondary: 
+      Rhabdomyosarcoma with ganglionic differentiation: 
+      Chronic lymphocytic leukemia: 
+      Liposarcoma well differentiated: 
+      Undifferentiated pleomorphic sarcoma: 
+      Secretory carcinoma of breast: 
+      Lobular carcinoma noninfiltrating: 
+      Mixed adenocarcinoma and squamous cell carcinoma: 
+      Melanotic neurofibroma: 
+      Chronic granulocytic leukemia Philadelphia chromosome (Ph1) positive: 
+      Hepatocellular adenoma: 
+      Burkitt lymphoma NOS (Includes all variants): 
+      Paraganglioma NOS: 
+      Diffuse large B-cell lymphoma NOS: 
+      Nevus NOS: 
+      Hepatoid carcinoma: 
+      Mixed tumor malignant NOS: 
+      Rhabdoid sarcoma: 
+      Tubulolobular carcinoma: 
+      Papillomatosis glandular: 
+      Bronchial adenoma carcinoid: 
+      Tumor embolus: 
+      Duct carcinoma NOS: 
+      Rhabdomyosarcoma NOS: 
+      Lobular carcinoma NOS: 
+      Bronchial adenoma cylindroid: 
+      Epidermoid carcinoma NOS: 
+      Papillary glioneuronal tumor: 
+      Ductal carcinoma in situ NOS: 
+      Unclassified tumor malignant uncertain whether primary or metastatic: 
+      Glioblastoma: 
+      Papillary and follicular carcinoma: 
+      Ductal carcinoma NOS: 
+      Tumor benign: 
+      Paget disease mammary: 
+      Diffuse astrocytoma low grade: 
+      Duct cell carcinoma: 
+      Preleukemic syndrome: 
+      Carcinoma diffuse type: 
+      Neurosarcoma: 
+      Papillomatosis NOS: 
+      Therapy related myeloid neoplasm: 
+      Renal carcinoma collecting duct type: 
+      Neurofibroma NOS: 
+      Meningioma anaplastic: 
+      Cementoma NOS: 
+      Dermatofibroma NOS: 
+      Astrocytoma NOS: 
+      Liver cell adenoma: 
+      Tubulovillous adenoma NOS: 
+      Melanoma NOS: 
+      Papilloma NOS: 
+      Esophageal glandular dysplasia (intraepithelial neoplasia) high grade: 
+      Tumor cells malignant: 
+      Malignant lymphoma diffuse NOS: 
+      Renal cell carcinoma chromophobe type: 
+      Tubular carcinoid: 
+      Nonpigmented nevus: 
+      Rodent ulcer: 
+      Hodgkin disease NOS: 
+      Acinar cell carcinoma: 
+      Papillary adenofibroma: 
+      Oat cell carcinoma: 
+      Adenocarcinoma in adenomatous polyp: 
+      Spindle cell carcinoma NOS: 
+      Adenocarcinoma in polypoid adenoma: 
+      Papillary serous adenocarcinoma: 
+      Splenic diffuse red pulp small B-cell lymphoma: 
+      Chondroma NOS: 
+      Bile duct adenoma: 
+      Adenocarcinoma in villous adenoma: 
+      Spindle cell melanoma NOS: 
+      Classical Hodgkin lymphoma mixed cellularity NOS: 
+      Combined small cell-large carcinoma: 
+      Eosinophil carcinoma: 
+      Pancreatic endocrine tumor NOS: 
+      Adenocarcinoma NOS: 
+      Sarcoma NOS: 
+      Chronic myelocytic leukemia NOS: 
+      Adenocarcinoma in situ non-mucinous: 
+      Chronic leukemia NOS: 
+      Pro-T ALL: 
+      Esophageal glandular dysplasia (intraepithelial neoplasia) low grade: 
+      Lymphoblastoma: 
+      Mixed medullary-papillary carcinoma: 
+      Classical Hodgkin lymphoma nodular sclerosis NOS: 
+      Osteoblastoma NOS: 
+      Cerebellar sarcoma NOS: 
+      Paraganglioma benign: 
+      Intraductal tubular-papillary neoplasm low grade: 
+      Familial adenomatous polyposis: 
+      Mixed squamous cell and glandular papilloma: 
+      Intraductal carcinoma NOS: 
+      Transitional carcinoma: 
+      Gastrinoma malignant: 
+      Melanocytoma eyeball: 
+      Mixed medullary-follicular carcinoma: 
+      Chronic myelogenous leukemia BCR-ABL positive: 
+      Basophil carcinoma: 
+      Neuroepithelioma NOS: 
+      Adenocarcinoma pancreatobiliary type: 
+      Precancerous melanosis NOS: 
+      Undifferentiated round cell sarcoma: 
+      Malignant lymphoma large cell NOS: 
+      Tubulo-papillary adenoma: 
+      Classical Hodgkin lymphoma lymphocyte depletion diffuse fibrosis: 
+      Cerebellar liponeurocytoma: 
+      Pulmonary blastoma: 
+      Burkitt-like lymphoma: 
+      Ganglioglioma NOS: 
+      T-cell lymphoma NOS: 
+      Papillary tumor of the pineal region: 
+      Intraductal papillary adenocarcinoma NOS: 
+      Malignant lymphoma NOS: 
+      Hepatoid adenocarcinoma: 
+      Papillary adenoma NOS: 
+      Carcinoma in situ in adenomatous polyp: 
+      Eosinophilic granuloma: 
+      Medullary adenocarcinoma: 
+      Malignant lymphoma mixed cell type nodular: 
+      Intraductal carcinoma noninfiltrating NOS: 
+      Interstitial cell tumor malignant: 
+      Lymphoma NOS: 
+      Unclassified tumor borderline malignancy: 
+      Adenocarcinoma in tubular adenoma: 
+      Intraductal papillary carcinoma: 
+      Myelocytic leukemia NOS: 
+      Tumor cells NOS: 
+      Liposarcoma NOS: 
+      Interstitial cell tumor benign: 
+      Neoplasm metastatic: 
+      Chronic neutrophilic leukemia: 
+      Bronchiolo-alveolar carcinoma goblet cell type: 
+      Papillary adenocarcinoma follicular variant: 
+      Hepatocarcinoma: 
+      Undifferentiated uterine sarcoma: 
+      Renal cell carcinoma unclassified: 
+      Papillary epidermoid carcinoma: 
+      Pigmented nevus NOS: 
+      Myeloid leukemia NOS: 
+      Esophageal squamous intraepithelial neoplasia (dysplasia) high grade: 
+      Malignant lymphoma large B-cell NOS: 
+      Non-lymphocytic leukemia NOS: 
+      Basal cell adenocarcinoma: 
+      Adult T-cell lymphoma/leukemia: 
+      Mixed pancreatic endocrine and exocrine tumor malignant: 
+      Ependymoma NOS: 
+      Peripheral T-cell lymphoma NOS: 
+      Pulmonary adenomatosis: 
+      Pleomorphic lobular carcinoma: 
+      Paget disease of breast: 
+      Hodgkin paragranuloma NOS: 
+      Malignant melanoma NOS: 
+      Papillary transitional cell carcinoma: 
+      Acute lymphocytic leukemia: 
+      Serous surface papillary carcinoma: 
+      Basal cell tumor: 
+      Chronic myelomonocytic leukemia NOS: 
+      Lymphatic leukemic NOS: 
+      Teratoma NOS: 
+      Malignant lymphoma mixed cell type follicular: 
+      Bronchiolar adenocarcinoma: 
+      Basophil adenocarcinoma: 
+      Non-Hodgkin lymphoma NOS: 
+      Haemangioblastoma: 
+      Intraductal tubular-papillary neoplasm high grade: 
+      Chronic myeloproliferative disease NOS: 
+      Rhabdoid meningioma: 
+      Rhabdoid tumor NOS: 
+      Carcinoma intestinal type: 
+      Classical Hodgkin lymphoma lymphocyte depletion NOS: 
+      Chronic myeloid leukemia NOS: 
+      Melanotic medulloblastoma: 
+      Melanotic neuroectodermal tumor: 
+      Lobular carcinoma in situ NOS: 
+      Mixed small cell carcinoma: 
+      Intradermal nevus: 
+      Bronchiolo-alveolar carcinoma Clara cell: 
+      Papillary squamous cell carcinoma in situ: 
+      Small cell neuroendocrine carcinoma: 
+      Malignant melanoma in precancerous melanosis: 
+      Carcinoma anaplastic NOS: 
+      Dysplastic nevus: 
+      Liposarcoma differentiated: 
+      Combined small cell-squamous cell carcinoma: 
+      Acute lymphatic leukemia: 
+      Glioma malignant: 
+      Adenocarcinoma in situ NOS: 
+      Mucosal-associated lymphoid tissue lymphoma: 
+      Splenic lymphoma with villous lymphocytes: 
+      Large cell carcinoma NOS: 
+      Micropapillary carcinoma NOS: 
+      Undifferentiated spindle cell sarcoma: 
+      Intraepidermal squamous cell carcinoma Bowen type: 
+      Endometrioid adenofibroma NOS: 
+      Medullary carcinoma NOS: 
+      T-cell large granular lymphocytosis: 
+      Intraductal adenocarcinoma noninfiltrating NOS: 
+      Osteosarcoma NOS: 
+      Pancreatobiliary-type carcinoma: 
+      Adenocarcinoid tumor: 
+      Diffuse astrocytoma IDH-mutant: 
+      Medullary osteosarcoma: 
+      Adenocarcinoma intestinal type: 
+      Carcinoma in situ in a polyp NOS: 
+      Carcinosarcoma NOS: 
+      Basal cell adenoma: 
+      Adult T-cell lymphoma: 
+      Lobular adenocarcinoma: 
+      Melanocytic nevus: 
+      Adenocarcinoma metastatic NOS: 
+      Pigmented basal cell carcinoma: 
+      Astrocytoma anaplastic: 
+      Melanoma malignant of soft parts: 
+      Small cell osteosarcoma: 
+      Unclassified tumor uncertain whether benign or malignant: 
+      Transitional cell carcinoma: 
+      Intraductal carcinoma and lobular carcinoma in situ: 
+      Rhabdomyoma NOS: 
+      B-cell lymphocytic leukemia/small lymphocytic lymphoma: 
+      Capillary hemangioma: 
+      Precursor B-cell lymphoblastic leukemia: 
+      Bronchiolo-alveolar carcinoma Clara cell and goblet cell type: 
+      Eosinophil adenoma: 
+      Splenic B-cell lymphoma/leukemia unclassifiable: 
+      Composite Hodgkin and non-Hodgkin lymphoma: 
+      Paget disease and infiltrating duct carcinoma of breast: 
+      Neurofibromatosis NOS: 
+      Hodgkin lymphoma NOS: 
+      Melanoma in situ: 
+      Serous cystadenocarcinoma NOS: 
+      Malignant lymphoma Hodgkin: 
+      Acute lymphoblastic leukemia-lymphoma NOS: 
+      Unclassified tumor malignant: 
+      Adult rhabdomyoma: 
+      Neoplasm uncertain whether benign or malignant: 
+      Chronic myelomonocytic leukemia Type 1: 
+      Duct adenoma NOS: 
+      Neoplasm benign: 
+      Carcinoma undifferentiated NOS: 
+      Malignancy: 
+      Adenocarcinoma in situ mucinous: 
+      Papillary squamous cell carcinoma: 
+      B lymphoblastic leukemia/lymphoma with hyperdiploidy: 
+      Precursor T-cell lymphoblastic leukemia: 
+      Tumor secondary: 
+      Pancreatobiliary neoplasm non-invasive: 
+      Malignant melanoma in giant pigmented nevus: 
+      Squamous cell carcinoma adenoid: 
+      Acute myelomonocytic leukemia: 
+      Bile duct cystadenocarcinoma: 
+      Pancreatic endocrine tumor nonfunctioning: 
+      Pleomorphic adenoma: 
+      B lymphoblastic leukemia/lymphoma with hypodiploidy (Hypodiploid ALL): 
+      Renal cell carcinoma sarcomatoid: 
+      Splenic marginal zone B-cell lymphoma: 
+      Malignant lymphoma large B-cell diffuse NOS: 
+      Infiltrating duct and colloid carcinoma: 
+      Chronic myelomonocytic leukemia Type II: 
+      Duct adenocarcinoma NOS: 
+      Combined/mixed carcinoid and adenocarcinoma: 
+      Haemangiosarcoma: 
+      Acute lymphoid leukemia: 
+      Diffuse astrocytoma IDH-wildtype: 
+      Intraductal tubulopapillary neoplasm: 
+      Acute basophilic leukaemia: 
+      Unclassified tumor benign: 
+      Intraductal micropapillary carcinoma: 
+      Hodgkin granuloma: 
+      Chronic lymphocytic leukemia B-cell type (includes all variants of BCLL): 
+      Pancreatoblastoma: 
+      Bile duct adenocarcinoma: 
+      Meningeal melanocytoma: 
+      Hodgkin lymphoma mixed cellularity NOS: 
+      Infiltrating duct carcinoma NOS: 
+      Esophageal squamous intraepithelial neoplasia (dysplasia) low grade: 
+      Small cell carcinoma NOS: 
+      Inflammatory carcinoma: 
+      Papillary urothelial carcinoma: 
+      Melanotic progonoma: 
+      Central neuroblastoma: 
+      Malignant lymphoma lymphocytic NOS: 
+      Myeloma NOS: 
+      Adenocarcinoma endocervical type: 
+      Adenocarcinoma in situ in a polyp NOS: 
+      Neoplasm malignant uncertain whether primary or metastatic: 
+      Pulmonary artery intimal sarcoma: 
+      Intraepidermal carcinoma NOS: 
+      Papillary serous cystadenoma NOS: 
+      Carcinoma in situ NOS: 
+      Tubular adenoma NOS: 
+      Tubulopapillary adenocarcinoma: 
+      Pancreatic microadenoma: 
+      Acute lymphoblastic leukemia mature B-cell type: 
+      c-ALL: 
+      Acute leukemia Burkitt type: 
+      Cervical intraepithelial neoplasia low grade: 
+      Mixed tumor NOS: 
+      Bronchiolo-alveolar adenocarcinoma NOS: 
+      Myoepithelioma: 
+      Pancreatic endocrine tumor malignant: 
+      Endometrioid adenocarcinoma NOS: 
+      Infiltrating basal cell carcinoma NOS: 
+      Precursor B-cell lymphoblastic lymphoma: 
+      Pleomorphic lobular carcinoma in situ: 
+      Mucous adenocarcinoma: 
+      Meningeal melanoma: 
+      Acute myeloid leukemia minimal differentiation: 
+      Lymphoblastic leukemia NOS: 
+      Melanotic MPNST: 
+      Astrocytoma low grade: 
+      Multiple myeloma: 
+      Papillary renal cell carcinoma: 
+      Medulloblastoma NOS: 
+      Adenocarcinoma in a polyp NOS: 
+      Combined small cell carcinoma: 
+      Bile duct carcinoma: 
+      Chronic granulocytic leukemia NOS: 
+      Juvenile myelomonocytic leukemia: 
+      Neoplasm NOS: 
+      Capillary lymphangioma: 
+      Malignant lymphoma mixed cell type diffuse: 
+      Neoplasm malignant: 
+      Papillary meningioma: 
+      Bile duct cystadenoma: 
+      Malignant melanoma in congenital melanocytic nevus: 
+      Adenocarcinoma diffuse type: 
+      Pancreatic endocrine tumor benign: 
+      Squamous cell carcinoma NOS: 
+      Chronic myelomonocytic leukemia in transformation: 
+      T-cell large granular lymphocytic leukemia: 
+      Basophil adenoma: 
+      Bronchiolar carcinoma: 
+      Tubular carcinoma: 
+      Neurofibrosarcoma: 
+      Adenocarcinoma in situ in adenomatous polyp: 
+      Intravascular B-cell lymphoma: 
+      Pleomorphic liposarcoma: 
+      Tumor metastatic: 
   TumorExtranodalExtensionIndicatorEnum:
     permissible_values:
-      Absent: null
-      Not applicable: null
-      'YES': null
-      unspecified: null
-      No source documentation: null
-      UNKNOWN: null
-      Present: null
-      Present - extensive: null
-      Not sampled or dissected: null
-      Present - minimal: null
-      'NO': null
-      Indeterminate: null
+      Absent: 
+      Not applicable: 
+      'YES': 
+      unspecified: 
+      No source documentation: 
+      UNKNOWN: 
+      Present: 
+      Present - extensive: 
+      Not sampled or dissected: 
+      Present - minimal: 
+      'NO': 
+      Indeterminate: 
   PrecancerousConditionTypeEnum:
     permissible_values:
-      Carcinoma NOS: null
-      Atypical melanocytic proliferation: null
-      Superficial spreading: null
-      Melanoma in situ arising in a giant congenital nevus: null
-      Invasive melanoma: null
-      Invasive melanoma - acral lentiginous: null
-      Melanoma in situ not otherwise classified: null
-      Mild dysplasia: null
-      Adenocarcinoma in situ - non mucinous: null
-      Reserve cell hyperplasia: null
-      Invasive melanoma - nevoid: null
-      No diagnosis possible: null
-      Hamartoma: null
-      Adenocarcinoma in situ - mucinous: null
-      Squamous metaplasia - immature: null
-      Severe dysplasia: null
-      Invasive melanoma - lentigo maligna: null
-      Squamous metaplasia - mature: null
-      Acral-lentiginous: null
-      Invasive melanoma - superficial spreading: null
-      Atypical adenomatous hyperplasia: null
-      Moderate dysplasia: null
-      Atypical Adenomatous Lung Hyperplasia: null
-      Normal WDA: null
-      Other: null
-      Persistent melanoma in situ: null
-      Pancreatic Intraepithelial Neoplasia: null
-      Ductal Carcinoma In Situ: null
-      Pancreatic Intraductal Papillary-Mucinous Neoplasm: null
-      Melanocytic hyperplasia: null
-      Melanoma in situ: null
-      Invasive melanoma - desmoplastic: null
-      Benign tumor NOS: null
-      Lentigo maligna type: null
-      Scar - no residual melanoma: null
-      Invasive melanoma - nodular type: null
-      Prostatic Intraepithelial Neoplasia: null
+      Carcinoma NOS: 
+      Atypical melanocytic proliferation: 
+      Superficial spreading: 
+      Melanoma in situ arising in a giant congenital nevus: 
+      Invasive melanoma: 
+      Invasive melanoma - acral lentiginous: 
+      Melanoma in situ not otherwise classified: 
+      Mild dysplasia: 
+      Adenocarcinoma in situ - non mucinous: 
+      Reserve cell hyperplasia: 
+      Invasive melanoma - nevoid: 
+      No diagnosis possible: 
+      Hamartoma: 
+      Adenocarcinoma in situ - mucinous: 
+      Squamous metaplasia - immature: 
+      Severe dysplasia: 
+      Invasive melanoma - lentigo maligna: 
+      Squamous metaplasia - mature: 
+      Acral-lentiginous: 
+      Invasive melanoma - superficial spreading: 
+      Atypical adenomatous hyperplasia: 
+      Moderate dysplasia: 
+      Atypical Adenomatous Lung Hyperplasia: 
+      Normal WDA: 
+      Other: 
+      Persistent melanoma in situ: 
+      Pancreatic Intraepithelial Neoplasia: 
+      Ductal Carcinoma In Situ: 
+      Pancreatic Intraductal Papillary-Mucinous Neoplasm: 
+      Melanocytic hyperplasia: 
+      Melanoma in situ: 
+      Invasive melanoma - desmoplastic: 
+      Benign tumor NOS: 
+      Lentigo maligna type: 
+      Scar - no residual melanoma: 
+      Invasive melanoma - nodular type: 
+      Prostatic Intraepithelial Neoplasia: 
   IndicatorEnum:
     permissible_values:
-      'Yes': null
-      'No': null
-      unknown: null
+      'Yes': 
+      'No': 
+      unknown: 
   AnaplasiaPresentTypeEnum:
     permissible_values:
-      unknown: null
-      Not Reported: null
-      Equivocal: null
-      Absent: null
-      Present: null
-      Diffuse: null
-      Focal: null
-      Sclerosis: null
+      unknown: 
+      Not Reported: 
+      Equivocal: 
+      Absent: 
+      Present: 
+      Diffuse: 
+      Focal: 
+      Sclerosis: 
