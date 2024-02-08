@@ -1808,6 +1808,11 @@ slots:
     description: Text that describes the kind of disease present in the tumor specimen as related to a specific timepoint (add rows to select multiple values along with timepoints)
     annotations:
     range: TumorTissueTypeEnum
+  TypeContraceptiveUse:
+    title: Type of Contraceptive Use
+    required: false
+    description: Type of contraceptive(s) used within the individual's history.
+    range: Contraceptive
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false

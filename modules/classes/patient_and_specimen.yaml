@@ -37,7 +37,6 @@ classes:
     - PackYearsSmoked
     - AlcoholUse
     - NumberofDrinksPerWeek
-    - ContraceptiveUse
     - AntibioticUse
     - SampleCollectionCenter
     - SampleCollectionYear
