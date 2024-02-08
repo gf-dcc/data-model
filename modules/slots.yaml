@@ -86,8 +86,9 @@ slots:
   AlcoholUse:
     title: Alcohol Use
     required: false
-    description: TBD
+    description: Alcohol use characterization. More quantitative data may be available in NumberofDrinksPerWeek.
     annotations:
+    range: AlcoholUseEnum
   AnalyteType:
     title: Analyte Type
     required: false
@@ -1749,7 +1750,8 @@ slots:
   TobaccoUse:
     title: Tobacco Use
     required: false
-    description: TBD
+    description: Tobacco use characterization. More quantitative data may be available in PackYearsSmoked.
+    range: TobaccoUseEnum
     annotations:
   TobaccoUseperDay:
     title: Tobacco Use per Day

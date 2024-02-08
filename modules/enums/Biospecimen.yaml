@@ -109,3 +109,10 @@ enums:
       Specimen at Room Temperature: 
       Other Shipping Environment: 
       Not Shipped: 
+  MarkerStatus:
+    permissible_values:
+      Strongly Positive:
+      Positive:
+      Weakly Positive:
+      Negative:
+      Equivocal:
