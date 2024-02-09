@@ -47,6 +47,19 @@ classes:
     - SampleCollectionCenter
     - SampleCollectionYear
 
+  BreastAtlasCohort:
+    title: Breast Atlas Cohort
+    required: false
+    description: Group of individuals featured in the breast precancer atlas.
+    slots:
+  
+  OvarianAtlasCohort:
+    title: Ovarian Atlas Cohort
+    required: false
+    description: Group of individuals featured in the ovarian precancer atlas.
+    slots:
+    - MenstrualCyclePhase
+    - TypeContraceptiveUse
 
   PatientExtended:
     is_a: Patient

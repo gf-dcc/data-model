@@ -450,16 +450,6 @@ slots:
     - Breast Atlas Cohort
     - Ovarian Atlas Cohort
     annotations:
-  BreastAtlasCohort:
-    title: Breast Atlas Cohort
-    required: false
-    description: Group of individuals featured in the breast precancer atlas.
-    annotations:
-  OvarianAtlasCohort:
-    title: Ovarian Atlas Cohort
-    required: false
-    description: Group of individuals featured in the ovarian precancer atlas.
-    annotations:
   Comment:
     title: Comment
     required: false
@@ -1038,7 +1028,6 @@ slots:
     description: Phase of the menstrual cycle at patient sample collection.
     range: MenstrualCyclePhaseEnum
     annotations:
-      requiresDependency: Ovarian Atlas Cohort
   MetalIsotopeElement:
     title: Metal Isotope Element
     required: false
@@ -1843,7 +1832,6 @@ slots:
     description: Type of contraceptive(s) used within the individual's history.
     range: Contraceptive
     annotations:
-      requiresDependency: Ovarian Atlas Cohort
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false
