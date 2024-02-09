@@ -7956,9 +7956,6 @@
     "rdfs:label" : "MenstrualCyclePhase",
     "rdfs:comment" : "Phase of the menstrual cycle at patient sample collection.",
     "@type" : "rdfs:Class",
-    "sms:requiresDependency" : [ {
-      "@id" : "bts:OvarianAtlasCohort"
-    } ],
     "sms:displayName" : "MenstrualCyclePhase"
   }, {
     "@id" : "bts:ThresholdforMinimumPassingReads",
@@ -8533,17 +8530,6 @@
     "rdfs:comment" : "The text term used to indicate whether the patient was exposed to secondhand smoke as a child.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "SecondhandSmokeasChild"
-  }, {
-    "@id" : "bts:OvarianAtlasCohort",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Group of individuals featured in the ovarian precancer atlas.",
-    "rdfs:label" : "OvarianAtlasCohort",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "OvarianAtlasCohort",
-    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:PhysicalSizeXUnit",
@@ -9420,9 +9406,6 @@
     "rdfs:label" : "TypeContraceptiveUse",
     "rdfs:comment" : "Type of contraceptive(s) used within the individual's history.",
     "@type" : "rdfs:Class",
-    "sms:requiresDependency" : [ {
-      "@id" : "bts:OvarianAtlasCohort"
-    } ],
     "sms:displayName" : "TypeContraceptiveUse"
   }, {
     "@id" : "bts:SoftwareandVersion",
@@ -9726,17 +9709,6 @@
     "rdfs:comment" : "Does data file contain a Z-stack of images",
     "@type" : "rdfs:Class",
     "sms:displayName" : "Zstack"
-  }, {
-    "@id" : "bts:BreastAtlasCohort",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "Group of individuals featured in the breast precancer atlas.",
-    "rdfs:label" : "BreastAtlasCohort",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastAtlasCohort",
-    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:Chromosome",
@@ -12886,6 +12858,23 @@
     } ],
     "sms:displayName" : "TissueBiospecimenType"
   }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:OvarianAtlasCohort",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "sms:requiresComponent" : null,
+    "rdfs:label" : "OvarianAtlasCohort",
+    "rdfs:comment" : "Group of individuals featured in the ovarian precancer atlas.",
+    "@type" : "rdfs:Class",
+    "sms:requiresDependency" : [ {
+      "@id" : "bts:MenstrualCyclePhase"
+    }, {
+      "@id" : "bts:TypeContraceptiveUse"
+    } ],
+    "sms:displayName" : "OvarianAtlasCohort"
+  }, {
     "rdfs:subClassOf" : [ {
       "@id" : "bts:Patient"
     } ],
@@ -13212,6 +13201,19 @@
       "@id" : "bts:ShippingConditionType"
     } ],
     "sms:displayName" : "BloodBiospecimenType"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:BreastAtlasCohort",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "sms:requiresComponent" : null,
+    "rdfs:label" : "BreastAtlasCohort",
+    "rdfs:comment" : "Group of individuals featured in the breast precancer atlas.",
+    "@type" : "rdfs:Class",
+    "sms:requiresDependency" : [ ],
+    "sms:displayName" : "BreastAtlasCohort"
   }, {
     "@id" : "bts:Skinofupperlimbandshoulder",
     "@type" : "rdfs:Class",
