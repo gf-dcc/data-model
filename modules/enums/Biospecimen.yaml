@@ -1,111 +1,118 @@
 enums:
   TotalVolumeUnitEnum:
     permissible_values:
-      mL: null
-      mm^3: null
-      cm^2: null
+      mL: 
+      mm^3: 
+      cm^2: 
   IschemicTemperatureEnum:
     permissible_values:
-      unknown: null
-      Liquid Nitrogen: null
-      Warm Ischemia: null
-      Cold Ischemia: null
-      Ambient air: null
-      4C wet ice: null
-      Negative -20C: null
-      Dry Ice: null
+      unknown: 
+      Liquid Nitrogen: 
+      Warm Ischemia: 
+      Cold Ischemia: 
+      Ambient air: 
+      4C wet ice: 
+      Negative -20C: 
+      Dry Ice: 
   AnalyteTypeEnum:
     permissible_values:
-      Tissue Section Analyte: null
-      Serum Analyte: null
-      PBMCs or Plasma or Serum Analyte: null
-      Plasma: null
-      Tissue Block Analyte: null
-      cfDNA Analyte: null
-      DNA Analyte: null
-      RNA Analyte: null
-      cDNA Libraries Analyte: null
-      PBMCs: null
-      Total RNA Analyte: null
+      Tissue Section Analyte: 
+      Serum Analyte: 
+      PBMCs or Plasma or Serum Analyte: 
+      Plasma: 
+      Tissue Block Analyte: 
+      cfDNA Analyte: 
+      DNA Analyte: 
+      RNA Analyte: 
+      cDNA Libraries Analyte: 
+      PBMCs: 
+      Total RNA Analyte: 
   DimensionsUnitEnum:
     permissible_values:
-      cm: null
-      mm: null
+      cm: 
+      mm: 
   BiospecimenTypeEnum:
     permissible_values:
-      Fluids Biospecimen Type: null
-      Sputum Biospecimen Type: null
-      Tissue Biospecimen Type: null
-      Mouth Rinse Biospecimen Type: null
-      Ascites Biospecimen Type: null
-      Cells Biospecimen Type: null
-      Blood Biospecimen Type: null
-      Analyte Biospecimen Type: null
-      Bone Marrow Biospecimen Type: null
-      Urine Biospecimen Type: null
-      Stool Biospecimen Type: null
+      Fluids Biospecimen Type: 
+      Sputum Biospecimen Type: 
+      Tissue Biospecimen Type: 
+      Mouth Rinse Biospecimen Type: 
+      Ascites Biospecimen Type: 
+      Cells Biospecimen Type: 
+      Blood Biospecimen Type: 
+      Analyte Biospecimen Type: 
+      Bone Marrow Biospecimen Type: 
+      Urine Biospecimen Type: 
+      Stool Biospecimen Type: 
   PreservationMethodEnum:
     permissible_values:
-      Negative 80 Deg C: null
-      Not Reported: null
-      Cryopreservation in dry ice - dead tissue: null
-      unknown: null
-      Fresh: null
-      Cryopreservation in liquid nitrogen - dead tissue: null
-      Formalin fixed paraffin embedded - FFPE: null
-      Archival: null
-      Formalin fixed-buffered: null
-      Formalin fixed-unbuffered: null
-      Cryopreserved: null
-      Frozen: null
-      Fresh dissociated and single cell sorted: null
-      Fresh dissociated and single cell sorted into plates in NP40 buffer: null
-      Methacarn fixed paraffin embedded - MFPE: null
-      Fresh dissociated: null
-      Fresh dissociated and single cell sorted into plates: null
-      Cryopreservation in liquid nitrogen - live cells: null
-      OCT: null
-      Snap Frozen: null
-      Liquid Nitrogen: null
+      Negative 80 Deg C: 
+      Not Reported: 
+      Cryopreservation in dry ice - dead tissue: 
+      unknown: 
+      Fresh: 
+      Cryopreservation in liquid nitrogen - dead tissue: 
+      Formalin fixed paraffin embedded - FFPE: 
+      Archival: 
+      Formalin fixed-buffered: 
+      Formalin fixed-unbuffered: 
+      Cryopreserved: 
+      Frozen: 
+      Fresh dissociated and single cell sorted: 
+      Fresh dissociated and single cell sorted into plates in NP40 buffer: 
+      Methacarn fixed paraffin embedded - MFPE: 
+      Fresh dissociated: 
+      Fresh dissociated and single cell sorted into plates: 
+      Cryopreservation in liquid nitrogen - live cells: 
+      OCT: 
+      Snap Frozen: 
+      Liquid Nitrogen: 
   TumorTissueTypeEnum:
     permissible_values:
-      Normal: null
-      Normal adjacent: null
-      Recurrent: null
-      Post therapy neoadjuvant: null
-      Normal distant: null
-      Post therapy adjuvant: null
-      Post therapy: null
-      Atypia - hyperplasia: null
-      Not Otherwise Specified: null
-      Metastatic: null
-      Local recurrence: null
-      Premalignant - in situ: null
-      Additional Primary: null
-      Premalignant: null
-      Primary: null
+      Normal: 
+      Normal adjacent: 
+      Recurrent: 
+      Post therapy neoadjuvant: 
+      Normal distant: 
+      Post therapy adjuvant: 
+      Post therapy: 
+      Atypia - hyperplasia: 
+      Not Otherwise Specified: 
+      Metastatic: 
+      Local recurrence: 
+      Premalignant - in situ: 
+      Additional Primary: 
+      Premalignant: 
+      Primary: 
   SpecimenLateralityEnum:
     permissible_values:
-      Not Applicable: null
-      unknown: null
-      Not Reported: null
-      Bilateral: null
-      Left: null
-      Right: null
+      Not Applicable: 
+      unknown: 
+      Not Reported: 
+      Bilateral: 
+      Left: 
+      Right: 
   SlideChargeTypeEnum:
     permissible_values:
-      Other: null
-      Uncharged: null
-      Charged: null
-      Coverslip: null
-      Not applicable: null
+      Other: 
+      Uncharged: 
+      Charged: 
+      Coverslip: 
+      Not applicable: 
   ShippingConditionTypeEnum:
     permissible_values:
-      Liquid Nitrogen: null
-      Dry Ice: null
-      Ambient Pack: null
-      Cold Pack: null
-      Ice Pack: null
-      Specimen at Room Temperature: null
-      Other Shipping Environment: null
-      Not Shipped: null
+      Liquid Nitrogen: 
+      Dry Ice: 
+      Ambient Pack: 
+      Cold Pack: 
+      Ice Pack: 
+      Specimen at Room Temperature: 
+      Other Shipping Environment: 
+      Not Shipped: 
+  MarkerStatus:
+    permissible_values:
+      Strongly Positive:
+      Positive:
+      Weakly Positive:
+      Negative:
+      Equivocal:

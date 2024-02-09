@@ -30,13 +30,13 @@ slots:
   Age:
     title: Age
     required: true
-    description: Age of individual as a positive number such as 40 or 56.5. If not available, cannot leave blank and must use "unknown".
+    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value "Unknown".
     annotations:
-      validationRules: regex match ^\d*\.?\d*$|^unknown$
+      validationRules: regex match ^\d*\.?\d*$|^Unknown$
   AgeAtMenarche:
     title: Age At Menarche
     required: false
-    description: TBD
+    description: Age at menarche.
     annotations:
   AgeIsObfuscated:
     title: Age Is Obfuscated
@@ -44,10 +44,10 @@ slots:
     description: The age of the patient has been modified for compliance reasons. The actual age differs from what is reported. Other date intervals for this patient may also be modified.
     annotations:
     range: AgeIsObfuscatedEnum
-  AgeatDiagnosis:
+  AgeAtDiagnosis:
     title: Age at Diagnosis
     required: false
-    description: Age at the time of diagnosis expressed in number of days since birth.
+    description: If applicable and known, age at the time of diagnosis in years. 
     annotations:
   AlcoholDaysPerWeek:
     title: Alcohol Days Per Week
@@ -86,8 +86,9 @@ slots:
   AlcoholUse:
     title: Alcohol Use
     required: false
-    description: TBD
+    description: Alcohol use characterization. More quantitative data may be available in NumberofDrinksPerWeek.
     annotations:
+    range: AlcoholUseEnum
   AnalyteType:
     title: Analyte Type
     required: false
@@ -141,7 +142,7 @@ slots:
   BMI:
     title: BMI
     required: false
-    description: TBD
+    description: Body mass index. Note that more direct height/weight information are preferred, if available.
     annotations:
   BiospecimenDimension1:
     title: Biospecimen Dimension 1
@@ -417,12 +418,12 @@ slots:
   ClassBRCA1:
     title: Class BRCA1
     required: false
-    description: TBD
+    description: BRCA1 grouping.
     annotations:
   ClassBRCA2:
     title: Class BRCA2
     required: false
-    description: TBD
+    description: BRCA2 grouping.
     annotations:
   ClinicalBiospecimenType:
     title: Clinical Biospecimen Type
@@ -440,6 +441,14 @@ slots:
     title: Clone
     required: false
     description: TBD
+    annotations:
+  Cohort:
+    title: Cohort
+    required: true
+    description: Label for cohort/atlas that this individual belongs to.
+    enum_range:
+    - Breast Atlas Cohort
+    - Ovarian Atlas Cohort
     annotations:
   Comment:
     title: Comment
@@ -531,7 +540,8 @@ slots:
   DiagnosisStatusType:
     title: Diagnosis Status Type
     required: false
-    description: TBD
+    description: Diagnosis status to provide information on any history with cancer (if applicable).
+    range: DiagnosisStatusTypeEnum
     annotations:
   Dilution:
     title: Dilution
@@ -1015,7 +1025,8 @@ slots:
   MenstrualCyclePhase:
     title: Menstrual Cycle Phase
     required: false
-    description: TBD
+    description: Phase of the menstrual cycle at patient sample collection.
+    range: MenstrualCyclePhaseEnum
     annotations:
   MetalIsotopeElement:
     title: Metal Isotope Element
@@ -1298,12 +1309,18 @@ slots:
     description: Text term that represents the method used to preserve the sample.
     annotations:
     range: PreservationMethodEnum
+  PreviousDiagnosis:
+    title: Previous Diagnosis
+    required: false
+    description: Name of cancer corresponding to a previous diagnosis.
+    annotations:
+    range: DiagnosisEnum
   PrimaryDiagnosis:
     title: Primary Diagnosis
     required: false
-    description: Text term used to describe the patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
+    description: If applicable, patient's histologic diagnosis, as described by the World Health Organization's (WHO) International Classification of Diseases for Oncology (ICD-O).
     annotations:
-    range: PrimaryDiagnosisEnum
+    range: DiagnosisEnum
   PriorInvasiveBreastDisease:
     title: Prior Invasive Breast Disease
     required: false
@@ -1451,12 +1468,12 @@ slots:
   SampleCollectionCenter:
     title: Sample Collection Center
     required: false
-    description: TBD
+    description: Name of center/institution/site where the individual contributed samples.
     annotations:
   SampleCollectionYear:
     title: Sample Collection Year
     required: false
-    description: TBD
+    description: Year the sample was collected from the individual.
     annotations:
   SampleID:
     title: Sample ID
@@ -1468,6 +1485,11 @@ slots:
     required: false
     description: TBD
     annotations:
+  SurgeryReason:
+    title: Surgery Reason
+    required: false
+    description: Reason for individual obtaining surgery
+    range: SurgeryReasonEnum
   SatelliteMetastasisPresentIndicator:
     title: Satellite Metastasis Present Indicator
     required: false
@@ -1736,7 +1758,8 @@ slots:
   TobaccoUse:
     title: Tobacco Use
     required: false
-    description: TBD
+    description: Tobacco use characterization. More quantitative data may be available in PackYearsSmoked.
+    range: TobaccoUseEnum
     annotations:
   TobaccoUseperDay:
     title: Tobacco Use per Day
@@ -1803,6 +1826,12 @@ slots:
     description: Text that describes the kind of disease present in the tumor specimen as related to a specific timepoint (add rows to select multiple values along with timepoints)
     annotations:
     range: TumorTissueTypeEnum
+  TypeContraceptiveUse:
+    title: Type of Contraceptive Use
+    required: false
+    description: Type of contraceptive(s) used within the individual's history.
+    range: Contraceptive
+    annotations:
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false

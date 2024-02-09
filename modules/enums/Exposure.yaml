@@ -1,57 +1,63 @@
 enums:
-  AlcoholTypeEnum:
-    permissible_values:
-      Other: 
-      unknown: 
-      Not Reported: 
-      Beer: 
-      Liquor: 
-      Wine: 
-  TobaccoSmokingStatusEnum:
-    permissible_values:
-      Not Reported: 
-      unknown: 
-      Current Reformed Smoker: 
-      Current Smoker: 
-      Current Reformed Smoker for > 15 yrs: 
-      Duration Not Specified: 
-      Smoking history not documented: 
-      Lifelong Non-Smoker: 
-      Current Reformed Smoker for < or = 15 yrs: 
-  SmokingFrequencyEnum:
-    permissible_values:
-      unknown: 
-      Every day: 
-      Some days: 
   AlcoholExposureEnum:
     permissible_values:
-      Yes - Alcohol Exposure: 
-      Not Reported: 
-      No - Alcohol Exposure: 
-  HistoryEnum:
-    permissible_values:
-      'Yes': 
-      'No': 
-      unknown: 
-      Not Reported: 
+      No - Alcohol Exposure:
+      Not Reported:
+      Yes - Alcohol Exposure:
   AlcoholIntensityEnum:
     permissible_values:
-      unknown: 
-      Not Reported: 
-      Drinker: 
-      Heavy Drinker: 
-      Lifelong Non-Drinker: 
-      Non-Drinker: 
-      Occasional Drinker: 
+      Drinker:
+      Heavy Drinker:
+      Lifelong Non-Drinker:
+      Non-Drinker:
+      Not Reported:
+      Occasional Drinker:
+      unknown:
+  AlcoholTypeEnum:
+    permissible_values:
+      Beer:
+      Liquor:
+      Not Reported:
+      Other:
+      Wine:
+      unknown:
+  AlcoholUseEnum:
+    permissible_values:
+      Former Drinker:
+      Never Drinker:
+      Not Reported:
+      Unknown:
   AntibioticUseEnum:
     permissible_values:
-      'No': 
-      unknown: 
-      Yes - within last monthh: 
-      Yes - within last 1-6 months: 
-      Yes - over 6 months ago: 
+      'No':
+      Yes - over 6 months ago:
+      Yes - within last 1-6 months:
+      Yes - within last monthh:
+      Unknown:
+  HistoryEnum:
+    permissible_values:
+      'No':
+      Not Reported:
+      'Yes':
+      unknown:
   SmokingExposureEnum:
     permissible_values:
-      Yes - Smoking Exposure: 
-      Not Reported: 
-      No - Smoking Exposure: 
+      No - Smoking Exposure:
+      Not Reported:
+      Yes - Smoking Exposure:
+  SmokingFrequencyEnum:
+    permissible_values:
+      Every day:
+      Some days:
+      unknown:
+  TobaccoUseEnum:
+    permissible_values:
+      Current Smoker:
+      Current Reformed Smoker:
+      Current Reformed Smoker for < or = 15 yrs:
+      Current Reformed Smoker for > 15 yrs:
+      Duration Not Specified:
+      Never Smoker:
+      Not Reported:
+      Unknown:
+

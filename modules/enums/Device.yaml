@@ -34,3 +34,22 @@ enums:
       Revio:
       Ultima Genomics UG100:
       Unknown:
+
+  Contraceptive:
+    permissible_values:
+      Oral:
+      Oral (estrogen):
+      Oral (progesterone):
+      Male sterilization:
+      Condoms:
+      Patch:
+      Vaginal ring:
+      IUD:
+      IUD (progesterone):
+      Implant:
+      Implant (progesterone):
+      Injection (progesterone):
+      Bilateral tubal ligation:
+      Natural family planning:
+      Unknown:
+
