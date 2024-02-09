@@ -470,6 +470,12 @@ slots:
     required: false
     description: TBD
     annotations:
+  ContraceptiveUseIndicator:
+    title: Contraceptive Use Indicator
+    required: false
+    description: Indicates whether individual has used some type of contraception.
+    range: BooleanEnum
+    annotations:
   CopyNumber:
     title: Copy Number
     required: false
@@ -1832,6 +1838,7 @@ slots:
     description: Type of contraceptive(s) used within the individual's history.
     range: Contraceptive
     annotations:
+      validationRules: 'list like'
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false

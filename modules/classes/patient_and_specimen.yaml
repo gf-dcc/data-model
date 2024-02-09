@@ -59,6 +59,7 @@ classes:
     description: Group of individuals featured in the ovarian precancer atlas.
     slots:
     - MenstrualCyclePhase
+    - ContraceptiveUseIndicator
     - TypeContraceptiveUse
 
   PatientExtended:
