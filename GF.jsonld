@@ -12792,9 +12792,11 @@
     }, {
       "@id" : "bts:AgeAtMenarche"
     }, {
+      "@id" : "bts:MenopauseStatus"
+    }, {
       "@id" : "bts:MenstrualCyclePhase"
     }, {
-      "@id" : "bts:MenopauseStatus"
+      "@id" : "bts:ContraceptiveUseIndicator"
     }, {
       "@id" : "bts:TypeContraceptiveUse"
     }, {
