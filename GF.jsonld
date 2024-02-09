@@ -626,6 +626,8 @@
       "@id" : "bts:Yes"
     }, {
       "@id" : "bts:No"
+    }, {
+      "@id" : "bts:NotDocumented"
     } ],
     "rdfs:label" : "CryopreservedCellsinSample",
     "rdfs:comment" : "Indicate if library preparation was based on revived frozen cells.",
@@ -7510,11 +7512,11 @@
     }, {
       "@id" : "bts:Endometriosis"
     }, {
-      "@id" : "bts:UterineFibroids"
-    }, {
       "@id" : "bts:UterineFibroids+Endometriosis"
     }, {
       "@id" : "bts:UterineFibroids+Adenomyosis"
+    }, {
+      "@id" : "bts:CervicalDysplasia"
     }, {
       "@id" : "bts:CesareanSection"
     }, {
@@ -7523,6 +7525,12 @@
       "@id" : "bts:AdnexalMass"
     }, {
       "@id" : "bts:PelvicMass"
+    }, {
+      "@id" : "bts:UterineFibroids"
+    }, {
+      "@id" : "bts:UterineLipoleiomyoma"
+    }, {
+      "@id" : "bts:UterineProlapse"
     }, {
       "@id" : "bts:Unknown"
     } ],
@@ -8410,6 +8418,24 @@
     "rdfs:comment" : "The order in which the individual planes of data are interleaved.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "DimensionOrder"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ContraceptiveUseIndicator",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Yes"
+    }, {
+      "@id" : "bts:No"
+    }, {
+      "@id" : "bts:NotDocumented"
+    } ],
+    "rdfs:label" : "ContraceptiveUseIndicator",
+    "rdfs:comment" : "Indicates whether individual has used some type of contraception.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ContraceptiveUseIndicator"
   }, {
     "@id" : "bts:Parity",
     "@type" : "rdfs:Class",
@@ -9372,6 +9398,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:false",
+    "sms:validationRules" : [ "list like" ],
     "schema:rangeIncludes" : [ {
       "@id" : "bts:Oral"
     }, {
@@ -9401,7 +9428,7 @@
     }, {
       "@id" : "bts:Naturalfamilyplanning"
     }, {
-      "@id" : "bts:Unknown"
+      "@id" : "bts:NotDocumented"
     } ],
     "rdfs:label" : "TypeContraceptiveUse",
     "rdfs:comment" : "Type of contraceptive(s) used within the individual's history.",
@@ -9664,7 +9691,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:true",
-    "sms:validationRules" : [ "regex match ^\\d*\\.?\\d*$|^Unknown$" ],
+    "sms:validationRules" : [ "regex match \\d*\\.?\\d*$|^Unknown$" ],
     "rdfs:label" : "Age",
     "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value \"Unknown\".",
     "@type" : "rdfs:Class",
@@ -12871,6 +12898,8 @@
     "sms:requiresDependency" : [ {
       "@id" : "bts:MenstrualCyclePhase"
     }, {
+      "@id" : "bts:ContraceptiveUseIndicator"
+    }, {
       "@id" : "bts:TypeContraceptiveUse"
     } ],
     "sms:displayName" : "OvarianAtlasCohort"
@@ -15050,6 +15079,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Skin",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:UterineProlapse",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "UterineProlapse",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Uterine Prolapse",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:BRAFmutation",
@@ -17637,6 +17677,17 @@
     "sms:displayName" : "Esophageal glandular dysplasia (intraepithelial neoplasia) high grade",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:NotDocumented",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "NotDocumented",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Not Documented",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Occipitallobe",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -20121,6 +20172,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Cervical intraepithelial neoplasia grade III",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:CervicalDysplasia",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "CervicalDysplasia",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Cervical Dysplasia",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Overlappinglesionofsmallintestine",
@@ -27040,6 +27102,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "WXS",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:UterineLipoleiomyoma",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "UterineLipoleiomyoma",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Uterine Lipoleiomyoma",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:NeutrophilBands",
