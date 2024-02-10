@@ -9691,7 +9691,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:true",
-    "sms:validationRules" : [ "regex match \\d*\\.?\\d*$|^Unknown$" ],
+    "sms:validationRules" : [ "regex match \\d+\\.?\\d+$|^Unknown$" ],
     "rdfs:label" : "Age",
     "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value \"Unknown\".",
     "@type" : "rdfs:Class",
