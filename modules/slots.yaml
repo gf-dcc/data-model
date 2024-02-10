@@ -32,7 +32,7 @@ slots:
     required: true
     description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value "Unknown".
     annotations:
-      validationRules: regex match \d*\.?\d*$|^Unknown$
+      validationRules: regex match \d+\.?\d+$|^Unknown$
   AgeAtMenarche:
     title: Age At Menarche
     required: false
