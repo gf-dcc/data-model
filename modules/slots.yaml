@@ -30,9 +30,9 @@ slots:
   Age:
     title: Age
     required: true
-    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value "Unknown".
+    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5.
     annotations:
-      validationRules: regex match \d+\.?\d+$|^Unknown$
+    #  validationRules: regex match \d+\.?\d+$|^Unknown$ # This currently doesn't work with GoogleSheets
   AgeAtMenarche:
     title: Age At Menarche
     required: false
