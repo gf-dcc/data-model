@@ -4989,7 +4989,7 @@
     }, {
       "@id" : "bts:miRNAsizefractionation"
     }, {
-      "@id" : "bts:other"
+      "@id" : "bts:othermethod"
     } ],
     "rdfs:label" : "LibrarySelectionMethod",
     "rdfs:comment" : "How RNA molecules are isolated",
@@ -10631,13 +10631,21 @@
     }, {
       "@id" : "bts:Oral(progesterone)"
     }, {
+      "@id" : "bts:Oral(estrogen/progesterone)"
+    }, {
       "@id" : "bts:Malesterilization"
     }, {
       "@id" : "bts:Condoms"
     }, {
+      "@id" : "bts:Diaphragm"
+    }, {
       "@id" : "bts:Patch"
     }, {
+      "@id" : "bts:Patch(progesterone)"
+    }, {
       "@id" : "bts:Vaginalring"
+    }, {
+      "@id" : "bts:Vaginalring(estrogen/progesterone)"
     }, {
       "@id" : "bts:IUD"
     }, {
@@ -10652,6 +10660,8 @@
       "@id" : "bts:Bilateraltuballigation"
     }, {
       "@id" : "bts:Naturalfamilyplanning"
+    }, {
+      "@id" : "bts:Rhythm"
     }, {
       "@id" : "bts:NotDocumented"
     } ],
@@ -15152,6 +15162,17 @@
     "sms:displayName" : "Mixed squamous cell and glandular papilloma",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Rhythm",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Rhythm",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Rhythm",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Portugal",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -15271,6 +15292,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Parotid gland",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Vaginalring(estrogen/progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Vaginalring(estrogen/progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Vaginal ring (estrogen/progesterone)",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Atypicalhyperplasia",
@@ -25899,6 +25931,17 @@
     "sms:displayName" : "Intraductal carcinoma NOS",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Patch(progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Patch(progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Patch (progesterone)",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Non-invasivelowgradeserouscarcinoma",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -26832,6 +26875,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Extensive Subtotal",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Diaphragm",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Diaphragm",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Diaphragm",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:PaternalGrandparent",
@@ -28020,6 +28074,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Pro-T ALL",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Oral(estrogen/progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Oral(estrogen/progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Oral (estrogen/progesterone)",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:GREM1mutation",
@@ -30836,17 +30901,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "chr13",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:other",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "other",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "other",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:AmericanIndianorAlaskaNative",
@@ -35599,6 +35653,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Vestibule of mouth",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:othermethod",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "othermethod",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "other method",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Uterineadnexa",
