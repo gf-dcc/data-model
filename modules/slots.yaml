@@ -782,7 +782,6 @@ slots:
     required: false
     description: TBD
     annotations:
-    range: MarkerStatus
   Height:
     title: Height
     required: false
