@@ -8678,29 +8678,16 @@
     "sms:displayName" : "WorkflowLink",
     "sms:required" : "sms:false"
   }, {
-    "rdfs:subClassOf" : [ ],
     "@id" : "bts:HER2Status",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HER2Status",
+    "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:required" : "sms:false",
-    "schema:rangeIncludes" : [ {
-      "@id" : "bts:StronglyPositive"
-    }, {
-      "@id" : "bts:Positive"
-    }, {
-      "@id" : "bts:WeaklyPositive"
-    }, {
-      "@id" : "bts:Negative"
-    }, {
-      "@id" : "bts:Equivocal"
-    }, {
-      "@id" : "bts:Unknown"
-    } ],
-    "rdfs:label" : "HER2Status",
-    "rdfs:comment" : "TBD",
-    "@type" : "rdfs:Class",
-    "sms:displayName" : "HER2Status"
+    "sms:displayName" : "HER2Status",
+    "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:PassedQC",
