@@ -947,7 +947,7 @@ slots:
     - random
     - rRNA depletion
     - miRNA size fractionation
-    - other
+    - other method
   LinkedDatasets:
     title: Linked Datasets
     required: false
