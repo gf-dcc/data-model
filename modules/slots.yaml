@@ -589,6 +589,7 @@ slots:
     required: false
     description: TBD
     annotations:
+    range: MarkerStatus
   Ecigvape30dayusenum:
     title: Ecig vape 30 day use num
     required: false
@@ -781,6 +782,7 @@ slots:
     required: false
     description: TBD
     annotations:
+    range: MarkerStatus
   Height:
     title: Height
     required: false
@@ -1195,6 +1197,7 @@ slots:
     required: false
     description: TBD
     annotations:
+    range: MarkerStatus
   PackYearsSmoked:
     title: Pack Years Smoked
     required: false
