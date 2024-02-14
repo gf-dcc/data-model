@@ -9,6 +9,1205 @@
   },
   "@id" : "http://schema.biothings.io/",
   "@graph" : [ {
+    "@id" : "bts:IndicatorEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IndicatorEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "IndicatorEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCancerAssessmentTestsEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCancerAssessmentTestsEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCancerAssessmentTestsEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:HereditaryCancerPredispositionSyndromeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HereditaryCancerPredispositionSyndromeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "HereditaryCancerPredispositionSyndromeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCarcinomaDetectionMethodTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCarcinomaDetectionMethodTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCarcinomaDetectionMethodTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:CancerAssociatedGeneMutationsEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "CancerAssociatedGeneMutationsEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "CancerAssociatedGeneMutationsEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:RelativewithCancerHistoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "RelativewithCancerHistoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "RelativewithCancerHistoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:EthnicityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "EthnicityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "EthnicityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ImmersionEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ImmersionEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ImmersionEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCancerGenomicTestPerformedEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCancerGenomicTestPerformedEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCancerGenomicTestPerformedEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:FileFormatEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "FileFormatEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "FileFormatEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DimensionOrderEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DimensionOrderEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DimensionOrderEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SexEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SexEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SexEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AlcoholIntensityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AlcoholIntensityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AlcoholIntensityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ImagingAssayTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ImagingAssayTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ImagingAssayTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PassedQCEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PassedQCEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PassedQCEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ExtentofTumorResectionEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ExtentofTumorResectionEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ExtentofTumorResectionEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ReverseTranscriptionPrimerEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ReverseTranscriptionPrimerEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ReverseTranscriptionPrimerEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TobaccoUseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TobaccoUseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TobaccoUseEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:CountryofResidenceEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "CountryofResidenceEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "CountryofResidenceEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:OncotypeRiskGroupEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "OncotypeRiskGroupEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "OncotypeRiskGroupEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PathogenicityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PathogenicityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PathogenicityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:LabTestsforMMRStatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LabTestsforMMRStatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LabTestsforMMRStatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:LibraryConstructionMethodEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LibraryConstructionMethodEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryConstructionMethodEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BisulfiteConversionKitEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BisulfiteConversionKitEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BisulfiteConversionKitEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TotalVolumeUnitEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TotalVolumeUnitEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TotalVolumeUnitEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BooleanEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BooleanEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BooleanEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MolecularAnalysisMethodEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MolecularAnalysisMethodEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MolecularAnalysisMethodEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ClonalityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ClonalityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ClonalityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:IschemicTemperatureEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "IschemicTemperatureEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "IschemicTemperatureEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AgeIsObfuscatedEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AgeIsObfuscatedEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AgeIsObfuscatedEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:LaboratoryTestEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LaboratoryTestEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LaboratoryTestEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SiteofResectionorBiopsyEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SiteofResectionorBiopsyEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SiteofResectionorBiopsyEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AlcoholUseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AlcoholUseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AlcoholUseEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:VascularInvasionTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "VascularInvasionTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "VascularInvasionTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:StainingIntensityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "StainingIntensityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "StainingIntensityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MutationalSignaturesEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MutationalSignaturesEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MutationalSignaturesEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PriorInvasiveBreastDiseaseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PriorInvasiveBreastDiseaseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PriorInvasiveBreastDiseaseEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MismatchRepairSystemStatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MismatchRepairSystemStatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MismatchRepairSystemStatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AnalyteTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AnalyteTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AnalyteTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ModeofCancerDetectionEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ModeofCancerDetectionEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ModeofCancerDetectionEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DiagnosisEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DiagnosisEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DiagnosisEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastBiopsyProcedureFindingTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastBiopsyProcedureFindingTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastBiopsyProcedureFindingTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AlcoholTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AlcoholTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AlcoholTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:VitalStatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "VitalStatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "VitalStatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DimensionsUnitEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DimensionsUnitEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DimensionsUnitEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MarkerStatus",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MarkerStatus",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MarkerStatus",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TestAnalyteTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TestAnalyteTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TestAnalyteTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ZygosityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ZygosityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ZygosityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:NucleicAcidSourceEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "NucleicAcidSourceEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "NucleicAcidSourceEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:OvarianCancerSurgicalOutcomeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "OvarianCancerSurgicalOutcomeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "OvarianCancerSurgicalOutcomeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Contraceptive",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Contraceptive",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Contraceptive",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SequencingStrategy",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SequencingStrategy",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SequencingStrategy",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:RaceEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "RaceEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "RaceEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCarcinomaSurgicalProcedureNameEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCarcinomaSurgicalProcedureNameEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCarcinomaSurgicalProcedureNameEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SmokingFrequencyEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SmokingFrequencyEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SmokingFrequencyEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PixelTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PixelTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PixelTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SpikeInEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SpikeInEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SpikeInEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ReadEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ReadEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ReadEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCarcinomaHER2StatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCarcinomaHER2StatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCarcinomaHER2StatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DiagnosisStatusTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DiagnosisStatusTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DiagnosisStatusTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ClinicalBiospecimenTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ClinicalBiospecimenTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ClinicalBiospecimenTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:RelationshipPrimaryDiagnosisEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "RelationshipPrimaryDiagnosisEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "RelationshipPrimaryDiagnosisEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MenstrualCyclePhaseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MenstrualCyclePhaseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MenstrualCyclePhaseEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BIRADSMammographyBreastDensityCategoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BIRADSMammographyBreastDensityCategoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BIRADSMammographyBreastDensityCategoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SurgeryReasonEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SurgeryReasonEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SurgeryReasonEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SingleNucleusBufferEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SingleNucleusBufferEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SingleNucleusBufferEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BiospecimenTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BiospecimenTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BiospecimenTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AntibioticUseEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AntibioticUseEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AntibioticUseEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:HormoneTherapyBreastCancerPreventionIndicatorEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HormoneTherapyBreastCancerPreventionIndicatorEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "HormoneTherapyBreastCancerPreventionIndicatorEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PreservationMethodEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PreservationMethodEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PreservationMethodEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TumorExtranodalExtensionIndicatorEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TumorExtranodalExtensionIndicatorEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TumorExtranodalExtensionIndicatorEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TseriesEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TseriesEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TseriesEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:DissociationMethodEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "DissociationMethodEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "DissociationMethodEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:LibraryLayoutEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "LibraryLayoutEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "LibraryLayoutEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCancerAllredEstrogenReceptorScoreEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCancerAllredEstrogenReceptorScoreEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCancerAllredEstrogenReceptorScoreEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PrecancerousConditionTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PrecancerousConditionTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PrecancerousConditionTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:VariantTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "VariantTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "VariantTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:RelationshipTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "RelationshipTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "RelationshipTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SmokingExposureEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SmokingExposureEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SmokingExposureEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:OvarianCancerPlatinumStatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "OvarianCancerPlatinumStatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "OvarianCancerPlatinumStatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:HistoneFamilyEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HistoneFamilyEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "HistoneFamilyEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ChromosomeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ChromosomeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ChromosomeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:OvarianCancerHistologicSubtypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "OvarianCancerHistologicSubtypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "OvarianCancerHistologicSubtypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MicroscopyUnitEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MicroscopyUnitEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MicroscopyUnitEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:HistoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HistoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "HistoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:CauseofDeathEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "CauseofDeathEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "CauseofDeathEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TestResultEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TestResultEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TestResultEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AntigenEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AntigenEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AntigenEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:MolecularConsequenceEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "MolecularConsequenceEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "MolecularConsequenceEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ReceptorStatusEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ReceptorStatusEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ReceptorStatusEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TumorTissueTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TumorTissueTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TumorTissueTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastQuadrantSiteEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastQuadrantSiteEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastQuadrantSiteEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:PloidyEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "PloidyEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "PloidyEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SpecimenLateralityEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SpecimenLateralityEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SpecimenLateralityEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:FamilyMemberVitalStatusIndicatorEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "FamilyMemberVitalStatusIndicatorEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "FamilyMemberVitalStatusIndicatorEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SequencingPlatformEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SequencingPlatformEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SequencingPlatformEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:VariantOriginEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "VariantOriginEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "VariantOriginEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AnaplasiaPresentTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AnaplasiaPresentTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AnaplasiaPresentTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:TranspositionReactionEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "TranspositionReactionEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "TranspositionReactionEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:EndBiasEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "EndBiasEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "EndBiasEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:HistoneVariantEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "HistoneVariantEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "HistoneVariantEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastCarcinomaHistologyCategoryEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastCarcinomaHistologyCategoryEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastCarcinomaHistologyCategoryEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:BreastImagingPerformedTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BreastImagingPerformedTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BreastImagingPerformedTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:AlcoholExposureEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "AlcoholExposureEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "AlcoholExposureEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SlideChargeTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SlideChargeTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SlideChargeTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:ShippingConditionTypeEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "ShippingConditionTypeEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "ShippingConditionTypeEnum",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:SingleCellIsolationMethodEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "SingleCellIsolationMethodEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "SingleCellIsolationMethodEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:YearsSmoked",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "Numeric value (or unknown) to represent the number of years a person has been smoking.",
@@ -626,6 +1825,8 @@
       "@id" : "bts:Yes"
     }, {
       "@id" : "bts:No"
+    }, {
+      "@id" : "bts:NotDocumented"
     } ],
     "rdfs:label" : "CryopreservedCellsinSample",
     "rdfs:comment" : "Indicate if library preparation was based on revived frozen cells.",
@@ -3788,7 +4989,7 @@
     }, {
       "@id" : "bts:miRNAsizefractionation"
     }, {
-      "@id" : "bts:other"
+      "@id" : "bts:othermethod"
     } ],
     "rdfs:label" : "LibrarySelectionMethod",
     "rdfs:comment" : "How RNA molecules are isolated",
@@ -7366,16 +8567,29 @@
     "sms:displayName" : "Concentration",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:PRStatus",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PRStatus",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:PRStatus",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "PRStatus",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:StronglyPositive"
+    }, {
+      "@id" : "bts:Positive"
+    }, {
+      "@id" : "bts:WeaklyPositive"
+    }, {
+      "@id" : "bts:Negative"
+    }, {
+      "@id" : "bts:Equivocal"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "PRStatus",
+    "rdfs:comment" : "TBD",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "PRStatus"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:IschemicTemperature",
@@ -7510,11 +8724,11 @@
     }, {
       "@id" : "bts:Endometriosis"
     }, {
-      "@id" : "bts:UterineFibroids"
-    }, {
       "@id" : "bts:UterineFibroids+Endometriosis"
     }, {
       "@id" : "bts:UterineFibroids+Adenomyosis"
+    }, {
+      "@id" : "bts:CervicalDysplasia"
     }, {
       "@id" : "bts:CesareanSection"
     }, {
@@ -7523,6 +8737,12 @@
       "@id" : "bts:AdnexalMass"
     }, {
       "@id" : "bts:PelvicMass"
+    }, {
+      "@id" : "bts:UterineFibroids"
+    }, {
+      "@id" : "bts:UterineLipoleiomyoma"
+    }, {
+      "@id" : "bts:UterineProlapse"
     }, {
       "@id" : "bts:Unknown"
     } ],
@@ -8019,16 +9239,29 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "AntibioticUse"
   }, {
-    "@id" : "bts:ERStatus",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ERStatus",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ERStatus",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "ERStatus",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:StronglyPositive"
+    }, {
+      "@id" : "bts:Positive"
+    }, {
+      "@id" : "bts:WeaklyPositive"
+    }, {
+      "@id" : "bts:Negative"
+    }, {
+      "@id" : "bts:Equivocal"
+    }, {
+      "@id" : "bts:Unknown"
+    } ],
+    "rdfs:label" : "ERStatus",
+    "rdfs:comment" : "TBD",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ERStatus"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:MolecularConsequence",
@@ -8410,6 +9643,24 @@
     "rdfs:comment" : "The order in which the individual planes of data are interleaved.",
     "@type" : "rdfs:Class",
     "sms:displayName" : "DimensionOrder"
+  }, {
+    "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ContraceptiveUseIndicator",
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Yes"
+    }, {
+      "@id" : "bts:No"
+    }, {
+      "@id" : "bts:NotDocumented"
+    } ],
+    "rdfs:label" : "ContraceptiveUseIndicator",
+    "rdfs:comment" : "Indicates whether individual has used some type of contraception.",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ContraceptiveUseIndicator"
   }, {
     "@id" : "bts:Parity",
     "@type" : "rdfs:Class",
@@ -9372,6 +10623,7 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:required" : "sms:false",
+    "sms:validationRules" : [ "list like" ],
     "schema:rangeIncludes" : [ {
       "@id" : "bts:Oral"
     }, {
@@ -9379,13 +10631,21 @@
     }, {
       "@id" : "bts:Oral(progesterone)"
     }, {
+      "@id" : "bts:Oral(estrogen/progesterone)"
+    }, {
       "@id" : "bts:Malesterilization"
     }, {
       "@id" : "bts:Condoms"
     }, {
+      "@id" : "bts:Diaphragm"
+    }, {
       "@id" : "bts:Patch"
     }, {
+      "@id" : "bts:Patch(progesterone)"
+    }, {
       "@id" : "bts:Vaginalring"
+    }, {
+      "@id" : "bts:Vaginalring(estrogen/progesterone)"
     }, {
       "@id" : "bts:IUD"
     }, {
@@ -9401,7 +10661,9 @@
     }, {
       "@id" : "bts:Naturalfamilyplanning"
     }, {
-      "@id" : "bts:Unknown"
+      "@id" : "bts:Rhythm"
+    }, {
+      "@id" : "bts:NotDocumented"
     } ],
     "rdfs:label" : "TypeContraceptiveUse",
     "rdfs:comment" : "Type of contraceptive(s) used within the individual's history.",
@@ -9658,17 +10920,16 @@
     "@type" : "rdfs:Class",
     "sms:displayName" : "DiagnosisStatusType"
   }, {
-    "rdfs:subClassOf" : [ ],
     "@id" : "bts:Age",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5.",
+    "rdfs:label" : "Age",
+    "rdfs:subClassOf" : [ ],
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:required" : "sms:true",
-    "sms:validationRules" : [ "regex match ^\\d*\\.?\\d*$|^Unknown$" ],
-    "rdfs:label" : "Age",
-    "rdfs:comment" : "Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value \"Unknown\".",
-    "@type" : "rdfs:Class",
-    "sms:displayName" : "Age"
+    "sms:displayName" : "Age",
+    "sms:required" : "sms:true"
   }, {
     "rdfs:subClassOf" : [ ],
     "@id" : "bts:TobaccoUse",
@@ -9879,1205 +11140,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "CancerIncidenceLocation",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:IndicatorEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IndicatorEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "IndicatorEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCancerAssessmentTestsEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCancerAssessmentTestsEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCancerAssessmentTestsEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:HereditaryCancerPredispositionSyndromeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "HereditaryCancerPredispositionSyndromeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "HereditaryCancerPredispositionSyndromeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCarcinomaDetectionMethodTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCarcinomaDetectionMethodTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCarcinomaDetectionMethodTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:CancerAssociatedGeneMutationsEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "CancerAssociatedGeneMutationsEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "CancerAssociatedGeneMutationsEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:RelativewithCancerHistoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "RelativewithCancerHistoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "RelativewithCancerHistoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:EthnicityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "EthnicityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "EthnicityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ImmersionEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ImmersionEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ImmersionEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCancerGenomicTestPerformedEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCancerGenomicTestPerformedEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCancerGenomicTestPerformedEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:FileFormatEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "FileFormatEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "FileFormatEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:DimensionOrderEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DimensionOrderEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "DimensionOrderEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SexEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SexEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SexEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AlcoholIntensityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AlcoholIntensityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AlcoholIntensityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ImagingAssayTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ImagingAssayTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ImagingAssayTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PassedQCEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PassedQCEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PassedQCEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ExtentofTumorResectionEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ExtentofTumorResectionEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ExtentofTumorResectionEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ReverseTranscriptionPrimerEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ReverseTranscriptionPrimerEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ReverseTranscriptionPrimerEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TobaccoUseEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TobaccoUseEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TobaccoUseEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:CountryofResidenceEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "CountryofResidenceEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "CountryofResidenceEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:OncotypeRiskGroupEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "OncotypeRiskGroupEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "OncotypeRiskGroupEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PathogenicityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PathogenicityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PathogenicityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:LabTestsforMMRStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LabTestsforMMRStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LabTestsforMMRStatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:LibraryConstructionMethodEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LibraryConstructionMethodEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LibraryConstructionMethodEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BisulfiteConversionKitEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BisulfiteConversionKitEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BisulfiteConversionKitEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TotalVolumeUnitEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TotalVolumeUnitEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TotalVolumeUnitEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BooleanEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BooleanEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BooleanEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MolecularAnalysisMethodEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MolecularAnalysisMethodEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MolecularAnalysisMethodEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ClonalityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ClonalityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ClonalityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "InvasiveDuctalBreastCarcinomaHistologicCategoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:IschemicTemperatureEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "IschemicTemperatureEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "IschemicTemperatureEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AgeIsObfuscatedEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AgeIsObfuscatedEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AgeIsObfuscatedEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:LaboratoryTestEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LaboratoryTestEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LaboratoryTestEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SiteofResectionorBiopsyEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SiteofResectionorBiopsyEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SiteofResectionorBiopsyEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AlcoholUseEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AlcoholUseEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AlcoholUseEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:VascularInvasionTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "VascularInvasionTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "VascularInvasionTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:StainingIntensityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "StainingIntensityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "StainingIntensityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MutationalSignaturesEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MutationalSignaturesEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MutationalSignaturesEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PriorInvasiveBreastDiseaseEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PriorInvasiveBreastDiseaseEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PriorInvasiveBreastDiseaseEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MismatchRepairSystemStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MismatchRepairSystemStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MismatchRepairSystemStatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AnalyteTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AnalyteTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AnalyteTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ModeofCancerDetectionEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ModeofCancerDetectionEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ModeofCancerDetectionEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:DiagnosisEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DiagnosisEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "DiagnosisEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastBiopsyProcedureFindingTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastBiopsyProcedureFindingTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastBiopsyProcedureFindingTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AlcoholTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AlcoholTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AlcoholTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:VitalStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "VitalStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "VitalStatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "InvasiveLobularBreastCarcinomaHistologicCategoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:DimensionsUnitEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DimensionsUnitEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "DimensionsUnitEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MarkerStatus",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MarkerStatus",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MarkerStatus",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TestAnalyteTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TestAnalyteTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TestAnalyteTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ZygosityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ZygosityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ZygosityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:NucleicAcidSourceEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "NucleicAcidSourceEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "NucleicAcidSourceEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:OvarianCancerSurgicalOutcomeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "OvarianCancerSurgicalOutcomeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "OvarianCancerSurgicalOutcomeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:Contraceptive",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "Contraceptive",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "Contraceptive",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SequencingStrategy",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SequencingStrategy",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SequencingStrategy",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:RaceEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "RaceEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "RaceEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCarcinomaSurgicalProcedureNameEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCarcinomaSurgicalProcedureNameEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCarcinomaSurgicalProcedureNameEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SmokingFrequencyEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SmokingFrequencyEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SmokingFrequencyEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PixelTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PixelTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PixelTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SpikeInEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SpikeInEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SpikeInEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ReadEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ReadEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ReadEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCarcinomaHER2StatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCarcinomaHER2StatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCarcinomaHER2StatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:DiagnosisStatusTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DiagnosisStatusTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "DiagnosisStatusTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ClinicalBiospecimenTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ClinicalBiospecimenTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ClinicalBiospecimenTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:RelationshipPrimaryDiagnosisEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "RelationshipPrimaryDiagnosisEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "RelationshipPrimaryDiagnosisEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MenstrualCyclePhaseEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MenstrualCyclePhaseEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MenstrualCyclePhaseEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BIRADSMammographyBreastDensityCategoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BIRADSMammographyBreastDensityCategoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BIRADSMammographyBreastDensityCategoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SurgeryReasonEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SurgeryReasonEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SurgeryReasonEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SingleNucleusBufferEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SingleNucleusBufferEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SingleNucleusBufferEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BiospecimenTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BiospecimenTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BiospecimenTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AntibioticUseEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AntibioticUseEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AntibioticUseEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:HormoneTherapyBreastCancerPreventionIndicatorEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "HormoneTherapyBreastCancerPreventionIndicatorEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "HormoneTherapyBreastCancerPreventionIndicatorEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PreservationMethodEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PreservationMethodEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PreservationMethodEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TumorExtranodalExtensionIndicatorEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TumorExtranodalExtensionIndicatorEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TumorExtranodalExtensionIndicatorEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TseriesEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TseriesEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TseriesEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:DissociationMethodEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "DissociationMethodEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "DissociationMethodEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:LibraryLayoutEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "LibraryLayoutEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "LibraryLayoutEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCancerAllredEstrogenReceptorScoreEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCancerAllredEstrogenReceptorScoreEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCancerAllredEstrogenReceptorScoreEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PrecancerousConditionTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PrecancerousConditionTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PrecancerousConditionTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:VariantTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "VariantTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "VariantTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:RelationshipTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "RelationshipTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "RelationshipTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SmokingExposureEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SmokingExposureEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SmokingExposureEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:OvarianCancerPlatinumStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "OvarianCancerPlatinumStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "OvarianCancerPlatinumStatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:HistoneFamilyEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "HistoneFamilyEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "HistoneFamilyEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ChromosomeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ChromosomeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ChromosomeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:OvarianCancerHistologicSubtypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "OvarianCancerHistologicSubtypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "OvarianCancerHistologicSubtypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MicroscopyUnitEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MicroscopyUnitEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MicroscopyUnitEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:HistoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "HistoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "HistoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:CauseofDeathEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "CauseofDeathEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "CauseofDeathEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TestResultEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TestResultEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TestResultEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AntigenEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AntigenEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AntigenEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:MolecularConsequenceEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "MolecularConsequenceEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "MolecularConsequenceEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ReceptorStatusEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ReceptorStatusEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ReceptorStatusEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TumorTissueTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TumorTissueTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TumorTissueTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastQuadrantSiteEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastQuadrantSiteEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastQuadrantSiteEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:PloidyEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "PloidyEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "PloidyEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SpecimenLateralityEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SpecimenLateralityEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SpecimenLateralityEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:FamilyMemberVitalStatusIndicatorEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "FamilyMemberVitalStatusIndicatorEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "FamilyMemberVitalStatusIndicatorEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SequencingPlatformEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SequencingPlatformEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SequencingPlatformEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:VariantOriginEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "VariantOriginEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "VariantOriginEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AnaplasiaPresentTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AnaplasiaPresentTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AnaplasiaPresentTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:TranspositionReactionEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "TranspositionReactionEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "TranspositionReactionEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:EndBiasEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "EndBiasEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "EndBiasEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:HistoneVariantEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "HistoneVariantEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "HistoneVariantEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastCarcinomaHistologyCategoryEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastCarcinomaHistologyCategoryEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastCarcinomaHistologyCategoryEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:BreastImagingPerformedTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "BreastImagingPerformedTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "BreastImagingPerformedTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:AlcoholExposureEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "AlcoholExposureEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "AlcoholExposureEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SlideChargeTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SlideChargeTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SlideChargeTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:ShippingConditionTypeEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "ShippingConditionTypeEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "ShippingConditionTypeEnum",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:SingleCellIsolationMethodEnum",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "SingleCellIsolationMethodEnum",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "SingleCellIsolationMethodEnum",
     "sms:required" : "sms:false"
   }, {
     "rdfs:subClassOf" : [ {
@@ -12765,9 +12827,11 @@
     }, {
       "@id" : "bts:AgeAtMenarche"
     }, {
+      "@id" : "bts:MenopauseStatus"
+    }, {
       "@id" : "bts:MenstrualCyclePhase"
     }, {
-      "@id" : "bts:MenopauseStatus"
+      "@id" : "bts:ContraceptiveUseIndicator"
     }, {
       "@id" : "bts:TypeContraceptiveUse"
     }, {
@@ -12870,6 +12934,8 @@
     "@type" : "rdfs:Class",
     "sms:requiresDependency" : [ {
       "@id" : "bts:MenstrualCyclePhase"
+    }, {
+      "@id" : "bts:ContraceptiveUseIndicator"
     }, {
       "@id" : "bts:TypeContraceptiveUse"
     } ],
@@ -15052,6 +15118,17 @@
     "sms:displayName" : "Skin",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:UterineProlapse",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "UterineProlapse",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Uterine Prolapse",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:BRAFmutation",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -15083,6 +15160,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Mixed squamous cell and glandular papilloma",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Rhythm",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Rhythm",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Rhythm",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Portugal",
@@ -15204,6 +15292,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Parotid gland",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Vaginalring(estrogen/progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Vaginalring(estrogen/progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Vaginal ring (estrogen/progesterone)",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Atypicalhyperplasia",
@@ -17635,6 +17734,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Esophageal glandular dysplasia (intraepithelial neoplasia) high grade",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:NotDocumented",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "NotDocumented",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Not Documented",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Occipitallobe",
@@ -20121,6 +20231,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Cervical intraepithelial neoplasia grade III",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:CervicalDysplasia",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "CervicalDysplasia",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Cervical Dysplasia",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Overlappinglesionofsmallintestine",
@@ -25810,6 +25931,17 @@
     "sms:displayName" : "Intraductal carcinoma NOS",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Patch(progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Patch(progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Patch (progesterone)",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:Non-invasivelowgradeserouscarcinoma",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -26745,6 +26877,17 @@
     "sms:displayName" : "Extensive Subtotal",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:Diaphragm",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Diaphragm",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Diaphragm",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:PaternalGrandparent",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -27040,6 +27183,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "WXS",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:UterineLipoleiomyoma",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "UterineLipoleiomyoma",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Uterine Lipoleiomyoma",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:NeutrophilBands",
@@ -27920,6 +28074,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Pro-T ALL",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:Oral(estrogen/progesterone)",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "Oral(estrogen/progesterone)",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "Oral (estrogen/progesterone)",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:GREM1mutation",
@@ -30736,17 +30901,6 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "chr13",
-    "sms:required" : "sms:false"
-  }, {
-    "@id" : "bts:other",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "TBD",
-    "rdfs:label" : "other",
-    "rdfs:subClassOf" : [ ],
-    "schema:isPartOf" : {
-      "@id" : "http://schema.biothings.io/"
-    },
-    "sms:displayName" : "other",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:AmericanIndianorAlaskaNative",
@@ -35499,6 +35653,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Vestibule of mouth",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:othermethod",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "othermethod",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "other method",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Uterineadnexa",

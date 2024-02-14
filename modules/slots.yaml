@@ -30,9 +30,9 @@ slots:
   Age:
     title: Age
     required: true
-    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5. If not available/missing, fill in with value "Unknown".
+    description: Age (in years) of individual when samples are contributed/biobanked, as a positive number such as 40 or 56.5.
     annotations:
-      validationRules: regex match ^\d*\.?\d*$|^Unknown$
+    #  validationRules: regex match \d+\.?\d+$|^Unknown$ # This currently doesn't work with GoogleSheets
   AgeAtMenarche:
     title: Age At Menarche
     required: false
@@ -470,6 +470,12 @@ slots:
     required: false
     description: TBD
     annotations:
+  ContraceptiveUseIndicator:
+    title: Contraceptive Use Indicator
+    required: false
+    description: Indicates whether individual has used some type of contraception.
+    range: BooleanEnum
+    annotations:
   CopyNumber:
     title: Copy Number
     required: false
@@ -583,6 +589,7 @@ slots:
     required: false
     description: TBD
     annotations:
+    range: MarkerStatus
   Ecigvape30dayusenum:
     title: Ecig vape 30 day use num
     required: false
@@ -940,7 +947,7 @@ slots:
     - random
     - rRNA depletion
     - miRNA size fractionation
-    - other
+    - other method
   LinkedDatasets:
     title: Linked Datasets
     required: false
@@ -1189,6 +1196,7 @@ slots:
     required: false
     description: TBD
     annotations:
+    range: MarkerStatus
   PackYearsSmoked:
     title: Pack Years Smoked
     required: false
@@ -1832,6 +1840,7 @@ slots:
     description: Type of contraceptive(s) used within the individual's history.
     range: Contraceptive
     annotations:
+      validationRules: 'list like'
   TypeofSmokeExposure:
     title: Type of Smoke Exposure
     required: false

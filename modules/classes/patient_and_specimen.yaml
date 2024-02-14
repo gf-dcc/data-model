@@ -27,8 +27,9 @@ classes:
     - Gravidity
     - Parity
     - AgeAtMenarche
-    - MenstrualCyclePhase
     - MenopauseStatus
+    - MenstrualCyclePhase
+    - ContraceptiveUseIndicator
     - TypeContraceptiveUse
     - DiagnosisStatusType
     - PreviousDiagnosis
@@ -59,6 +60,7 @@ classes:
     description: Group of individuals featured in the ovarian precancer atlas.
     slots:
     - MenstrualCyclePhase
+    - ContraceptiveUseIndicator
     - TypeContraceptiveUse
 
   PatientExtended:

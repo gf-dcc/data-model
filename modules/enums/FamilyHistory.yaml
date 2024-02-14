@@ -1,307 +1,307 @@
 enums:
   FamilyMemberVitalStatusIndicatorEnum:
     permissible_values:
-      unknown: null
-      Not Reported: null
-      Vital Status Alive: null
-      Vital Status Dead: null
+      unknown: 
+      Not Reported: 
+      Vital Status Alive: 
+      Vital Status Dead: 
   RelationshipPrimaryDiagnosisEnum:
     permissible_values:
-      Prostate Cancer: null
-      Testicular Cancer: null
-      Cancer: null
-      Kaposi Sarcoma: null
-      Bone Cancer: null
-      Liver Cancer: null
-      CNS Cancer: null
-      Uterine Cancer: null
-      Not Reported: null
-      Lymph Node Cancer: null
-      Rectal Cancer: null
-      Wilms Tumor: null
-      unknown: null
-      Osteosarcoma: null
-      Chondrosarcoma: null
-      Mesothelioma: null
-      Gastric Cancer: null
-      Cervical Cancer: null
-      Ewing Sarcoma: null
-      Glioblastoma: null
-      Skin Cancer: null
-      Tonsillar Cancer: null
-      Bile Duct Cancer: null
-      Tongue Cancer: null
-      Laryngeal Cancer: null
-      Melanoma: null
-      Hematologic Cancer: null
-      Throat Cancer: null
-      Colorectal Cancer: null
-      Kidney Cancer: null
-      Spleen Cancer: null
-      Breast Cancer: null
-      Leukemia: null
-      Sarcoma: null
-      Blood Cancer: null
-      Neuroblastoma: null
-      Gynecologic Cancer: null
-      Rhabdomyosarcoma: null
-      Pancreas Cancer: null
-      Adrenal Gland Cancer: null
-      Thyroid Cancer: null
-      Multiple Myeloma: null
-      Lung Cancer: null
-      Basal Cell Cancer: null
-      Brain Cancer: null
-      Esophageal Cancer: null
-      Lymphoma: null
-      Ovarian Cancer: null
-      Gallbladder Cancer: null
-      Head and Neck Cancer: null
-      Bladder Cancer: null
+      Prostate Cancer: 
+      Testicular Cancer: 
+      Cancer: 
+      Kaposi Sarcoma: 
+      Bone Cancer: 
+      Liver Cancer: 
+      CNS Cancer: 
+      Uterine Cancer: 
+      Not Reported: 
+      Lymph Node Cancer: 
+      Rectal Cancer: 
+      Wilms Tumor: 
+      unknown: 
+      Osteosarcoma: 
+      Chondrosarcoma: 
+      Mesothelioma: 
+      Gastric Cancer: 
+      Cervical Cancer: 
+      Ewing Sarcoma: 
+      Glioblastoma: 
+      Skin Cancer: 
+      Tonsillar Cancer: 
+      Bile Duct Cancer: 
+      Tongue Cancer: 
+      Laryngeal Cancer: 
+      Melanoma: 
+      Hematologic Cancer: 
+      Throat Cancer: 
+      Colorectal Cancer: 
+      Kidney Cancer: 
+      Spleen Cancer: 
+      Breast Cancer: 
+      Leukemia: 
+      Sarcoma: 
+      Blood Cancer: 
+      Neuroblastoma: 
+      Gynecologic Cancer: 
+      Rhabdomyosarcoma: 
+      Pancreas Cancer: 
+      Adrenal Gland Cancer: 
+      Thyroid Cancer: 
+      Multiple Myeloma: 
+      Lung Cancer: 
+      Basal Cell Cancer: 
+      Brain Cancer: 
+      Esophageal Cancer: 
+      Lymphoma: 
+      Ovarian Cancer: 
+      Gallbladder Cancer: 
+      Head and Neck Cancer: 
+      Bladder Cancer: 
   RelationshipTypeEnum:
     permissible_values:
-      Grand Niece: null
-      Foster Brother: null
-      Grand Nephew: null
-      Stepfather: null
-      Grandparent: null
-      Uncle: null
-      Natural Mother: null
-      Step Child: null
-      Daughter-in-law: null
-      Maternal Grandfather: null
-      Full Brother: null
-      Grandchild: null
-      Half Sibling: null
-      Grandfather: null
-      Not Reported: null
-      Father-in-law: null
-      Natural Brother: null
-      Maternal Half Brother: null
-      Paternal Half Sister: null
-      Fraternal Twin Sibling: null
-      Natural Sister: null
-      Legal Guardian: null
-      unknown: null
-      Foster Father: null
-      Paternal Grandmother: null
-      Husband: null
-      Brother-in-law: null
-      Twin Sibling: null
-      Mother: null
-      Natural Sibling: null
-      Brother: null
-      Wife: null
-      Paternal Grandfather: null
-      Great Grandchild: null
-      Mother-in-law: null
-      Granddaughter: null
-      Domestic Partner: null
-      Natural Grandparent: null
-      Fraternal Twin Brother: null
-      Cousin: null
-      Maternal Half Sister: null
-      Stepsister: null
-      Full Sister: null
-      Nephew: null
-      Niece Second Degree Relative: null
-      Paternal Uncle: null
-      Maternal Great Grandparent: null
-      Stepmother: null
-      Half Sister: null
-      Natural Grandfather: null
-      Paternal Great Uncle: null
-      Foster Sister: null
-      Natural Daughter: null
-      Foster Daughter: null
-      Step Sibling: null
-      First Cousin Once Removed: null
-      Adoptive Father: null
-      Paternal First Cousin Once Removed: null
-      Paternal Half Sibling: null
-      Spouse: null
-      Maternal Great Aunt: null
-      Female Cousin: null
-      Sister-in-law: null
-      Half Brother: null
-      Sibling: null
-      Maternal First Cousin Once Removed: null
-      Sister: null
-      Other: null
-      Natural Father: null
-      Stepdaughter: null
-      Natural Son: null
-      Natural Grandchild: null
-      Adoptive Brother: null
-      Stepson: null
-      Son: null
-      Refused: null
-      Child: null
-      Grandson: null
-      Ward: null
-      Aunt: null
-      Adopted Daughter: null
-      Maternal Great Uncle: null
-      Parent: null
-      Paternal Aunt: null
-      Adoptive Mother: null
-      First Cousin: null
-      Identical Twin Brother: null
-      Identical Twin Sister: null
-      Male Cousin: null
-      Son-in-law: null
-      Paternal First Cousin: null
-      Natural Grandmother: null
-      Maternal Grandparent: null
-      Foster Mother: null
-      Niece: null
-      Maternal Grandmother: null
-      Unrelated: null
-      Identical Twin Sibling: null
-      Paternal Great Grandparent: null
-      Fraternal Twin Sister: null
-      Adoptive Sister: null
-      Natural Child: null
-      Maternal Aunt: null
-      Grandmother: null
-      Foster Son: null
-      Maternal Uncle: null
-      Paternal Great Aunt: null
-      Paternal Half Brother: null
-      Daughter: null
-      Father: null
-      Paternal Grandparent: null
-      Natural Parent: null
-      Maternal Half Sibling: null
-      Adopted Son: null
-      Maternal First Cousin: null
-      Stepbrother: null
+      Grand Niece: 
+      Foster Brother: 
+      Grand Nephew: 
+      Stepfather: 
+      Grandparent: 
+      Uncle: 
+      Natural Mother: 
+      Step Child: 
+      Daughter-in-law: 
+      Maternal Grandfather: 
+      Full Brother: 
+      Grandchild: 
+      Half Sibling: 
+      Grandfather: 
+      Not Reported: 
+      Father-in-law: 
+      Natural Brother: 
+      Maternal Half Brother: 
+      Paternal Half Sister: 
+      Fraternal Twin Sibling: 
+      Natural Sister: 
+      Legal Guardian: 
+      unknown: 
+      Foster Father: 
+      Paternal Grandmother: 
+      Husband: 
+      Brother-in-law: 
+      Twin Sibling: 
+      Mother: 
+      Natural Sibling: 
+      Brother: 
+      Wife: 
+      Paternal Grandfather: 
+      Great Grandchild: 
+      Mother-in-law: 
+      Granddaughter: 
+      Domestic Partner: 
+      Natural Grandparent: 
+      Fraternal Twin Brother: 
+      Cousin: 
+      Maternal Half Sister: 
+      Stepsister: 
+      Full Sister: 
+      Nephew: 
+      Niece Second Degree Relative: 
+      Paternal Uncle: 
+      Maternal Great Grandparent: 
+      Stepmother: 
+      Half Sister: 
+      Natural Grandfather: 
+      Paternal Great Uncle: 
+      Foster Sister: 
+      Natural Daughter: 
+      Foster Daughter: 
+      Step Sibling: 
+      First Cousin Once Removed: 
+      Adoptive Father: 
+      Paternal First Cousin Once Removed: 
+      Paternal Half Sibling: 
+      Spouse: 
+      Maternal Great Aunt: 
+      Female Cousin: 
+      Sister-in-law: 
+      Half Brother: 
+      Sibling: 
+      Maternal First Cousin Once Removed: 
+      Sister: 
+      Other: 
+      Natural Father: 
+      Stepdaughter: 
+      Natural Son: 
+      Natural Grandchild: 
+      Adoptive Brother: 
+      Stepson: 
+      Son: 
+      Refused: 
+      Child: 
+      Grandson: 
+      Ward: 
+      Aunt: 
+      Adopted Daughter: 
+      Maternal Great Uncle: 
+      Parent: 
+      Paternal Aunt: 
+      Adoptive Mother: 
+      First Cousin: 
+      Identical Twin Brother: 
+      Identical Twin Sister: 
+      Male Cousin: 
+      Son-in-law: 
+      Paternal First Cousin: 
+      Natural Grandmother: 
+      Maternal Grandparent: 
+      Foster Mother: 
+      Niece: 
+      Maternal Grandmother: 
+      Unrelated: 
+      Identical Twin Sibling: 
+      Paternal Great Grandparent: 
+      Fraternal Twin Sister: 
+      Adoptive Sister: 
+      Natural Child: 
+      Maternal Aunt: 
+      Grandmother: 
+      Foster Son: 
+      Maternal Uncle: 
+      Paternal Great Aunt: 
+      Paternal Half Brother: 
+      Daughter: 
+      Father: 
+      Paternal Grandparent: 
+      Natural Parent: 
+      Maternal Half Sibling: 
+      Adopted Son: 
+      Maternal First Cousin: 
+      Stepbrother: 
   HereditaryCancerPredispositionSyndromeEnum:
     permissible_values:
-      SDH associated renal cancer: null
-      Constitutional mismatch repair deficiency: null
-      Cirrhosis unknown etiology: null
-      Beckwith-Wiedemann: null
-      Hereditary melanoma: null
-      Not Reported: null
-      Gorlin syndrome: null
-      von Hippel-Lindau Syndrome: null
-      Tuberous sclerosis complex: null
-      Rhabdoid tumor predisposition syndrome type I: null
-      unknown: null
-      Tyrosinemia: null
-      Familial gastrointestinal stromal tumor: null
-      Not Applicable: null
-      Li-Fraumeni syndrome: null
-      Fanconi anemia: null
-      Turcot syndrome: null
-      Attenuated familial adenomatous polyposis: null
-      BAP1 mutant disease: null
-      Lynch syndrome: null
-      Hereditary paraganglioma–pheochromocytoma syndrome: null
-      Nevoid basal cell carcinoma syndrome: null
-      Multiple endocrine neoplasia type II: null
-      Rubinstein-Taybi syndrome: null
-      Cowden syndrome: null
-      Hereditary renal oncocytoma: null
-      Hereditary papillary RCC: null
-      Peutz–Jeghers syndrome: null
-      Familial adenomatous polyposis: null
-      Biliary disorder: null
-      MUTYH-associated polyposis: null
-      Rhabdoid tumor predisposition syndrome type II: null
-      Hereditary retinoblastoma: null
-      Glycogen Storage Disease: null
-      Carney complex: null
-      Hereditary diffuse gastric cancer: null
-      Juvenile polyposis syndrome: null
-      Hereditary mixed polyposis syndrome: null
-      Serrated polyposis syndrome: null
-      Familial renal cancer: null
-      Hereditary papillary renal cell carcinoma: null
-      Hereditary leiomyoma-renal cell carcinoma: null
-      Multiple endocrine neoplasia type I: null
-      Birt-Hogg-Dube syndrome: null
-      Familial pancreatic cancer: null
-      Hereditary breast–ovarian cancer syndrome: null
-      Familial prostate cancer: null
-      Melanoma–astrocytoma syndrome: null
-      Alpha-1 antitrypsin: null
+      SDH associated renal cancer: 
+      Constitutional mismatch repair deficiency: 
+      Cirrhosis unknown etiology: 
+      Beckwith-Wiedemann: 
+      Hereditary melanoma: 
+      Not Reported: 
+      Gorlin syndrome: 
+      von Hippel-Lindau Syndrome: 
+      Tuberous sclerosis complex: 
+      Rhabdoid tumor predisposition syndrome type I: 
+      unknown: 
+      Tyrosinemia: 
+      Familial gastrointestinal stromal tumor: 
+      Not Applicable: 
+      Li-Fraumeni syndrome: 
+      Fanconi anemia: 
+      Turcot syndrome: 
+      Attenuated familial adenomatous polyposis: 
+      BAP1 mutant disease: 
+      Lynch syndrome: 
+      Hereditary paraganglioma–pheochromocytoma syndrome: 
+      Nevoid basal cell carcinoma syndrome: 
+      Multiple endocrine neoplasia type II: 
+      Rubinstein-Taybi syndrome: 
+      Cowden syndrome: 
+      Hereditary renal oncocytoma: 
+      Hereditary papillary RCC: 
+      Peutz–Jeghers syndrome: 
+      Familial adenomatous polyposis: 
+      Biliary disorder: 
+      MUTYH-associated polyposis: 
+      Rhabdoid tumor predisposition syndrome type II: 
+      Hereditary retinoblastoma: 
+      Glycogen Storage Disease: 
+      Carney complex: 
+      Hereditary diffuse gastric cancer: 
+      Juvenile polyposis syndrome: 
+      Hereditary mixed polyposis syndrome: 
+      Serrated polyposis syndrome: 
+      Familial renal cancer: 
+      Hereditary papillary renal cell carcinoma: 
+      Hereditary leiomyoma-renal cell carcinoma: 
+      Multiple endocrine neoplasia type I: 
+      Birt-Hogg-Dube syndrome: 
+      Familial pancreatic cancer: 
+      Hereditary breast–ovarian cancer syndrome: 
+      Familial prostate cancer: 
+      Melanoma–astrocytoma syndrome: 
+      Alpha-1 antitrypsin: 
   RelativewithCancerHistoryEnum:
     permissible_values:
-      Yes - Cancer History Relative: null
-      unknown: null
-      Not Reported: null
-      None: null
+      Yes - Cancer History Relative: 
+      unknown: 
+      Not Reported: 
+      None: 
   CancerAssociatedGeneMutationsEnum:
     permissible_values:
-      PMS2 mutation: null
-      POT1 mutation: null
-      TP53 mutation: null
-      H3K27M mutation: null
-      SMARCA4 mutation: null
-      SDHD mutation: null
-      BRCA1 mutation: null
-      CHK mutation: null
-      RB1 mutation: null
-      H3G34R/V mutation: null
-      SDHC mutation: null
-      SDHB mutation: null
-      TSC2 mutation: null
-      Not Reported: null
-      HOXB13 mutation: null
-      NF1 mutation: null
-      VHL mutation: null
-      BAP1 mutation: null
-      SETD2 mutation: null
-      BRCA1 and 2 mutation: null
-      unknown: null
-      PTEN mutation: null
-      Not Applicable: null
-      STK11 mutation: null
-      PAX5 mutation: null
-      RET mutation: null
-      NF2 mutation: null
-      ETV6 mutation: null
-      PolD mutation: null
-      IKZF1 mutation: null
-      PALB2 mutation: null
-      SDHAF2 mutation: null
-      EGFR mutation: null
-      PDGFRA mutation: null
-      ARF mutation: null
-      PTCH mutation: null
-      PRKAR1A mutation: null
-      MUTYH mutation: null
-      MSH6 mutation: null
-      CDKN2A and p14ARF mutation: null
-      GREM1 mutation: null
-      MAX mutation: null
-      FH mutation: null
-      PHOX2B mutation: null
-      CDH1 mutation: null
-      MSH2 mutation: null
-      MLH1 mutation: null
-      MET mutation: null
-      ATRX mutation: null
-      KRAS mutation: null
-      KIT mutation: null
-      PolE mutation: null
-      TSC1 mutation: null
-      BLM mutation: null
-      ATM mutation: null
-      ACVR1 mutation: null
-      FLCN mutation: null
-      MEN1 mutation: null
-      TMEM127 mutation: null
-      BRAF mutation: null
-      ROS1 mutation: null
-      SMAD4 mutation: null
-      ALK mutation: null
-      BMPR1A mutation: null
-      APC mutation: null
-      BRCA2 mutation: null
-      SMARCB1 mutation: null
-      CDKN2A mutation: null
-      RAD51C mutation: null
-      p14ARF mutation: null
+      PMS2 mutation: 
+      POT1 mutation: 
+      TP53 mutation: 
+      H3K27M mutation: 
+      SMARCA4 mutation: 
+      SDHD mutation: 
+      BRCA1 mutation: 
+      CHK mutation: 
+      RB1 mutation: 
+      H3G34R/V mutation: 
+      SDHC mutation: 
+      SDHB mutation: 
+      TSC2 mutation: 
+      Not Reported: 
+      HOXB13 mutation: 
+      NF1 mutation: 
+      VHL mutation: 
+      BAP1 mutation: 
+      SETD2 mutation: 
+      BRCA1 and 2 mutation: 
+      unknown: 
+      PTEN mutation: 
+      Not Applicable: 
+      STK11 mutation: 
+      PAX5 mutation: 
+      RET mutation: 
+      NF2 mutation: 
+      ETV6 mutation: 
+      PolD mutation: 
+      IKZF1 mutation: 
+      PALB2 mutation: 
+      SDHAF2 mutation: 
+      EGFR mutation: 
+      PDGFRA mutation: 
+      ARF mutation: 
+      PTCH mutation: 
+      PRKAR1A mutation: 
+      MUTYH mutation: 
+      MSH6 mutation: 
+      CDKN2A and p14ARF mutation: 
+      GREM1 mutation: 
+      MAX mutation: 
+      FH mutation: 
+      PHOX2B mutation: 
+      CDH1 mutation: 
+      MSH2 mutation: 
+      MLH1 mutation: 
+      MET mutation: 
+      ATRX mutation: 
+      KRAS mutation: 
+      KIT mutation: 
+      PolE mutation: 
+      TSC1 mutation: 
+      BLM mutation: 
+      ATM mutation: 
+      ACVR1 mutation: 
+      FLCN mutation: 
+      MEN1 mutation: 
+      TMEM127 mutation: 
+      BRAF mutation: 
+      ROS1 mutation: 
+      SMAD4 mutation: 
+      ALK mutation: 
+      BMPR1A mutation: 
+      APC mutation: 
+      BRCA2 mutation: 
+      SMARCB1 mutation: 
+      CDKN2A mutation: 
+      RAD51C mutation: 
+      p14ARF mutation: 

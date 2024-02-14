@@ -3,6 +3,7 @@ enums:
     permissible_values:
       'Yes':
       'No':
+      Not Documented:
   
   FileFormatEnum:
     permissible_values:

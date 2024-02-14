@@ -40,10 +40,14 @@ enums:
       Oral:
       Oral (estrogen):
       Oral (progesterone):
+      Oral (estrogen/progesterone):
       Male sterilization:
       Condoms:
+      Diaphragm:
       Patch:
+      Patch (progesterone):
       Vaginal ring:
+      Vaginal ring (estrogen/progesterone):
       IUD:
       IUD (progesterone):
       Implant:
@@ -51,5 +55,5 @@ enums:
       Injection (progesterone):
       Bilateral tubal ligation:
       Natural family planning:
-      Unknown:
-
+      Rhythm:
+      Not Documented:

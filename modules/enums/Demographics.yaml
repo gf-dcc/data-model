@@ -300,13 +300,16 @@ enums:
       Tubal Sterilization:
       Ovarian Serous Cystadenoma:
       Endometriosis:
-      Uterine Fibroids: 
       'Uterine Fibroids + Endometriosis':
       'Uterine Fibroids + Adenomyosis':
+      Cervical Dysplasia:
       Cesarean Section:
       Menorrhagia:
       Adnexal Mass:
       Pelvic Mass:
+      Uterine Fibroids:
+      Uterine Lipoleiomyoma:
+      Uterine Prolapse:
       Unknown: 
 
   MenstrualCyclePhaseEnum:
