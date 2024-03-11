@@ -1,4 +1,11 @@
 enums:
+  BRCAClassificationEnum:
+    permissible_values:
+      Pathogenic:
+      Likely Pathogenic:
+      VUS:
+      Negative:
+      
   SexEnum:
     permissible_values:
       Female: 
