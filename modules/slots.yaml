@@ -418,13 +418,13 @@ slots:
   ClassBRCA1:
     title: BRCA1 Classification
     required: false
-    description: The BRCA1 classification categorizes genetic test results for the BRCA1 gene into four options: pathogenic (mutation known to increase cancer risk), likely pathogenic (mutation probably increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).
+    description: 'The BRCA1 classification categorizes genetic test results for the BRCA1 gene into four options, pathogenic (mutation known to increase cancer risk), likely pathogenic (mutation probably increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).'
     annotations:
     range: BRCAClassificationEnum
   ClassBRCA2:
     title: BRCA2 Classification
     required: false
-    description: The BRCA2 classification refers to the categorization of genetic test results for the BRCA2 gene into four options: pathogenic (mutation known to significantly increase cancer risk), likely pathogenic (mutation likely increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).
+    description: 'The BRCA2 classification refers to the categorization of genetic test results for the BRCA2 gene into four options, pathogenic (mutation known to significantly increase cancer risk), likely pathogenic (mutation likely increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).'
     annotations:
     range: BRCAClassificationEnum
   ClinicalBiospecimenType:
