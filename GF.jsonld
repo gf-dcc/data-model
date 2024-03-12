@@ -823,6 +823,17 @@
     "sms:displayName" : "TseriesEnum",
     "sms:required" : "sms:false"
   }, {
+    "@id" : "bts:BRCAClassificationEnum",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "BRCAClassificationEnum",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "BRCAClassificationEnum",
+    "sms:required" : "sms:false"
+  }, {
     "@id" : "bts:DissociationMethodEnum",
     "@type" : "rdfs:Class",
     "rdfs:comment" : "TBD",
@@ -3398,16 +3409,25 @@
     "sms:displayName" : "CellBarcodeLength",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:ClassBRCA1",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "BRCA1 grouping.",
-    "rdfs:label" : "ClassBRCA1",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ClassBRCA1",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "ClassBRCA1",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Pathogenic"
+    }, {
+      "@id" : "bts:LikelyPathogenic"
+    }, {
+      "@id" : "bts:VUS"
+    }, {
+      "@id" : "bts:Negative"
+    } ],
+    "rdfs:label" : "ClassBRCA1",
+    "rdfs:comment" : "The BRCA1 classification categorizes genetic test results for the BRCA1 gene into four options, pathogenic (mutation known to increase cancer risk), likely pathogenic (mutation probably increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ClassBRCA1"
   }, {
     "@id" : "bts:SectionNumberinSequence",
     "@type" : "rdfs:Class",
@@ -10544,16 +10564,25 @@
     "sms:displayName" : "RRIDidentifier",
     "sms:required" : "sms:false"
   }, {
-    "@id" : "bts:ClassBRCA2",
-    "@type" : "rdfs:Class",
-    "rdfs:comment" : "BRCA2 grouping.",
-    "rdfs:label" : "ClassBRCA2",
     "rdfs:subClassOf" : [ ],
+    "@id" : "bts:ClassBRCA2",
     "schema:isPartOf" : {
       "@id" : "http://schema.biothings.io/"
     },
-    "sms:displayName" : "ClassBRCA2",
-    "sms:required" : "sms:false"
+    "sms:required" : "sms:false",
+    "schema:rangeIncludes" : [ {
+      "@id" : "bts:Pathogenic"
+    }, {
+      "@id" : "bts:LikelyPathogenic"
+    }, {
+      "@id" : "bts:VUS"
+    }, {
+      "@id" : "bts:Negative"
+    } ],
+    "rdfs:label" : "ClassBRCA2",
+    "rdfs:comment" : "The BRCA2 classification refers to the categorization of genetic test results for the BRCA2 gene into four options, pathogenic (mutation known to significantly increase cancer risk), likely pathogenic (mutation likely increases cancer risk), variant of uncertain significance (VUS, unclear impact on cancer risk), and negative (no harmful mutations detected).",
+    "@type" : "rdfs:Class",
+    "sms:displayName" : "ClassBRCA2"
   }, {
     "@id" : "bts:WhitelistCellBarcodeFileLink",
     "@type" : "rdfs:Class",
@@ -13708,6 +13737,17 @@
       "@id" : "http://schema.biothings.io/"
     },
     "sms:displayName" : "Hereditary renal oncocytoma",
+    "sms:required" : "sms:false"
+  }, {
+    "@id" : "bts:VUS",
+    "@type" : "rdfs:Class",
+    "rdfs:comment" : "TBD",
+    "rdfs:label" : "VUS",
+    "rdfs:subClassOf" : [ ],
+    "schema:isPartOf" : {
+      "@id" : "http://schema.biothings.io/"
+    },
+    "sms:displayName" : "VUS",
     "sms:required" : "sms:false"
   }, {
     "@id" : "bts:Radicalmastectomy",
