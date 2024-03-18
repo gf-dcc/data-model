@@ -3,6 +3,12 @@
 	"$id": "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/org.synapse.grayfoundation-supersample",
 	"properties": {
 
+		"SampleID": {
+			"type": "string"
+		},
+		"IndividualID": {
+			"type": "string"
+		},
 		"Step": {
 			"enum": [
 				"A1_B1",
