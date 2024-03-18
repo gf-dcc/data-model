@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/org.synapse.grayfoundation-sample.C",
+	"title": "Step C",
+	"properties": {
+		"Step": {
+			"type": "string",
+			"enum": ["C1", "C2"]
+		},
+		"SampleState": {
+			"enum": ["freshly dissociated cells", "lightly fixed cells", "10x fixed cells", "-"]
+		},
+		"FromProtocol": {
+			"enum": ["Nathanson", "Brugge"]
+		},
+		"TotalCellYield": {
+			"type": "number"
+		},
+		"ViabilityPercent": {
+			"type": "number"
+		},
+		"CellPopulation": {
+			"type": "string",
+			"enum": ["mixed cells", "epithelial cells", "luminal cells", "immune cells", "-"]
+		}
+	}
+}

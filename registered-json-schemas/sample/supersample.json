@@ -1,0 +1,135 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/org.synapse.grayfoundation-supersample",
+	"properties": {
+
+		"Step": {
+			"enum": [
+				"A1_B1",
+				"A2_B2",
+				"C1",
+				"C2",
+				"D",
+				"H",
+				"I",
+				"M"
+			]
+		},
+		"SampleState": {
+			"type": "string",
+			"enum": ["tissue", "freshly dissociated cells", "lightly fixed cells", "10x fixed cells", "-"]
+		},
+		"ProcessedBy": {
+			"type": "string"
+		},
+		"DateCollectionOrProcessing": {
+			"type": "string"
+		},
+		"SentTo": {
+			"type": "string",
+			"enum": ["None - Retain in Home Lab", "Brugge Lab", "Nathanson Lab", "Aparicio Lab", "Long Lab"]
+		},
+		"Location": {
+			"type": "string"
+		},
+		"LinkedAssets": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"default": ""
+			}
+		},
+		"Comments": {
+			"type": "string"
+		}
+	},
+	"allOf": [{
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "A1_B1"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.AB"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "A2_B2"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.AB"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "C1"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.C"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "C2"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.C"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "D"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.D"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "H"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.H"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "I"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.I"
+		}
+	}, {
+		"if": {
+			"properties": {
+				"Step": {
+					"const": "M"
+				}
+			}
+		},
+		"then": {
+			"$ref": "org.synapse.grayfoundation-sample.M"
+		}
+	}]
+}

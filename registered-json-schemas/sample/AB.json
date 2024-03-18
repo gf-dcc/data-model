@@ -1,0 +1,56 @@
+{
+	"schema": {
+		"$schema": "http://json-schema.org/draft-07/schema#",
+		"$id": "https://repo-prod.prod.sagebase.org/repo/v1/schema/type/registered/org.synapse.grayfoundation-sample.AB",
+		"title": "Step A & B",
+		"properties": {
+			"Step": {
+				"type": "string",
+				"enum": ["A1_B1", "A2_B2"]
+			},
+			"SampleState": {
+				"const": "tissue"
+			},
+			"Laterality": {
+				"enum": ["Left", "Right", "-"],
+				"type": "string"
+			},
+			"TissueType": {
+				"enum": ["Normal", "Tumor", "-"]
+			},
+			"TissueSplit": {
+				"type": "boolean"
+			},
+			"TissueSize_mm2": {
+				"type": "number"
+			},
+			"Texture": {
+				"enum": ["Soft", "Firm", "-"]
+			},
+			"BloodPresent": {
+				"type": "boolean"
+			},
+			"BloodQuant": {
+				"enum": ["Light", "Moderate", "Extreme", "-"],
+				"type": "string",
+				"default": "-"
+			},
+			"DyePresent": {
+				"type": "boolean"
+			},
+			"DyeQuant": {
+				"enum": ["Light", "Moderate", "Extreme", "-"],
+				"type": "string"
+			},
+			"Fibrotic": {
+				"type": "boolean"
+			},
+			"SampleVolume_mL": {
+				"type": "number"
+			},
+			"EstFatContent_mL": {
+				"type": "number"
+			}
+		}
+	}
+}
