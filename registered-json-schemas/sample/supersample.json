@@ -6,7 +6,7 @@
 		"SampleID": {
 			"type": "string"
 		},
-		"IndividualID": {
+		"PatientID": {
 			"type": "string"
 		},
 		"Step": {
